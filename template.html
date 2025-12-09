@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{Meta Title}}</title>
+    <meta name="description" content="{{Meta Description}}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{Final URL}}">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Tour With Anand",
+      "description": "{{Schema Description}}",
+      "url": "{{Final URL}}",
+      "telephone": "{{Phone Number}}",
+      "priceRange": "₹{{One-Way Fare 1}} - ₹{{Round-Trip Fare 2}}",
+      "areaServed": {
+        "@type": "Place",
+        "name": "{{Local Area}}, {{District}}, {{State}}, India"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "{{FAQ 1 Question}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ 1 Answer}}"
+        }
+      }, {
+        "@type": "Question",
+        "name": "{{FAQ 2 Question}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ 2 Answer}}"
+        }
+      }, {
+        "@type": "Question",
+        "name": "{{FAQ 3 Question}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ 3 Answer}}"
+        }
+      }, {
+        "@type": "Question",
+        "name": "{{FAQ 4 Question}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ 4 Answer}}"
+        }
+      }, {
+        "@type": "Question",
+        "name": "{{FAQ 5 Question}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ 5 Answer}}"
+        }
+      }]
+    }
+    </script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="https://tourwithanand.in/" class="text-xl font-bold text-orange-600">Tour With Anand</a>
+            <a href="tel:{{Phone Number}}" class="text-sm font-semibold text-gray-700 hover:text-orange-500">
+                <i class="fas fa-phone-alt mr-1"></i> Call Anand: {{Phone Number}}
+            </a>
+        </div>
+    </header>
+    
+    <div class="w-full h-64 overflow-hidden">
+        <img src="{{Primary Image URL}}" 
+             alt="{{Image Alt Text}}" 
+             loading="lazy"
+             class="w-full h-full object-cover">
+    </div>
+
+    <section class="bg-orange-500 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+                {{Page Title (H1)}}
+            </h1>
+            
+            <div class="flex justify-center space-x-4 mb-3 text-lg font-medium">
+                <span><i class="fas fa-route mr-2"></i> Distance: {{Distance}}</span>
+                <span><i class="fas fa-clock mr-2"></i> Duration: ~{{Travel Time}}</span>
+                <span><i class="fas fa-rupee-sign mr-2"></i> Starting Price: ₹{{One-Way Fare 1}}</span>
+            </div>
+            
+            <p class="text-2xl font-bold mb-6 max-w-2xl mx-auto">
+                Managed personally by Anand: Your safest, fixed-fare airport transfer to {{Local Area}}.
+            </p>
+
+            <a href="{{WhatsApp Link}}" 
+               class="inline-block bg-white text-orange-600 font-bold px-10 py-4 rounded-lg text-xl transition hover:bg-gray-100 shadow-xl">
+                <i class="fab fa-whatsapp mr-2"></i> {{WhatsApp CTA Text}}
+            </a>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Compare Taxi Options & Prices</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-6 text-center max-w-2xl mx-auto">
+                
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="images/sedan.jpg" alt="{{Vehicle Type 1}} car option" loading="lazy" class="w-full h-24 object-contain mb-2">
+                    <p class="font-semibold text-gray-800">{{Vehicle Type 1}}</p>
+                    <p class="text-sm text-gray-500 mb-2">{{Capacity 1}} seats</p>
+                    <div class="bg-orange-500 text-white font-bold py-1 rounded">₹{{One-Way Fare 1}}</div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="images/ertiga.jpg" alt="{{Vehicle Type 2}} car option" loading="lazy" class="w-full h-24 object-contain mb-2">
+                    <p class="font-semibold text-gray-800">{{Vehicle Type 2}}</p>
+                    <p class="text-sm text-gray-500 mb-2">{{Capacity 2}} seats</p>
+                    <div class="bg-orange-500 text-white font-bold py-1 rounded">₹{{One-Way Fare 2}}</div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="{{WhatsApp Link}}" 
+                   class="inline-block bg-orange-600 text-white font-bold px-8 py-3 rounded-lg text-lg transition shadow-lg hover:bg-orange-700">
+                    Get an Instant Quote for Your Chosen Cab
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">{{Route Title (H2)}}</h2>
+
+            <div class="md:grid md:grid-cols-2 gap-8">
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">{{Taxi Service Title (H2)}}</h3>
+                    <div class="text-gray-700 space-y-3">
+                        <p>{{Taxi Service Description Paragraph}}</p>
+                        <ul class="list-disc list-inside space-y-1 pl-4">
+                            <li><strong>One-Way Drop Taxi</strong> from Kochi Airport to {{Local Area}}.</li>
+                            <li><strong>Round Trip Cab</strong> booking if you plan to return.</li>
+                            <li><strong>Multi-Stop Trips</strong> for sightseeing on the way.</li>
+                            <li>Customize your taxi package as needed.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 mt-6 md:mt-0">{{Places to Visit Title (H2)}}</h3>
+                    <p class="text-gray-700 mb-3">
+                        {{Route Description}}
+                    </p>
+                    <p class="font-semibold text-gray-800 mb-2">Other tourist places on this route or nearby are:</p>
+                    <ul class="grid grid-cols-2 gap-x-4 text-sm text-gray-700 list-disc list-inside">
+                        {{#PlacesToVisitBullets}}
+                        <li>{{.}}</li>
+                        {{/PlacesToVisitBullets}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">{{Fare Title (H2)}}</h2>
+            <div class="overflow-x-auto shadow-lg rounded-lg">
+                <table class="w-full bg-white">
+                    <thead class="bg-gray-800 text-white">
+                        <tr>
+                            <th class="px-4 py-3 text-left">Vehicle Type</th>
+                            <th class="px-4 py-3 text-left">Model (or Similar)</th>
+                            <th class="px-4 py-3 text-left">Capacity</th>
+                            <th class="px-4 py-3 text-left">One-Way Fare</th>
+                            <th class="px-4 py-3 text-left">Round-Trip Fare</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-sm">
+                        
+                        <tr>
+                            <td class="px-4 py-3">{{Vehicle Type 1}}</td>
+                            <td class="px-4 py-3">{{Model 1}}</td>
+                            <td class="px-4 py-3">{{Capacity 1}} seater</td>
+                            <td class="px-4 py-3">₹{{One-Way Fare 1}}</td>
+                            <td class="px-4 py-3">₹{{Round-Trip Fare 1}}</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="px-4 py-3">{{Vehicle Type 2}}</td>
+                            <td class="px-4 py-3">{{Model 2}}</td>
+                            <td class="px-4 py-3">{{Capacity 2}} seater</td>
+                            <td class="px-4 py-3">₹{{One-Way Fare 2}}</td>
+                            <td class="px-4 py-3">₹{{Round-Trip Fare 2}}</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">{{FAQ Title (H2)}}</h2>
+            
+            <div class="space-y-4">
+                <details class="bg-white rounded-lg p-4 cursor-pointer hover:bg-gray-50 transition shadow-sm">
+                    <summary class="font-bold text-lg text-gray-900">{{FAQ 1 Question}}</summary>
+                    <p class="mt-2 text-gray-700">{{FAQ 1 Answer}}</p>
+                </details>
+                
+                <details class="bg-white rounded-lg p-4 cursor-pointer hover:bg-gray-50 transition shadow-sm">
+                    <summary class="font-bold text-lg text-gray-900">{{FAQ 2 Question}}</summary>
+                    <p class="mt-2 text-gray-700">{{FAQ 2 Answer}}</p>
+                </details>
+                
+                <details class="bg-white rounded-lg p-4 cursor-pointer hover:bg-gray-50 transition shadow-sm">
+                    <summary class="font-bold text-lg text-gray-900">{{FAQ 3 Question}}</summary>
+                    <p class="mt-2 text-gray-700">{{FAQ 3 Answer}}</p>
+                </details>
+
+                <details class="bg-white rounded-lg p-4 cursor-pointer hover:bg-gray-50 transition shadow-sm">
+                    <summary class="font-bold text-lg text-gray-900">{{FAQ 4 Question}}</summary>
+                    <p class="mt-2 text-gray-700">{{FAQ 4 Answer}}</p>
+                </details>
+
+                <details class="bg-white rounded-lg p-4 cursor-pointer hover:bg-gray-50 transition shadow-sm">
+                    <summary class="font-bold text-lg text-gray-900">{{FAQ 5 Question}}</summary>
+                    <p class="mt-2 text-gray-700">{{FAQ 5 Answer}}</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Explore Other Popular Airport Routes</h3>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                {{#InternalLinks}}
+                <a href="{{.}}" class="px-6 py-3 bg-white text-orange-600 border border-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition shadow-sm">
+                    {{.}}
+                </a>
+                {{/InternalLinks}}
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+             <p class="text-xl font-bold mb-4">Book your safe, personalized transfer today: <a href="tel:{{Phone Number}}" class="text-orange-400 hover:text-orange-200">{{Phone Number}}</a></p>
+            <p class="text-gray-400">© 2025 Tour With Anand. All rights reserved.</p>
+        </div>
+    </section>
+
+</body>
+</html>
