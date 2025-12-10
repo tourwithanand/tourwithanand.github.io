@@ -46,7 +46,7 @@ Edit `routes.csv` and add rows with the following columns:
 | Local Area | Destination area | "Fort Kochi" |
 | District | District name | "Ernakulam" |
 | State | State name | "Kerala" |
-| Primary Image URL | Hero image URL | "https://tourwithanand.com/images/fort-kochi.jpg" |
+| Primary Image URL | Hero image URL | "https://tourwithanand.in/images/fort-kochi.jpg" |
 | Image Alt Text | Image alt text | "Kochi Airport to Fort Kochi Taxi Service" |
 | Route Title (H2) | Route section heading | "Kochi Airport to Fort Kochi Route" |
 | Route Description | Route details paragraph | "The route is smooth and well connected through NH 544..." |
