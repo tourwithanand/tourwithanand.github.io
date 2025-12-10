@@ -46,17 +46,28 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify(data)
       });
 
-      if (!res.ok) {
-        const t = await res.text();
-        throw new Error(t || 'Submit failed');
+      // Read response and show helpful diagnostics on failure
+      const contentType = res.headers.get('content-type') || '';
+      let payload = null;
+      try {
+        if (contentType.includes('application/json')) payload = await res.json();
+        else payload = await res.text();
+      } catch (e) {
+        payload = await res.text().catch(() => null);
       }
 
-      const body = await res.json();
-      msg.innerHTML = `Thanks ${data.name}! A confirmation email has been sent to ${data.email}. Please click the confirmation link in your email.`;
+      if (!res.ok) {
+        console.error('Submit failed', res.status, payload);
+        msg.innerHTML = `Automatic submission failed (status ${res.status}).<br/><small>${typeof payload === 'string' ? escapeHtml(payload) : JSON.stringify(payload)}</small><br/>Please use the "Use email to submit" button.`;
+        return;
+      }
+
+      // Success
+      msg.innerHTML = `Thanks ${escapeHtml(data.name)}! A confirmation email has been sent to ${escapeHtml(data.email)}. Please click the confirmation link in your email.`;
       form.reset();
     } catch (err) {
       console.error('Submit failed, falling back to mailto', err);
-      msg.textContent = 'Automatic submission failed. Please use the "Use email to submit" button.';
+      msg.innerHTML = `Automatic submission failed: <strong>${escapeHtml(err.message || String(err))}</strong>.<br/>Please use the "Use email to submit" button.`;
     }
   });
 });
@@ -84,3 +95,13 @@ async function sendConfirmationEmail(data) {
 // - To make this fully automated replace sendConfirmationEmail() with a call to an email API (e.g., SendGrid) inside a serverless function.
 // - The server should store incoming reviews in a pending store (DB or GitHub issue) and send a confirmation email to the submitter with a unique token/URL.
 // - Once the user clicks the confirmation link, the server marks the review as confirmed and publishes it (adds to published JSON or merges a PR).
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
