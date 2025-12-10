@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Confirm Your Review — Tour With Anand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <main class="container mx-auto px-4 py-20">
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow">
+      <h1 class="text-2xl font-bold mb-4">Confirm Your Review</h1>
+      <p class="text-gray-600 mb-6">This page is a confirmation placeholder. In a full setup the token in the URL would be used to confirm and publish the review automatically.</p>
+
+      <div id="token-block" class="bg-gray-50 p-4 rounded border text-sm text-gray-700"></div>
+
+      <div class="mt-6 text-sm text-gray-600">
+        <p>If you are the site owner, you can use the token to look up the pending review and mark it as published in your admin dashboard or storage.</p>
+        <p class="mt-4">For a fully automated system, implement a serverless endpoint that receives the token and updates the review record to confirmed, then adds it to the published reviews data source.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token') || 'No token provided';
+    document.getElementById('token-block').textContent = token;
+  </script>
+</body>
+</html>
