@@ -20,6 +20,8 @@ Requirements
   - `OWNER_EMAIL` — (optional) from address for confirmation emails (default `info@tourwithanand.com`)
   - `SITE_URL` — (optional) your site URL (default `https://tourwithanand.github.io`)
 
+  - `ADMIN_TOKEN` — a secret string you set on Netlify used to authorize review deletions from the admin UI
+
 Notes
 -----
 - This implementation stores pending reviews as GitHub Issues to avoid requiring a separate database. If you prefer a different pending store (Airtable, Firebase), modify `functions/submit-review.js` accordingly.
@@ -32,6 +34,12 @@ Deployment steps (Netlify)
 2. Create a new Netlify site and connect to this GitHub repository.
 3. Add the required environment variables in Site settings → Build & deploy → Environment.
 4. Deploy site. Netlify will expose the functions at `/.netlify/functions/submit-review` and `/.netlify/functions/confirm-review`.
+
+Notes for immediate-publish flow
+--------------------------------
+- The site now publishes reviews immediately when the visitor submits the form. There is no double opt-in confirmation step.
+- On submission the function appends the review to `data/reviews.json` and sends a notification email to `OWNER_EMAIL`.
+- To delete a review, use the Admin page `reviews-admin.html` and provide the `ADMIN_TOKEN` (set in Netlify env). The admin page calls `/.netlify/functions/delete-review` to remove the review and commit the updated `data/reviews.json`.
 
 Testing locally
 ----------------

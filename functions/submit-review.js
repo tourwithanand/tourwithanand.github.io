@@ -79,14 +79,100 @@ exports.handler = async function(event, context) {
 
     if (!sgResp.ok) {
       const text = await sgResp.text();
-      console.error('SendGrid failed', text);
-      // sendGrid failure should not lose the pending review — return partial success
-      return { statusCode: 202, body: JSON.stringify({ ok: false, message: 'Pending saved; email not sent. Use manual email.' }) };
-    }
-  } catch (err) {
-    console.error('SendGrid error', err);
-    return { statusCode: 202, body: JSON.stringify({ ok: false, message: 'Pending saved; email not sent. Use manual email.' }) };
-  }
+      const GITHUB_API = 'https://api.github.com';
 
-  return { statusCode: 200, body: JSON.stringify({ ok: true, token }) };
-};
+      exports.handler = async function(event, context) {
+        if (event.httpMethod !== 'POST') {
+          return { statusCode: 405, body: 'Method Not Allowed' };
+        }
+
+        let payload;
+        try {
+          payload = JSON.parse(event.body);
+        } catch (err) {
+          return { statusCode: 400, body: 'Invalid JSON' };
+        }
+
+        const { name, email, rating, review } = payload;
+        if (!name || !email || !rating || !review) {
+          return { statusCode: 400, body: 'Missing fields' };
+        }
+
+        const token = 'r-' + Math.random().toString(36).slice(2,10) + '-' + Date.now().toString(36);
+        const repoOwner = process.env.REPO_OWNER;
+        const repoName = process.env.REPO_NAME;
+        const githubToken = process.env.GITHUB_TOKEN;
+        const sendgridKey = process.env.SENDGRID_API_KEY;
+        const siteUrl = process.env.SITE_URL || 'https://tourwithanand.github.io';
+        const ownerEmail = process.env.OWNER_EMAIL || 'info@tourwithanand.com';
+
+        if (!repoOwner || !repoName || !githubToken || !sendgridKey) {
+          return { statusCode: 500, body: 'Server not configured. Missing environment variables.' };
+        }
+
+        // Append review to data/reviews.json in repository
+        const filePath = 'data/reviews.json';
+        try {
+          // Fetch existing file (if any)
+          const getResp = await fetch(`${GITHUB_API}/repos/${repoOwner}/${repoName}/contents/${filePath}`, {
+            headers: { 'Authorization': `token ${githubToken}`, 'Accept': 'application/vnd.github+json' }
+          });
+
+          let reviews = [];
+          let sha = null;
+          if (getResp.ok) {
+            const json = await getResp.json();
+            sha = json.sha;
+            const content = Buffer.from(json.content, 'base64').toString('utf8');
+            try { reviews = JSON.parse(content); } catch (e) { reviews = []; }
+          }
+
+          const newReview = { id: token, name, email, rating, review, createdAt: new Date().toISOString() };
+          reviews.push(newReview);
+
+          const updatedContent = Buffer.from(JSON.stringify(reviews, null, 2)).toString('base64');
+          const putResp = await fetch(`${GITHUB_API}/repos/${repoOwner}/${repoName}/contents/${filePath}`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${githubToken}`, 'Accept': 'application/vnd.github+json' },
+            body: JSON.stringify({ message: `Publish review ${token}`, content: updatedContent, sha })
+          });
+
+          if (!putResp.ok) {
+            const t = await putResp.text();
+            console.error('Failed to commit reviews.json', t);
+            return { statusCode: 500, body: 'Failed to publish review' };
+          }
+        } catch (err) {
+          console.error('Error publishing review', err);
+          return { statusCode: 500, body: 'Error publishing review' };
+        }
+
+        // Send notification email to owner via SendGrid
+        const sgBody = {
+          personalizations: [{ to: [{ email: ownerEmail }], subject: 'New review submitted on Tour With Anand' }],
+          from: { email: ownerEmail, name: 'Tour With Anand' },
+          content: [{ type: 'text/plain', value: `New review submitted:\n\nName: ${name}\nEmail: ${email}\nRating: ${rating}\n\nReview:\n${review}\n\nID: ${token}\n` }]
+        };
+
+        try {
+          const sgResp = await fetch('https://api.sendgrid.com/v3/mail/send', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${sendgridKey}`,
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(sgBody)
+          });
+
+          if (!sgResp.ok) {
+            const text = await sgResp.text();
+            console.error('SendGrid failed', text);
+            // Return success since review is published, but notify admin that email failed
+            return { statusCode: 200, body: JSON.stringify({ ok: true, token, emailSent: false, message: 'Review published; notification email failed.' }) };
+          }
+        } catch (err) {
+          console.error('SendGrid error', err);
+          return { statusCode: 200, body: JSON.stringify({ ok: true, token, emailSent: false, message: 'Review published; notification email failed.' }) };
+        }
+
+        return { statusCode: 200, body: JSON.stringify({ ok: true, token, emailSent: true }) };
