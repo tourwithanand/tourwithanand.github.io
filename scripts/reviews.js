@@ -32,25 +32,31 @@ document.addEventListener('DOMContentLoaded', () => {
     msg.textContent = '';
 
     const data = {
-      id: uuid(),
       name: document.getElementById('name').value.trim(),
       email: document.getElementById('email').value.trim(),
       rating: document.getElementById('rating').value,
       review: document.getElementById('review').value.trim(),
-      createdAt: new Date().toISOString(),
-      confirmed: false
     };
 
-    // In this static demo we will: 1) show a confirmation message and 2) prepare a mailto for the site owner
-    // For production: replace sendConfirmationEmail() with integration to an email service or serverless function.
-
+    // Try to POST to serverless endpoint. If it fails, fallback to opening a mailto.
     try {
-      await sendConfirmationEmail(data);
-      msg.innerHTML = `Thanks ${data.name}! A confirmation email has been prepared — please click the link in the email to confirm publishing your review.`;
+      const res = await fetch('/.netlify/functions/submit-review', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (!res.ok) {
+        const t = await res.text();
+        throw new Error(t || 'Submit failed');
+      }
+
+      const body = await res.json();
+      msg.innerHTML = `Thanks ${data.name}! A confirmation email has been sent to ${data.email}. Please click the confirmation link in your email.`;
       form.reset();
     } catch (err) {
-      console.error(err);
-      msg.textContent = 'Could not send confirmation automatically. Use the "Use email to submit" button to email the review to the owner.';
+      console.error('Submit failed, falling back to mailto', err);
+      msg.textContent = 'Automatic submission failed. Please use the "Use email to submit" button.';
     }
   });
 });
