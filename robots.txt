@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://tourwithanand.github.io/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 0
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Allow crawling of all content
+User-agent: *
+Allow: /
