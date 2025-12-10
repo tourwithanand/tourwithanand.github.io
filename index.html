@@ -12,18 +12,34 @@
         body { font-family: 'Inter', sans-serif; }
         .gradient-primary { background: linear-gradient(135deg, #1e40af 0%, #0c4a6e 100%); }
         .gradient-dark { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        
+        @keyframes blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
 
     <!-- Navigation Header -->
-    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="text-2xl font-bold text-blue-900">Tour With Anand</div>
-                <div class="hidden sm:block text-xs text-gray-600 font-medium">
-                    <div>Taxi & Tours</div>
-                    <div>Professional Travel Assistant</div>
+                <div class="w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center shadow-lg">
+                    <i class="fas fa-taxi text-white text-xl font-bold"></i>
+                </div>
+                <div>
+                    <div class="text-xl font-bold text-blue-900 leading-tight">Tour With Anand</div>
+                    <div class="hidden sm:block text-xs text-gray-500 font-medium">Professional Travel Services</div>
                 </div>
             </div>
 
@@ -56,110 +72,131 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="gradient-primary text-white py-20 md:py-32">
-        <div class="container mx-auto px-4">
+    <section class="relative h-screen md:h-[600px] flex items-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <div style="background: linear-gradient(135deg, #1e40af 0%, #0c4a6e 50%, #164e63 100%);"></div>
+            <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-4 py-20">
             <div class="max-w-3xl">
-                <div class="mb-4 flex items-center space-x-2">
-                    <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                    <span class="text-sm font-semibold text-blue-100 uppercase tracking-wider">Professional Travel Services</span>
+                <div class="mb-6 flex items-center space-x-3">
+                    <div class="w-1 h-8 bg-yellow-400 rounded-full"></div>
+                    <span class="text-sm font-bold text-yellow-300 uppercase tracking-widest">Welcome to Tour With Anand</span>
                 </div>
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                    Premium Taxi Service & South India Tours
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                    Premium Taxi & <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">South India Tours</span>
                 </h1>
-                <p class="text-lg text-blue-50 mb-8 leading-relaxed">
-                    Experience stress-free travel with professional taxi service and curated tour packages. Managed personally by Anand, your dedicated travel assistant in Kerala and South India.
+                <p class="text-xl text-blue-100 mb-8 leading-relaxed max-w-2xl">
+                    Experience stress-free travel with professional taxi service and curated tour packages. Managed personally by Anand, your dedicated travel assistant.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#services" class="inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition text-center">
+                    <a href="#services" class="inline-block bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-xl hover:bg-yellow-300 transition transform hover:scale-105 shadow-xl text-center text-lg">
                         Explore Services
                     </a>
-                    <a href="https://wa.me/919400620615" class="inline-block bg-white bg-opacity-20 border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-30 transition text-center">
+                    <a href="https://wa.me/919400620615" class="inline-block bg-white bg-opacity-20 border-2 border-white text-white font-bold py-4 px-8 rounded-xl hover:bg-white hover:text-blue-900 transition text-center text-lg backdrop-blur-md">
                         <i class="fab fa-whatsapp mr-2"></i> Book Now
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 right-10 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-0 left-20 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
+    <section id="services" class="py-20 bg-gradient-to-b from-white to-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Professional taxi and tour packages designed for comfortable and memorable travel experiences.</p>
+                <h2 class="text-5xl md:text-6xl font-black text-gray-900 mb-4">Our Services</h2>
+                <div class="h-1 w-24 bg-gradient-to-r from-blue-900 to-cyan-500 mx-auto mb-6 rounded-full"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Professional taxi and tour packages designed for comfortable and memorable travel experiences.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <!-- Taxi Service Card -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 border-l-4 border-blue-900">
-                    <div class="mb-4">
-                        <i class="fas fa-taxi text-5xl text-blue-900"></i>
+                <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 p-8 border-t-4 border-blue-900 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="mb-6 w-16 h-16 bg-gradient-to-br from-blue-900 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-taxi text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">24/7 Taxi Service</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Professional, reliable airport transfers and taxi services available round-the-clock. From single passengers to group travel, we have the right vehicle for you.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Kochi (COK) Airport pickups/drop-offs</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Sedan, SUV & Tempo Traveller options</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Professional drivers with local knowledge</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Fixed, transparent pricing</span></li>
+                        </ul>
+                        <a href="/kochi-airport-to-fort-kochi-taxi.html" class="inline-block text-blue-900 font-bold hover:text-cyan-600 transition text-lg">View Taxi Routes <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">24/7 Taxi Service</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Professional, reliable airport transfers and taxi services available round-the-clock. From single passengers to group travel, we have the right vehicle for you.
-                    </p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Kochi (COK) Airport pickups/drop-offs</span></li>
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Sedan, SUV & Tempo Traveller options</span></li>
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Professional drivers with local knowledge</span></li>
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Fixed, transparent pricing</span></li>
-                    </ul>
-                    <a href="/kochi-airport-to-fort-kochi-taxi.html" class="text-blue-900 font-semibold hover:underline">View Taxi Routes →</a>
                 </div>
 
                 <!-- Tour Packages Card -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 border-l-4 border-blue-900">
-                    <div class="mb-4">
-                        <i class="fas fa-map-location-dot text-5xl text-blue-900"></i>
+                <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 p-8 border-t-4 border-cyan-500 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-100 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="mb-6 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-400 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-map-location-dot text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Curated Tour Packages</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Expertly planned South India tours with guided experiences. Explore Kerala's backwaters, tea plantations, temples, and historic sites at your own pace.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-cyan-500 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Custom Kerala & Tamil Nadu itineraries</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-cyan-500 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Family & group-friendly packages</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-cyan-500 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Cultural & historical site expertise</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-cyan-500 mr-3 mt-1 text-lg"></i><span class="text-gray-700 font-medium">Flexible scheduling & personalized service</span></li>
+                        </ul>
+                        <a href="https://tourwithanand.in/south-india-tours/" class="inline-block text-cyan-600 font-bold hover:text-blue-900 transition text-lg">Explore Tours <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Curated Tour Packages</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Expertly planned South India tours with guided experiences. Explore Kerala's backwaters, tea plantations, temples, and historic sites at your own pace.
-                    </p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Custom Kerala & Tamil Nadu itineraries</span></li>
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Family & group-friendly packages</span></li>
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Cultural & historical site expertise</span></li>
-                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Flexible scheduling & personalized service</span></li>
-                    </ul>
-                    <a href="https://tourwithanand.in/south-india-tours/" class="text-blue-900 font-semibold hover:underline">Explore Tours →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Anand Section -->
-    <section id="about" class="gradient-primary text-white py-20">
-        <div class="container mx-auto px-4">
+    <section id="about" class="relative py-20 overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-700"></div>
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,<svg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"%23ffffff\" fill-opacity=\"0.1\"><path d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/></g></g></svg>');"></div>
+
+        <div class="relative z-10 container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <div class="mb-4 flex items-center space-x-2">
-                    <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                    <span class="text-sm font-semibold text-blue-100 uppercase tracking-wider">Meet Your Travel Assistant</span>
+                <div class="mb-6 flex items-center space-x-3">
+                    <div class="w-1 h-8 bg-yellow-400 rounded-full"></div>
+                    <span class="text-sm font-bold text-yellow-300 uppercase tracking-widest">Meet Your Travel Assistant</span>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-8">About Anand</h2>
+                <h2 class="text-5xl md:text-6xl font-black text-white mb-8">About Anand</h2>
                 <p class="text-lg text-blue-50 leading-relaxed mb-8">
                     Anand is a professional travel assistant and taxi service operator based in Kerala with years of experience in the tourism and hospitality industry. With deep local knowledge and a passion for customer service, Anand personally manages all bookings, arrangements, and guest experiences to ensure every journey is comfortable, memorable, and stress-free.
                 </p>
-                <p class="text-lg text-blue-50 leading-relaxed mb-8">
+                <p class="text-lg text-blue-50 leading-relaxed mb-12">
                     Whether you need a reliable airport transfer, a guided tour of South India's most iconic destinations, or a customized travel package, Anand's professional approach and attention to detail guarantee your complete satisfaction.
                 </p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
-                        <div class="text-3xl font-bold text-yellow-400 mb-2">500+</div>
-                        <div class="text-sm text-blue-100">Happy Customers</div>
+                    <div class="bg-white bg-opacity-15 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-30 hover:bg-opacity-25 transition transform hover:scale-105">
+                        <div class="text-4xl font-black text-yellow-300 mb-3">500+</div>
+                        <div class="text-sm font-bold text-blue-100">Happy Customers</div>
                     </div>
-                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
-                        <div class="text-3xl font-bold text-yellow-400 mb-2">24/7</div>
-                        <div class="text-sm text-blue-100">Available Service</div>
+                    <div class="bg-white bg-opacity-15 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-30 hover:bg-opacity-25 transition transform hover:scale-105">
+                        <div class="text-4xl font-black text-yellow-300 mb-3">24/7</div>
+                        <div class="text-sm font-bold text-blue-100">Available Service</div>
                     </div>
-                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
-                        <div class="text-3xl font-bold text-yellow-400 mb-2">10+</div>
-                        <div class="text-sm text-blue-100">Years Experience</div>
+                    <div class="bg-white bg-opacity-15 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-30 hover:bg-opacity-25 transition transform hover:scale-105">
+                        <div class="text-4xl font-black text-yellow-300 mb-3">10+</div>
+                        <div class="text-sm font-bold text-blue-100">Years Experience</div>
                     </div>
-                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
-                        <div class="text-3xl font-bold text-yellow-400 mb-2">100%</div>
-                        <div class="text-sm text-blue-100">Customer Focused</div>
+                    <div class="bg-white bg-opacity-15 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-30 hover:bg-opacity-25 transition transform hover:scale-105">
+                        <div class="text-4xl font-black text-yellow-300 mb-3">100%</div>
+                        <div class="text-sm font-bold text-blue-100">Customer Focused</div>
                     </div>
                 </div>
             </div>
@@ -167,56 +204,75 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
-                <p class="text-lg text-gray-600">Real experiences from travelers who've trusted Anand with their journeys.</p>
+                <h2 class="text-5xl md:text-6xl font-black text-gray-900 mb-4">What Our Customers Say</h2>
+                <div class="h-1 w-24 bg-gradient-to-r from-blue-900 to-cyan-500 mx-auto mb-6 rounded-full"></div>
+                <p class="text-xl text-gray-600">Real experiences from travelers who've trusted Anand with their journeys.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-900">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">"Professional, reliable, and friendly service. Anand made our airport transfer seamless and stress-free."</p>
-                    <div>
-                        <div class="font-bold text-gray-900">Rajesh K.</div>
-                        <div class="text-sm text-gray-600">Mumbai</div>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-900">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">"Anand's tour package was incredible. Great knowledge of local culture and history. Highly recommended!"</p>
-                    <div>
-                        <div class="font-bold text-gray-900">Priya M.</div>
-                        <div class="text-sm text-gray-600">Bangalore</div>
+                <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300 border-t-4 border-blue-900 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-100 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed font-medium">"Professional, reliable, and friendly service. Anand made our airport transfer seamless and stress-free."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gradient-to-br from-blue-900 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold mr-3">R</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Rajesh K.</div>
+                                <div class="text-sm text-gray-500">Mumbai</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-900">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
+                <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300 border-t-4 border-cyan-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-100 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed font-medium">"Anand's tour package was incredible. Great knowledge of local culture and history. Highly recommended!"</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold mr-3">P</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Priya M.</div>
+                                <div class="text-sm text-gray-500">Bangalore</div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"Outstanding service from start to finish. The best travel experience we've had in South India."</p>
-                    <div>
-                        <div class="font-bold text-gray-900">Sarah J.</div>
-                        <div class="text-sm text-gray-600">London</div>
+                </div>
+
+                <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300 border-t-4 border-orange-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-orange-100 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                            <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed font-medium">"Outstanding service from start to finish. The best travel experience we've had in South India."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-3">S</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Sarah J.</div>
+                                <div class="text-sm text-gray-500">London</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,57 +280,145 @@
     </section>
 
     <!-- Destinations Section -->
-    <section id="destinations" class="py-20 bg-gray-50">
+    <section id="destinations" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Popular Destinations</h2>
-                <p class="text-lg text-gray-600">Explore South India's most sought-after locations.</p>
+                <h2 class="text-5xl md:text-6xl font-black text-gray-900 mb-4">Popular Destinations</h2>
+                <div class="h-1 w-24 bg-gradient-to-r from-blue-900 to-cyan-500 mx-auto mb-6 rounded-full"></div>
+                <p class="text-xl text-gray-600">Explore South India's most sought-after locations.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                <a href="/kochi-airport-to-alleppey-taxi.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="aspect-square bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                        <i class="fas fa-water text-6xl text-white opacity-20"></i>
+                <a href="/kochi-airport-to-alleppey-taxi.html" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 duration-300">
+                    <div class="aspect-square bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-water text-7xl text-white opacity-30"></i>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
-                        <h4 class="text-xl font-bold text-white">Alleppey</h4>
-                        <p class="text-sm text-blue-100">Backwaters & Houseboats</p>
-                    </div>
-                </a>
-
-                <a href="/kochi-airport-to-fort-kochi-taxi.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="aspect-square bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-                        <i class="fas fa-gopuram text-6xl text-white opacity-20"></i>
-                    </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
-                        <h4 class="text-xl font-bold text-white">Fort Kochi</h4>
-                        <p class="text-sm text-blue-100">History & Culture</p>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-6">
+                        <h4 class="text-2xl font-bold text-white">Alleppey</h4>
+                        <p class="text-blue-100 font-semibold">Backwaters & Houseboats</p>
                     </div>
                 </a>
 
-                <a href="/" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="aspect-square bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                        <i class="fas fa-leaf text-6xl text-white opacity-20"></i>
+                <a href="/kochi-airport-to-fort-kochi-taxi.html" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 duration-300">
+                    <div class="aspect-square bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-gopuram text-7xl text-white opacity-30"></i>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
-                        <h4 class="text-xl font-bold text-white">Munnar</h4>
-                        <p class="text-sm text-blue-100">Tea Plantations</p>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-6">
+                        <h4 class="text-2xl font-bold text-white">Fort Kochi</h4>
+                        <p class="text-blue-100 font-semibold">History & Culture</p>
                     </div>
                 </a>
 
-                <a href="/" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="aspect-square bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                        <i class="fas fa-landmark text-6xl text-white opacity-20"></i>
+                <a href="/" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 duration-300">
+                    <div class="aspect-square bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-leaf text-7xl text-white opacity-30"></i>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
-                        <h4 class="text-xl font-bold text-white">Tamil Nadu</h4>
-                        <p class="text-sm text-blue-100">Temples & Heritage</p>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-6">
+                        <h4 class="text-2xl font-bold text-white">Munnar</h4>
+                        <p class="text-blue-100 font-semibold">Tea Plantations</p>
+                    </div>
+                </a>
+
+                <a href="/" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 duration-300">
+                    <div class="aspect-square bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-landmark text-7xl text-white opacity-30"></i>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-6">
+                        <h4 class="text-2xl font-bold text-white">Tamil Nadu</h4>
+                        <p class="text-blue-100 font-semibold">Temples & Heritage</p>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20" style="animation: blob 7s infinite; animation-delay: 2s;"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black text-white mb-4">Why Choose Us?</h2>
+                <div class="h-1 w-24 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto mb-6 rounded-full"></div>
+                <p class="text-xl text-gray-300">Experience excellence in every journey with Anand's Premium Services</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="group relative bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:border-blue-400/50 hover:shadow-2xl hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">
+                    <div class="absolute -top-8 -right-8 w-32 h-32 bg-blue-500 rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-crown text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Premium Service</h3>
+                        <p class="text-gray-300">Luxury vehicles, professional drivers, and premium experience for every journey.</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-cyan-500/20 transition duration-300 transform hover:scale-105">
+                    <div class="absolute -top-8 -right-8 w-32 h-32 bg-cyan-500 rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-cyan-600 mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-user-tie text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Personal Attention</h3>
+                        <p class="text-gray-300">Managed personally by Anand with attention to every detail of your travel.</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:border-purple-400/50 hover:shadow-2xl hover:shadow-purple-500/20 transition duration-300 transform hover:scale-105">
+                    <div class="absolute -top-8 -right-8 w-32 h-32 bg-purple-500 rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-clock text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">24/7 Availability</h3>
+                        <p class="text-gray-300">Round-the-clock service for your travel needs anytime, anywhere.</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:border-pink-400/50 hover:shadow-2xl hover:shadow-pink-500/20 transition duration-300 transform hover:scale-105">
+                    <div class="absolute -top-8 -right-8 w-32 h-32 bg-pink-500 rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500 to-pink-600 mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-handshake text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Transparent Pricing</h3>
+                        <p class="text-gray-300">No hidden charges, straightforward rates, and honest dealing always.</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:border-green-400/50 hover:shadow-2xl hover:shadow-green-500/20 transition duration-300 transform hover:scale-105">
+                    <div class="absolute -top-8 -right-8 w-32 h-32 bg-green-500 rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-shield-alt text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Safe & Reliable</h3>
+                        <p class="text-gray-300">Well-maintained vehicles and experienced drivers for your peace of mind.</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:border-yellow-400/50 hover:shadow-2xl hover:shadow-yellow-500/20 transition duration-300 transform hover:scale-105">
+                    <div class="absolute -top-8 -right-8 w-32 h-32 bg-yellow-500 rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-500 to-yellow-600 mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-map-location-dot text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Local Expertise</h3>
+                        <p class="text-gray-300">Deep knowledge of Kerala and nearby regions for perfect tour planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Travel Insights Section -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
@@ -308,54 +452,98 @@
         </div>
     </section>
 
-    <section class="py-12 bg-gray-800 text-white text-center">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">Ready to Plan Your Perfect South India Trip?</h2>
-            <p class="text-gray-300 mb-8 text-lg">Contact Anand directly for customized itineraries, airport bookings, or any travel questions.</p>
-            <a href="https://wa.me/919400620615" class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition shadow-xl text-lg">
+    <!-- Contact CTA Section -->
+    <section class="py-12 bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-900 text-white text-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -mr-48 -mt-48"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -ml-48 -mb-48"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-black mb-4">Ready to Plan Your Perfect South India Trip?</h2>
+            <p class="text-gray-100 mb-8 text-lg max-w-2xl mx-auto">Contact Anand directly for customized itineraries, airport bookings, or any travel questions. Experience personalized service excellence.</p>
+            <a href="https://wa.me/919400620615" class="inline-block bg-green-500 text-white font-bold py-4 px-10 rounded-full hover:bg-green-600 transition shadow-2xl text-lg transform hover:scale-105 duration-300">
                 <i class="fab fa-whatsapp mr-2"></i> Message Anand on WhatsApp
             </a>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-6 flex justify-center">
-                <img src="https://tourwithanand.in/wp-content/uploads/2025/06/logo-e1749967388339.png" alt="Tour With Anand Logo" class="h-20">
-            </div>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-8">Experienced travel guide from Kerala, offering personalized South India tours. Enjoy a stress-free, memorable journey.</p>
-            
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8 text-gray-300">
-                <div class="flex items-center">
-                    <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
-                    <span>Nedumbassery P.O, Aluva, Kochi</span>
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 to-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-taxi text-white text-lg font-bold"></i>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold">Tour With Anand</div>
+                            <div class="text-xs text-gray-400">Travel Excellence</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Experienced travel guide offering personalized South India tours with premium service.</p>
                 </div>
-                <div class="flex items-center">
-                    <i class="fas fa-envelope mr-2 text-blue-500"></i>
-                    <a href="mailto:info@tourwithanand.com" class="hover:text-white">info@tourwithanand.com</a>
+
+                <div>
+                    <h4 class="font-bold text-white mb-4 text-lg">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#services" class="hover:text-blue-400 transition">Services</a></li>
+                        <li><a href="#destinations" class="hover:text-blue-400 transition">Destinations</a></li>
+                        <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="flex items-center">
-                    <i class="fas fa-phone mr-2 text-blue-500"></i>
-                    <a href="tel:+919400620615" class="hover:text-white">+91 94006 20615</a>
+
+                <div>
+                    <h4 class="font-bold text-white mb-4 text-lg">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-2 text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span>Nedumbassery P.O, Aluva, Kochi</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-blue-500 flex-shrink-0"></i>
+                            <a href="tel:+919400620615" class="hover:text-white transition">+91 94006 20615</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-500 flex-shrink-0"></i>
+                            <a href="mailto:info@tourwithanand.com" class="hover:text-white transition">info@tourwithanand.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-4 text-lg">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/TourWithAnand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300">
+                            <i class="fab fa-facebook text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tour_with_anand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anand-c-s-835167351/" target="_blank" class="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-800 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300">
+                            <i class="fab fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="https://youtube.com/@tour_with_anand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300">
+                            <i class="fab fa-youtube text-lg"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="flex justify-center space-x-6 text-2xl">
-                <a href="https://www.facebook.com/TourWithAnand" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/tour_with_anand" target="_blank" class="hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/anand-c-s-835167351/" target="_blank" class="hover:text-blue-700 transition"><i class="fab fa-linkedin"></i></a>
-                <a href="https://youtube.com/@tour_with_anand" target="_blank" class="hover:text-red-600 transition"><i class="fab fa-youtube"></i></a>
-            </div>
-            
-            <div class="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-500">
-                &copy; 2025 Tour With Anand. All rights reserved.
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 Tour With Anand. All rights reserved. | <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a> | <a href="#" class="hover:text-blue-400 transition">Terms & Conditions</a></p>
+                    <div class="text-gray-400 text-sm">Crafted with <i class="fas fa-heart text-red-500"></i> for your travel memories</div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/919400620615" target="_blank" class="fixed bottom-6 left-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 flex items-center space-x-2">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919400620615" target="_blank" class="fixed bottom-6 left-6 bg-gradient-to-br from-green-500 to-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-green-500/50 hover:bg-green-700 transition duration-300 z-50 flex items-center space-x-2 hover:scale-110 transform group">
         <i class="fab fa-whatsapp text-2xl"></i>
-        <span class="font-bold hidden md:inline">Connect Now</span>
+        <span class="font-bold hidden md:inline text-sm">Connect Now</span>
+        <div class="absolute -top-2 -right-2 w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
     </a>
 
     <script>
