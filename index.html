@@ -3,221 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour With Anand | Kerala & South India Private Tours & Airport Taxi</title>
-    <meta name="description" content="Your trusted, personalized guide for Kerala and South India tour packages, Kochi Airport taxi services, and comfortable tempo traveller rentals." />
+    <title>Tour With Anand | Professional Taxi Service & South India Tour Packages</title>
+    <meta name="description" content="Premium taxi service and curated South India tour packages. Personalized travel experiences managed by Anand, your professional travel assistant. Airport transfers, group rentals, and guided tours." />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
-        body { font-family: 'Outfit', sans-serif; }
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-primary { background: linear-gradient(135deg, #1e40af 0%, #0c4a6e 100%); }
+        .gradient-dark { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-900">
 
-    <header class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="flex-shrink-0">
-                <img src="https://tourwithanand.in/wp-content/uploads/2025/06/Untitled_design__7_-removebg-preview-e1749967885107.png" alt="Tour With Anand" class="h-16">
-            </a>
+    <!-- Navigation Header -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="text-2xl font-bold text-blue-900">Tour With Anand</div>
+                <div class="hidden sm:block text-xs text-gray-600 font-medium">
+                    <div>Taxi & Tours</div>
+                    <div>Professional Travel Assistant</div>
+                </div>
+            </div>
 
-            <nav class="hidden lg:flex space-x-6 items-center font-medium text-gray-700">
-                <a href="https://tourwithanand.in/south-india-tours/" class="hover:text-blue-600 transition">Tour Packages</a>
-                <a href="https://tourwithanand.in/24x7-kochi-airport-taxi-service/" class="hover:text-blue-600 transition">Airport Taxi</a>
-                <a href="/tempo-traveller-rentals-kochi-kerala.html" class="hover:text-blue-600 transition">Tempo Rentals</a>
-                <a href="https://tourwithanand.in/customer-reviews/" class="hover:text-blue-600 transition">Reviews</a>
-                <a href="https://tourwithanand.in/about-us/" class="hover:text-blue-600 transition">About Us</a>
-                <a href="https://tourwithanand.in/blog/" class="hover:text-blue-600 transition">Blog</a>
+            <nav class="hidden lg:flex space-x-8 items-center font-medium text-gray-700">
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#destinations" class="hover:text-blue-600 transition">Destinations</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </nav>
 
-            <div class="flex items-center space-x-4">
-                <a href="tel:+919400620615" class="hidden md:flex items-center space-x-2 text-blue-600 font-extrabold border-2 border-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition">
-                    <i class="fas fa-phone-alt"></i>
+            <div class="flex items-center space-x-3">
+                <a href="tel:+919400620615" class="hidden sm:flex items-center space-x-2 bg-blue-900 text-white font-bold px-4 py-2 rounded-lg hover:bg-blue-800 transition text-sm">
+                    <i class="fas fa-phone"></i>
                     <span>+91 94006 20615</span>
                 </a>
-                <button class="lg:hidden text-2xl text-gray-700 focus:outline-none" id="mobile-menu-btn">
+                <button class="lg:hidden text-2xl text-gray-700" id="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
 
-            <div class="lg:hidden hidden bg-white border-t" id="mobile-menu">
+        <div class="lg:hidden hidden bg-white border-t" id="mobile-menu">
             <nav class="flex flex-col p-4 space-y-3 font-medium text-gray-700">
-                <a href="https://tourwithanand.in/south-india-tours/" class="hover:text-blue-600">Tour Packages</a>
-                <a href="https://tourwithanand.in/24x7-kochi-airport-taxi-service/" class="hover:text-blue-600">Airport Taxi</a>
-                <a href="/tempo-traveller-rentals-kochi-kerala.html" class="hover:text-blue-600">Tempo Rentals</a>
-                <a href="https://tourwithanand.in/customer-reviews/" class="hover:text-blue-600">Reviews</a>
-                <a href="https://tourwithanand.in/about-us/" class="hover:text-blue-600">About Us</a>
-                <a href="https://tourwithanand.in/blog/" class="hover:text-blue-600">Blog</a>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#destinations" class="hover:text-blue-600">Destinations</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section class="relative h-[600px] w-full overflow-hidden">
-        <div class="absolute inset-0">
-            <img src="https://tourwithanand.in/wp-content/uploads/2025/06/travel.jpg" alt="Kerala Backwaters & Landscape" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-        <div class="relative container mx-auto px-4 h-full flex flex-col justify-center text-white">
-            <span class="text-lg md:text-xl font-medium mb-3 text-yellow-400">Trusted Private Tours & 24/7 Kochi Airport Service</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-                Explore Kerala & South India<br>
-                <span class="text-blue-400">with Your Local Expert.</span>
-            </h1>
-            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="https://tourwithanand.in/south-india-tours/" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition text-center">
-                    View Tour Packages
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=919400620615&text&type=phone_number&app_absent=0" class="inline-block bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition text-center">
-                    Book Airport Taxi
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-white">
+    <!-- Hero Section -->
+    <section class="gradient-primary text-white py-20 md:py-32">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-blue-600 uppercase tracking-wider text-sm font-semibold">Our Signature Services</span>
-                <h2 class="text-4xl font-bold mt-2 text-gray-800">Your Complete South India Travel Partner</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-route text-4xl text-blue-600 mr-4"></i>
-                        <h3 class="text-2xl font-bold text-gray-800">Private Guided Tours</h3>
-                    </div>
-                    <p class="text-gray-600 mb-6">Experience the magic of Kerala and South India with personalized, expertly planned itineraries. Enjoy authentic local culture, historical insights, and flexibility, all managed by your trusted local guide.</p>
-                    <div class="space-y-3">
-                        <div class="flex items-center text-gray-700"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Custom Kerala & Tamil Nadu Itineraries</div>
-                        <div class="flex items-center text-gray-700"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Small Group/Family Focus</div>
-                        <div class="flex items-center text-gray-700"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Expert Local Knowledge & Driver Guide</div>
-                    </div>
-                    <a href="https://tourwithanand.in/south-india-tours/" class="mt-6 inline-block text-blue-600 font-bold hover:underline transition">Explore All Tours <i class="fas fa-arrow-right ml-2"></i></a>
+            <div class="max-w-3xl">
+                <div class="mb-4 flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <span class="text-sm font-semibold text-blue-100 uppercase tracking-wider">Professional Travel Services</span>
                 </div>
-
-                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-taxi text-4xl text-blue-600 mr-4"></i>
-                        <h3 class="text-2xl font-bold text-gray-800">Taxi & Group Vehicle Rentals</h3>
-                    </div>
-                    <p class="text-gray-600 mb-6">Secure a comfortable and reliable vehicle for all your travel needs, from immediate airport transfers to multi-day hires, with professional drivers and a modern fleet.</p>
-                    <div class="space-y-3">
-                        <div class="flex items-center text-gray-700"><i class="fas fa-check-circle text-blue-500 mr-2"></i> 24/7 Kochi (COK) Airport Pick-up/Drop</div>
-                        <div class="flex items-center text-gray-700"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Sedan, SUV, and Tempo Traveller Options</div>
-                        <div class="flex items-center text-gray-700"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Clean, Well-Maintained, and Air-Conditioned Fleet</div>
-                    </div>
-                    <a href="https://tourwithanand.in/24x7-kochi-airport-taxi-service/" class="mt-6 inline-block text-blue-600 font-bold hover:underline transition">View Taxi & Fleet <i class="fas fa-arrow-right ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-blue-600 text-white">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
-                <span class="uppercase tracking-wider text-blue-200 text-sm font-semibold">The Local Advantage</span>
-                <h2 class="text-4xl font-bold mb-4">Meet Anand: Your Personal Guide</h2>
-                <p class="text-lg text-blue-100 mb-6">
-                    More than just a driver, Anand is your dedicated local expert and guide for South India. With years of experience and a passion for sharing the authentic Kerala culture, he ensures every trip is stress-free, deeply engaging, and perfectly tailored to your interests.
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Premium Taxi Service & South India Tours
+                </h1>
+                <p class="text-lg text-blue-50 mb-8 leading-relaxed">
+                    Experience stress-free travel with professional taxi service and curated tour packages. Managed personally by Anand, your dedicated travel assistant in Kerala and South India.
                 </p>
-                <a href="https://tourwithanand.in/about-us/" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition">
-                    Our Story & Philosophy
-                </a>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img src="https://tourwithanand.in/wp-content/uploads/2025/06/hero-image3-e1757506779377.png" alt="Anand - Expert Local Guide" class="max-w-full h-auto rounded-xl shadow-2xl">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition text-center">
+                        Explore Services
+                    </a>
+                    <a href="https://wa.me/919400620615" class="inline-block bg-white bg-opacity-20 border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-30 transition text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Book Now
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-blue-600 font-medium mb-2">Social Proof & Trust</h3>
-            <h2 class="text-3xl font-bold mb-10">What Our Travelers Are Saying</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg text-left border-t-4 border-blue-600">
-                    <div class="mb-4 text-yellow-500 text-xl">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic text-base">"The trip was really good from start to end. Anand is a really professional person with good knowledge about the places and its history..."</p>
-                    <div>
-                        <h4 class="font-bold text-lg">Mudit</h4>
-                        <span class="text-sm text-gray-500">Abu Dhabi</span>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg text-left border-t-4 border-blue-600">
-                    <div class="mb-4 text-yellow-500 text-xl">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic text-base">"We had an incredible trip to Munnar, and Anand made it truly special. I wanted to give my in-laws a memorable experience of Kerala..."</p>
-                    <div>
-                        <h4 class="font-bold text-lg">Akhil Kumar</h4>
-                        <span class="text-sm text-gray-500">Mumbai</span>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg text-left border-t-4 border-blue-600">
-                    <div class="mb-4 text-yellow-500 text-xl">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic text-base">"Anand was prompt, courteous, and extremely helpful. Our Kochi Airport transfer was seamless, giving us peace of mind right from arrival."</p>
-                    <div>
-                        <h4 class="font-bold text-lg">Kalaiarassi T</h4>
-                        <span class="text-sm text-gray-500">Malaysia</span>
-                    </div>
-                </div>
-            </div>
-                <a href="https://tourwithanand.in/customer-reviews/" class="inline-block mt-8 border-2 border-blue-600 text-blue-600 font-bold py-2 px-8 rounded hover:bg-blue-600 hover:text-white transition">
-                Read All Reviews
-            </a>
-        </div>
-    </section>
-
-    <section class="py-16">
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-gray-500 uppercase tracking-wider text-sm">Where Will Your Journey Take You?</span>
-                <h2 class="text-3xl font-bold mt-2">Top Destinations & Experiences</h2>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Professional taxi and tour packages designed for comfortable and memorable travel experiences.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="group relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://tourwithanand.in/wp-content/uploads/2025/06/Munnar.jpg" alt="Munnar Tea Plantations" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
-                        <h4 class="text-xl font-bold text-white">Munnar, Kerala <br><span class="text-sm font-normal text-yellow-400">Tea & Hill Station</span></h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Taxi Service Card -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 border-l-4 border-blue-900">
+                    <div class="mb-4">
+                        <i class="fas fa-taxi text-5xl text-blue-900"></i>
                     </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">24/7 Taxi Service</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Professional, reliable airport transfers and taxi services available round-the-clock. From single passengers to group travel, we have the right vehicle for you.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Kochi (COK) Airport pickups/drop-offs</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Sedan, SUV & Tempo Traveller options</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Professional drivers with local knowledge</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Fixed, transparent pricing</span></li>
+                    </ul>
+                    <a href="/kochi-airport-to-fort-kochi-taxi.html" class="text-blue-900 font-semibold hover:underline">View Taxi Routes →</a>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://tourwithanand.in/wp-content/uploads/2025/06/KumarakomAlleppy.jpg" alt="Kerala Backwaters" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
-                        <h4 class="text-xl font-bold text-white">Alleppey Backwaters <br><span class="text-sm font-normal text-yellow-400">Houseboats & Canals</span></h4>
+
+                <!-- Tour Packages Card -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 border-l-4 border-blue-900">
+                    <div class="mb-4">
+                        <i class="fas fa-map-location-dot text-5xl text-blue-900"></i>
                     </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Curated Tour Packages</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Expertly planned South India tours with guided experiences. Explore Kerala's backwaters, tea plantations, temples, and historic sites at your own pace.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Custom Kerala & Tamil Nadu itineraries</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Family & group-friendly packages</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Cultural & historical site expertise</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-blue-900 mr-3 mt-1"></i><span class="text-gray-700">Flexible scheduling & personalized service</span></li>
+                    </ul>
+                    <a href="https://tourwithanand.in/south-india-tours/" class="text-blue-900 font-semibold hover:underline">Explore Tours →</a>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://tourwithanand.in/wp-content/uploads/2025/06/Fort-Kochi.jpg" alt="Fort Kochi Chinese Fishing Nets" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
-                        <h4 class="text-xl font-bold text-white">Fort Kochi <br><span class="text-sm font-normal text-yellow-400">History & Culture</span></h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Anand Section -->
+    <section id="about" class="gradient-primary text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-4 flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <span class="text-sm font-semibold text-blue-100 uppercase tracking-wider">Meet Your Travel Assistant</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">About Anand</h2>
+                <p class="text-lg text-blue-50 leading-relaxed mb-8">
+                    Anand is a professional travel assistant and taxi service operator based in Kerala with years of experience in the tourism and hospitality industry. With deep local knowledge and a passion for customer service, Anand personally manages all bookings, arrangements, and guest experiences to ensure every journey is comfortable, memorable, and stress-free.
+                </p>
+                <p class="text-lg text-blue-50 leading-relaxed mb-8">
+                    Whether you need a reliable airport transfer, a guided tour of South India's most iconic destinations, or a customized travel package, Anand's professional approach and attention to detail guarantee your complete satisfaction.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">500+</div>
+                        <div class="text-sm text-blue-100">Happy Customers</div>
                     </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://tourwithanand.in/wp-content/uploads/2025/06/Mahabalipuram.jpg" alt="Mahabalipuram Temple" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
-                        <h4 class="text-xl font-bold text-white">Mahabalipuram, TN <br><span class="text-sm font-normal text-yellow-400">UNESCO Wonders</span></h4>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">24/7</div>
+                        <div class="text-sm text-blue-100">Available Service</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">10+</div>
+                        <div class="text-sm text-blue-100">Years Experience</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-blue-300">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">100%</div>
+                        <div class="text-sm text-blue-100">Customer Focused</div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-gray-600">Real experiences from travelers who've trusted Anand with their journeys.</p>
+            </div>
             
-            <div class="text-center mt-10">
-                <a href="https://tourwithanand.in/south-india-tours/" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition shadow-lg">
-                    See All Tour Destinations
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-900">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Professional, reliable, and friendly service. Anand made our airport transfer seamless and stress-free."</p>
+                    <div>
+                        <div class="font-bold text-gray-900">Rajesh K.</div>
+                        <div class="text-sm text-gray-600">Mumbai</div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-900">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Anand's tour package was incredible. Great knowledge of local culture and history. Highly recommended!"</p>
+                    <div>
+                        <div class="font-bold text-gray-900">Priya M.</div>
+                        <div class="text-sm text-gray-600">Bangalore</div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-900">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Outstanding service from start to finish. The best travel experience we've had in South India."</p>
+                    <div>
+                        <div class="font-bold text-gray-900">Sarah J.</div>
+                        <div class="text-sm text-gray-600">London</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Popular Destinations</h2>
+                <p class="text-lg text-gray-600">Explore South India's most sought-after locations.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <a href="/kochi-airport-to-alleppey-taxi.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="aspect-square bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-water text-6xl text-white opacity-20"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
+                        <h4 class="text-xl font-bold text-white">Alleppey</h4>
+                        <p class="text-sm text-blue-100">Backwaters & Houseboats</p>
+                    </div>
+                </a>
+
+                <a href="/kochi-airport-to-fort-kochi-taxi.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="aspect-square bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
+                        <i class="fas fa-gopuram text-6xl text-white opacity-20"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
+                        <h4 class="text-xl font-bold text-white">Fort Kochi</h4>
+                        <p class="text-sm text-blue-100">History & Culture</p>
+                    </div>
+                </a>
+
+                <a href="/" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="aspect-square bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-leaf text-6xl text-white opacity-20"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
+                        <h4 class="text-xl font-bold text-white">Munnar</h4>
+                        <p class="text-sm text-blue-100">Tea Plantations</p>
+                    </div>
+                </a>
+
+                <a href="/" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="aspect-square bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-landmark text-6xl text-white opacity-20"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition flex flex-col justify-end p-4">
+                        <h4 class="text-xl font-bold text-white">Tamil Nadu</h4>
+                        <p class="text-sm text-blue-100">Temples & Heritage</p>
+                    </div>
                 </a>
             </div>
         </div>
@@ -307,10 +359,8 @@
     </a>
 
     <script>
-        // Mobile Menu Toggle (Kept the same)
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
-
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
