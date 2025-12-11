@@ -23,16 +23,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
   <style>
-    /* 🌟 New Fonts: Poppins for Headings, Inter for Body */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700;800&display=swap');
+    /* Typography: Poppins for Headings, Inter for Body */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
     body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; } /* Apply Poppins to all headings */
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
     
-    /* Custom Blue Color to match logo/branding */
-    .text-brand-blue { color: #1e3a8a; } /* Blue-900 */
+    /* Custom Blue Color (Brand Blue) */
+    .text-brand-blue { color: #1e3a8a; } 
     .bg-brand-blue { background-color: #1e3a8a; }
-    .hover\:bg-brand-blue-dark:hover { background-color: #101c40; } /* Darker blue */
-    .border-brand-blue { border-color: #1e3a8a; }
+    .hover\:bg-brand-blue-dark:hover { background-color: #101c40; }
     
 
     .hero-img { object-fit: cover; width:100%; height:100%; }
@@ -42,7 +41,7 @@
     .scrollbar-hide::-webkit-scrollbar{ display:none; }
     .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
     /* subtle focus outline for accessibility */
-    :focus { outline: 3px solid rgba(14,165,233,0.3); outline-offset: 3px; border-radius: 8px; } /* Slightly bolder focus */
+    :focus { outline: 3px solid rgba(14,165,233,0.3); outline-offset: 3px; border-radius: 8px; }
   </style>
 
     <script type="application/ld+json">
@@ -96,66 +95,77 @@
   }
   </script>
 </head>
-<body class="bg-gray-50 text-gray-900">     <header class="bg-white shadow-xl sticky top-0 z-50">     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<body class="bg-white text-gray-900">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <a href="/" class="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Tour With Anand Logo" class="h-12 w-auto">
-          <div>
-            <div class="text-2xl font-extrabold text-brand-blue leading-tight">Tour With Anand</div>             <div class="hidden sm:block text-xs text-gray-500 font-medium tracking-wider">Professional Travel Services</div>
+          <img src="/images/logo.png" alt="Tour With Anand Logo" class="h-9 w-auto">           <div>
+            <div class="text-lg font-bold text-brand-blue leading-tight">Tour With Anand</div>             <div class="hidden sm:block text-xs text-gray-500 font-normal">Professional Travel Services</div>
           </div>
         </a>
       </div>
 
-      <nav class="hidden lg:flex space-x-8 items-center font-semibold text-gray-700">         <a href="/" class="hover:text-blue-600 transition duration-300">Home</a>
-        <a href="/kochi-airport-taxi-service" class="hover:text-blue-600 transition duration-300 border-b-2 border-brand-blue pb-1 text-brand-blue">Kochi Airport Taxi</a>         <a href="/south-india-tours" class="hover:text-blue-600 transition duration-300">South India Tours</a>
-        <a href="#contact" class="hover:text-blue-600 transition duration-300">Contact</a>
+      <nav class="hidden lg:flex space-x-8 items-center font-medium text-gray-700">
+        <a href="/" class="hover:text-blue-600 transition duration-200">Home</a>
+        <a href="/kochi-airport-taxi-service" class="hover:text-blue-600 transition duration-200 border-b-2 border-brand-blue pb-1 text-brand-blue font-semibold">Kochi Airport Taxi</a>
+        <a href="/south-india-tours" class="hover:text-blue-600 transition duration-200">South India Tours</a>
+        <a href="#contact" class="hover:text-blue-600 transition duration-200">Contact</a>
       </nav>
 
       <div class="flex items-center space-x-3">
-        <a href="tel:+919400620615" class="hidden sm:flex items-center space-x-2 bg-brand-blue text-white font-bold px-4 py-2 rounded-lg hover:bg-brand-blue-dark transition duration-300 text-sm shadow-md hover:shadow-lg">           <i class="fas fa-phone"></i>
-          <span>+91 94006 20615</span>
+                <a href="tel:+919400620615" class="hidden sm:flex items-center space-x-2 text-brand-blue font-semibold px-3 py-1.5 rounded-lg hover:bg-blue-50 transition duration-200 text-sm border border-brand-blue/30">
+          <i class="fas fa-phone"></i>
+          <span>Call Now</span>
         </a>
-        <a href="https://wa.me/919400620615" class="inline-flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg font-bold hover:bg-green-600 transition duration-300 shadow-md">
+        <a href="https://wa.me/919400620615" class="inline-flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg font-semibold hover:bg-green-600 transition duration-200 shadow-md">
           <i class="fab fa-whatsapp"></i> Book
         </a>
-        <button class="lg:hidden text-2xl text-gray-700" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        <button class="lg:hidden text-xl text-gray-700" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
       </div>
     </div>
   </header>
 
     <section class="relative h-[480px] md:h-[600px]">
-    <img src="/images/tourwithanand-cok-crysta.png" alt="Tour With Anand at Cochin Airport - Crysta taxi" class="hero-img absolute inset-0 w-full h-full brightness-[.65]" loading="lazy">     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/20"></div>
+    <img src="/images/tourwithanand-cok-crysta.png" alt="Tour With Anand at Cochin Airport - Crysta taxi" class="hero-img absolute inset-0 w-full h-full brightness-[.65]" loading="lazy">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/20"></div>
 
     <div class="relative z-10 container mx-auto px-4 h-full flex items-center">
       <div class="max-w-3xl">
-        <span class="inline-block bg-yellow-400 text-brand-blue font-bold px-4 py-1.5 rounded-full mb-4 shadow-lg text-sm uppercase tracking-wide">Kochi Airport Taxi Service</span>         <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 tracking-tight">Your Trusted Arrival in Kerala: <span class="text-yellow-400">COK Airport Transfers</span></h1>         <p class="text-blue-100 text-lg mb-6 max-w-lg">Fixed-rate pickups & drops from Cochin International Airport. Sedans, MPVs, Innova Crysta, Force Urbania and Tempo Travellers — safe, punctual and affordable.</p>
+        <span class="inline-block bg-yellow-400 text-brand-blue font-bold px-4 py-1.5 rounded-full mb-4 shadow-lg text-sm uppercase tracking-wide">Kochi Airport Taxi Service</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 tracking-tight">Your Trusted Arrival in Kerala: <span class="text-yellow-400">COK Airport Transfers</span></h1>
+        <p class="text-blue-100 text-lg mb-6 max-w-lg">Fixed-rate pickups & drops from Cochin International Airport. Sedans, MPVs, Innova Crysta, Force Urbania and Tempo Travellers — safe, punctual and affordable.</p>
 
         <div class="flex gap-4">
-          <a href="#vehicles" class="bg-yellow-400 text-brand-blue font-extrabold px-6 py-3 rounded-xl hover:bg-yellow-300 transition duration-300 shadow-xl hover:shadow-2xl">View Our Fleet</a>           <a href="https://wa.me/919400620615" class="bg-green-500 text-white font-extrabold px-6 py-3 rounded-xl hover:bg-green-600 transition duration-300 shadow-xl"><i class="fab fa-whatsapp mr-2"></i> Book on WhatsApp</a>
+          <a href="#vehicles" class="bg-yellow-400 text-brand-blue font-bold px-6 py-3 rounded-xl hover:bg-yellow-300 transition duration-300 shadow-lg">View Our Fleet</a>
+          <a href="https://wa.me/919400620615" class="bg-green-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-600 transition duration-300 shadow-lg"><i class="fab fa-whatsapp mr-2"></i> Book on WhatsApp</a>
         </div>
       </div>
     </div>
   </section>
 
-  <main class="container mx-auto px-4 py-12">         <section class="bg-white rounded-3xl shadow-2xl p-8 mb-12 border-t-4 border-brand-blue">       <div class="md:flex md:items-center md:justify-between">
+  <main class="container mx-auto px-4 py-12 bg-white">
+
+        <section class="bg-white rounded-xl shadow-md p-8 mb-12 border-t-4 border-brand-blue">
+      <div class="md:flex md:items-center md:justify-between">
         <div>
-          <h2 class="text-3xl font-bold text-brand-blue">Trusted Kochi Airport Taxi — Fast confirmations & transparent fares</h2>
-          <p class="text-gray-600 mt-2 text-lg">Specialized COK airport transfers with confirmed drivers and easy booking. Popular routes: Munnar, Alleppey, Fort Kochi and more.</p>
+          <h2 class="text-2xl font-bold text-brand-blue">Trusted Kochi Airport Taxi — Fast confirmations & transparent fares</h2>
+          <p class="text-gray-600 mt-2 text-base">Specialized COK airport transfers with confirmed drivers and easy booking. Popular routes: Munnar, Alleppey, Fort Kochi and more.</p>
         </div>
         <div class="mt-4 md:mt-0 flex-shrink-0">
-          <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold inline-flex items-center text-lg hover:bg-green-600 transition duration-300 shadow-xl"><i class="fab fa-whatsapp mr-2"></i> Message Now</a>
+          <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-5 py-2.5 rounded-lg font-bold inline-flex items-center text-base hover:bg-green-600 transition duration-300 shadow-md"><i class="fab fa-whatsapp mr-2"></i> Message Now</a>
         </div>
       </div>
     </section>
 
-        <section class="bg-white rounded-3xl shadow-xl p-8 mb-12">
+        <section class="bg-white rounded-xl shadow-md p-8 mb-12 border border-gray-100">
       <h3 class="text-2xl font-bold text-brand-blue mb-4">Quick Quote & Booking</h3>
       <p class="text-gray-600 mb-6">Send a message for instant price & driver confirmation — our team is on WhatsApp 24/7.</p>
 
-      <form class="grid grid-cols-1 md:grid-cols-3 gap-5" onsubmit="event.preventDefault(); window.open('https://wa.me/919400620615?text='+encodeURIComponent('Hi Anand, I need a taxi from COK to '+document.getElementById('dest').value+' on '+document.getElementById('date').value+' for '+document.getElementById('pax').value+' pax. Preferred vehicle: '+document.getElementById('vehicle').value));">
-        <input id="date" type="datetime-local" class="p-4 border-2 border-gray-200 rounded-xl focus:border-brand-blue transition duration-300" required>
-        <input id="dest" type="text" placeholder="Destination (e.g. Munnar)" class="p-4 border-2 border-gray-200 rounded-xl focus:border-brand-blue transition duration-300" required>
-        <select id="vehicle" class="p-4 border-2 border-gray-200 rounded-xl focus:border-brand-blue transition duration-300">
+      <form class="grid grid-cols-1 md:grid-cols-3 gap-4" onsubmit="event.preventDefault(); window.open('https://wa.me/919400620615?text='+encodeURIComponent('Hi Anand, I need a taxi from COK to '+document.getElementById('dest').value+' on '+document.getElementById('date').value+' for '+document.getElementById('pax').value+' pax. Preferred vehicle: '+document.getElementById('vehicle').value));">
+        <input id="date" type="datetime-local" class="p-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition duration-300" required>
+        <input id="dest" type="text" placeholder="Destination (e.g. Munnar)" class="p-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition duration-300" required>
+        <select id="vehicle" class="p-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition duration-300">
           <option>Toyota Crysta — Premium MPV</option>
           <option>Maruti Dezire — Sedan</option>
           <option>Toyota Etios — Sedan</option>
@@ -163,27 +173,27 @@
           <option>Force Urbania — Van</option>
           <option>Tempo Traveller — Group</option>
         </select>
-        <input id="pax" type="number" min="1" value="1" class="p-4 border-2 border-gray-200 rounded-xl focus:border-brand-blue transition duration-300" placeholder="Passengers">
+        <input id="pax" type="number" min="1" value="1" class="p-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition duration-300" placeholder="Passengers">
         <div class="md:col-span-2">
-          <button class="w-full bg-brand-blue text-white font-extrabold py-4 rounded-xl hover:bg-brand-blue-dark transition duration-300 shadow-lg" type="submit">Send Booking on WhatsApp</button>
+          <button class="w-full bg-brand-blue text-white font-bold py-3 rounded-lg hover:bg-blue-800 transition duration-300 shadow-md" type="submit">Send Booking on WhatsApp</button>
         </div>
       </form>
 
       <div class="mt-6 text-center text-sm text-gray-500">For urgent bookings, call <a href="tel:+919400620615" class="text-brand-blue font-semibold hover:text-blue-600 transition">+91 94006 20615</a></div>
     </section>
 
-        <section id="why" class="grid md:grid-cols-3 gap-8 mb-12">
-      <article class="p-8 bg-white rounded-3xl shadow-lg border-b-4 border-yellow-400 transform hover:scale-[1.02] transition duration-300">
+        <section id="why" class="grid md:grid-cols-3 gap-6 mb-12">
+      <article class="p-6 bg-white rounded-xl shadow-sm border-l-4 border-yellow-400 transform hover:scale-[1.01] transition duration-300">
         <i class="fas fa-user-shield text-3xl text-brand-blue mb-3"></i>
         <h4 class="text-xl font-bold mb-2 text-brand-blue">Verified Drivers</h4>
         <p class="text-gray-600">Local, experienced drivers who handle airport pickups, luggage and safe routing.</p>
       </article>
-      <article class="p-8 bg-white rounded-3xl shadow-lg border-b-4 border-yellow-400 transform hover:scale-[1.02] transition duration-300">
+      <article class="p-6 bg-white rounded-xl shadow-sm border-l-4 border-yellow-400 transform hover:scale-[1.01] transition duration-300">
         <i class="fas fa-tags text-3xl text-brand-blue mb-3"></i>
         <h4 class="text-xl font-bold mb-2 text-brand-blue">Transparent Pricing</h4>
         <p class="text-gray-600">Fixed rates for popular routes — no surge pricing or hidden fees. Get the quote instantly on WhatsApp.</p>
       </article>
-      <article class="p-8 bg-white rounded-3xl shadow-lg border-b-4 border-yellow-400 transform hover:scale-[1.02] transition duration-300">
+      <article class="p-6 bg-white rounded-xl shadow-sm border-l-4 border-yellow-400 transform hover:scale-[1.01] transition duration-300">
         <i class="fas fa-car-side text-3xl text-brand-blue mb-3"></i>
         <h4 class="text-xl font-bold mb-2 text-brand-blue">Clean Fleet</h4>
         <p class="text-gray-600">Well-maintained vehicles with sanitiser and sufficient luggage space for comfortable transfers.</p>
@@ -194,84 +204,82 @@
       <div class="text-center mb-8">
         <h3 class="text-3xl font-bold text-brand-blue">Our Fleet — Kochi Airport Vehicles</h3>
         <p class="text-gray-600 mt-2 text-lg">From compact sedans to tempo travellers — choose the right vehicle for your trip.</p>
-      </div>
+        <div class="h-1 mx-auto bg-yellow-400 w-16 mt-3 rounded"></div>       </div>
 
-      <div class="carousel flex gap-8 overflow-x-auto py-4 px-2 scrollbar-hide">                 <article class="min-w-[280px] bg-white rounded-2xl shadow-xl p-6 border-b-4 border-brand-blue transform hover:scale-[1.03] transition-all duration-300">           <img src="/images/maruti-dezire.png" alt="Maruti Dezire Kochi Airport taxi" class="card-img mb-4" loading="lazy">
-          <h4 class="text-xl font-bold text-brand-blue">Maruti Dezire</h4>
-          <p class="caption">Economical sedan — ideal for 1–3 passengers with luggage.</p>
+      <div class="carousel flex gap-6 overflow-x-auto py-4 px-2 scrollbar-hide">
+                <article class="min-w-[260px] bg-white rounded-xl shadow-md p-5 border-b-4 border-brand-blue transform hover:scale-[1.01] transition-all duration-300">
+          <img src="/images/maruti-dezire.png" alt="Maruti Dezire Kochi Airport taxi" class="card-img mb-3" loading="lazy">
+          <h4 class="text-lg font-bold text-brand-blue">Maruti Dezire</h4>
+          <p class="caption">Economical sedan (1–3 passengers).</p>
         </article>
 
-                <article class="min-w-[280px] bg-white rounded-2xl shadow-xl p-6 border-b-4 border-brand-blue transform hover:scale-[1.03] transition-all duration-300">
-          <img src="/images/toyota-etios.png" alt="Toyota Etios Cochin airport taxi" class="card-img mb-4" loading="lazy">
-          <h4 class="text-xl font-bold text-brand-blue">Toyota Etios</h4>
-          <p class="caption">Comfortable sedan with good boot space for airport transfers.</p>
+                <article class="min-w-[260px] bg-white rounded-xl shadow-md p-5 border-b-4 border-brand-blue transform hover:scale-[1.01] transition-all duration-300">
+          <img src="/images/toyota-etios.png" alt="Toyota Etios Cochin airport taxi" class="card-img mb-3" loading="lazy">
+          <h4 class="text-lg font-bold text-brand-blue">Toyota Etios</h4>
+          <p class="caption">Comfortable sedan with good boot space.</p>
         </article>
 
-                <article class="min-w-[280px] bg-white rounded-2xl shadow-xl p-6 border-b-4 border-brand-blue transform hover:scale-[1.03] transition-all duration-300">
-          <img src="/images/maruti-ertiga.png" alt="Maruti Ertiga MPV for airport transfers" class="card-img mb-4" loading="lazy">
-          <h4 class="text-xl font-bold text-brand-blue">Maruti Ertiga</h4>
-          <p class="caption">Spacious MPV — best for families (up to 6 passengers).</p>
+                <article class="min-w-[260px] bg-white rounded-xl shadow-md p-5 border-b-4 border-brand-blue transform hover:scale-[1.01] transition-all duration-300">
+          <img src="/images/maruti-ertiga.png" alt="Maruti Ertiga MPV for airport transfers" class="card-img mb-3" loading="lazy">
+          <h4 class="text-lg font-bold text-brand-blue">Maruti Ertiga</h4>
+          <p class="caption">Spacious MPV (up to 6 passengers).</p>
         </article>
 
-                <article class="min-w-[280px] bg-white rounded-2xl shadow-xl p-6 border-b-4 border-brand-blue transform hover:scale-[1.03] transition-all duration-300">
-          <img src="/images/toyota-crysta.png" alt="Toyota Innova Crysta — Kochi Airport taxi" class="card-img mb-4" loading="lazy">
-          <h4 class="text-xl font-bold text-brand-blue">Toyota Innova Crysta</h4>
-          <p class="caption">Premium MPV — comfortable for 6–8 passengers with ample luggage space.</p>
+                <article class="min-w-[260px] bg-white rounded-xl shadow-md p-5 border-b-4 border-brand-blue transform hover:scale-[1.01] transition-all duration-300">
+          <img src="/images/toyota-crysta.png" alt="Toyota Innova Crysta — Kochi Airport taxi" class="card-img mb-3" loading="lazy">
+          <h4 class="text-lg font-bold text-brand-blue">Toyota Innova Crysta</h4>
+          <p class="caption">Premium MPV (6–8 passengers).</p>
         </article>
 
-                <article class="min-w-[280px] bg-white rounded-2xl shadow-xl p-6 border-b-4 border-brand-blue transform hover:scale-[1.03] transition-all duration-300">
-          <img src="/images/force-urbania.png" alt="Force Urbania premium van for group transfers" class="card-img mb-4" loading="lazy">
-          <h4 class="text-xl font-bold text-brand-blue">Force Urbania</h4>
-          <p class="caption">Large van — comfortable for groups with extra luggage.</p>
+                <article class="min-w-[260px] bg-white rounded-xl shadow-md p-5 border-b-4 border-brand-blue transform hover:scale-[1.01] transition-all duration-300">
+          <img src="/images/force-urbania.png" alt="Force Urbania premium van for group transfers" class="card-img mb-3" loading="lazy">
+          <h4 class="text-lg font-bold text-brand-blue">Force Urbania</h4>
+          <p class="caption">Large van for groups with extra luggage.</p>
         </article>
 
-                <article class="min-w-[280px] bg-white rounded-2xl shadow-xl p-6 border-b-4 border-brand-blue transform hover:scale-[1.03] transition-all duration-300">
-          <img src="/images/force-tempo-traveller.png" alt="Tempo Traveller group transport from Kochi Airport" class="card-img mb-4" loading="lazy">
-          <h4 class="text-xl font-bold text-brand-blue">Tempo Traveller</h4>
-          <p class="caption">Group transport: 9–20 passengers depending on the layout.</p>
+                <article class="min-w-[260px] bg-white rounded-xl shadow-md p-5 border-b-4 border-brand-blue transform hover:scale-[1.01] transition-all duration-300">
+          <img src="/images/force-tempo-traveller.png" alt="Tempo Traveller group transport from Kochi Airport" class="card-img mb-3" loading="lazy">
+          <h4 class="text-lg font-bold text-brand-blue">Tempo Traveller</h4>
+          <p class="caption">Group transport (9–20 passengers).</p>
         </article>
       </div>
 
       <div class="text-center text-sm text-gray-500 mt-4">Tip: Swipe horizontally on mobile or use mouse wheel while hovering to view more vehicles.</div>
     </section>
 
-        <section id="routes" class="grid md:grid-cols-3 gap-8 mb-12">
-      <article class="bg-white rounded-2xl p-6 shadow-xl border-l-4 border-green-500">
+        <section id="routes" class="grid md:grid-cols-3 gap-6 mb-12">
+      <article class="bg-white rounded-xl p-6 shadow-sm border-l-4 border-green-500">
         <h4 class="text-xl font-bold text-brand-blue mb-1">Kochi Airport → Munnar</h4>
-        <p class="text-gray-600">Scenic mountain transfer. Travel time approx 4 hours depending on traffic. Stops available on request.</p>
+        <p class="text-gray-600">Scenic mountain transfer. Travel time approx 4 hours.</p>
       </article>
-      <article class="bg-white rounded-2xl p-6 shadow-xl border-l-4 border-green-500">
-        <h4 class="text-xl font-bold text-brand-blue mb-1">Kochi Airport → Alleppey (Alappuzha)</h4>
-        <p class="text-gray-600">Backwater houseboat transfers — punctual airport pickups and hotel drop-offs.</p>
+      <article class="bg-white rounded-xl p-6 shadow-sm border-l-4 border-green-500">
+        <h4 class="text-xl font-bold text-brand-blue mb-1">Kochi Airport → Alleppey</h4>
+        <p class="text-gray-600">Backwater houseboat transfers — punctual pickups.</p>
       </article>
-      <article class="bg-white rounded-2xl p-6 shadow-xl border-l-4 border-green-500">
-        <h4 class="text-xl font-bold text-brand-blue mb-1">Kochi Airport → Fort Kochi / Ernakulam</h4>
-        <p class="text-gray-600">Quick, fixed-rate transfers to Fort Kochi, Mattancherry and Ernakulam city center hotels.</p>
+      <article class="bg-white rounded-xl p-6 shadow-sm border-l-4 border-green-500">
+        <h4 class="text-xl font-bold text-brand-blue mb-1">Kochi Airport → Fort Kochi</h4>
+        <p class="text-gray-600">Fixed-rate transfers to city center hotels.</p>
       </article>
     </section>
 
-        <section id="how-book" class="bg-white p-8 rounded-3xl shadow-xl mb-12">
+        <section id="how-book" class="bg-white p-8 rounded-xl shadow-md mb-12 border border-gray-100">
       <h3 class="text-2xl font-bold text-brand-blue mb-6 border-b pb-2">Your 4-Step Booking Process</h3>
       <div class="grid md:grid-cols-4 gap-6 text-center">
         <div class="flex flex-col items-center">
-          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-extrabold mb-3 shadow-md">1</div>
+          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-3 shadow-sm">1</div>
           <p class="font-semibold text-gray-700">Message on WhatsApp</p>
-          <p class="text-sm text-gray-500">Send us your flight and arrival details.</p>
         </div>
         <div class="flex flex-col items-center">
-          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-extrabold mb-3 shadow-md">2</div>
+          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-3 shadow-sm">2</div>
           <p class="font-semibold text-gray-700">Receive Instant Quote</p>
-          <p class="text-sm text-gray-500">We confirm the price and availability quickly.</p>
         </div>
         <div class="flex flex-col items-center">
-          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-extrabold mb-3 shadow-md">3</div>
+          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-3 shadow-sm">3</div>
           <p class="font-semibold text-gray-700">Meet Your Driver</p>
-          <p class="text-sm text-gray-500">Driver meets you at the arrival gate with your name board.</p>
         </div>
         <div class="flex flex-col items-center">
-          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-extrabold mb-3 shadow-md">4</div>
+          <div class="bg-blue-100 text-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-3 shadow-sm">4</div>
           <p class="font-semibold text-gray-700">Pay & Go</p>
-          <p class="text-sm text-gray-500">Pay the fixed rate via cash or online and enjoy your ride.</p>
         </div>
       </div>
     </section>
@@ -280,35 +288,32 @@
         <section id="faq" class="mb-12">
       <h3 class="text-2xl font-bold text-brand-blue mb-4">Frequently Asked Questions</h3>
 
-      <details class="mb-3 p-5 bg-white rounded-xl shadow-md border-l-4 border-yellow-400"><summary class="font-bold text-lg cursor-pointer hover:text-brand-blue transition">Are late-night pickups available?</summary>
+      <details class="mb-3 p-4 bg-white rounded-lg shadow-sm border-l-4 border-yellow-400"><summary class="font-semibold text-base cursor-pointer hover:text-brand-blue transition">Are late-night pickups available?</summary>
         <div class="mt-2 text-gray-600 pt-3 border-t border-gray-100">Yes — we operate 24/7 and monitor flight statuses for delays.</div>
       </details>
 
-      <details class="mb-3 p-5 bg-white rounded-xl shadow-md border-l-4 border-yellow-400"><summary class="font-bold text-lg cursor-pointer hover:text-brand-blue transition">Do you provide receipts?</summary>
+      <details class="mb-3 p-4 bg-white rounded-lg shadow-sm border-l-4 border-yellow-400"><summary class="font-semibold text-base cursor-pointer hover:text-brand-blue transition">Do you provide receipts?</summary>
         <div class="mt-2 text-gray-600 pt-3 border-t border-gray-100">Yes — digital receipts are provided upon request after payment.</div>
-      </details>
-
-      <details class="mb-3 p-5 bg-white rounded-xl shadow-md border-l-4 border-yellow-400"><summary class="font-bold text-lg cursor-pointer hover:text-brand-blue transition">Can I change or cancel a booking?</summary>
-        <div class="mt-2 text-gray-600 pt-3 border-t border-gray-100">Yes — contact us on WhatsApp and we will assist depending on availability and timing.</div>
       </details>
     </section>
 
         <section id="contact" class="mb-12">
-      <div class="bg-gradient-to-r from-brand-blue via-blue-800 to-cyan-600 text-white p-8 rounded-2xl shadow-2xl flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div class="bg-gradient-to-r from-brand-blue via-blue-800 to-cyan-600 text-white p-8 rounded-xl shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         <div>
           <h3 class="text-3xl font-extrabold">Need a Kochi Airport Taxi Right Now?</h3>
           <p class="mt-2 text-blue-200 text-lg">Instant driver details & confirmation via WhatsApp. Message now for a smooth arrival.</p>
         </div>
         <div class="flex flex-wrap gap-4">
-          <a href="https://wa.me/919400620615" class="bg-green-500 px-6 py-3 rounded-xl font-extrabold inline-flex items-center hover:bg-green-600 transition duration-300 shadow-lg text-lg"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
-          <a href="tel:+919400620615" class="bg-white text-brand-blue px-6 py-3 rounded-xl font-extrabold inline-flex items-center hover:bg-gray-100 transition duration-300 shadow-lg text-lg"><i class="fas fa-phone mr-2"></i> Call Now</a>
+          <a href="https://wa.me/919400620615" class="bg-green-500 px-6 py-3 rounded-xl font-bold inline-flex items-center hover:bg-green-600 transition duration-300 shadow-md text-lg"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
+          <a href="tel:+919400620615" class="bg-white text-brand-blue px-6 py-3 rounded-xl font-bold inline-flex items-center hover:bg-gray-100 transition duration-300 shadow-md text-lg"><i class="fas fa-phone mr-2"></i> Call Now</a>
         </div>
       </div>
     </section>
 
   </main>
 
-    <footer class="bg-gray-900 text-white py-12">     <div class="container mx-auto px-4 grid md:grid-cols-5 gap-8">
+    <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 grid md:grid-cols-5 gap-8">
       <div class="md:col-span-2">
         <img src="/images/logo.png" alt="Tour With Anand logo" class="h-10 mb-3">
         <p class="text-sm text-gray-400">Reliable Kochi Airport transfer services & curated South India tours.</p>
@@ -332,8 +337,8 @@
       <div>
         <h4 class="font-bold mb-3 text-yellow-400">Follow</h4>
         <div class="flex gap-3">
-          <a href="https://www.facebook.com/TourWithAnand" class="w-10 h-10 flex items-center justify-center bg-blue-700 rounded-full hover:bg-blue-800 transition text-lg"><i class="fab fa-facebook text-white"></i></a>
-          <a href="https://www.instagram.com/tour_with_anand" class="w-10 h-10 flex items-center justify-center bg-pink-600 rounded-full hover:bg-pink-700 transition text-lg"><i class="fab fa-instagram text-white"></i></a>
+          <a href="https://www.facebook.com/TourWithAnand" class="w-9 h-9 flex items-center justify-center bg-blue-700 rounded-full hover:bg-blue-800 transition text-lg"><i class="fab fa-facebook text-white"></i></a>
+          <a href="https://www.instagram.com/tour_with_anand" class="w-9 h-9 flex items-center justify-center bg-pink-600 rounded-full hover:bg-pink-700 transition text-lg"><i class="fab fa-instagram text-white"></i></a>
         </div>
       </div>
     </div>
@@ -343,23 +348,20 @@
     </div>
   </footer>
 
-    <a href="https://wa.me/919400620615" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 bg-green-500 text-white px-5 py-3 rounded-full shadow-2xl hover:bg-green-600 transition duration-300">
-    <i class="fab fa-whatsapp text-2xl"></i><span class="font-extrabold text-lg">Book on WhatsApp</span>
+    <a href="https://wa.me/919400620615" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+    <i class="fab fa-whatsapp text-2xl"></i><span class="font-bold text-base">Book on WhatsApp</span>
   </a>
 
   <script>
     // mobile menu toggle placeholder (if you add mobile menu)
     const btn = document.getElementById('mobile-menu-btn');
-    if(btn) btn.addEventListener('click', ()=> {
-      const m = document.getElementById('mobile-menu');
-      if(m) m.classList.toggle('hidden');
-    });
+    // Note: Mobile menu implementation needed if you want the hamburger button to work.
 
     // accessibility: allow arrow keys to scroll carousel when focused
     document.querySelectorAll('.carousel').forEach(car => {
       car.addEventListener('keydown', (e) => {
-        if(e.key === 'ArrowRight') car.scrollBy({ left: 300, behavior: 'smooth' }); // Increased scroll
-        if(e.key === 'ArrowLeft') car.scrollBy({ left: -300, behavior: 'smooth' }); // Increased scroll
+        if(e.key === 'ArrowRight') car.scrollBy({ left: 300, behavior: 'smooth' });
+        if(e.key === 'ArrowLeft') car.scrollBy({ left: -300, behavior: 'smooth' });
       });
       // make carousel focusable
       car.setAttribute('tabindex','0');
