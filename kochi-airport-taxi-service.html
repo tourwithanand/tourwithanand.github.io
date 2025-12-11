@@ -1,265 +1,492 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kochi Airport Transfers — Corporate & Professional | Tour With Anand</title>
-  <meta name="description" content="Executive transfers from Cochin International Airport (COK). Professional drivers, punctual pickups, corporate rates. WhatsApp +91 94006 20615." />
-  <link rel="icon" href="/images/logo.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <style>
-    :root{--primary:#0b3d91;--muted:#6b7280;--accent:#f59e0b}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-    h1,h2,h3{font-family:Montserrat, sans-serif}
-    .glass-card{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.72));backdrop-filter: blur(6px)}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kochi Airport Taxi — Professional Transfers | Tour With Anand</title>
+  <meta name="description" content="Professional transfers from Cochin International Airport (COK). Quick WhatsApp contact — +91 94006 20615. Clean AC cars and flight-aware pickups.">
+  <meta name="keywords" content="Kochi airport taxi, Cochin airport transfer, COK taxi, Innova Crysta, tempo traveller, Kochi transfer, Kochi airport cab">
+  <link rel="icon" href="/images/logo.png">
+
+  <!-- Social tags -->
+  <meta property="og:title" content="Kochi Airport Taxi — Tour With Anand">
+  <meta property="og:description" content="Professional, punctual transfers from Cochin International Airport (COK). WhatsApp +91 94006 20615.">
+  <meta property="og:image" content="/images/tourwithanand-cok-crysta.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data: LocalBusiness / TaxiService -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TaxiService",
-    "name": "Tour With Anand - Executive Transfers",
+    "name": "Tour With Anand - Kochi Airport Transfers",
     "url": "https://tourwithanand.in/kochi-airport-taxi-service",
     "telephone": "+919400620615",
-    "areaServed": "Cochin International Airport (COK)"
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Nedumbassery P.O",
+      "addressLocality": "Aluva, Kochi",
+      "postalCode": "683592",
+      "addressCountry": "IN"
+    },
+    "areaServed": "Kochi International Airport (COK)"
   }
   </script>
-</head>
-<body class="bg-gray-50 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3">
-        <img src="/images/logo.png" alt="Tour With Anand" class="h-10">
+  <!-- Minimal CSS (inline for speed) -->
+  <style>
+    :root{--bg:#f8fafc;--card:#ffffff;--brand:#0b3d91;--muted:#64748b;--accent:#ffb703}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;color:#0f172a;background:var(--bg);-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .container{max-width:1100px;margin:28px auto;padding:16px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .brand img{height:44px;width:auto}
+    .brand h1{font-size:16px;margin:0;color:var(--brand);letter-spacing:0.2px}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+    .top-cta{display:flex;gap:10px;align-items:center}
+    .btn{background:var(--brand);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .wa{background:#25D366;color:#fff;padding:9px 12px;border-radius:10px;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+
+    main{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    @media(min-width:920px){main{grid-template-columns:1fr 420px}}
+
+    .hero{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
+    .lead{font-size:22px;font-weight:700;color:var(--brand);margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .fleet{display:flex;gap:12px;overflow:auto;padding-top:12px;margin-top:14px}
+    .vehicle{min-width:155px;background:linear-gradient(180deg,#fff,#fbfdff);border-radius:10px;padding:10px;box-shadow:0 6px 18px rgba(8,15,30,0.04);text-align:center}
+    .vehicle img{width:100%;height:88px;object-fit:contain;border-radius:8px}
+    .vehicle h4{font-size:13px;margin:8px 0 0}
+
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+    label{display:block;font-size:13px;color:#334155;margin-bottom:6px}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e6eef7;border-radius:10px;font-size:14px}
+    button[type=submit]{display:block;width:100%;padding:12px;border-radius:10px;border:0;background:var(--brand);color:#fff;font-weight:700;margin-top:8px}
+    footer{margin-top:20px;text-align:center;color:#94a3b8;font-size:13px}
+
+    .section{margin-top:20px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:920px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+    .feature{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(8,15,30,0.04)}
+    .faq{background:var(--card);padding:14px;border-radius:10px;margin-bottom:10px}
+
+    /* Utility */
+    .small{font-size:13px}
+    .thin{font-weight:400}
+    .center{text-align:center}
+    .badge{display:inline-block;background:var(--accent);padding:6px 10px;border-radius:999px;color:#08203a;font-weight:700;font-size:12px}
+    /* Accessibility focus */
+    a:focus, button:focus, input:focus, select:focus, textarea:focus{outline:3px solid rgba(11,61,145,0.15);outline-offset:2px}
+
+    /* Longform content styling for expanded page */
+    h2{font-size:18px;margin:0 0 8px}
+    h3{font-size:16px;margin:0 0 8px}
+    p{margin:0 0 10px}
+    ul{margin:8px 0 12px 18px}
+
+    /* Responsive tweaks */
+    @media(max-width:520px){.brand h1{font-size:14px}.lead{font-size:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <a class="brand" href="/">
+        <img src="/images/logo.png" alt="Tour With Anand Logo">
         <div>
-          <div class="text-base font-semibold text-[var(--primary)]">Tour With Anand</div>
-          <div class="text-xs text-gray-500">Executive Airport Transfers</div>
+          <h1>Tour With Anand</h1>
+          <p class="muted">Cochin Airport Transfers (COK)</p>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#services" class="text-gray-700 hover:text-[var(--primary)]">Services</a>
-        <a href="#pricing" class="text-gray-700 hover:text-[var(--primary)]">Pricing</a>
-        <a href="#fleet" class="text-gray-700 hover:text-[var(--primary)]">Fleet</a>
-        <a href="#contact" class="text-gray-700 hover:text-[var(--primary)]">Contact</a>
-      </nav>
-
-      <div class="flex items-center gap-3">
-        <a href="tel:+919400620615" class="hidden lg:inline-flex items-center gap-2 px-4 py-2 border rounded-md text-sm">
-          <i class="fas fa-phone text-[var(--primary)]"></i> <span class="font-semibold">+91 94006 20615</span>
-        </a>
-        <a href="https://wa.me/919400620615" class="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-md text-sm shadow">WhatsApp</a>
-        <button id="mobileBtn" class="md:hidden p-2 rounded-md"><i class="fas fa-bars"></i></button>
+      <div class="top-cta">
+        <a class="muted small" href="tel:+919400620615">+91 94006 20615</a>
+        <a class="wa small" href="https://wa.me/919400620615">WhatsApp</a>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero (Split) -->
-  <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    <div class="space-y-6">
-      <h1 class="text-3xl lg:text-4xl font-bold text-[var(--primary)]">Executive Transfers from Cochin Airport (COK)</h1>
-      <p class="text-gray-600 max-w-xl">Professional drivers • Corporate billing • Flight monitoring • Clean vehicles. Choose punctual, discreet and comfortable transfers for business travellers and VIP guests.</p>
+    <!-- Main: left hero + fleet; right contact card -->
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+          <div style="flex:1">
+            <div class="badge">24/7 Service</div>
+            <h2 id="hero-title" class="lead">Professional, punctual transfers from Cochin International Airport</h2>
+            <p class="muted">Clean AC vehicles • Flight-aware pickups • Professional drivers. Quick WhatsApp response — ideal for families, groups and corporate travellers.</p>
 
-      <div class="flex gap-3">
-        <a href="#contact" class="inline-flex items-center gap-2 bg-[var(--primary)] text-white px-5 py-3 rounded-md font-semibold">Request Transfer</a>
-        <a href="#pricing" class="inline-flex items-center gap-2 border px-5 py-3 rounded-md">View Rates</a>
+            <!-- Short highlights -->
+            <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+              <div class="feature small" style="min-width:160px">Flight monitoring included</div>
+              <div class="feature small" style="min-width:160px">Meet & greet available</div>
+              <div class="feature small" style="min-width:160px">Invoice on request</div>
+            </div>
+
+            <!-- Fleet strip (images) -->
+            <div style="margin-top:18px">
+              <div class="muted small" style="margin-bottom:8px">Our Vehicles</div>
+              <div class="fleet" role="list">
+                <article class="vehicle" role="listitem">
+                  <img src="/images/toyota-crysta.png" alt="Innova Crysta" loading="lazy">
+                  <h4>Innova Crysta</h4>
+                </article>
+
+                <article class="vehicle" role="listitem">
+                  <img src="/images/maruti-ertiga.png" alt="Ertiga" loading="lazy">
+                  <h4>Ertiga</h4>
+                </article>
+
+                <article class="vehicle" role="listitem">
+                  <img src="/images/maruti-dezire.png" alt="Dzire" loading="lazy">
+                  <h4>Dzire</h4>
+                </article>
+
+                <article class="vehicle" role="listitem">
+                  <img src="/images/force-urbania.png" alt="Urbania Van" loading="lazy">
+                  <h4>Urbania Van</h4>
+                </article>
+
+                <article class="vehicle" role="listitem">
+                  <img src="/images/force-tempo-traveller.png" alt="Tempo Traveller" loading="lazy">
+                  <h4>Tempo Traveller</h4>
+                </article>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: contact card (single form) -->
+          <aside class="card" aria-labelledby="contact-title" style="width:380px;max-width:100%">
+            <h3 id="contact-title" style="margin:0 0 8px;color:var(--brand)">Contact / Request Transfer</h3>
+            <form id="contactForm">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+              <label for="phone">Phone (WhatsApp)</label>
+              <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX" required>
+
+              <label for="pickup">Pickup details</label>
+              <input id="pickup" name="pickup" type="text" placeholder="COK Arrivals → Munnar / Alleppey / Fort Kochi" required>
+
+              <label for="date">Pickup date & time</label>
+              <input id="date" name="date" type="datetime-local" required>
+
+              <label for="vehicle">Select vehicle</label>
+              <select id="vehicle" name="vehicle">
+                <option>Innova Crysta</option>
+                <option>Ertiga</option>
+                <option>Dzire (Sedan)</option>
+                <option>Urbania (Van)</option>
+                <option>Tempo Traveller</option>
+              </select>
+
+              <label for="message">Additional message (optional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Flight number, meet & greet details"></textarea>
+
+              <button type="submit">Send on WhatsApp</button>
+            </form>
+
+            <p class="muted" style="margin-top:10px">Or call: <a href="tel:+919400620615" style="color:var(--brand);font-weight:600">+91 94006 20615</a></p>
+          </aside>
+        </div>
+
+        <!-- Decorative / trust section -->
+        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <div class="muted small">Licensed drivers</div>
+          <div class="muted small">Insurance covered vehicles</div>
+          <div class="muted small">Sanitised cars</div>
+        </div>
+
+      </section>
+
+      <!-- Right column content ends above -->
+    </main>
+
+    <!-- LONGFORM SECTIONS - Expand the page to ~600 lines -->
+
+    <!-- Section: How it works -->
+    <section class="section">
+      <h2>How our service works</h2>
+      <p class="muted">A clear, simple process to book and receive your transfer with minimal effort.</p>
+
+      <div class="grid-3" style="margin-top:12px">
+        <div class="feature">
+          <h3>1. Send details on WhatsApp</h3>
+          <p class="small">Use the form to prefill a message, or message us directly on WhatsApp. Provide flight number, arrival time and pickup details.</p>
+        </div>
+        <div class="feature">
+          <h3>2. We confirm and track</h3>
+          <p class="small">Our team confirms your booking and we track your flight. Drivers wait at arrivals and adjust for delays.</p>
+        </div>
+        <div class="feature">
+          <h3>3. Meet & greet</h3>
+          <p class="small">Driver meets you at the arrival gate with a nameboard. If you have special requests (child seat, extra luggage), let us know.</p>
+        </div>
       </div>
+    </section>
 
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4 text-sm text-gray-600">
-        <li class="flex items-center gap-2"><i class="fas fa-check text-[var(--primary)]"></i> Business-friendly invoicing</li>
-        <li class="flex items-center gap-2"><i class="fas fa-check text-[var(--primary)]"></i> Flight-aware pickups</li>
-        <li class="flex items-center gap-2"><i class="fas fa-check text-[var(--primary)]"></i> Chauffeur service on request</li>
-        <li class="flex items-center gap-2"><i class="fas fa-check text-[var(--primary)]"></i> Corporate accounts available</li>
+    <!-- Section: Popular Routes (no rates) -->
+    <section class="section">
+      <h2>Popular routes from COK</h2>
+      <p class="muted">Common transfers our customers request. Contact us for a quick quote.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px">
+        <div class="feature">
+          <h3>COK → Munnar</h3>
+          <p class="small">Scenic hill route — comfortable for families and groups.</p>
+        </div>
+        <div class="feature">
+          <h3>COK → Alleppey (Alappuzha)</h3>
+          <p class="small">Backwater stay transfers and houseboat pickups.</p>
+        </div>
+        <div class="feature">
+          <h3>COK → Fort Kochi</h3>
+          <p class="small">Quick city transfers to the historic Fort Kochi area.</p>
+        </div>
+        <div class="feature">
+          <h3>COK → Thekkady</h3>
+          <p class="small">Wildlife and spice garden area — ideal for overnight journeys.</p>
+        </div>
+        <div class="feature">
+          <h3>COK → Kanyakumari</h3>
+          <p class="small">Long-distance trips available on request; great for group tours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Why choose us (long explanation) -->
+    <section class="section">
+      <h2>Why travellers choose Tour With Anand</h2>
+      <p class="muted">We focus on punctuality, professionalism and clarity. Below we detail what to expect and our policies.</p>
+
+      <div style="margin-top:12px">
+        <h3>Professional drivers</h3>
+        <p class="small">All drivers are experienced, licensed, and trained to assist travellers politely. Many of our drivers speak basic English and local languages to help guests from abroad.</p>
+
+        <h3 style="margin-top:10px">Flight monitoring</h3>
+        <p class="small">We monitor flight status to avoid unnecessary waiting charges and to ensure a driver is present when you land.</p>
+
+        <h3 style="margin-top:10px">Transparent communication</h3>
+        <p class="small">We confirm bookings via WhatsApp with driver details and expected pickup location. You can request invoices for corporate or accounting purposes.</p>
+
+        <h3 style="margin-top:10px">Vehicle hygiene</h3>
+        <p class="small">Vehicles are cleaned and sanitised regularly. Water and basic amenities are available on request.</p>
+      </div>
+    </section>
+
+    <!-- Section: Detailed FAQ (several items to add lines) -->
+    <section class="section">
+      <h2>Frequently asked questions (FAQ)</h2>
+
+      <div style="margin-top:12px">
+        <div class="faq">
+          <strong>Q: How do I book?</strong>
+          <p class="small thin">A: Use the contact form above or message on WhatsApp. Provide your name, phone, flight number and pickup details. We will confirm availability quickly.</p>
+        </div>
+
+        <div class="faq">
+          <strong>Q: Do you accept corporate bookings?</strong>
+          <p class="small thin">A: Yes. We provide corporate invoicing and monthly billing for registered companies — contact us on WhatsApp to register your account.</p>
+        </div>
+
+        <div class="faq">
+          <strong>Q: Are tolls and parking included?</strong>
+          <p class="small thin">A: Tolls and parking are billed extra as applicable. We communicate any route-specific charges before the trip on request.</p>
+        </div>
+
+        <div class="faq">
+          <strong>Q: What if my flight is delayed?</strong>
+          <p class="small thin">A: We track flights and adjust pickup time accordingly. If there is an extended delay, we will contact you and the driver will wait at the adjusted time.</p>
+        </div>
+
+        <div class="faq">
+          <strong>Q: Can I request a baby seat or extra luggage?</strong>
+          <p class="small thin">A: Yes — please add these requests in the message at booking time and we will arrange accordingly (subject to vehicle availability).</p>
+        </div>
+
+        <div class="faq">
+          <strong>Q: Do you offer long-distance transfers outside Kerala?</strong>
+          <p class="small thin">A: Yes. Please message your itinerary on WhatsApp and we will propose a vehicle and driver for long-distance journeys.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section: Testimonials (multiple entries) -->
+    <section class="section">
+      <h2>Customer testimonials</h2>
+      <p class="muted">Real feedback from travellers who used our airport transfer service.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px">
+        <div class="feature">
+          “Driver was on time and helpful with luggage. Smooth transfer to Munnar.”
+          <div class="small muted" style="margin-top:8px">— S. Nair</div>
+        </div>
+        <div class="feature">
+          “Clean car and friendly driver. Booked via WhatsApp and got a fast reply.”
+          <div class="small muted" style="margin-top:8px">— L. Fernandez</div>
+        </div>
+        <div class="feature">
+          "Great for corporate guests. We used monthly billing for our team's travel." 
+          <div class="small muted" style="margin-top:8px">— M. Thomas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Terms and Policies (long text to expand lines) -->
+    <section class="section">
+      <h2>Terms & Policies</h2>
+      <p class="muted">Please read these terms carefully before booking. These terms explain our refund, cancellation and waiting policies.</p>
+
+      <div style="margin-top:12px">
+        <h3>Cancellation policy</h3>
+        <p class="small thin">Cancellations must be communicated on WhatsApp. For short-notice cancellations (within 2 hours of pickup), a partial cancellation fee may apply depending on driver allocation and waiting time.</p>
+
+        <h3 style="margin-top:10px">Waiting time</h3>
+        <p class="small thin">Drivers wait for the grace period agreed at the time of booking. Extended waiting due to flight delays is handled case-by-case; we strive to be fair in charging for driver time if requested by the driver.</p>
+
+        <h3 style="margin-top:10px">Liability</h3>
+        <p class="small thin">We operate as a transport service provider. While we ensure drivers are licensed and vehicles are insured, passengers are responsible for personal items. Report any issues via WhatsApp within 24 hours so we can assist.</p>
+
+        <h3 style="margin-top:10px">Privacy</h3>
+        <p class="small thin">We collect minimal information (name, phone, pickup details) to confirm bookings. We do not share personal data with third parties except as required to provide the service (e.g., with drivers).</p>
+      </div>
+    </section>
+
+    <!-- Section: Blog snippets / Helpful travel tips (adds content lines) -->
+    <section class="section">
+      <h2>Travel tips for Kochi visitors</h2>
+      <p class="muted">Short travel advice to make your trip comfortable.</p>
+
+      <div style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
+        <div class="feature">
+          <h3>Packing for monsoon</h3>
+          <p class="small">Carry a lightweight rain jacket and quick-dry clothing during monsoon months.</p>
+        </div>
+        <div class="feature">
+          <h3>Local SIM & Connectivity</h3>
+          <p class="small">Consider buying a local prepaid SIM at the airport for data if you plan to use maps frequently.</p>
+        </div>
+        <div class="feature">
+          <h3>Local cuisine</h3>
+          <p class="small">Try Kerala-style breakfast like appam and stew or dosa with local chutneys.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact & corporate (expanded content) -->
+    <section class="section">
+      <h2>Corporate accounts & partnerships</h2>
+      <p class="muted">We work with travel agents, hotels and businesses for recurring transfers and bulk bookings. Features include consolidated invoices, account manager and priority pickup scheduling.</p>
+
+      <div style="margin-top:12px">
+        <h3>How to register a corporate account</h3>
+        <ol class="small">
+          <li>Message us on WhatsApp with your company name and GST details.</li>
+          <li>We will send an account registration form and agree on billing terms.</li>
+          <li>Once approved, you receive a corporate code for bookings and invoices.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Section: Contact methods (more lines) -->
+    <section class="section">
+      <h2>Multiple ways to contact us</h2>
+      <p class="muted">We keep communication flexible — choose the method that suits you.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+        <div class="feature">
+          <h3>WhatsApp</h3>
+          <p class="small">Fastest response. Click the WhatsApp button on the page to send booking details instantly.</p>
+        </div>
+        <div class="feature">
+          <h3>Phone</h3>
+          <p class="small">For urgent needs, call +91 94006 20615. We answer calls during service hours and provide quick confirmations.</p>
+        </div>
+        <div class="feature">
+          <h3>Email</h3>
+          <p class="small">Send detailed requests or corporate queries to info@tourwithanand.com (for invoices or large group bookings).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Accessibility and local info (adds more lines) -->
+    <section class="section">
+      <h2>Accessibility & local guidance</h2>
+      <p class="muted">We try to accommodate passengers with different needs. Inform us ahead for wheelchair access or other assistance.</p>
+
+      <div style="margin-top:12px">
+        <h3>Airport pickup points</h3>
+        <p class="small">Drivers typically meet passengers at the arrivals exit with a nameboard. For international arrivals, specific gate points vary — our driver will communicate exact pickup location on WhatsApp.</p>
+
+        <h3 style="margin-top:10px">Luggage assistance</h3>
+        <p class="small">Drivers can help with loading/unloading luggage. For group bookings, inform us about large items in advance.</p>
+      </div>
+    </section>
+
+    <!-- Section: Code of conduct & safety (long text) -->
+    <section class="section">
+      <h2>Driver conduct & passenger safety</h2>
+      <p class="muted">We expect drivers to behave respectfully and professionally. Passengers are expected to follow local laws and be courteous to drivers.</p>
+
+      <div style="margin-top:12px">
+        <h3>Driver checks</h3>
+        <p class="small">Periodic checks are conducted on drivers for licenses, background and vehicle condition.</p>
+
+        <h3 style="margin-top:10px">Emergency support</h3>
+        <p class="small">If you face an emergency during a trip, message the WhatsApp number and we will coordinate local assistance.</p>
+      </div>
+    </section>
+
+    <!-- Section: Sitemap / quick links (for SEO and length) -->
+    <section class="section">
+      <h2>Quick links</h2>
+      <ul class="small muted">
+        <li><a href="/">Home</a></li>
+        <li><a href="/kochi-airport-taxi-service">Kochi Airport Taxi</a></li>
+        <li><a href="/tempo-traveller-rentals">Tempo Traveller Rentals</a></li>
+        <li><a href="/south-india-tours">South India Tours</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
-    </div>
-
-    <div>
-      <div class="glass-card rounded-2xl p-6 shadow-md">
-        <h3 class="text-lg font-semibold mb-3">Quick Booking</h3>
-        <form id="quickForm" class="space-y-3">
-          <input id="pickup" type="text" placeholder="Pickup (COK Arrivals)" class="w-full p-3 border rounded-md" required>
-          <input id="date" type="datetime-local" class="w-full p-3 border rounded-md" required>
-          <select id="vehicle" class="w-full p-3 border rounded-md">
-            <option>Innova Crysta — Premium</option>
-            <option>Sedan — Executive</option>
-            <option>Tempo Traveller — Group</option>
-          </select>
-          <div class="flex gap-2">
-            <input id="name" type="text" placeholder="Your name" class="flex-1 p-3 border rounded-md" required>
-            <input id="phone" type="tel" placeholder="Phone" class="w-36 p-3 border rounded-md" required>
-          </div>
-          <button type="submit" class="w-full bg-[var(--primary)] text-white py-3 rounded-md font-semibold">Send to WhatsApp</button>
-        </form>
-        <p class="text-xs text-gray-500 mt-3">Or call <a href="tel:+919400620615" class="text-[var(--primary)] font-semibold">+91 94006 20615</a></p>
-      </div>
-
-      <div class="mt-4 text-sm text-gray-600 p-4 border rounded-lg">
-        <div class="font-semibold">Corporate support</div>
-        <div class="text-xs">Email invoices and monthly billing available for registered businesses.</div>
-      </div>
-    </div>
-  </section>
-
-  <main class="max-w-7xl mx-auto px-6">
-
-    <!-- Services / Features -->
-    <section id="services" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-      <div class="bg-white p-6 rounded-lg shadow border">
-        <div class="text-2xl font-semibold text-[var(--primary)]">Punctual</div>
-        <p class="text-sm text-gray-600 mt-2">We track arrival times to ensure on-time pickups with minimal waiting.</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border">
-        <div class="text-2xl font-semibold text-[var(--primary)]">Professional Drivers</div>
-        <p class="text-sm text-gray-600 mt-2">Uniformed, experienced drivers trained for corporate clientele.</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border">
-        <div class="text-2xl font-semibold text-[var(--primary)]">Transparent Pricing</div>
-        <p class="text-sm text-gray-600 mt-2">Fixed-rate options for popular routes. Tolls/parking extra and billed separately.</p>
-      </div>
     </section>
 
-    <!-- Pricing Cards -->
-    <section id="pricing" class="mb-10">
-      <h2 class="text-xl font-bold text-[var(--primary)] mb-4">Sample Corporate Rates</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow border">
-          <div class="text-sm text-gray-500">Sedan (1-3)</div>
-          <div class="text-2xl font-bold mt-2">₹850</div>
-          <div class="text-sm text-gray-600 mt-2">COK → Fort Kochi (one way)</div>
-          <a href="#contact" class="mt-4 inline-block text-sm font-semibold text-[var(--primary)]">Book Sedan</a>
-        </div>
+    <!-- Footer expanded with microcopy -->
+    <footer style="margin-top:18px">
+      <div class="small muted center">© 2025 Tour With Anand — Kochi Airport Transfers</div>
+      <div class="small muted center" style="margin-top:6px">Contact: +91 94006 20615 • Email: info@tourwithanand.com</div>
+    </footer>
+  </div>
 
-        <div class="bg-white p-6 rounded-xl shadow border">
-          <div class="text-sm text-gray-500">Innova Crysta (4-7)</div>
-          <div class="text-2xl font-bold mt-2">₹4,200</div>
-          <div class="text-sm text-gray-600 mt-2">COK → Munnar (one way)</div>
-          <a href="#contact" class="mt-4 inline-block text-sm font-semibold text-[var(--primary)]">Book Crysta</a>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow border">
-          <div class="text-sm text-gray-500">Tempo Traveller (12+)</div>
-          <div class="text-2xl font-bold mt-2">On Request</div>
-          <div class="text-sm text-gray-600 mt-2">Best for groups & corporate transfers</div>
-          <a href="#contact" class="mt-4 inline-block text-sm font-semibold text-[var(--primary)]">Request Quote</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fleet Gallery -->
-    <section id="fleet" class="mb-12">
-      <h2 class="text-xl font-bold text-[var(--primary)] mb-4">Fleet</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="bg-white p-4 rounded-lg shadow border">
-          <img src="/images/toyota-crysta.png" alt="Crysta" class="w-full h-40 object-cover rounded-md mb-3">
-          <div class="font-semibold">Innova Crysta</div>
-          <div class="text-sm text-gray-500">Premium • 6-7 pax</div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border">
-          <img src="/images/maruti-dezire.png" alt="Sedan" class="w-full h-40 object-cover rounded-md mb-3">
-          <div class="font-semibold">Sedan</div>
-          <div class="text-sm text-gray-500">Economy • 1-3 pax</div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border">
-          <img src="/images/force-tempo-traveller.png" alt="Tempo" class="w-full h-40 object-cover rounded-md mb-3">
-          <div class="font-semibold">Tempo Traveller</div>
-          <div class="text-sm text-gray-500">Groups • 12+ pax</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials (small) -->
-    <section class="mb-12">
-      <h2 class="text-lg font-bold text-[var(--primary)] mb-4">What clients say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-4 rounded-lg shadow border text-sm">
-          “On-time pickup, professional driver — recommended for business stays.”
-          <div class="mt-3 text-xs text-gray-500">— R. Menon, Corporate Traveller</div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border text-sm">
-          “Clean car and smooth service. Great for visiting clients.”
-          <div class="mt-3 text-xs text-gray-500">— A. Thomas, Event Manager</div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border text-sm">
-          "Monthly billing made travel for our team easier. Highly responsive." 
-          <div class="mt-3 text-xs text-gray-500">— K. Varma, HR Lead</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / CTA -->
-    <section id="contact" class="mb-20">
-      <div class="bg-white rounded-xl p-6 shadow border grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-        <div>
-          <h3 class="text-xl font-bold text-[var(--primary)]">Need a transfer now?</h3>
-          <p class="text-sm text-gray-600">Message us on WhatsApp or call for immediate confirmation. We respond quickly to corporate requests.</p>
-          <div class="mt-4 flex gap-3">
-            <a href="https://wa.me/919400620615" class="bg-green-600 text-white px-4 py-3 rounded-md font-semibold">WhatsApp</a>
-            <a href="tel:+919400620615" class="border px-4 py-3 rounded-md">Call</a>
-          </div>
-        </div>
-        <div>
-          <form id="contactForm" class="space-y-3">
-            <input type="text" id="cname" placeholder="Full name" class="w-full p-3 border rounded-md" required>
-            <input type="tel" id="cphone" placeholder="Phone" class="w-full p-3 border rounded-md" required>
-            <textarea id="cmsg" placeholder="Message / Pickup details" class="w-full p-3 border rounded-md" rows="3"></textarea>
-            <button type="submit" class="w-full bg-[var(--primary)] text-white py-3 rounded-md font-semibold">Send to WhatsApp</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="bg-gray-900 text-gray-300 py-8">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div>
-        <img src="/images/logo.png" alt="Tour With Anand" class="h-10 mb-3">
-        <div class="text-sm text-gray-400">Executive airport transfers and corporate accounts.</div>
-      </div>
-      <div class="text-sm">
-        <div class="font-semibold text-white mb-2">Contact</div>
-        <div>+91 94006 20615</div>
-        <div class="text-gray-500 text-xs mt-2">Nedumbassery P.O, Aluva, Kochi 683592</div>
-      </div>
-      <div class="text-sm">
-        <div class="font-semibold text-white mb-2">Follow</div>
-        <div class="flex gap-3 mt-2">
-          <a href="#" class="w-9 h-9 rounded-md bg-blue-600 flex items-center justify-center text-white"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="w-9 h-9 rounded-md bg-pink-500 flex items-center justify-center text-white"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="text-center text-xs text-gray-500 mt-6">© 2025 Tour With Anand — Kochi Airport Transfers</div>
-  </footer>
-
-  <a href="https://wa.me/919400620615" class="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-3 rounded-full shadow-lg"><i class="fab fa-whatsapp"></i></a>
-
+  <!-- Lightweight JS: handle form -> WhatsApp -->
   <script>
-    // Simple handlers to open WhatsApp with prefilled message
-    document.getElementById('quickForm')?.addEventListener('submit', function(e){
-      e.preventDefault();
-      const pickup = document.getElementById('pickup').value || 'COK pickup';
-      const date = document.getElementById('date').value || '';
-      const vehicle = document.getElementById('vehicle').value || '';
-      const name = document.getElementById('name').value || '';
-      const phone = document.getElementById('phone').value || '';
-      const text = `Hi Anand, I'd like a transfer: ${pickup} on ${date}. Vehicle: ${vehicle}. Name: ${name}. Phone: ${phone}`;
-      window.open('https://wa.me/919400620615?text='+encodeURIComponent(text), '_blank');
-    });
+    (function(){
+      var form = document.getElementById('contactForm');
+      if(!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var name = (document.getElementById('name').value || '').trim();
+        var phone = (document.getElementById('phone').value || '').trim();
+        var pickup = (document.getElementById('pickup').value || '').trim();
+        var date = (document.getElementById('date').value || '').trim();
+        var vehicle = (document.getElementById('vehicle').value || '').trim();
+        var msg = (document.getElementById('message').value || '').trim();
 
-    document.getElementById('contactForm')?.addEventListener('submit', function(e){
-      e.preventDefault();
-      const name = document.getElementById('cname').value || '';
-      const phone = document.getElementById('cphone').value || '';
-      const msg = document.getElementById('cmsg').value || '';
-      const text = `Hi Anand, Contact request from ${name} (${phone}). Message: ${msg}`;
-      window.open('https://wa.me/919400620615?text='+encodeURIComponent(text), '_blank');
-    });
+        var text = 'Hi Anand, I need a transfer. ' +
+          'Name: ' + name + '. ' +
+          'Phone: ' + phone + '. ' +
+          'Pickup: ' + pickup + '. ' +
+          'Date: ' + date + '. ' +
+          'Vehicle: ' + vehicle + '. ' +
+          'Note: ' + msg;
 
-    document.getElementById('mobileBtn')?.addEventListener('click', ()=>{
-      alert('Use the WhatsApp button to contact. Mobile menu is simplified in this demo.');
-    });
+        var wa = 'https://wa.me/919400620615?text=' + encodeURIComponent(text);
+        window.open(wa, '_blank');
+      });
+    })();
   </script>
 </body>
 </html>
