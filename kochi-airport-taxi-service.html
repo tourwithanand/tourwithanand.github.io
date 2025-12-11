@@ -3,38 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kochi Airport Taxi Service | Cochin Airport Transfers - Tour With Anand</title>
-  <meta name="description" content="Book Kochi (Cochin) Airport taxi service with fixed rates, 24/7 pickups, tempo traveller rentals and local guided tours. Reliable drivers, transparent pricing — Book via WhatsApp." />
-  <meta name="keywords" content="Kochi airport taxi, Cochin airport taxi, Kochi cab, tempo traveller Kochi, airport transfer Cochin, Kochi taxi service" />
-  <link rel="canonical" href="https://tourwithanand.github.io/kochi-airport-taxi-service.html" />
+  <title>Kochi Airport Taxi Service | Cochin Airport Taxis — Tour With Anand</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Book reliable Kochi Airport taxi service (Cochin COK) — fixed rates, 24/7 pickups, tempo traveller rentals, and private tours. Book over WhatsApp or call +91 94006 20615. Trusted drivers, transparent pricing." />
+  <meta name="keywords" content="Kochi airport taxi, Cochin airport taxi, Kochi taxi service, COK airport transfers, tempo traveller Kochi, airport transfer Cochin" />
+  <link rel="canonical" href="https://tourwithanand.in/kochi-airport-taxi-service" />
+  <meta name="author" content="Tour With Anand" />
+
+  <!-- OpenGraph / Twitter -->
+  <meta property="og:title" content="Kochi Airport Taxi Service — Tour With Anand" />
+  <meta property="og:description" content="Reliable Cochin (COK) airport transfers — sedans, MPVs, Crysta, Tempo Traveller. Message on WhatsApp for instant booking." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tourwithanand.in/kochi-airport-taxi-service" />
+  <meta property="og:image" content="https://tourwithanand.in/images/tourwithanand-cok-crysta.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
   <link rel="icon" href="/images/logo.png" />
 
-  <!-- Tailwind + FontAwesome (home page style) -->
+  <!-- Tailwind + icons (keeps same look as Home) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
     body { font-family: 'Inter', sans-serif; }
+    .hero-img { object-fit: cover; width:100%; height:100%; }
+    .card-img { object-fit: contain; height:150px; width:100%; }
     .carousel { -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+    .caption { color: #475569; font-size: 0.95rem; }
+    /* small scrollbar style */
     .carousel::-webkit-scrollbar { height: 8px; }
     .carousel::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 8px; }
-    .card-img { height: 160px; object-fit: contain; }
-    .caption { font-size: 13px; color: #475569; }
   </style>
 
-  <!-- Structured Data: LocalBusiness + TaxiService + FAQ + Breadcrumb -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"LocalBusiness",
-        "name":"Tour With Anand",
-        "image":"https://tourwithanand.github.io/images/logo.png",
-        "telephone":"+919400620615",
+        "@type": "LocalBusiness",
+        "@id": "https://tourwithanand.in/#localbusiness",
+        "name": "Tour With Anand",
+        "image": "https://tourwithanand.in/images/logo.png",
+        "telephone": "+919400620615",
         "email":"info@tourwithanand.com",
-        "address":{
+        "address": {
           "@type":"PostalAddress",
           "streetAddress":"Nedumbassery P.O",
           "addressLocality":"Aluva",
@@ -42,75 +58,82 @@
           "postalCode":"683592",
           "addressCountry":"IN"
         },
-        "url":"https://tourwithanand.github.io/",
-        "sameAs":[
-          "https://www.facebook.com/TourWithAnand",
-          "https://www.instagram.com/tour_with_anand"
-        ],
-        "openingHours":"Mo-Su 00:00-23:59"
+        "url":"https://tourwithanand.in/",
+        "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],
+        "sameAs":["https://www.facebook.com/TourWithAnand","https://www.instagram.com/tour_with_anand"]
       },
       {
-        "@type":"TaxiService",
+        "@type": "TaxiService",
+        "@id":"https://tourwithanand.in/#taxi",
         "name":"Tour With Anand - Kochi Airport Taxi",
-        "serviceType":["Airport Transfer","Tempo Traveller Rental","Cochin Taxi"],
-        "areaServed":{"@type":"Place","name":"Kochi, Ernakulam, Kerala"},
+        "url":"https://tourwithanand.in/kochi-airport-taxi-service",
         "telephone":"+919400620615",
-        "url":"https://tourwithanand.github.io/kochi-airport-taxi-service.html"
+        "serviceType":["Airport Transfer","Tempo Traveller Rental","Private Taxi"],
+        "areaServed": {"@type":"Place","name":"Kochi, Ernakulam, Kerala"}
       },
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {"@type":"Question","name":"How do I book a taxi from Kochi Airport?","acceptedAnswer":{"@type":"Answer","text":"Message us over WhatsApp at +91 94006 20615 with your flight details and destination. We will confirm driver and ETA quickly."}},
-          {"@type":"Question","name":"Do you provide fixed rates from Cochin Airport?","acceptedAnswer":{"@type":"Answer","text":"Yes — we offer fixed, transparent pricing for popular routes and customized quotes for long-distance trips."}}
+          {"@type":"Question","name":"How do I book a taxi from Kochi Airport?","acceptedAnswer":{"@type":"Answer","text":"Message us on WhatsApp at +91 94006 20615 with flight and destination details. We confirm driver and ETA quickly."}},
+          {"@type":"Question","name":"Do you offer fixed rates from COK?","acceptedAnswer":{"@type":"Answer","text":"Yes — fixed rates are available for common routes; for custom routes we provide a quote."}},
+          {"@type":"Question","name":"What vehicles are available?","acceptedAnswer":{"@type":"Answer","text":"Sedans, MPVs (Ertiga), premium Innova Crysta, Force Urbania and Tempo Travellers for groups."}}
         ]
       },
       {
         "@type":"BreadcrumbList",
         "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://tourwithanand.github.io/"},
-          {"@type":"ListItem","position":2,"name":"Kochi Airport Taxi","item":"https://tourwithanand.github.io/kochi-airport-taxi-service.html"}
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://tourwithanand.in/"},
+          {"@type":"ListItem","position":2,"name":"Kochi Airport Taxi","item":"https://tourwithanand.in/kochi-airport-taxi-service"}
         ]
       }
     ]
   }
   </script>
 </head>
+
 <body class="bg-white text-gray-900">
 
-  <!-- Header (home template style) -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <img src="/images/logo.png" alt="Tour With Anand logo" class="h-12 w-auto">
-        <div>
-          <div class="text-xl font-bold text-blue-900">Tour With Anand</div>
-          <div class="hidden sm:block text-xs text-gray-500">Professional Travel Services</div>
-        </div>
+  <!-- Header (Home theme) -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="/" class="flex items-center gap-3">
+          <img src="/images/logo.png" alt="Tour With Anand logo" class="h-12 w-auto">
+          <div>
+            <div class="text-lg font-bold text-blue-900">Tour With Anand</div>
+            <div class="hidden sm:block text-xs text-gray-500">Kochi Airport Taxi & South India Tours</div>
+          </div>
+        </a>
       </div>
-      <nav class="hidden lg:flex space-x-6 items-center text-gray-700 font-medium">
+      <nav class="hidden lg:flex gap-8 items-center text-gray-700 font-medium">
         <a href="/" class="hover:text-blue-600">Home</a>
-        <a href="/kochi-airport-taxi-service.html" class="hover:text-blue-600 font-semibold">Kochi Airport Taxi</a>
-        <a href="#vehicles" class="hover:text-blue-600">Vehicles</a>
+        <a href="/kochi-airport-taxi-service" class="text-blue-900 font-semibold">Kochi Airport Taxi</a>
+        <a href="/south-india-tours" class="hover:text-blue-600">Tours</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
-      <div class="flex items-center space-x-3">
-        <a href="tel:+919400620615" class="hidden sm:flex items-center bg-blue-900 text-white px-4 py-2 rounded-lg font-bold hover:bg-blue-800">
-          <i class="fas fa-phone mr-2"></i> +91 94006 20615
+      <div class="flex items-center gap-3">
+        <a href="tel:+919400620615" class="hidden sm:inline-flex items-center gap-2 bg-blue-900 text-white font-bold px-4 py-2 rounded-lg hover:bg-blue-800">
+          <i class="fas fa-phone"></i><span>+91 94006 20615</span>
         </a>
-        <button id="mobile-menu-btn" class="lg:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        <a href="https://wa.me/919400620615" class="inline-flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg font-bold hover:bg-green-600">
+          <i class="fab fa-whatsapp"></i> Book Now
+        </a>
       </div>
     </div>
   </header>
 
   <!-- Hero / Banner -->
-  <section class="relative h-[420px] md:h-[520px]">
-    <img src="/images/fort-kochi-hero.png" alt="Kochi Airport Taxi Service - Fort Kochi banner" class="absolute inset-0 w-full h-full object-cover brightness-75">
+  <section class="relative h-[460px] md:h-[560px]">
+    <!-- Use the banner file you provided. If the URL below 404s, change to exact filename in your repo -->
+    <img src="/images/tourwithanand-cok-crysta.png" alt="Tour With Anand at Cochin Airport - Crysta Taxi" class="hero-img absolute inset-0 w-full h-full brightness-75" loading="lazy" />
+    <!-- fallback comment: if the above does not exist use /images/fort-kochi-hero.png -->
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/20"></div>
+
     <div class="relative z-10 container mx-auto px-4 h-full flex items-center">
-      <div class="max-w-2xl">
-        <div class="text-sm font-bold text-yellow-300 uppercase mb-2">Kochi Airport Taxi</div>
-        <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4">Reliable Cochin Airport Taxi Service — 24/7 Airport Transfers</h1>
-        <p class="text-blue-100 mb-6">Fixed-rate pickups from Cochin International Airport (COK). Sedans, MPVs, premium Crysta, Tempo Traveller for group travel — safe and punctual.</p>
+      <div class="max-w-3xl">
+        <span class="inline-block bg-yellow-400 text-blue-900 font-bold px-3 py-1 rounded-full mb-4">Kochi Airport Taxi Service</span>
+        <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4">Reliable Cochin (COK) Airport Transfers — 24/7 Taxi & Tempo Traveller Rentals</h1>
+        <p class="text-blue-100 mb-6">Fixed-rate airport pickups & drops, experienced drivers, and a fleet of sedans, MPVs and tempo travellers — ideal for families, groups and solo travellers.</p>
 
         <div class="flex gap-3">
           <a href="#vehicles" class="bg-yellow-400 text-blue-900 font-bold px-5 py-3 rounded-lg hover:bg-yellow-300">View Vehicles</a>
@@ -122,192 +145,211 @@
 
   <main class="container mx-auto px-4 py-10">
 
-    <!-- Quick Booking -->
-    <div class="max-w-3xl mx-auto -mt-16 bg-white rounded-2xl shadow-lg p-6 border-t-4 border-blue-900">
-      <div class="flex items-center justify-between">
+    <!-- Key Benefits / SEO snippet -->
+    <section class="bg-white rounded-2xl shadow p-6 mb-8">
+      <div class="md:flex md:items-center md:justify-between">
         <div>
-          <h3 class="text-xl font-bold">Instant Booking — Kochi Airport Taxi</h3>
-          <p class="text-sm text-gray-600">Send your pickup details and get instant confirmation on WhatsApp.</p>
+          <h2 class="text-2xl font-bold">Trusted Kochi Airport Taxi — Fast confirmations & transparent pricing</h2>
+          <p class="text-gray-600 mt-2">We specialize in Cochin International Airport (COK) transfers — punctual pickups, professional drivers, clean vehicles and affordable rates. Popular for transfers to Munnar, Alleppey, Fort Kochi and more.</p>
         </div>
-        <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
+        <div class="mt-4 md:mt-0">
+          <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-4 py-3 rounded-lg font-bold inline-flex items-center"><i class="fab fa-whatsapp mr-2"></i> Message Now</a>
+        </div>
       </div>
+    </section>
 
-      <form class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3" onsubmit="event.preventDefault(); window.open('https://wa.me/919400620615?text='+encodeURIComponent('Hi Anand, I need a taxi from COK to '+document.getElementById('dest').value+' on '+document.getElementById('date').value+' for '+document.getElementById('pax').value+' pax'));">
-        <input id="date" type="datetime-local" required class="p-3 border rounded-lg" placeholder="Pickup date & time">
-        <input id="dest" type="text" required class="p-3 border rounded-lg" placeholder="Destination (e.g. Munnar)">
-        <input id="pax" type="number" min="1" value="1" class="p-3 border rounded-lg" placeholder="Passengers">
-        <div class="md:col-span-3">
-          <button class="w-full bg-blue-900 text-white font-bold py-3 rounded-lg">Send Booking on WhatsApp</button>
+    <!-- Booking / Quick Quote -->
+    <section class="bg-white rounded-2xl shadow p-6 mb-8">
+      <h3 class="text-xl font-bold mb-3">Quick Quote & Booking</h3>
+      <p class="text-sm text-gray-600 mb-4">Send a quick message to get instant price & driver confirmation.</p>
+
+      <form class="grid grid-cols-1 md:grid-cols-3 gap-3" onsubmit="event.preventDefault(); window.open('https://wa.me/919400620615?text=' + encodeURIComponent('Hi Anand, I need a taxi from COK to ' + document.getElementById('dest').value + ' on ' + document.getElementById('date').value + ' for ' + document.getElementById('pax').value + ' pax. Preferred vehicle: ' + document.getElementById('vehicle').value));">
+        <input id="date" type="datetime-local" class="p-3 border rounded" required>
+        <input id="dest" type="text" placeholder="Destination (e.g. Munnar)" class="p-3 border rounded" required>
+        <select id="vehicle" class="p-3 border rounded">
+          <option value="Maruti Dezire">Maruti Dezire — Sedan</option>
+          <option value="Toyota Etios">Toyota Etios — Sedan</option>
+          <option value="Maruti Ertiga">Maruti Ertiga — MPV</option>
+          <option value="Toyota Crysta">Toyota Crysta — Premium</option>
+          <option value="Force Urbania">Force Urbania — Van</option>
+          <option value="Tempo Traveller">Tempo Traveller — Group</option>
+        </select>
+        <input id="pax" type="number" min="1" value="1" class="p-3 border rounded" placeholder="Passengers">
+        <div class="md:col-span-2">
+          <button class="w-full bg-blue-900 text-white font-bold py-3 rounded" type="submit">Send Booking on WhatsApp</button>
         </div>
       </form>
-    </div>
 
-    <!-- Why Choose -->
-    <section id="why" class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="p-6 bg-white rounded-2xl shadow">
-        <h4 class="font-bold text-lg mb-2">Trusted Drivers</h4>
-        <p class="text-sm text-gray-600">Verified, local drivers with experience handling airport pickups, luggage assistance and safe routing.</p>
-      </div>
-      <div class="p-6 bg-white rounded-2xl shadow">
-        <h4 class="font-bold text-lg mb-2">Transparent Pricing</h4>
-        <p class="text-sm text-gray-600">Fixed rates for popular routes from Cochin Airport — no surge pricing, no hidden fees.</p>
-      </div>
-      <div class="p-6 bg-white rounded-2xl shadow">
-        <h4 class="font-bold text-lg mb-2">Vehicle Variety</h4>
-        <p class="text-sm text-gray-600">Choose from sedans, MPVs, premium Innova Crysta, Force Urbania & tempo travellers depending on group size.</p>
-      </div>
+      <div class="mt-4 text-sm text-gray-500">Prefer phone? Call <a href="tel:+919400620615" class="text-blue-600">+91 94006 20615</a></div>
     </section>
 
-    <!-- Vehicles Carousel (compact scrollable) -->
-    <section id="vehicles" class="mt-12">
+    <!-- Why Choose (SEO-rich) -->
+    <section id="why-choose" class="grid md:grid-cols-3 gap-6 mb-8">
+      <article class="bg-white rounded-2xl shadow p-6">
+        <h4 class="font-bold mb-2">Verified Drivers</h4>
+        <p class="text-gray-600">Experienced local drivers, background checked and familiar with airport procedures and flight schedules.</p>
+      </article>
+      <article class="bg-white rounded-2xl shadow p-6">
+        <h4 class="font-bold mb-2">Transparent Fixed Rates</h4>
+        <p class="text-gray-600">Fixed prices for popular routes from Cochin Airport — no hidden charges or surge pricing. Ideal for travelers on a budget.</p>
+      </article>
+      <article class="bg-white rounded-2xl shadow p-6">
+        <h4 class="font-bold mb-2">Clean & Comfortable Fleet</h4>
+        <p class="text-gray-600">Regularly serviced vehicles with sanitizer, comfortable seating and enough luggage space for airport transfers.</p>
+      </article>
+    </section>
+
+    <!-- Vehicles carousel (scrollable) -->
+    <section id="vehicles" class="mb-8">
       <div class="text-center mb-6">
-        <h2 class="text-2xl md:text-3xl font-black">Our Vehicles — Kochi Airport Taxi Fleet</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Small cars to group tempo travellers — pick what's best for your trip.</p>
+        <h3 class="text-2xl font-bold">Our Fleet — Kochi Airport Vehicles</h3>
+        <p class="text-gray-600">From compact sedans to Tempo Travellers for group journeys. All vehicles insured and driver assisted for luggage.</p>
       </div>
 
-      <div class="carousel flex gap-6 overflow-x-auto py-4">
-        <!-- Card 1 -->
+      <div class="carousel flex gap-6 overflow-x-auto py-4 px-2">
+        <!-- use the filenames actually present in your /images/ folder -->
         <article class="min-w-[240px] bg-white rounded-xl shadow p-4">
-          <img src="/images/maruti-dezire.png" alt="Maruti Dezire — Kochi Airport taxi" class="w-full card-img mb-3">
-          <h3 class="font-bold">Maruti Dezire</h3>
-          <div class="caption">Ideal for 1–3 passengers • Comfortable sedan</div>
+          <img src="/images/maruti-dezire.png" alt="Maruti Dezire — Kochi airport taxi" class="card-img mb-3" loading="lazy">
+          <h4 class="font-bold">Maruti Dezire</h4>
+          <p class="caption">Economical sedan — best for 1–3 passengers</p>
         </article>
 
-        <!-- Card 2 -->
         <article class="min-w-[240px] bg-white rounded-xl shadow p-4">
-          <img src="/images/etios.png" alt="Toyota Etios — Cochin airport taxi" class="w-full card-img mb-3">
-          <h3 class="font-bold">Toyota Etios</h3>
-          <div class="caption">Spacious boot • Great for city transfers</div>
+          <img src="/images/etios.png" alt="Toyota Etios — Cochin airport taxi" class="card-img mb-3" loading="lazy">
+          <h4 class="font-bold">Toyota Etios</h4>
+          <p class="caption">Comfortable with good boot space</p>
         </article>
 
-        <!-- Card 3 -->
         <article class="min-w-[240px] bg-white rounded-xl shadow p-4">
-          <img src="/images/maruti-ertiga.png" alt="Maruti Ertiga — MPV for family airport transfer" class="w-full card-img mb-3">
-          <h3 class="font-bold">Maruti Ertiga</h3>
-          <div class="caption">Family MPV • Seats up to 6</div>
+          <img src="/images/maruti-ertiga.png" alt="Maruti Ertiga — MPV for family airport transfers" class="card-img mb-3" loading="lazy">
+          <h4 class="font-bold">Maruti Ertiga</h4>
+          <p class="caption">Spacious MPV — seats up to 6</p>
         </article>
 
-        <!-- Card 4 -->
         <article class="min-w-[240px] bg-white rounded-xl shadow p-4">
-          <img src="/images/swift-dzire.png" alt="Swift Dzire — compact sedan for Kochi airport" class="w-full card-img mb-3">
-          <h3 class="font-bold">Swift / Dzire</h3>
-          <div class="caption">Compact and economical for short trips</div>
+          <img src="/images/swift-dzire.png" alt="Swift Dzire — compact sedan from Kochi Airport" class="card-img mb-3" loading="lazy">
+          <h4 class="font-bold">Swift / Dzire</h4>
+          <p class="caption">Compact & fuel efficient for short trips</p>
         </article>
 
-        <!-- Card 5 -->
         <article class="min-w-[240px] bg-white rounded-xl shadow p-4">
-          <img src="/images/force-urbania.png" alt="Force Urbania — premium van for airport group transfer" class="w-full card-img mb-3">
-          <h3 class="font-bold">Force Urbania</h3>
-          <div class="caption">Large van • Comfortable for groups with luggage</div>
+          <img src="/images/force-urbania.png" alt="Force Urbania — large van for group transfers" class="card-img mb-3" loading="lazy">
+          <h4 class="font-bold">Force Urbania</h4>
+          <p class="caption">Large van — comfortable for 8–12 passengers</p>
         </article>
 
-        <!-- Card 6 -->
         <article class="min-w-[240px] bg-white rounded-xl shadow p-4">
-          <img src="/images/force-tempo-traveller.png" alt="Tempo Traveller — Kochi airport group transport" class="w-full card-img mb-3">
-          <h3 class="font-bold">Tempo Traveller</h3>
-          <div class="caption">Group travel 9–20 pax (depending on model)</div>
+          <img src="/images/force-tempo-traveller.png" alt="Tempo Traveller — group transport from Kochi Airport" class="card-img mb-3" loading="lazy">
+          <h4 class="font-bold">Tempo Traveller</h4>
+          <p class="caption">Group transfers — 9–20 pax depending on layout</p>
         </article>
       </div>
-      <!-- optional controls notice -->
-      <div class="text-xs text-gray-400 mt-2">Swipe horizontally (mobile) or use mouse drag/scroll to view more vehicles.</div>
+      <div class="text-xs text-gray-400 mt-2">Tip: swipe horizontally on mobile or use your mouse wheel while hovering to navigate the vehicle list.</div>
     </section>
 
-    <!-- Popular Routes (SEO content) -->
-    <section id="routes" class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl p-6 shadow">
+    <!-- Popular Routes (more SEO content) -->
+    <section id="popular-routes" class="grid md:grid-cols-3 gap-6 mb-8">
+      <article class="bg-white p-5 rounded-xl shadow">
         <h4 class="font-bold">Kochi Airport to Munnar</h4>
-        <p class="text-sm text-gray-600">Comfortable road transfers to the hill station of Munnar with scenic stops available upon request.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-6 shadow">
+        <p class="text-gray-600">Scenic mountain transfer — recommended stop at viewpoint. Travel time ~4 hours depending on traffic.</p>
+      </article>
+      <article class="bg-white p-5 rounded-xl shadow">
         <h4 class="font-bold">Kochi Airport to Alleppey (Alappuzha)</h4>
-        <p class="text-sm text-gray-600">Reach the backwaters & houseboats with punctual airport pickups and flexible drop-off times.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-6 shadow">
-        <h4 class="font-bold">Kochi Airport to Fort Kochi</h4>
-        <p class="text-sm text-gray-600">Short, fixed-rate transfers to the Fort Kochi heritage area and nearby hotels.</p>
-      </div>
+        <p class="text-gray-600">Backwater houseboat transfers — door-to-door service for tourists and groups.</p>
+      </article>
+      <article class="bg-white p-5 rounded-xl shadow">
+        <h4 class="font-bold">Kochi Airport to Fort Kochi & Ernakulam</h4>
+        <p class="text-gray-600">Quick transfers to hotels in Fort Kochi, Mattancherry & Ernakulam city center.</p>
+      </article>
     </section>
 
-    <!-- How to Book -->
-    <section id="how-to-book" class="mt-12 bg-gradient-to-r from-white to-gray-50 p-6 rounded-xl shadow">
-      <h3 class="text-xl font-bold mb-3">How to Book a Kochi Airport Taxi</h3>
-      <ol class="list-decimal ml-6 space-y-2 text-gray-600">
-        <li>Message us on WhatsApp: <a href="https://wa.me/919400620615" class="text-blue-600">+91 94006 20615</a> with your flight & arrival time.</li>
-        <li>Tell us your destination (Munnar / Alleppey / Fort Kochi / etc.) and passenger count.</li>
-        <li>Receive confirmation, driver details & vehicle photos. Pay in cash or online as agreed.</li>
+    <!-- How to Book (step-by-step) -->
+    <section id="how-book" class="bg-white p-6 rounded-xl shadow mb-8">
+      <h3 class="text-xl font-bold mb-3">How to Book Your Kochi Airport Taxi</h3>
+      <ol class="list-decimal ml-6 space-y-2 text-gray-700">
+        <li>Message us on WhatsApp at <a href="https://wa.me/919400620615" class="text-blue-600">+91 94006 20615</a> or call us.</li>
+        <li>Provide your flight number, arrival time, destination and number of passengers / luggage.</li>
+        <li>Receive confirmation with driver name, contact and vehicle details.</li>
+        <li>Pay in cash to the driver or request an online payment link (if required).</li>
       </ol>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="mt-12">
-      <h3 class="text-xl font-bold mb-3">Frequently Asked Questions</h3>
-      <details class="mb-3 p-4 bg-white rounded shadow"><summary class="font-semibold">Do you meet late-night flights?</summary><div class="mt-2 text-gray-600">Yes — we operate 24/7 and monitor flight arrivals for delays.</div></details>
-      <details class="mb-3 p-4 bg-white rounded shadow"><summary class="font-semibold">Can I get a receipt?</summary><div class="mt-2 text-gray-600">Yes — digital receipt provided after payment or on completion of trip.</div></details>
-      <details class="mb-3 p-4 bg-white rounded shadow"><summary class="font-semibold">Is luggage assistance provided?</summary><div class="mt-2 text-gray-600">Yes — drivers assist with loading/unloading luggage for airport pickups and drop-offs.</div></details>
+    <!-- FAQ (on-page content for SEO) -->
+    <section id="faq" class="mb-10">
+      <h3 class="text-xl font-bold mb-3">Frequently asked questions — Kochi Airport Taxi</h3>
+
+      <details class="mb-3 p-4 bg-white rounded shadow"><summary class="font-semibold">Are pickups available for late-night flights?</summary>
+        <p class="mt-2 text-gray-600">Yes — we operate 24/7 and monitor flight timings. Driver waits and coordinates on flight delays.</p>
+      </details>
+
+      <details class="mb-3 p-4 bg-white rounded shadow"><summary class="font-semibold">How do you charge for airport transfers?</summary>
+        <p class="mt-2 text-gray-600">We provide fixed-rate quotes for common routes. For special routes or long-distance trips we provide a custom quote.</p>
+      </details>
+
+      <details class="mb-3 p-4 bg-white rounded shadow"><summary class="font-semibold">Can I change my booking?</summary>
+        <p class="mt-2 text-gray-600">Yes — message us on WhatsApp and we will modify your booking depending on availability.</p>
+      </details>
     </section>
 
-    <!-- CTA -->
-    <section id="contact" class="mt-12">
-      <div class="bg-blue-900 text-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <!-- Final CTA -->
+    <section class="mb-12">
+      <div class="bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-700 text-white p-6 rounded-xl shadow-lg flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
-          <h3 class="text-2xl font-bold">Ready to book your Kochi Airport Taxi?</h3>
-          <p class="mt-2 text-blue-100">Instant confirmation via WhatsApp — driver details & ETA provided.</p>
+          <h3 class="text-2xl font-bold">Need a Kochi Airport Taxi Right Now?</h3>
+          <p class="mt-2 text-blue-100">Instant confirmations and driver details — message us now for a smooth arrival.</p>
         </div>
         <div class="flex gap-3">
-          <a href="https://wa.me/919400620615" class="bg-green-500 px-4 py-3 rounded-lg font-bold"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
-          <a href="tel:+919400620615" class="bg-white text-blue-900 px-4 py-3 rounded-lg font-bold"><i class="fas fa-phone mr-2"></i> Call +91 94006 20615</a>
+          <a href="https://wa.me/919400620615" class="bg-green-500 px-4 py-3 rounded-lg font-bold inline-flex items-center"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
+          <a href="tel:+919400620615" class="bg-white text-blue-900 px-4 py-3 rounded-lg font-bold inline-flex items-center"><i class="fas fa-phone mr-2"></i> Call +91 94006 20615</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gradient-to-br from-gray-900 to-black text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <img src="/images/logo.png" alt="Tour With Anand logo" class="h-10 mb-4">
-          <p class="text-sm text-gray-400">Professional Kochi Airport taxi service & South India tours.</p>
-        </div>
-        <div>
-          <h4 class="font-bold mb-3">Quick Links</h4>
-          <ul class="text-gray-400 space-y-2 text-sm">
-            <li><a href="/" class="hover:text-white">Home</a></li>
-            <li><a href="/kochi-airport-taxi-service.html" class="hover:text-white">Kochi Airport Taxi</a></li>
-            <li><a href="#vehicles" class="hover:text-white">Vehicles</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold mb-3">Contact</h4>
-          <p class="text-sm text-gray-400">Nedumbassery P.O, Aluva, Kochi</p>
-          <p class="text-sm text-gray-400 mt-2"><a href="tel:+919400620615" class="hover:text-white">+91 94006 20615</a></p>
-        </div>
-        <div>
-          <h4 class="font-bold mb-3">Follow</h4>
-          <div class="flex gap-3">
-            <a href="https://www.facebook.com/TourWithAnand" class="w-9 h-9 rounded-full bg-blue-600 flex items-center justify-center"><i class="fab fa-facebook text-white"></i></a>
-            <a href="https://www.instagram.com/tour_with_anand" class="w-9 h-9 rounded-full bg-pink-500 flex items-center justify-center"><i class="fab fa-instagram text-white"></i></a>
-          </div>
+  <!-- Footer (Home theme) -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+      <div>
+        <img src="/images/logo.png" alt="Tour With Anand logo" class="h-10 mb-3">
+        <p class="text-sm text-gray-400">Reliable Kochi Airport transfers & curated South India tours.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Quick Links</h4>
+        <ul class="text-gray-400 space-y-2 text-sm">
+          <li><a href="/" class="hover:text-white">Home</a></li>
+          <li><a href="/kochi-airport-taxi-service" class="hover:text-white">Kochi Airport Taxi</a></li>
+          <li><a href="/south-india-tours" class="hover:text-white">South India Tours</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Contact</h4>
+        <p class="text-sm text-gray-400">Nedumbassery P.O, Aluva, Kochi</p>
+        <p class="text-sm text-gray-400 mt-2"><a href="tel:+919400620615" class="hover:text-white">+91 94006 20615</a></p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Follow</h4>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/TourWithAnand" class="w-9 h-9 flex items-center justify-center bg-blue-600 rounded"><i class="fab fa-facebook text-white"></i></a>
+          <a href="https://www.instagram.com/tour_with_anand" class="w-9 h-9 flex items-center justify-center bg-pink-500 rounded"><i class="fab fa-instagram text-white"></i></a>
         </div>
       </div>
+    </div>
 
-      <div class="border-t border-gray-800 mt-8 pt-6 text-sm text-gray-400 flex justify-between">
-        <div>&copy; 2025 Tour With Anand. All rights reserved.</div>
-        <div>Crafted with <i class="fas fa-heart text-red-500"></i></div>
-      </div>
+    <div class="border-t border-gray-800 mt-6 pt-6 text-center text-sm text-gray-400">
+      &copy; 2025 Tour With Anand. All rights reserved.
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/919400620615" target="_blank" class="fixed bottom-6 left-6 bg-gradient-to-br from-green-500 to-green-600 text-white p-4 rounded-full shadow-2xl z-50 flex items-center gap-2">
-    <i class="fab fa-whatsapp text-2xl"></i><span class="hidden md:inline font-bold">Connect Now</span>
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/919400620615" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg">
+    <i class="fab fa-whatsapp text-2xl"></i><span class="font-bold">Message Anand</span>
   </a>
 
   <script>
-    // mobile menu toggle
+    // small mobile menu toggle (if you add mobile menu later)
     const btn = document.getElementById('mobile-menu-btn');
-    if(btn) btn.addEventListener('click', ()=> {
+    if(btn) btn.addEventListener('click', () => {
       const m = document.getElementById('mobile-menu');
       if(m) m.classList.toggle('hidden');
     });
