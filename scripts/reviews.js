@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Success
-      msg.innerHTML = `Thanks ${escapeHtml(data.name)}! A confirmation email has been sent to ${escapeHtml(data.email)}. Please click the confirmation link in your email.`;
-      form.reset();
+        // Success
+        msg.innerHTML = `Thank you, ${escapeHtml(data.name)}! Your review has been published and will appear on the website soon. The site owner has been notified.`;
+        form.reset();
     } catch (err) {
       console.error('Submit failed, falling back to mailto', err);
       msg.innerHTML = `Automatic submission failed: <strong>${escapeHtml(err.message || String(err))}</strong>.<br/>Please use the "Use email to submit" button.`;
