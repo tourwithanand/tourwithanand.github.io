@@ -1,253 +1,336 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kochi Airport Taxi Service | Tour With Anand</title>
-    <meta name="description" content="Book reliable Kochi (Cochin) Airport taxis — fixed rates, 24/7 service, tempo travellers for groups. Instant WhatsApp booking + confirmed drivers." />
-    <meta name="keywords" content="Kochi airport taxi, Cochin airport taxi, Kochi cab, tempo traveller Kerala" />
-    <link rel="canonical" href="https://tourwithanand.com/kochi-airport-taxi/" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kochi Airport Taxi Service | Tour With Anand</title>
+  <meta name="description" content="Book reliable Kochi (Cochin) Airport taxis — fixed rates, 24/7 service, tempo travellers for groups. Instant WhatsApp booking + confirmed drivers." />
+  <meta name="keywords" content="Kochi airport taxi, Cochin airport taxi, Kochi cab, tempo traveller Kerala, Kochi airport transfer" />
+  <link rel="canonical" href="https://tourwithanand.github.io/kochi-airport-taxi-service.html" />
+  <link rel="icon" href="/images/logo.png" />
 
-    <!-- Tailwind + FontAwesome (same as home page template) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Tailwind + FontAwesome (same as home page) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-      body{font-family:'Inter',sans-serif}
-      /* small helpers to blend existing CSS with Tailwind */
-      .hero-banner img{width:100%;height:auto;border-radius:12px}
-    </style>
+  <!-- Basic fonts + small helpers -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .hero-banner img{ width:100%; height:auto; border-radius:12px; object-fit:cover; }
+  </style>
 
+  <!-- LocalBusiness + TaxiService + FAQ + Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://tourwithanand.github.io/#localbusiness",
+        "name": "Tour With Anand",
+        "image": "https://tourwithanand.github.io/images/logo.png",
+        "url": "https://tourwithanand.github.io/",
+        "telephone": "+919400620615",
+        "email": "info@tourwithanand.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Nedumbassery P.O",
+          "addressLocality": "Aluva",
+          "addressRegion": "Kochi",
+          "postalCode": "683592",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 10.1378,
+          "longitude": 76.3352
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "priceRange": "₹₹",
+        "sameAs": [
+          "https://www.facebook.com/TourWithAnand",
+          "https://www.instagram.com/tour_with_anand",
+          "https://www.linkedin.com/in/anand-c-s-835167351/",
+          "https://youtube.com/@tour_with_anand"
+        ]
+      },
+      {
+        "@type": "TaxiService",
+        "@id": "https://tourwithanand.github.io/#taxi",
+        "name": "Tour With Anand - Kochi Airport Taxi",
+        "url": "https://tourwithanand.github.io/kochi-airport-taxi-service.html",
+        "telephone": "+919400620615",
+        "serviceType": ["Airport Transfer","Tempo Traveller Rental","Kerala Tours","Point-to-point Taxi"],
+        "areaServed": {"@type":"Place","name":"Kochi, Ernakulam, Kerala"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"Do you meet late-night flights?","acceptedAnswer":{"@type":"Answer","text":"Yes — we operate 24x7 and monitor flight arrivals."}},
+          {"@type":"Question","name":"Can I get a receipt?","acceptedAnswer":{"@type":"Answer","text":"Yes — we provide a digital receipt after payment or at trip end."}},
+          {"@type":"Question","name":"Are drivers verified?","acceptedAnswer":{"@type":"Answer","text":"All drivers are background-checked and follow hygiene standards."}}
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://tourwithanand.github.io/"},
+          {"@type":"ListItem","position":2,"name":"Kochi Airport Taxi","item":"https://tourwithanand.github.io/kochi-airport-taxi-service.html"}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body class="bg-white text-gray-900">
 
-<!-- Header (home page template style) -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-    <div class="flex items-center space-x-3">
-      <img src="/images/logo.png" alt="Tour With Anand Logo" class="h-12 w-auto">
-      <div>
-        <div class="text-xl font-bold text-blue-900 leading-tight">Tour With Anand</div>
-        <div class="hidden sm:block text-xs text-gray-500 font-medium">Professional Travel Services</div>
-      </div>
-    </div>
-
-    <nav class="hidden lg:flex space-x-8 items-center font-medium text-gray-700">
-      <a href="/" class="hover:text-blue-600 transition">Home</a>
-      <a href="#services" class="hover:text-blue-600 transition">Services</a>
-      <a href="#destinations" class="hover:text-blue-600 transition">Destinations</a>
-      <a href="#about" class="hover:text-blue-600 transition">About</a>
-      <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
-    </nav>
-
-    <div class="flex items-center space-x-3">
-      <a href="tel:+919400620615" class="hidden sm:flex items-center space-x-2 bg-blue-900 text-white font-bold px-4 py-2 rounded-lg hover:bg-blue-800 transition text-sm">
-        <i class="fas fa-phone"></i>
-        <span>+91 94006 20615</span>
-      </a>
-      <button class="lg:hidden text-2xl text-gray-700" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
-    </div>
-  </div>
-
-  <div class="lg:hidden hidden bg-white border-t" id="mobile-menu">
-    <nav class="flex flex-col p-4 space-y-3 font-medium text-gray-700">
-      <a href="#services" class="hover:text-blue-600">Services</a>
-      <a href="#destinations" class="hover:text-blue-600">Destinations</a>
-      <a href="#about" class="hover:text-blue-600">About</a>
-      <a href="#contact" class="hover:text-blue-600">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- Hero (uses template colors, shapes) -->
-<section class="relative h-[540px] md:h-[620px] flex items-center overflow-hidden">
-  <!-- Background gradient & shapes -->
-  <div class="absolute inset-0">
-    <div class="w-full h-full" style="background: linear-gradient(135deg,#1e40af 0%,#0c4a6e 50%,#164e63 100%);"></div>
-    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(15,23,42,0.55), rgba(15,23,42,0.35));"></div>
-    <div class="absolute top-10 right-10 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-    <div class="absolute bottom-0 left-10 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20" style="animation-delay: 2s;"></div>
-  </div>
-
-  <div class="relative z-10 container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    <div>
-      <div class="mb-6 flex items-center space-x-3">
-        <div class="w-1 h-8 bg-yellow-400 rounded-full shadow-lg"></div>
-        <span class="text-sm font-bold text-yellow-300 uppercase tracking-widest">Welcome to Tour With Anand</span>
-      </div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
-        Kochi Airport Taxi Service — <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">Reliable 24/7 Transfers</span>
-      </h1>
-      <p class="text-lg text-gray-100 mb-6 max-w-xl font-semibold">Fixed-rate Cochin Airport (COK) taxis, tempo travellers for groups, and personalized Kerala tours. Book instantly over WhatsApp.</p>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="#vehicles" class="inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-xl hover:bg-yellow-300 transition transform hover:scale-105">Our Vehicles</a>
-        <a href="https://wa.me/919400620615" class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-green-600 transition transform hover:scale-105"><i class="fab fa-whatsapp mr-2"></i> Book on WhatsApp</a>
-      </div>
-    </div>
-
-    <div class="hero-banner">
-      <img src="/images/Tourwithanand at COK Airport with Crysta taxi.png" alt="Tour With Anand at Cochin Airport - Crysta Taxi" class="rounded-2xl shadow-2xl">
-    </div>
-  </div>
-</section>
-
-<main class="container mx-auto px-4 py-10">
-
-  <!-- Quick Booking Card (right side feel moved below hero for template) -->
-  <div class="max-w-3xl mx-auto -mt-12 bg-white rounded-2xl shadow-lg p-6 border-t-4 border-blue-900">
-    <div class="flex items-center justify-between">
-      <div>
-        <h3 class="text-xl font-bold">Instant Quote & Booking</h3>
-        <p class="text-sm text-gray-600">Send details and get instant confirmation on WhatsApp.</p>
-      </div>
-      <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold flex items-center"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
-    </div>
-
-    <form class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3" onsubmit="event.preventDefault();window.open('https://wa.me/919400620615?text='+encodeURIComponent('Hi Anand, I need a taxi from COK to '+document.getElementById('dest').value+' on '+document.getElementById('date').value+' for '+document.getElementById('pax').value+' pax'))">
-      <input id="date" type="datetime-local" required class="p-3 border rounded-lg" placeholder="Pickup date & time">
-      <input id="dest" type="text" required class="p-3 border rounded-lg" placeholder="Destination (e.g. Munnar)">
-      <input id="pax" type="number" min="1" value="1" class="p-3 border rounded-lg" placeholder="Passengers">
-      <div class="md:col-span-3">
-        <button class="w-full bg-blue-900 text-white font-bold py-3 rounded-lg">Send Booking on WhatsApp</button>
-      </div>
-    </form>
-  </div>
-
-  <!-- Vehicles Section -->
-  <section id="vehicles" class="mt-12">
-    <div class="text-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-black text-gray-900">Our Vehicle Options</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">Choose the right vehicle for your airport transfer — clean, insured and driven by experienced professionals.</p>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
-        <img src="/images/Maruti Dezire.png" alt="Maruti Dezire Sedan Kochi Airport Taxi" class="w-full h-44 object-cover rounded-lg mb-3">
-        <h3 class="font-bold text-lg">Swift Dzire (Sedan)</h3>
-        <p class="text-sm text-gray-600">Comfortable for up to 3 passengers with standard luggage.</p>
-      </div>
-
-      <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
-        <img src="/images/Toyota Etios.png" alt="Toyota Etios Airport Taxi" class="w-full h-44 object-cover rounded-lg mb-3">
-        <h3 class="font-bold text-lg">Etios</h3>
-        <p class="text-sm text-gray-600">Spacious sedan, great for city transfers.</p>
-      </div>
-
-      <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
-        <img src="/images/Maruti Ertiga.png" alt="Maruti Ertiga Airport Taxi" class="w-full h-44 object-cover rounded-lg mb-3">
-        <h3 class="font-bold text-lg">Ertiga (MPV)</h3>
-        <p class="text-sm text-gray-600">Ideal for families — seats 5 comfortably.</p>
-      </div>
-
-      <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
-        <img src="/images/Force Urbania.png" alt="Force Urbania Van" class="w-full h-44 object-cover rounded-lg mb-3">
-        <h3 class="font-bold text-lg">Urbania / Crysta</h3>
-        <p class="text-sm text-gray-600">Premium van/SUV options for larger groups.</p>
-      </div>
-
-      <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
-        <img src="/images/Force Tempo Traveller.png" alt="Tempo Traveller" class="w-full h-44 object-cover rounded-lg mb-3">
-        <h3 class="font-bold text-lg">Tempo Traveller</h3>
-        <p class="text-sm text-gray-600">Group transfers — 9 to 20 pax depending on model.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQs -->
-  <section class="mt-12">
-    <h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
-    <div class="space-y-3">
-      <details class="p-4 bg-white rounded-lg shadow"><summary class="font-semibold">Do you meet late-night flights?</summary><div class="mt-2 text-gray-600">Yes — we operate 24x7 and monitor flight arrivals.</div></details>
-      <details class="p-4 bg-white rounded-lg shadow"><summary class="font-semibold">Can I get a receipt?</summary><div class="mt-2 text-gray-600">Yes — we provide a digital receipt after payment or at trip end.</div></details>
-      <details class="p-4 bg-white rounded-lg shadow"><summary class="font-semibold">Are drivers verified?</summary><div class="mt-2 text-gray-600">All drivers are background-checked and follow hygiene standards.</div></details>
-    </div>
-  </section>
-
-  <!-- Contact Card -->
-  <section id="contact" class="mt-12 mb-8">
-    <div class="bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-900 text-white rounded-2xl p-8 shadow-2xl">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+  <!-- Header (home template style) -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="/images/logo.png" alt="Tour With Anand Logo" class="h-12 w-auto">
         <div>
-          <h3 class="text-2xl font-bold">Ready to book your Kochi Airport transfer?</h3>
-          <p class="text-gray-200 mt-2">Message Anand on WhatsApp for instant confirmation and driver details.</p>
+          <div class="text-xl font-bold text-blue-900 leading-tight">Tour With Anand</div>
+          <div class="hidden sm:block text-xs text-gray-500 font-medium">Professional Travel Services</div>
         </div>
-        <div class="flex items-center gap-4">
-          <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-4 py-3 rounded-lg font-bold flex items-center"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
-          <a href="tel:+919400620615" class="bg-blue-900 text-white px-4 py-3 rounded-lg font-bold"><i class="fas fa-phone mr-2"></i> Call +91 94006 20615</a>
+      </div>
+
+      <nav class="hidden lg:flex space-x-8 items-center font-medium text-gray-700">
+        <a href="/" class="hover:text-blue-600 transition">Home</a>
+        <a href="#vehicles" class="hover:text-blue-600 transition">Vehicles</a>
+        <a href="#services" class="hover:text-blue-600 transition">Services</a>
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a href="tel:+919400620615" class="hidden sm:flex items-center space-x-2 bg-blue-900 text-white font-bold px-4 py-2 rounded-lg hover:bg-blue-800 transition text-sm">
+          <i class="fas fa-phone"></i>
+          <span>+91 94006 20615</span>
+        </a>
+        <button class="lg:hidden text-2xl text-gray-700" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <div class="lg:hidden hidden bg-white border-t" id="mobile-menu">
+      <nav class="flex flex-col p-4 space-y-3 font-medium text-gray-700">
+        <a href="#vehicles" class="hover:text-blue-600">Vehicles</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (template style) -->
+  <section class="relative h-[520px] md:h-[620px] flex items-center overflow-hidden">
+    <!-- Background gradient + shapes -->
+    <div class="absolute inset-0">
+      <div class="w-full h-full" style="background: linear-gradient(135deg,#1e40af 0%,#0c4a6e 50%,#164e63 100%);"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(15,23,42,0.55), rgba(15,23,42,0.35));"></div>
+      <div class="absolute top-10 right-10 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+      <div class="absolute bottom-0 left-10 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20" style="animation-delay:2s"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="mb-6 flex items-center space-x-3">
+          <div class="w-1 h-8 bg-yellow-400 rounded-full shadow-lg"></div>
+          <span class="text-sm font-bold text-yellow-300 uppercase tracking-widest">Welcome to Tour With Anand</span>
         </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
+          Kochi Airport Taxi Service — <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">Reliable 24/7 Transfers</span>
+        </h1>
+
+        <p class="text-lg text-gray-100 mb-6 max-w-xl font-semibold">Fixed-rate Cochin Airport (COK) taxis, tempo travellers for groups, and personalized Kerala tours. Book instantly over WhatsApp.</p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#vehicles" class="inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-xl hover:bg-yellow-300 transition transform hover:scale-105">Our Vehicles</a>
+          <a href="https://wa.me/919400620615" class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-green-600 transition transform hover:scale-105"><i class="fab fa-whatsapp mr-2"></i> Book on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero-banner">
+        <!-- Banner image (updated) -->
+        <img src="/images/Tourwithanand at COK Airport with Crysta taxi.png" alt="Tour With Anand at Cochin Airport - Crysta Taxi" class="rounded-2xl shadow-2xl">
       </div>
     </div>
   </section>
 
-</main>
+  <main class="container mx-auto px-4 py-10">
 
-<!-- Footer (home page template style) -->
-<footer class="bg-gradient-to-br from-gray-900 to-black text-white py-16">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-      <div>
-        <div class="flex items-center space-x-3 mb-4">
-          <img src="/images/logo.png" alt="Logo" class="h-10 w-auto">
+    <!-- Quick Booking Card -->
+    <div class="max-w-3xl mx-auto -mt-12 bg-white rounded-2xl shadow-lg p-6 border-t-4 border-blue-900">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold">Instant Quote & Booking</h3>
+          <p class="text-sm text-gray-600">Send details and get instant confirmation on WhatsApp.</p>
+        </div>
+        <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold flex items-center"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
+      </div>
+
+      <form class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3" onsubmit="event.preventDefault(); window.open('https://wa.me/919400620615?text='+encodeURIComponent('Hi Anand, I need a taxi from COK to '+document.getElementById('dest').value+' on '+document.getElementById('date').value+' for '+document.getElementById('pax').value+' pax'));">
+        <input id="date" type="datetime-local" required class="p-3 border rounded-lg" placeholder="Pickup date & time">
+        <input id="dest" type="text" required class="p-3 border rounded-lg" placeholder="Destination (e.g. Munnar)">
+        <input id="pax" type="number" min="1" value="1" class="p-3 border rounded-lg" placeholder="Passengers">
+        <div class="md:col-span-3">
+          <button class="w-full bg-blue-900 text-white font-bold py-3 rounded-lg">Send Booking on WhatsApp</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Vehicles -->
+    <section id="vehicles" class="mt-12">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-black text-gray-900">Our Vehicle Options</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Choose the right vehicle for your airport transfer — clean, insured and driven by experienced professionals.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Maruti Dezire -->
+        <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
+          <img src="/images/Maruti Dezire.png" alt="Maruti Dezire Sedan Kochi Airport Taxi" class="w-full h-44 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-lg">Maruti Dezire (Sedan)</h3>
+          <p class="text-sm text-gray-600">Comfortable for up to 3 passengers with standard luggage.</p>
+        </div>
+
+        <!-- Toyota Etios -->
+        <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
+          <img src="/images/Toyota Etios.png" alt="Toyota Etios Airport Taxi" class="w-full h-44 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-lg">Toyota Etios</h3>
+          <p class="text-sm text-gray-600">Spacious sedan, great for city transfers.</p>
+        </div>
+
+        <!-- Maruti Ertiga -->
+        <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
+          <img src="/images/Maruti Ertiga.png" alt="Maruti Ertiga Airport Taxi" class="w-full h-44 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-lg">Maruti Ertiga (MPV)</h3>
+          <p class="text-sm text-gray-600">Ideal for families — seats 5 comfortably.</p>
+        </div>
+
+        <!-- Toyota Crysta / Urbania -->
+        <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
+          <img src="/images/Toyota Crysta.png" alt="Toyota Crysta Premium" class="w-full h-44 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-lg">Toyota Crysta / Urbania</h3>
+          <p class="text-sm text-gray-600">Premium van/SUV options for larger groups and comfort.</p>
+        </div>
+
+        <!-- Force Urbania -->
+        <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
+          <img src="/images/Force Urbania.png" alt="Force Urbania Van" class="w-full h-44 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-lg">Force Urbania</h3>
+          <p class="text-sm text-gray-600">Large group transfers — comfortable seating & luggage space.</p>
+        </div>
+
+        <!-- Tempo Traveller -->
+        <div class="bg-white rounded-2xl p-4 shadow hover:shadow-2xl transition">
+          <img src="/images/Force Tempo Traveller.png" alt="Tempo Traveller Kochi Airport" class="w-full h-44 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-lg">Tempo Traveller</h3>
+          <p class="text-sm text-gray-600">Group transfers — 9 to 20 pax depending on model.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+      <div class="space-y-3">
+        <details class="p-4 bg-white rounded-lg shadow"><summary class="font-semibold">Do you meet late-night flights?</summary><div class="mt-2 text-gray-600">Yes — we operate 24x7 and monitor flight arrivals.</div></details>
+        <details class="p-4 bg-white rounded-lg shadow"><summary class="font-semibold">Can I get a receipt?</summary><div class="mt-2 text-gray-600">Yes — we provide a digital receipt after payment or at trip end.</div></details>
+        <details class="p-4 bg-white rounded-lg shadow"><summary class="font-semibold">Are drivers verified?</summary><div class="mt-2 text-gray-600">All drivers are background-checked and follow hygiene standards.</div></details>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="mt-12 mb-8">
+      <div class="bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-900 text-white rounded-2xl p-8 shadow-2xl">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <div class="text-xl font-bold">Tour With Anand</div>
-            <div class="text-xs text-gray-400">Travel Excellence</div>
+            <h3 class="text-2xl font-bold">Ready to book your Kochi Airport transfer?</h3>
+            <p class="text-gray-200 mt-2">Message Anand on WhatsApp for instant confirmation and driver details.</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="https://wa.me/919400620615" class="bg-green-500 text-white px-4 py-3 rounded-lg font-bold flex items-center"><i class="fab fa-whatsapp mr-2"></i> Message Anand</a>
+            <a href="tel:+919400620615" class="bg-blue-900 text-white px-4 py-3 rounded-lg font-bold"><i class="fas fa-phone mr-2"></i> Call +91 94006 20615</a>
           </div>
         </div>
-        <p class="text-gray-400 text-sm leading-relaxed">Experienced travel guide offering personalized South India tours with premium service.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (template) -->
+  <footer class="bg-gradient-to-br from-gray-900 to-black text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="/images/logo.png" alt="Logo" class="h-10 w-auto">
+            <div>
+              <div class="text-xl font-bold">Tour With Anand</div>
+              <div class="text-xs text-gray-400">Travel Excellence</div>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">Experienced travel guide offering personalized South India tours with premium service.</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-lg">Quick Links</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li><a href="#vehicles" class="hover:text-blue-400 transition">Vehicles</a></li>
+            <li><a href="#services" class="hover:text-blue-400 transition">Services</a></li>
+            <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+            <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-lg">Contact Info</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li class="flex items-start"><i class="fas fa-map-marker-alt mr-2 text-blue-500 mt-1 flex-shrink-0"></i><span>Nedumbassery P.O, Aluva, Kochi</span></li>
+            <li class="flex items-center"><i class="fas fa-phone mr-2 text-blue-500 flex-shrink-0"></i><a href="tel:+919400620615" class="hover:text-white transition">+91 94006 20615</a></li>
+            <li class="flex items-center"><i class="fas fa-envelope mr-2 text-blue-500 flex-shrink-0"></i><a href="mailto:info@tourwithanand.com" class="hover:text-white transition">info@tourwithanand.com</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-lg">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/TourWithAnand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-facebook text-lg"></i></a>
+            <a href="https://www.instagram.com/tour_with_anand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-instagram text-lg"></i></a>
+            <a href="https://www.linkedin.com/in/anand-c-s-835167351/" target="_blank" class="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-800 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-linkedin text-lg"></i></a>
+            <a href="https://youtube.com/@tour_with_anand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-youtube text-lg"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <h4 class="font-bold text-white mb-4 text-lg">Quick Links</h4>
-        <ul class="space-y-3 text-gray-400">
-          <li><a href="#services" class="hover:text-blue-400 transition">Services</a></li>
-          <li><a href="#destinations" class="hover:text-blue-400 transition">Destinations</a></li>
-          <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
-          <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="font-bold text-white mb-4 text-lg">Contact Info</h4>
-        <ul class="space-y-3 text-gray-400 text-sm">
-          <li class="flex items-start"><i class="fas fa-map-marker-alt mr-2 text-blue-500 mt-1 flex-shrink-0"></i><span>Nedumbassery P.O, Aluva, Kochi</span></li>
-          <li class="flex items-center"><i class="fas fa-phone mr-2 text-blue-500 flex-shrink-0"></i><a href="tel:+919400620615" class="hover:text-white transition">+91 94006 20615</a></li>
-          <li class="flex items-center"><i class="fas fa-envelope mr-2 text-blue-500 flex-shrink-0"></i><a href="mailto:info@tourwithanand.com" class="hover:text-white transition">info@tourwithanand.com</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="font-bold text-white mb-4 text-lg">Follow Us</h4>
-        <div class="flex space-x-4">
-          <a href="https://www.facebook.com/TourWithAnand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-facebook text-lg"></i></a>
-          <a href="https://www.instagram.com/tour_with_anand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-instagram text-lg"></i></a>
-          <a href="https://www.linkedin.com/in/anand-c-s-835167351/" target="_blank" class="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-800 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-linkedin text-lg"></i></a>
-          <a href="https://youtube.com/@tour_with_anand" target="_blank" class="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition duration-300"><i class="fab fa-youtube text-lg"></i></a>
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 Tour With Anand. All rights reserved. | <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a> | <a href="#" class="hover:text-blue-400 transition">Terms & Conditions</a></p>
+          <div class="text-gray-400 text-sm">Crafted with <i class="fas fa-heart text-red-500"></i> for your travel memories</div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <div class="border-t border-gray-800 pt-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 Tour With Anand. All rights reserved. | <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a> | <a href="#" class="hover:text-blue-400 transition">Terms & Conditions</a></p>
-        <div class="text-gray-400 text-sm">Crafted with <i class="fas fa-heart text-red-500"></i> for your travel memories</div>
-      </div>
-    </div>
-  </div>
-</footer>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919400620615" target="_blank" class="fixed bottom-6 left-6 bg-gradient-to-br from-green-500 to-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-green-500/50 hover:bg-green-700 transition duration-300 z-50 flex items-center space-x-2 hover:scale-110 transform group">
+    <i class="fab fa-whatsapp text-2xl"></i>
+    <span class="font-bold hidden md:inline text-sm">Connect Now</span>
+  </a>
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/919400620615" target="_blank" class="fixed bottom-6 left-6 bg-gradient-to-br from-green-500 to-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-green-500/50 hover:bg-green-700 transition duration-300 z-50 flex items-center space-x-2 hover:scale-110 transform group">
-  <i class="fab fa-whatsapp text-2xl"></i>
-  <span class="font-bold hidden md:inline text-sm">Connect Now</span>
-</a>
-
-<script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  if(btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-</script>
-
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
 </body>
 </html>
