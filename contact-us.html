@@ -5,7 +5,7 @@
 
   <!-- SEO META -->
   <title>Contact & Booking | Tour With Anand – Kochi Airport Taxi & Tours</title>
-  <meta name="description" content="Contact Tour With Anand for Kochi Airport taxi booking, Kerala tour packages, South India pilgrim tours and tempo traveller rentals. WhatsApp for instant confirmation.">
+  <meta name="description" content="Contact Tour With Anand for Kochi Airport taxi booking, Kerala tour packages, South India pilgrim tours and tempo traveller rentals. WhatsApp or Email for instant response.">
   <meta name="keywords" content="Kochi airport taxi booking, Kerala tour booking, South India taxi service, Tour With Anand contact">
   <meta name="author" content="Tour With Anand">
   <meta name="robots" content="index, follow">
@@ -31,10 +31,7 @@
       padding: 20px;
     }
 
-    h1 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
+    h1 { font-size: 34px; margin-bottom: 10px; }
 
     /* STICKY HOME LOGO */
     .sticky-logo {
@@ -47,9 +44,7 @@
       border-radius: 6px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     }
-    .sticky-logo img {
-      height: 40px;
-    }
+    .sticky-logo img { height: 40px; }
 
     /* HERO */
     .hero {
@@ -57,7 +52,7 @@
       border-bottom: 1px solid #eee;
     }
 
-    /* CONTACT GRID */
+    /* GRID */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -75,41 +70,34 @@
     form input, form textarea {
       width: 100%;
       padding: 12px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 15px;
     }
 
-    form textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
+    textarea { min-height: 120px; resize: vertical; }
 
     .btn {
-      display: inline-block;
-      padding: 12px 26px;
+      padding: 12px 22px;
       background: #000;
       color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       font-size: 15px;
+      margin-right: 10px;
     }
 
-    /* CONTACT INFO */
+    .btn.secondary {
+      background: #444;
+    }
+
+    /* INFO */
     .info-box {
       border: 1px solid #eee;
       padding: 25px;
       border-radius: 8px;
-    }
-
-    .info-box p {
-      margin-bottom: 14px;
-    }
-
-    .cta {
-      margin-top: 20px;
     }
 
     footer {
@@ -123,12 +111,9 @@
     footer a { color: #fff; }
 
     @media (max-width: 900px) {
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-      .hero {
-        padding-top: 90px;
-      }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 90px; }
+      .btn { width: 100%; margin-bottom: 10px; }
     }
   </style>
 </head>
@@ -144,15 +129,15 @@
 <section class="hero container">
   <h1>Contact & Booking</h1>
   <p>
-    Planning a taxi ride, Kerala tour or South India pilgrimage?  
-    Send your travel details and get instant confirmation via WhatsApp.
+    Share your travel requirement below.  
+    You can send it via WhatsApp or Email – whatever is convenient for you.
   </p>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT -->
 <section class="container contact-grid">
 
-  <!-- WHATSAPP BOOKING FORM -->
+  <!-- FORM -->
   <div>
     <h2>Send Your Travel Details</h2>
 
@@ -163,14 +148,18 @@
       <label for="phone">Phone / WhatsApp Number</label>
       <input type="text" id="phone" required>
 
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="your@email.com">
+
       <label for="travel">Travel Requirement</label>
       <textarea id="travel" placeholder="Example: Kochi Airport to Munnar on 25 Dec, 2 adults, sedan"></textarea>
 
       <button type="submit" class="btn">Send via WhatsApp</button>
+      <button type="button" class="btn secondary" onclick="sendEmail()">Send via Email</button>
     </form>
   </div>
 
-  <!-- CONTACT INFO -->
+  <!-- INFO -->
   <div class="info-box">
     <h2>Direct Booking Contact</h2>
 
@@ -187,10 +176,6 @@
     <p><strong>✉️ Email:</strong><br>
       infostarkholidays@gmail.com
     </p>
-
-    <div class="cta">
-      <a href="https://wa.me/919400620615" class="btn">WhatsApp for Instant Booking</a>
-    </div>
   </div>
 
 </section>
@@ -200,29 +185,46 @@
   <div class="container">
     <p><strong>Tour With Anand</strong></p>
     <p>Kochi Airport Taxi | Kerala & South India Tours</p>
-    <p>
-      📞 <a href="tel:+919400620615">+91 94006 20615</a> |
-      💬 <a href="https://wa.me/919400620615">WhatsApp</a>
-    </p>
     <p>© 2025 tourwithanand.in</p>
   </div>
 </footer>
 
-<!-- WHATSAPP SCRIPT -->
+<!-- SCRIPTS -->
 <script>
 function sendWhatsApp() {
   const name = document.getElementById("name").value.trim();
   const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
   const travel = document.getElementById("travel").value.trim();
 
   const message =
     "Hello Anand,%0A%0A" +
     "Name: " + name + "%0A" +
     "Phone: " + phone + "%0A" +
+    "Email: " + email + "%0A" +
     "Travel Requirement: " + travel;
 
-  const url = "https://wa.me/919400620615?text=" + message;
-  window.open(url, "_blank");
+  window.open("https://wa.me/919400620615?text=" + message, "_blank");
+}
+
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const travel = document.getElementById("travel").value;
+
+  const subject = "Travel Enquiry - Tour With Anand";
+  const body =
+    "Name: " + name + "\n" +
+    "Phone: " + phone + "\n" +
+    "Email: " + email + "\n\n" +
+    "Travel Requirement:\n" + travel;
+
+  window.location.href =
+    "mailto:infostarkholidays@gmail.com?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
 }
 </script>
 
