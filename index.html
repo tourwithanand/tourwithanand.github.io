@@ -5,16 +5,14 @@
 
   <!-- SEO META -->
   <title>South India Tour & Taxi Packages | Kochi Airport Taxi – Tour With Anand</title>
-  <meta name="description" content="Book South India tour & taxi packages with Tour With Anand. 24x7 Kochi Airport taxi service, Kerala tour packages, tempo traveller rentals and private South India tours with local drivers.">
-  <meta name="keywords" content="South India tour packages, Kochi airport taxi, Kerala tour packages, Cochin airport taxi service, tempo traveller rental Kerala, South India taxi tours">
+  <meta name="description" content="South India tour & taxi packages by Tour With Anand. Kochi Airport taxi service, South India tour packages, pilgrim tours and tempo traveller rentals with trusted local drivers.">
+  <meta name="keywords" content="South India tour packages, Kochi airport taxi, South India pilgrim packages, tempo traveller rental Kerala, taxi service Kochi">
   <meta name="author" content="Tour With Anand">
   <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://tourwithanand.in/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- BASIC STYLES -->
   <style>
     body {
       margin: 0;
@@ -24,7 +22,7 @@
       line-height: 1.6;
     }
     a { color: #000; text-decoration: none; }
-    img { max-width: 100%; height: auto; display: block; }
+    img { max-width: 100%; display: block; }
 
     .container {
       max-width: 1200px;
@@ -34,6 +32,16 @@
 
     h1, h2, h3 { color: #000; }
 
+    /* HEADER LOGO */
+    header {
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      max-width: 180px;
+    }
+
+    /* BUTTON */
     .btn {
       display: inline-block;
       padding: 12px 24px;
@@ -57,28 +65,40 @@
     }
     .hero-content {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       padding: 20px;
     }
     .hero h1 { color: #fff; font-size: 34px; }
-    .hero p { max-width: 700px; margin: auto; }
+    .hero p { max-width: 700px; }
 
     /* SECTIONS */
-    .section { padding: 50px 0; border-bottom: 1px solid #eee; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+    .section {
+      padding: 50px 0;
+      border-bottom: 1px solid #eee;
     }
 
-    .box {
+    /* SERVICE ICONS */
+    .service-icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      text-align: center;
+    }
+    .service-box {
       border: 1px solid #eee;
-      padding: 20px;
-      border-radius: 6px;
+      padding: 25px 20px;
+      border-radius: 8px;
+    }
+    .service-box svg {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 12px;
+      fill: #000;
     }
 
     /* ABOUT */
@@ -88,10 +108,6 @@
       gap: 30px;
       align-items: center;
     }
-    @media(max-width: 768px) {
-      .about { grid-template-columns: 1fr; }
-      .hero-content { position: static; transform: none; padding: 30px; }
-    }
 
     footer {
       background: #000;
@@ -100,9 +116,14 @@
       font-size: 14px;
     }
     footer a { color: #fff; }
+
+    @media(max-width: 768px) {
+      .about { grid-template-columns: 1fr; }
+      .hero-content { position: static; }
+    }
   </style>
 
-  <!-- LOCATION + BUSINESS SCHEMA -->
+  <!-- LOCATION SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -116,21 +137,12 @@
       "addressRegion": "Kerala",
       "addressCountry": "IN"
     },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Kerala"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Tamil Nadu"
-      }
-    ],
+    "areaServed": ["Kerala","Tamil Nadu"],
     "serviceType": [
-      "Kochi Airport Taxi Service",
+      "Taxi Service",
       "South India Tour Packages",
-      "Kerala Taxi Service",
-      "Tempo Traveller Rental"
+      "South India Pilgrim Packages",
+      "Tempo Traveller & Bus Rentals"
     ]
   }
   </script>
@@ -139,41 +151,54 @@
 
 <body>
 
-<!-- HERO WITH BANNER IMAGE -->
+<!-- HEADER LOGO -->
+<header>
+  <div class="container">
+    <img src="images/logo.png" alt="Tour With Anand Logo" class="logo">
+  </div>
+</header>
+
+<!-- HERO -->
 <section class="hero">
   <img src="images/tourwithanand-cok-crysta.png" alt="South India Tour & Taxi Packages">
   <div class="hero-content">
     <h1>South India Tour & Taxi Packages</h1>
-    <p>
-      Trusted Kochi Airport taxi service and customized Kerala & South India tours
-      with experienced local drivers.
-    </p>
-    <p><strong>⭐ 4.9 Google Rating | 24×7 Airport Pickup | Local Operator</strong></p>
-    <a class="btn" href="https://wa.me/919400620615">WhatsApp for Instant Booking</a>
+    <p>Reliable Kochi Airport taxi service and customized South India tours with local drivers.</p>
+    <a class="btn" href="https://wa.me/919400620615">WhatsApp for Booking</a>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- OUR TRAVEL SERVICES (ICON SECTION) -->
 <section class="section">
   <div class="container">
     <h2>Our Travel Services</h2>
-    <div class="grid">
-      <div class="box">
-        <h3>Kochi Airport Taxi Service</h3>
-        <p>24×7 Cochin Airport (COK) pickup and drop to all destinations in Kerala and Tamil Nadu.</p>
+
+    <div class="service-icons">
+
+      <div class="service-box">
+        <svg viewBox="0 0 24 24"><path d="M5 11l1-3h12l1 3v6h-2v-2H7v2H5v-6zm2.5-5h9L18 8H6l1.5-2z"/></svg>
+        <h3>Taxi Service</h3>
+        <p>24×7 Kochi Airport taxi and long-distance cab services across South India.</p>
       </div>
-      <div class="box">
-        <h3>Kerala Tour Packages</h3>
-        <p>Private Kerala sightseeing tours covering Munnar, Alleppey, Thekkady, Varkala and more.</p>
+
+      <div class="service-box">
+        <svg viewBox="0 0 24 24"><path d="M12 2l4 8h-8l4-8zm0 20l-4-8h8l-4 8z"/></svg>
+        <h3>South India Tour Packages</h3>
+        <p>Customized leisure tours covering Kerala, Tamil Nadu and heritage destinations.</p>
       </div>
-      <div class="box">
-        <h3>South India Tours</h3>
-        <p>Custom South India tour packages including Tamil Nadu temples and heritage destinations.</p>
+
+      <div class="service-box">
+        <svg viewBox="0 0 24 24"><path d="M12 3l7 7h-4v7h-6v-7H5l7-7z"/></svg>
+        <h3>South India Pilgrim Packages</h3>
+        <p>Temple tours to Sabarimala, Tirupati, Rameswaram, Madurai and more.</p>
       </div>
-      <div class="box">
-        <h3>Tempo Traveller Rentals</h3>
-        <p>9–26 seater tempo travellers for group tours, airport transfers and pilgrimages.</p>
+
+      <div class="service-box">
+        <svg viewBox="0 0 24 24"><path d="M4 16l1-4h14l1 4v4H4v-4zm3-6h10l1-2H6l1 2z"/></svg>
+        <h3>Tempo Traveller & Bus Rentals</h3>
+        <p>9–26 seater tempo travellers and buses for group travel and pilgrimages.</p>
       </div>
+
     </div>
   </div>
 </section>
@@ -185,17 +210,13 @@
       <div>
         <h2>About Anand</h2>
         <p>
-          Tour With Anand is a Kochi-based travel service managed by Anand, a professional
-          local travel expert specializing in airport taxi services, Kerala tour packages
-          and South India private tours.
-        </p>
-        <p>
-          With a strong focus on punctuality, comfort and transparent pricing,
-          Tour With Anand is trusted by Indian and international travellers.
+          Tour With Anand is a Kochi-based travel service led by Anand, offering
+          reliable taxi services, South India tour packages and pilgrim journeys
+          with complete transparency and local expertise.
         </p>
       </div>
       <div>
-        <img src="images/anand.jpeg" alt="Anand - Tour With Anand Founder">
+        <img src="images/anand.jpeg" alt="Anand - Tour With Anand">
       </div>
     </div>
   </div>
@@ -205,12 +226,12 @@
 <footer>
   <div class="container">
     <p><strong>Tour With Anand</strong></p>
-    <p>South India Tour & Taxi Packages | Kochi Airport Taxi Service</p>
+    <p>South India Tour & Taxi Packages | Kochi Airport Taxi</p>
     <p>
       📞 <a href="tel:+919400620615">+91 94006 20615</a> |
       💬 <a href="https://wa.me/919400620615">WhatsApp</a>
     </p>
-    <p>© 2025 tourwithanand.in – All Rights Reserved</p>
+    <p>© 2025 tourwithanand.in</p>
   </div>
 </footer>
 
