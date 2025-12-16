@@ -5,8 +5,8 @@
 
   <!-- SEO META -->
   <title>Contact & Booking | Tour With Anand – Kochi Airport Taxi & Tours</title>
-  <meta name="description" content="Contact Tour With Anand for Kochi Airport taxi booking, Kerala tour packages, South India pilgrim tours and tempo traveller rentals. WhatsApp or call for instant confirmation.">
-  <meta name="keywords" content="Contact Tour With Anand, Kochi airport taxi booking, Kerala tour booking, South India taxi service">
+  <meta name="description" content="Contact Tour With Anand for Kochi Airport taxi booking, Kerala tour packages, South India pilgrim tours and tempo traveller rentals. WhatsApp for instant confirmation.">
+  <meta name="keywords" content="Kochi airport taxi booking, Kerala tour booking, South India taxi service, Tour With Anand contact">
   <meta name="author" content="Tour With Anand">
   <meta name="robots" content="index, follow">
 
@@ -145,28 +145,28 @@
   <h1>Contact & Booking</h1>
   <p>
     Planning a taxi ride, Kerala tour or South India pilgrimage?  
-    Get in touch with us directly for honest pricing and quick confirmation.
+    Send your travel details and get instant confirmation via WhatsApp.
   </p>
 </section>
 
 <!-- CONTACT SECTION -->
 <section class="container contact-grid">
 
-  <!-- BOOKING FORM -->
+  <!-- WHATSAPP BOOKING FORM -->
   <div>
     <h2>Send Your Travel Details</h2>
 
-    <form action="mailto:info@tourwithanand.in" method="post" enctype="text/plain">
+    <form onsubmit="sendWhatsApp(); return false;">
       <label for="name">Your Name</label>
-      <input type="text" id="name" name="Name" required>
+      <input type="text" id="name" required>
 
       <label for="phone">Phone / WhatsApp Number</label>
-      <input type="text" id="phone" name="Phone" required>
+      <input type="text" id="phone" required>
 
       <label for="travel">Travel Requirement</label>
-      <textarea id="travel" name="Travel Requirement" placeholder="Example: Kochi Airport to Munnar on 25 Dec, 2 adults, sedan"></textarea>
+      <textarea id="travel" placeholder="Example: Kochi Airport to Munnar on 25 Dec, 2 adults, sedan"></textarea>
 
-      <button type="submit" class="btn">Send Enquiry</button>
+      <button type="submit" class="btn">Send via WhatsApp</button>
     </form>
   </div>
 
@@ -185,7 +185,7 @@
     </p>
 
     <p><strong>✉️ Email:</strong><br>
-      info@tourwithanand.in
+      infostarkholidays@gmail.com
     </p>
 
     <div class="cta">
@@ -207,6 +207,24 @@
     <p>© 2025 tourwithanand.in</p>
   </div>
 </footer>
+
+<!-- WHATSAPP SCRIPT -->
+<script>
+function sendWhatsApp() {
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const travel = document.getElementById("travel").value.trim();
+
+  const message =
+    "Hello Anand,%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Phone: " + phone + "%0A" +
+    "Travel Requirement: " + travel;
+
+  const url = "https://wa.me/919400620615?text=" + message;
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
