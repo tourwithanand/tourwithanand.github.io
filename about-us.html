@@ -5,7 +5,7 @@
 
   <!-- SEO META -->
   <title>About Us | Tour With Anand – South India Tour & Taxi Experts</title>
-  <meta name="description" content="Learn about Anand and Tour With Anand, a Kochi-based South India tour and taxi service offering honest, direct and professional travel experiences across Kerala and South India.">
+  <meta name="description" content="Meet Anand, founder of Tour With Anand – a Kochi-based South India tour and taxi service offering honest, direct and professional travel experiences across Kerala and South India.">
   <meta name="keywords" content="About Tour With Anand, Anand Kochi, South India tour operator, Kerala taxi service, Kochi airport taxi">
   <meta name="author" content="Tour With Anand">
   <meta name="robots" content="index, follow">
@@ -19,8 +19,9 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #ffffff;
       color: #111;
-      line-height: 1.7;
+      line-height: 1.75;
     }
+
     a { color: #000; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
@@ -30,28 +31,54 @@
       padding: 20px;
     }
 
-    h1, h2 {
-      color: #000;
-    }
-
-    /* HERO */
-    .hero {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 30px;
-      align-items: center;
-      padding: 50px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    .hero h1 {
+    h1 {
       font-size: 36px;
       margin-bottom: 10px;
     }
 
-    .hero p {
+    /* STICKY HOME LOGO */
+    .sticky-logo {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 999;
+      background: #ffffff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+    .sticky-logo img {
+      height: 42px;
+      width: auto;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+      padding: 70px 0 50px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .hero-text p {
       font-size: 17px;
-      max-width: 550px;
+      max-width: 560px;
+    }
+
+    /* IMAGE STYLING FOR TRANSPARENT PNG */
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f3f3f3, #ffffff);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .hero-image img {
+      max-height: 420px;
     }
 
     /* CONTENT */
@@ -60,8 +87,8 @@
     }
 
     .content p {
-      margin-bottom: 18px;
       max-width: 900px;
+      margin-bottom: 18px;
     }
 
     footer {
@@ -69,6 +96,7 @@
       color: #fff;
       padding: 30px 20px;
       font-size: 14px;
+      margin-top: 40px;
     }
 
     footer a {
@@ -78,6 +106,13 @@
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
+        padding-top: 90px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+      .sticky-logo img {
+        height: 36px;
       }
     }
   </style>
@@ -85,17 +120,23 @@
 
 <body>
 
+<!-- STICKY LOGO HOME BUTTON -->
+<a href="index.html" class="sticky-logo" aria-label="Go to Home">
+  <img src="images/logo.png" alt="Tour With Anand Home">
+</a>
+
 <!-- HERO SECTION -->
 <section class="hero container">
-  <div>
+  <div class="hero-text">
     <h1>About Tour With Anand</h1>
     <p>
-      Honest travel. Direct service. Local expertise from the heart of Kerala.
+      Honest travel. Direct service. Local expertise from the heart of Kerala,
+      God’s Own Country.
     </p>
   </div>
 
-  <div>
-    <img src="images/Hero-White-shirt-right.png" alt="Anand – Founder of Tour With Anand">
+  <div class="hero-image">
+    <img src="images/anand.jpeg" alt="Anand – Founder of Tour With Anand">
   </div>
 </section>
 
@@ -118,10 +159,10 @@
 
   <p>
     Early on, we tried to connect to the local search engines who gave us the clients
-    details. Later on, we came in contact with local businesses, who entrusted us with
-    regular trips after experiencing our quality of service. During the coronavirus
-    epidemic, our entire industry took a massive hit, from which the recovery has
-    been slow and steady.
+    details. Later on, we came in contact with local businesses, who entrusted us
+    with regular trips after experiencing our quality of service. During the
+    coronavirus epidemic, our entire industry took a massive hit, from which the
+    recovery has been slow and steady.
   </p>
 
   <p>
