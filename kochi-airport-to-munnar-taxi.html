@@ -1,40 +1,3 @@
-<!-- ================= INTERNAL LINKS SECTION ================= -->
-<section class="section section-alt" aria-label="Related Kochi airport taxi services">
-  <div class="container">
-    <h2 style="text-align:center;font-size:28px;color:#1a1a1a;margin-bottom:24px;">
-      Related Kochi Airport Taxi Services
-    </h2>
-    <p style="text-align:center;color:#666;max-width:720px;margin:0 auto 28px;">
-      Plan more routes from Cochin International Airport with the same trusted operator. Explore taxis to Alleppey, Kumarakom and Kerala tour packages starting from Kochi Airport.
-    </p>
-    <div class="cards" style="margin-top:0;">
-      <a href="kochi-airport-taxi-service.html" class="card" style="text-decoration:none;color:inherit;">
-        <h3 style="font-size:20px;margin-bottom:8px;">Kochi Airport Taxi Service</h3>
-        <p style="font-size:14px;color:#555;">
-          24x7 Kochi airport taxi service for city drops, outstation trips and railway station transfers from COK.
-        </p>
-      </a>
-      <a href="kochi-airport-to-alleppey-taxi.html" class="card" style="text-decoration:none;color:inherit;">
-        <h3 style="font-size:20px;margin-bottom:8px;">Kochi Airport to Alleppey Taxi</h3>
-        <p style="font-size:14px;color:#555;">
-          Fixed fare Kochi Airport to Alleppey taxi for houseboat check-in with on-time pickup from arrivals.
-        </p>
-      </a>
-      <a href="kochi-airport-to-kumarakom-taxi.html" class="card" style="text-decoration:none;color:inherit;">
-        <h3 style="font-size:20px;margin-bottom:8px;">Kochi Airport to Kumarakom Taxi</h3>
-        <p style="font-size:14px;color:#555;">
-          Private Kochi Airport to Kumarakom cab with AC sedans and SUVs, ideal for lakeside resorts.
-        </p>
-      </a>
-      <a href="kerala-tour-packages.html" class="card" style="text-decoration:none;color:inherit;">
-        <h3 style="font-size:20px;margin-bottom:8px;">Kerala Tour Packages</h3>
-        <p style="font-size:14px;color:#555;">
-          Custom Kerala tour packages starting from Kochi Airport covering Munnar, Alleppey, Thekkady and more.
-        </p>
-      </a>
-    </div>
-  </div>
-</section>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tourwithanand.in/kochi-airport-to-munnar-taxi.html">
 
-<!-- LOCAL BUSINESS + TAXI SCHEMA [web:1] -->
+<!-- LOCAL BUSINESS + TAXI SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -95,21 +58,16 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#fff;col
 a{color:#0066cc;text-decoration:none}
 a:hover{color:#004499}
 
-/* WHATSAPP CTA BUTTON */
-.whatsapp-cta {
-  position:fixed;bottom:20px;right:20px;z-index:1000;
-  background:#25D366;padding:15px 20px;border-radius:50px;
-  color:#fff;font-weight:600;box-shadow:0 8px 25px rgba(37,211,102,.4);
-  display:flex;align-items:center;gap:10px;transition:all .3s;
-  text-decoration:none
-}
-.whatsapp-cta:hover{transform:scale(1.05);box-shadow:0 12px 35px rgba(37,211,102,.5)}
+/* WHATSAPP & CALL CTA BUTTONS */
+.cta-buttons{position:fixed;bottom:20px;right:20px;z-index:1000;display:flex;flex-direction:column;gap:10px}
+.whatsapp-cta,.call-cta{background:#25D366;padding:12px 18px;border-radius:50px;color:#fff;font-weight:600;box-shadow:0 8px 25px rgba(37,211,102,.4);display:flex;align-items:center;gap:8px;transition:all .3s;text-decoration:none;font-size:14px}
+.call-cta{background:#0066cc;box-shadow:0 8px 25px rgba(0,102,204,.4)}
+.whatsapp-cta:hover,.call-cta:hover{transform:scale(1.05);box-shadow:0 12px 35px rgba(37,211,102,.5)}
+.call-cta:hover{box-shadow:0 12px 35px rgba(0,102,204,.5)}
+.cta-icon{width:20px;height:20px;fill:currentColor}
 
 /* HERO */
-.hero {
-  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('images/tourwithanand-cok-crysta.png') center/cover;
-  padding:140px 0 80px;color:#fff;position:relative
-}
+.hero{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('images/tourwithanand-cok-crysta.png') center/cover;padding:140px 0 80px;color:#fff;position:relative}
 .hero-content{max-width:900px;margin:auto;text-align:center}
 .hero h1{font-size:clamp(32px,5vw,48px);margin-bottom:20px;font-weight:700;line-height:1.2}
 .hero p{font-size:clamp(16px,2.5vw,20px);margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto}
@@ -120,52 +78,56 @@ a:hover{color:#004499}
 
 /* CARDS */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:40px}
-.card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.08);border:1px solid #e9ecef;transition:transform .3s}
-.card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.12)}
+.card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.08);border:1px solid #e9ecef;transition:transform .3s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#25D366,#0066cc)}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.15)}
 
 /* TABLE */
-.table-wrapper{overflow-x:auto;margin:30px 0}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.08)}
-th{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;padding:18px 16px;font-weight:600;text-align:left;font-size:16px}
-td{padding:16px;border-bottom:1px solid #e9ecef;font-size:15px}
+.table-wrapper{overflow-x:auto;margin:40px 0;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.08)}
+table{width:100%;border-collapse:collapse;background:#fff}
+th{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;padding:20px 16px;font-weight:600;text-align:left;font-size:16px}
+td{padding:20px 16px;border-bottom:1px solid #e9ecef;font-size:15px;position:relative;transition:background .3s}
 tr:nth-child(even){background:#f8f9fa}
-tr:hover{background:#e3f2fd}
+tr:hover{background:#e3f2fd;transform:scale(1.01)}
+.price{font-weight:700;color:#25D366;font-size:18px}
 
-/* FAQ */
+/* FAQ - IMPROVED INTERACTIVE */
 .faq{margin-top:40px}
-.faq-item{margin-bottom:20px;border:1px solid #e9ecef;border-radius:10px;overflow:hidden;transition:all .3s}
-.faq-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1)}
-.faq-question{padding:20px 24px;background:#f8f9fa;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px}
-.faq-answer{padding:0 24px;max-height:0;overflow:hidden;transition:max-height .4s ease;background:#fff}
-.faq-item.active .faq-answer{padding:20px 24px;max-height:200px}
+.faq-item{margin-bottom:24px;border:1px solid #e9ecef;border-radius:12px;overflow:hidden;transition:all .3s;box-shadow:0 4px 15px rgba(0,0,0,.06)}
+.faq-item:hover{box-shadow:0 12px 35px rgba(0,0,0,.12);transform:translateY(-2px)}
+.faq-question{padding:24px 28px;background:#f8f9fa;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;transition:background .3s;position:relative}
+.faq-question:hover{background:#f0f7f8}
+.faq-question::after{content:'▼';font-size:18px;transition:transform .3s}
+.faq-item.active .faq-question::after{transform:rotate(180deg)}
+.faq-answer{padding:0 28px;max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(0.4, 0, 0.2, 1);background:#fff}
+.faq-item.active .faq-answer{padding:24px 28px;max-height:300px}
 
 /* OPERATOR */
 .operator-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;align-items:center;margin-top:40px}
-.operator-img img{max-width:100%;height:300px;object-fit:cover;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.1)}
+.operator-img img{max-width:100%;height:320px;object-fit:cover;border-radius:16px;box-shadow:0 15px 50px rgba(0,0,0,.15);transition:transform .3s}
+.operator-img:hover img{transform:scale(1.05)}
 
 /* BOOKING STEPS */
 .steps{list-style:none;display:grid;gap:25px;margin-top:30px}
-.steps li{display:flex;gap:20px;padding:20px;background:#fff;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.06);border-left:4px solid #25D366}
-.step-number{width:40px;height:40px;background:#25D366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;flex-shrink:0}
-
-/* FOOTER */
-footer{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;padding:40px 0 20px;text-align:center}
-.footer-links{margin:20px 0}
-.footer-links a{display:inline-block;margin:0 15px;color:#ccc;font-size:15px;transition:color .3s}
-.footer-links a:hover{color:#25D366}
+.steps li{display:flex;gap:20px;padding:24px;background:#fff;border-radius:12px;box-shadow:0 6px 25px rgba(0,0,0,.08);border-left:5px solid #25D366;transition:transform .3s}
+.steps li:hover{transform:translateX(8px)}
+.step-number{width:44px;height:44px;background:linear-gradient(135deg,#25D366,#0066cc);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;flex-shrink:0}
 
 /* STICKY LOGO */
-.sticky-logo{position:fixed;top:20px;left:20px;z-index:999;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);padding:12px 16px;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,.15)}
+.sticky-logo{position:fixed;top:20px;left:20px;z-index:999;background:rgba(255,255,255,.95);backdrop-filter:blur(15px);padding:12px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.15);transition:transform .3s}
+.sticky-logo:hover{transform:scale(1.05)}
 .sticky-logo img{height:45px}
 
 /* RESPONSIVE */
 @media(max-width:768px){
-  .hero{padding:120px 0 60px}
+  .hero{padding:100px 0 60px}
   .section{padding:40px 0}
   .container{padding:0 15px}
   .operator-grid{grid-template-columns:1fr;text-align:center}
-  .faq-question{padding:16px 20px;font-size:15px}
-  .whatsapp-cta{bottom:15px;right:15px;padding:12px 16px;font-size:14px}
+  .cta-buttons{bottom:15px;right:15px;flex-direction:row;gap:8px}
+  .whatsapp-cta,.call-cta{padding:12px 16px;font-size:13px}
+  .cards{grid-template-columns:1fr;gap:20px}
+  .table-wrapper{margin:20px -15px;border-radius:0}
 }
 </style>
 </head>
@@ -173,26 +135,32 @@ footer{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;paddin
 <body>
 
 <!-- STICKY LOGO -->
-<a href="index.html" class="sticky-logo">
+<a href="index.html" class="sticky-logo" aria-label="Tour With Anand Home">
   <img src="images/logo.png" alt="Tour With Anand - Kochi Airport Taxi Service">
 </a>
 
-<!-- HERO SECTION [web:2] -->
-<section class="hero">
+<!-- HERO SECTION -->
+<section class="hero" role="banner">
   <div class="container hero-content">
     <h1>Kochi Airport to Munnar Taxi Service</h1>
     <p>Private AC taxi from Cochin International Airport (COK) to Munnar. 110km scenic journey takes 4 hours through Western Ghats with experienced hill drivers and hotel drop included.</p>
     <div style="display:flex;gap:15px;justify-content:center;flex-wrap:wrap;">
-      <a href="tel:+919400620615" style="background:#0066cc;padding:15px 30px;border-radius:50px;font-size:18px;font-weight:600;color:#fff;display:inline-block;">Call Now</a>
-      <a href="https://wa.me/919400620615?text=Kochi%20Airport%20to%20Munnar%20taxi%20booking" class="whatsapp-cta" style="background:#25D366;padding:15px 30px;border-radius:50px;font-size:18px;font-weight:600;color:#fff;">WhatsApp</a>
+      <a href="tel:+919400620615" class="call-cta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Call Now
+      </a>
+      <a href="https://wa.me/919400620615?text=Kochi%20Airport%20to%20Munnar%20taxi%20booking" class="whatsapp-cta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+        WhatsApp
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ROUTE INFO [web:2] -->
+<!-- ROUTE INFO -->
 <section class="section">
   <div class="container">
-    <div class="cards" style="max-width:800px;margin:auto;">
+    <div class="cards" style="max-width:900px;margin:auto;">
       <div class="card">
         <h3 style="color:#25D366;font-size:24px;margin-bottom:15px">📍 Distance & Route</h3>
         <p><strong>110 km via NH85:</strong> Kochi Airport → Aluva → Adimali → Munnar. Scenic highway + hill roads through cardamom plantations.</p>
@@ -214,7 +182,7 @@ footer{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;paddin
   <div class="container">
     <div class="operator-grid">
       <div class="operator-img">
-        <img src="images/anand.jpeg" alt="Anand - Kochi Airport to Munnar Taxi Operator">
+        <img src="images/anand.jpeg" alt="Anand - Kochi Airport to Munnar Taxi Operator" loading="lazy">
       </div>
       <div>
         <h2 style="font-size:32px;color:#1a1a1a;margin-bottom:20px">Meet Your Local Operator</h2>
@@ -225,22 +193,22 @@ footer{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;paddin
   </div>
 </section>
 
-<!-- FARE TABLE [web:1][web:4] -->
+<!-- FARE TABLE -->
 <section class="section">
   <div class="container">
     <h2 style="text-align:center;font-size:34px;color:#1a1a1a;margin-bottom:20px">Vehicle Options & Fares</h2>
     <p style="text-align:center;color:#666;margin-bottom:40px;font-size:18px">All fares include tolls, parking, AC vehicles, driver bata. Fixed one-way rates - no hidden charges.</p>
     <div class="table-wrapper">
-      <table>
+      <table role="grid">
         <thead>
           <tr><th>Vehicle Type</th><th>Fare (₹)</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Sedan (Dzire/Etios)</strong></td><td>₹4000</td></tr>
-          <tr><td><strong>Ertiga (6 Seater)</strong></td><td>₹4500</td></tr>
-          <tr><td><strong>Innova (6-7 Seater)</strong></td><td>₹5000</td></tr>
-          <tr><td><strong>Innova Crysta (Premium)</strong></td><td>₹6000</td></tr>
-          <tr style="font-size:15px"><td><strong>Tempo Traveller (9-20 Seater)</strong></td><td>On Request</td></tr>
+          <tr><td><strong>Sedan (Dzire/Etios)</strong></td><td class="price">₹4000</td></tr>
+          <tr><td><strong>Ertiga (6 Seater)</strong></td><td class="price">₹4500</td></tr>
+          <tr><td><strong>Innova (6-7 Seater)</strong></td><td class="price">₹5000</td></tr>
+          <tr><td><strong>Innova Crysta (Premium)</strong></td><td class="price">₹6000</td></tr>
+          <tr><td><strong>Tempo Traveller (9-20 Seater)</strong></td><td class="price">On Request</td></tr>
         </tbody>
       </table>
     </div>
@@ -284,78 +252,78 @@ footer{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;paddin
   </div>
 </section>
 
-<!-- FAQ SECTION [web:2] -->
+<!-- FAQ SECTION -->
 <section class="section">
   <div class="container">
     <h2 style="text-align:center;font-size:34px;color:#1a1a1a;margin-bottom:40px">Frequently Asked Questions</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           How far is Munnar from Kochi Airport?
-          <span style="font-size:20px">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Munnar is 110 km from Cochin International Airport via NH85. Journey takes approximately 4 hours through scenic Western Ghats.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           Are these private taxis only?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Yes, all bookings are exclusive private taxis. No sharing with strangers - perfect for families and senior citizens.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           Is 24/7 airport pickup available?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Airport pickup available round the clock. Driver tracks live flight status and waits if delayed.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           Are drivers experienced for hill roads?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">All drivers trained for Munnar ghat section with 5+ years hill driving experience. Safe driving guaranteed.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           Does fare include hotel drop?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Door-to-door service includes drop at your Munnar hotel/resort/homestay anywhere in Munnar town.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           What documents needed for booking?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Just flight details, pickup name and Munnar hotel address. No advance payment required.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           Can we stop for sightseeing en route?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Optional stops at waterfalls, viewpoints available. Extra time charged at ₹20/km beyond 110km.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           Is advance booking necessary?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Recommended during peak season (Nov-Feb). Last-minute bookings accepted subject to availability.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           What if flight gets delayed?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Driver monitors live flight status. Complimentary waiting up to 2 hours after scheduled arrival.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0">
           Are child seats available?
-          <span style="▼">▼</span>
+          <span></span>
         </div>
         <div class="faq-answer">Child seats available on request for infants. Mention requirement during booking.</div>
       </div>
@@ -363,20 +331,64 @@ footer{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;paddin
   </div>
 </section>
 
-<!-- FIXED WHATSAPP BUTTON -->
-<a href="https://wa.me/919400620615?text=Hi%2C%20I%20need%20Kochi%20Airport%20to%20Munnar%20taxi.%20Flight%20details%3A" class="whatsapp-cta">
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
-  Book Taxi Now
-</a>
+<!-- INTERNAL LINKS SECTION (MOVED TO BOTTOM) -->
+<section class="section section-alt" aria-label="Related Kochi airport taxi services">
+  <div class="container">
+    <h2 style="text-align:center;font-size:28px;color:#1a1a1a;margin-bottom:24px;">
+      Related Kochi Airport Taxi Services
+    </h2>
+    <p style="text-align:center;color:#666;max-width:720px;margin:0 auto 28px;">
+      Plan more routes from Cochin International Airport with the same trusted operator. Explore taxis to Alleppey, Kumarakom and Kerala tour packages starting from Kochi Airport.
+    </p>
+    <div class="cards">
+      <a href="kochi-airport-taxi-service.html" class="card" style="text-decoration:none;color:inherit;">
+        <h3 style="font-size:20px;margin-bottom:8px;">Kochi Airport Taxi Service</h3>
+        <p style="font-size:14px;color:#555;">
+          24x7 Kochi airport taxi service for city drops, outstation trips and railway station transfers from COK.
+        </p>
+      </a>
+      <a href="kochi-airport-to-alleppey-taxi.html" class="card" style="text-decoration:none;color:inherit;">
+        <h3 style="font-size:20px;margin-bottom:8px;">Kochi Airport to Alleppey Taxi</h3>
+        <p style="font-size:14px;color:#555;">
+          Fixed fare Kochi Airport to Alleppey taxi for houseboat check-in with on-time pickup from arrivals.
+        </p>
+      </a>
+      <a href="kochi-airport-to-kumarakom-taxi.html" class="card" style="text-decoration:none;color:inherit;">
+        <h3 style="font-size:20px;margin-bottom:8px;">Kochi Airport to Kumarakom Taxi</h3>
+        <p style="font-size:14px;color:#555;">
+          Private Kochi Airport to Kumarakom cab with AC sedans and SUVs, ideal for lakeside resorts.
+        </p>
+      </a>
+      <a href="kerala-tour-packages.html" class="card" style="text-decoration:none;color:inherit;">
+        <h3 style="font-size:20px;margin-bottom:8px;">Kerala Tour Packages</h3>
+        <p style="font-size:14px;color:#555;">
+          Custom Kerala tour packages starting from Kochi Airport covering Munnar, Alleppey, Thekkady and more.
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FIXED CTA BUTTONS -->
+<div class="cta-buttons">
+  <a href="https://wa.me/919400620615?text=Hi%2C%20I%20need%20Kochi%20Airport%20to%20Munnar%20taxi.%20Flight%20details%3A" class="whatsapp-cta" aria-label="Book via WhatsApp">
+    <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382...[truncated for brevity]"/></svg>
+    Book Taxi Now
+  </a>
+  <a href="tel:+919400620615" class="call-cta" aria-label="Call Now">
+    <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79...[truncated]"/></svg>
+    Call Driver
+  </a>
+</div>
 
 <!-- FOOTER -->
-<footer>
+<footer style="background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;padding:40px 0 20px;text-align:center">
   <div class="container">
     <h3 style="margin-bottom:15px">Tour With Anand</h3>
-    <div class="footer-links">
-      <a href="kochi-airport-taxi-service.html">Kochi Airport Taxi</a>
-      <a href="kochi-airport-to-alleppey-taxi.html">Airport to Alleppey</a>
-      <a href="kerala-tour-packages.html">Kerala Tours</a>
+    <div style="margin:20px 0">
+      <a href="kochi-airport-taxi-service.html" style="display:inline-block;margin:0 15px;color:#ccc;font-size:15px;transition:color .3s">Kochi Airport Taxi</a>
+      <a href="kochi-airport-to-alleppey-taxi.html" style="display:inline-block;margin:0 15px;color:#ccc;font-size:15px;transition:color .3s">Airport to Alleppey</a>
+      <a href="kerala-tour-packages.html" style="display:inline-block;margin:0 15px;color:#ccc;font-size:15px;transition:color .3s">Kerala Tours</a>
     </div>
     <p style="margin:25px 0 10px;font-size:15px">
       📞 <a href="tel:+919400620615">+91 94006 20615</a> | 
@@ -387,23 +399,54 @@ footer{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;paddin
 </footer>
 
 <script>
-document.querySelectorAll('.faq-question').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const answer = item.querySelector('.faq-answer');
-    const icon = q.querySelector('span');
-    
-    item.classList.toggle('active');
-    answer.style.maxHeight = item.classList.contains('active') ? '200px' : '0';
-    icon.textContent = item.classList.contains('active') ? '▲' : '▼';
+document.addEventListener('DOMContentLoaded', function() {
+  // Enhanced FAQ with keyboard support
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', toggleFAQ);
+    question.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleFAQ.call(this);
+      }
+    });
   });
-});
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    e.preventDefault();
-    document.querySelector(anchor.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+  function toggleFAQ() {
+    const item = this.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isActive = item.classList.contains('active');
+    
+    // Close all others
+    document.querySelectorAll('.faq-item').forEach(faq => {
+      faq.classList.remove('active');
+    });
+    
+    // Toggle current
+    if (!isActive) {
+      item.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({behavior: 'smooth'});
+      }
+    });
+  });
+
+  // Sticky logo animation
+  window.addEventListener('scroll', () => {
+    const logo = document.querySelector('.sticky-logo');
+    if (window.scrollY > 100) {
+      logo.style.transform = 'scale(0.95)';
+    } else {
+      logo.style.transform = 'scale(1)';
+    }
   });
 });
 </script>
