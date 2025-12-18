@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 
 <!-- ================= SEO META ================= -->
-<title>South India Tour Packages & Kochi Airport Taxi | Tour With Anand</title>
+<title>South India Tours & Taxi Service | Kochi Airport | Tour With Anand</title>
 
 <meta name="description" content="Tour With Anand is a Kochi Airport–based travel operator offering airport taxi services, Kerala tour packages, Tamil Nadu tours and pilgrimage trips across South India.">
 
-<meta name="keywords" content="Kochi Airport Taxi, South India Tour Packages, Kerala Tour Packages, Tamil Nadu Tour Packages, Pilgrimage Tours India, Cochin Airport Taxi">
+<meta name="keywords" content="South India Tours, Kochi Airport Taxi, Kerala Tour Packages, Tamil Nadu Tours, Pilgrimage Tours, Cochin Airport Taxi">
 
 <meta name="robots" content="index,follow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="https://tourwithanand.github.io/">
+<link rel="canonical" href="https://tourwithanand.in/">
 
 <!-- ================= SCHEMA ================= -->
 <script type="application/ld+json">
@@ -21,15 +21,16 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://tourwithanand.github.io/",
-      "name": "South India Tour Packages & Kochi Airport Taxi",
-      "url": "https://tourwithanand.github.io/"
+      "@id": "https://tourwithanand.in/",
+      "name": "South India Tours & Taxi Service",
+      "url": "https://tourwithanand.in/"
     },
     {
-      "@type": "TravelAgency",
+      "@type": "LocalBusiness",
       "name": "Tour With Anand",
       "telephone": "+91 94006 20615",
       "email": "infostarkholidays@gmail.com",
+      "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Nedumbassery",
@@ -37,6 +38,51 @@
         "addressCountry": "IN"
       },
       "areaServed": "South India"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does Tour With Anand provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tour With Anand provides Kochi Airport taxi services, Kerala tour packages, Tamil Nadu tours and South India pilgrimage trips."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Tour With Anand based near Kochi Airport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Tour With Anand is based near Kochi International Airport and specializes in airport transfers and tours originating from Kochi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer private taxi services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all taxi services provided by Tour With Anand are private AC vehicles with no seat sharing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I book Kerala and Tamil Nadu tours together?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, customized Kerala and Tamil Nadu tour packages can be combined based on your travel plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I contact Tour With Anand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can call +91 94006 20615 or WhatsApp for instant assistance and booking."
+          }
+        }
+      ]
     }
   ]
 }
@@ -44,60 +90,78 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Segoe UI,Arial,sans-serif;color:#111;line-height:1.7;background:#fff}
+body{font-family:Segoe UI,Arial,sans-serif;color:#111827;line-height:1.7;background:#fff}
 .container{max-width:1120px;margin:auto;padding:0 16px}
 h1,h2,h3{line-height:1.3;margin-bottom:10px}
 p{margin-bottom:10px;color:#374151}
 a{text-decoration:none;color:inherit}
 
-/* Logo */
-.logo{position:fixed;top:14px;left:14px;z-index:1000}
+/* LOGO */
+.logo{position:fixed;top:12px;left:14px;z-index:1000}
 .logo img{height:38px}
 
-/* Hero */
+/* HERO */
 .hero{background:#000;color:#fff}
-.hero-inner{padding:110px 0 60px}
-.hero h1{font-size:28px}
-.hero h2{font-size:16px;font-weight:400;color:#e5e7eb}
-.hero p{font-size:15px;color:#d1d5db;max-width:760px}
-.hero-cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
-.hero-cta a{padding:12px 22px;border-radius:30px;font-weight:600}
+.hero-inner{padding:120px 0 60px}
+.hero-grid{display:flex;flex-direction:column;gap:26px}
+.hero-text h1{font-size:28px}
+.hero-text h2{font-size:16px;font-weight:400;color:#d1d5db}
+.hero-text p{font-size:15px;color:#e5e7eb}
+
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.hero-badges span{background:rgba(17,24,39,.8);padding:6px 12px;border-radius:999px;font-size:12px}
+
+.hero-cta{display:flex;gap:12px;margin-top:16px}
+.hero-cta a{padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px}
 .call{background:#fff;color:#000}
 .wa{background:#25D366;color:#fff}
 
-/* Sections */
+.hero-img img{width:100%;border-radius:16px}
+
+/* BOOKING FORM */
+.booking-section{padding:50px 0;border-bottom:1px solid #e5e7eb}
+.booking-wrap{max-width:900px;margin:auto;background:#f9fafb;border-radius:16px;padding:24px}
+.booking-form{display:grid;grid-template-columns:1fr;gap:14px}
+.booking-form input,.booking-form textarea{padding:12px;border-radius:10px;border:1px solid #d1d5db}
+.booking-form button{background:#000;color:#fff;border:none;padding:14px;border-radius:999px;font-weight:600}
+
+/* SECTIONS */
 section{padding:56px 0}
 .alt{background:#f9fafb}
 
-/* Services */
+/* SERVICES */
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.service-card{border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff}
-.service-card h3{font-size:18px}
-.service-card p{font-size:14px;color:#4b5563}
-.service-card a{display:inline-block;margin-top:8px;color:#2563eb;font-weight:600}
+.service-card{border:1px solid #e5e7eb;border-radius:14px;padding:18px;background:#fff;transition:.25s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.08)}
 
-/* Lists */
-ul{margin-left:18px}
-ul li{margin-bottom:6px}
+/* ABOUT */
+.about{display:flex;flex-wrap:wrap;gap:20px;align-items:center}
+.about img{width:140px;height:140px;border-radius:50%;object-fit:cover}
 
-/* Popular Links */
+/* FAQ */
+.faq details{margin-bottom:10px;border:1px solid #e5e7eb;border-radius:10px;padding:12px}
+
+/* LINKS */
 .links a{display:inline-block;margin:6px 10px 6px 0;color:#2563eb;font-weight:500}
 
-/* Sticky icons */
+/* STICKY */
 .sticky{position:fixed;right:14px;bottom:20px;z-index:999;display:flex;flex-direction:column;gap:10px}
 .sticky a{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
 .sticky .call{background:#111}
 .sticky .wa{background:#25D366}
 
-/* Footer */
+/* FOOTER */
 footer{background:#111;color:#d1d5db;padding:32px 0;font-size:14px}
-footer p{color:#d1d5db}
 
-/* Desktop */
+/* DESKTOP */
 @media(min-width:768px){
-.hero h1{font-size:38px}
-.hero h2{font-size:18px}
+.hero-grid{flex-direction:row;align-items:center}
+.hero-text{flex:1}
+.hero-img{flex:1}
+.hero-text h1{font-size:36px}
 .hero-inner{padding:140px 0 80px}
+.booking-form{grid-template-columns:1fr 1fr}
+.booking-form textarea,.booking-form button{grid-column:span 2}
 }
 </style>
 </head>
@@ -111,78 +175,63 @@ footer p{color:#d1d5db}
 
 <!-- HERO -->
 <div class="hero">
-  <div class="container hero-inner">
-    <h1>South India Tour Packages & Kochi Airport Taxi Service</h1>
-    <h2>Kochi Airport–Based Travel Operator – Tour With Anand</h2>
-    <p>
-      Tour With Anand is a trusted travel operator originating from Kochi International Airport (COK),
-      offering reliable airport taxi services and customized South India tour packages.
-      From Kerala sightseeing to Tamil Nadu tours and pilgrimage journeys, we manage your travel end-to-end.
-    </p>
-    <div class="hero-cta">
-      <a href="tel:+919400620615" class="call">Call Anand</a>
-      <a href="https://wa.me/919400620615" class="wa">Book on WhatsApp</a>
-    </div>
-  </div>
+<div class="container hero-inner">
+<div class="hero-grid">
+
+<div class="hero-text">
+<h1>South India Tours & Taxi Service</h1>
+<h2>Kochi Airport–Based Travel Operator – Tour With Anand</h2>
+<p>
+We provide reliable Kochi Airport taxi services and customized South India tour packages
+covering Kerala, Tamil Nadu and major pilgrimage destinations.
+</p>
+
+<div class="hero-badges">
+<span>15+ Years Experience</span>
+<span>Kochi Airport Specialist</span>
+<span>Private AC Vehicles</span>
 </div>
+
+<div class="hero-cta">
+<a href="tel:+919400620615" class="call">Call Anand</a>
+<a href="https://wa.me/919400620615" class="wa">Book on WhatsApp</a>
+</div>
+</div>
+
+<div class="hero-img">
+<img src="images/tourwithanand-cok-crysta.png" alt="South India Tours and Taxi Service">
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- BOOKING FORM -->
+<section class="booking-section">
+<div class="container">
+<div class="booking-wrap">
+<h2>Plan Your Trip</h2>
+<p>Share your travel plan and get a quick callback from us.</p>
+<form class="booking-form">
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="email" placeholder="Email Address">
+<textarea placeholder="Trip Plan / Travel Requirement"></textarea>
+<button type="submit">Request Callback</button>
+</form>
+</div>
+</div>
+</section>
 
 <!-- SERVICES -->
 <section>
 <div class="container">
-<h2>Our Travel Services</h2>
-
+<h2>Our Services</h2>
 <div class="services">
-  <div class="service-card">
-    <h3>Kochi Airport Taxi</h3>
-    <p>24×7 private AC airport taxi service from Kochi (COK) to all Kerala destinations with fixed pricing.</p>
-    <a href="/kochi-airport-taxi.html">Explore Airport Taxi →</a>
-  </div>
-
-  <div class="service-card">
-    <h3>Kerala Tour Packages</h3>
-    <p>Customized Kerala tour packages covering Munnar, Alleppey, Thekkady, Wayanad and more.</p>
-    <a href="/kerala-tour-packages.html">View Kerala Tours →</a>
-  </div>
-
-  <div class="service-card">
-    <h3>Tamil Nadu Tour Packages</h3>
-    <p>Temple, heritage and leisure tours to Madurai, Rameswaram, Kanyakumari and Tamil Nadu.</p>
-    <a href="/tamilnadu-tour-packages.html">View Tamil Nadu Tours →</a>
-  </div>
-
-  <div class="service-card">
-    <h3>Pilgrimage Tours</h3>
-    <p>Well-planned pilgrimage tours including Sabarimala, Tirupati and South India temple circuits.</p>
-    <a href="/pilgrimage-tour-packages.html">View Pilgrimage Tours →</a>
-  </div>
-</div>
-</div>
-</section>
-
-<!-- WHY US -->
-<section class="alt">
-<div class="container">
-<h2>Why Choose Tour With Anand?</h2>
-<ul>
-<li>Kochi Airport–based local travel operator</li>
-<li>15+ years experience in South India travel</li>
-<li>Private vehicles only – no seat sharing</li>
-<li>Experienced drivers & destination knowledge</li>
-<li>Trusted by Indian & international travelers</li>
-</ul>
-</div>
-</section>
-
-<!-- POPULAR LINKS -->
-<section>
-<div class="container">
-<h2>Popular Taxi Routes from Kochi Airport</h2>
-<div class="links">
-  <a href="/kochi-airport-to-munnar-taxi.html">Kochi Airport to Munnar Taxi</a>
-  <a href="/kochi-airport-to-alleppey-taxi.html">Kochi Airport to Alleppey Taxi</a>
-  <a href="/kochi-airport-to-kumarakom-taxi.html">Kochi Airport to Kumarakom Taxi</a>
-  <a href="/kochi-airport-to-thekkady-taxi.html">Kochi Airport to Thekkady Taxi</a>
-  <a href="/kochi-airport-to-varkala-taxi.html">Kochi Airport to Varkala Taxi</a>
+<div class="service-card"><h3>Kochi Airport Taxi</h3><p>24×7 private airport transfers.</p></div>
+<div class="service-card"><h3>Kerala Tour Packages</h3><p>Munnar, Alleppey & more.</p></div>
+<div class="service-card"><h3>Tamil Nadu Tours</h3><p>Temple & heritage tours.</p></div>
+<div class="service-card"><h3>Pilgrimage Tours</h3><p>Sabarimala, Tirupati etc.</p></div>
 </div>
 </div>
 </section>
@@ -191,11 +240,25 @@ footer p{color:#d1d5db}
 <section class="alt">
 <div class="container">
 <h2>About Anand</h2>
+<div class="about">
+<img src="images/anand.jpg" alt="Anand - Tour With Anand">
 <p>
 Anand is a Kochi Airport–based travel professional with over 15 years of experience
-handling airport transfers and South India tour operations. He personally manages
-guest travel to ensure safety, comfort and reliable service.
+in airport transfers and South India tour operations.
 </p>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section>
+<div class="container">
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+<details><summary>Do you provide airport taxi services?</summary><p>Yes, we specialize in Kochi Airport taxi services.</p></details>
+<details><summary>Are tours customizable?</summary><p>Yes, all tours can be customized.</p></details>
+<details><summary>Are vehicles private?</summary><p>Yes, only private AC vehicles.</p></details>
+</div>
 </div>
 </section>
 
@@ -210,7 +273,7 @@ guest travel to ensure safety, comfort and reliable service.
 </div>
 </footer>
 
-<!-- STICKY ICONS -->
+<!-- STICKY -->
 <div class="sticky">
 <a href="tel:+919400620615" class="call">📞</a>
 <a href="https://wa.me/919400620615" class="wa">💬</a>
