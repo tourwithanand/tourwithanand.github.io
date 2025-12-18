@@ -1,393 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South India Tours & Taxi Service | Tour With Anand</title>
-    <meta name="description" content="South India Tours & Taxi Service from Kochi. Kerala, Tamil Nadu temple tours, Munnar hills, Alleppey houseboats. Sedan, Innova Crysta, Tempo Traveller rentals. WhatsApp +91 94006 20615.">
-    <meta name="keywords" content="South India Tours, Taxi Service Kochi, Kerala tour packages, Tamil Nadu temple tour, Tour With Anand">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="South India Tours & Taxi Service | Tour With Anand">
-    <meta property="og:description" content="Custom South India tours & taxi service from Kochi Airport. Kerala backwaters, Munnar, Madurai temples. Fixed rates.">
-    <meta property="og:image" content="images/logo.png">
-    <meta property="og:url" content="https://tourwithanand.com/">
-    
-    <!-- Schema: TravelAgency + LocalBusiness -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "TravelAgency",
-        "name": "Tour With Anand",
-        "description": "South India Tours & Taxi Service from Kochi Airport",
-        "url": "https://tourwithanand.com",
-        "telephone": "+919400620615",
-        "priceRange": "₹4000 - ₹50000",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Kochi",
-            "addressRegion": "Kerala",
-            "addressCountry": "IN"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 10.155,
-            "longitude": 76.401
-        },
-        "areaServed": ["Kerala", "Tamil Nadu", "Karnataka"],
-        "serviceType": ["South India Tours", "Taxi Service", "Airport Transfers"],
-        "sameAs": [
-            "https://share.google/tgpwiF3FbQ4GWDYrb",
-            "https://www.tripadvisor.in/Attraction_Review-g3581631-d25427755-Reviews-Tour_With_Anand-Nedumbassery_Kochi_Cochin_Ernakulam_District_Kerala.html"
-        ]
-    }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South India Tours & Taxi Service | Tour With Anand</title>
 
-    <style>
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif; line-height:1.6; color:#222; }
-        .container { max-width:1200px; margin:0 auto; padding:0 20px; }
-        
-        /* Sticky Logo */
-        .logo-sticky { 
-            position:fixed; top:20px; left:20px; z-index:1000; 
-            background:rgba(255,255,255,0.95); backdrop-filter:blur(10px);
-            padding:12px 20px; border-radius:50px; box-shadow:0 8px 32px rgba(0,0,0,0.1);
-            transition:all 0.3s ease; 
-        }
-        .logo-sticky:hover { transform:scale(1.05); box-shadow:0 12px 40px rgba(0,0,0,0.15); }
-        .logo-sticky img { height:40px; width:auto; }
-        
-        /* Hero - Fixed for small images */
-        .hero { 
-            min-height:70vh; 
-            background: 
-                linear-gradient(135deg,rgba(15,76,117,0.85) 0%,rgba(30,60,114,0.85) 50%,rgba(42,82,152,0.85) 100%),
-                url('images/south-india-banner.jpg') center/cover no-repeat;
-            background-size: cover !important;
-            background-position: center !important;
-            display:flex; align-items:center; color:white; text-shadow:0 2px 4px rgba(0,0,0,0.7);
-            position:relative; 
-        }
-        .hero::before { 
-            content:''; position:absolute; top:0; left:0; right:0; bottom:0; 
-            background:rgba(0,0,0,0.3); 
-        }
-        .hero-content { position:relative; z-index:2; max-width:800px; padding:2rem 0; }
-        .hero h1 { 
-            font-size:clamp(2.8rem,6vw,5rem); 
-            font-weight:800; 
-            margin-bottom:1.5rem; 
-            line-height:1.2;
-        }
-        .hero p { font-size:clamp(1.1rem,3vw,1.4rem); margin-bottom:2.5rem; }
-        .btn { 
-            display:inline-block; padding:18px 36px; background:#0b7a6b; color:white; 
-            text-decoration:none; border-radius:50px; font-weight:600; font-size:1.2rem; 
-            transition:all 0.3s; box-shadow:0 4px 20px rgba(11,122,107,0.3);
-        }
-        .btn:hover { 
-            background:#0a6a5f; transform:translateY(-3px); 
-            box-shadow:0 12px 35px rgba(11,122,107,0.5); 
-        }
-        
-        /* Sections */
-        section { padding:70px 0; }
-        section:nth-child(even) { background:#f8fbff; }
-        h2 { font-size:clamp(2rem,4vw,2.8rem); text-align:center; color:#0f2e4a; margin-bottom:2.5rem; font-weight:700; }
-        .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:2rem; }
-        .card { 
-            background:white; padding:2rem; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.08); 
-            transition:all 0.3s; text-align:center;
-        }
-        .card:hover { transform:translateY(-10px); box-shadow:0 25px 60px rgba(0,0,0,0.15); }
-        .card h3 { color:#0b7a6b; font-size:1.6rem; margin-bottom:1rem; }
-        .card p { color:#555; font-size:1rem; }
-        
-        /* FAQ */
-        .faq-item { margin-bottom:1.5rem; border:2px solid #e8f4f2; border-radius:16px; overflow:hidden; background:white; }
-        .faq-q { 
-            background:#f8fbff; padding:1.5rem 2rem; cursor:pointer; font-weight:600; font-size:1.15rem; 
-            display:flex; justify-content:space-between; align-items:center; 
-        }
-        .faq-q:hover { background:#f0f7f8; }
-        .faq-q::after { content:'+'; font-size:1.8rem; font-weight:bold; transition:transform 0.3s; color:#0b7a6b; }
-        .faq-item.active .faq-q::after { transform:rotate(45deg); }
-        .faq-a { 
-            max-height:0; overflow:hidden; background:white; padding:0 2rem; 
-            transition:all 0.4s ease; font-size:1rem; line-height:1.7;
-        }
-        .faq-item.active .faq-a { max-height:250px; padding:1.8rem 2rem; }
-        
-        /* Sticky Bottom Buttons */
-        .sticky-bottom { 
-            position:fixed; bottom:25px; right:25px; display:flex; gap:12px; z-index:1000; 
-        }
-        .btn-whatsapp { 
-            background:#25D366; box-shadow:0 8px 32px rgba(37,211,102,0.4); 
-            width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center;
-            font-size:1.4rem;
-        }
-        .btn-call { 
-            background:#0f2e4a; box-shadow:0 8px 32px rgba(15,46,74,0.4); 
-            width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center;
-            font-size:1.4rem; margin-top:0;
-        }
-        .btn-whatsapp:hover { background:#20c15b; transform:scale(1.1); }
-        .btn-call:hover { background:#0d2539; transform:scale(1.1); }
-        
-        /* Responsive */
-        @media (max-width:768px) {
-            .logo-sticky { top:15px; left:15px; padding:10px 16px; }
-            .logo-sticky img { height:36px; }
-            .hero { min-height:65vh; background-size:cover !important; background-position:center top !important; }
-            section { padding:50px 0; }
-            h2 { font-size:1.8rem; margin-bottom:2rem; }
-            .cards { grid-template-columns:1fr; gap:1.5rem; }
-            .card { padding:1.8rem; }
-            .sticky-bottom { bottom:20px; right:20px; flex-direction:column; gap:10px; }
-            .btn-whatsapp, .btn-call { width:56px; height:56px; font-size:1.3rem; }
-            .hero-content { padding:1.5rem 0; text-align:center; }
-        }
-        
-        @media (max-width:480px) {
-            .container { padding:0 15px; }
-            .hero h1 { font-size:2.2rem; }
-            .hero p { font-size:1rem; }
-            .faq-q { padding:1.2rem 1.5rem; font-size:1rem; }
-            .faq-a { padding:1.2rem 1.5rem; font-size:0.95rem; }
-        }
-    </style>
+  <meta name="description" content="South India Tours & Taxi Service from Kochi Airport. Kerala tour packages, Tamil Nadu temple tours, Kochi airport taxi, Innova Crysta & Tempo Traveller rentals. WhatsApp +91 94006 20615." />
+  <meta name="keywords" content="South India tours, taxi service Kochi, Kerala tour packages, Kochi airport taxi, Innova Crysta cab, Tempo Traveller Kochi, Tour With Anand" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="South India Tours & Taxi Service | Tour With Anand" />
+  <meta property="og:description" content="Custom South India tours with airport pickup, AC cabs and experienced local drivers. Kerala, Tamil Nadu & Karnataka from Kochi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tourwithanand.com/" />
+  <meta property="og:image" content="images/Crysta Banner Forest.jpg" />
+
+  <!-- Basic TravelAgency + Location Schema (inline) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Tour With Anand",
+    "description": "South India Tours & Taxi Service from Kochi Airport",
+    "url": "https://tourwithanand.com",
+    "telephone": "+919400620615",
+    "priceRange": "₹4000 - ₹50000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kochi",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.155,
+      "longitude": 76.401
+    },
+    "areaServed": ["Kerala","Tamil Nadu","Karnataka"],
+    "serviceType": ["South India Tours","Taxi Service","Airport Transfer"]
+  }
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background:#ffffff;
+    }
+    a { color:inherit; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Sticky Logo */
+    .logo-sticky {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      z-index: 1000;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.96);
+      box-shadow: 0 8px 26px rgba(0,0,0,0.15);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .logo-sticky img {
+      height: 36px;
+      width: auto;
+      display:block;
+    }
+    .logo-sticky span {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color:#0f2e4a;
+      letter-spacing:0.05em;
+      text-transform:uppercase;
+    }
+    .logo-sticky:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.2);
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 70vh;
+      display:flex;
+      align-items:center;
+      padding: 80px 16px 48px;
+      color:#fff;
+      background-image:
+        linear-gradient(135deg, rgba(5,18,32,0.8), rgba(3,49,75,0.82)),
+        url("images/Crysta Banner Forest.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat:no-repeat;
+    }
+    .hero-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .hero-tagline {
+      font-size: 0.85rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #ffd78a;
+      margin-bottom: 0.6rem;
+    }
+    .hero-title {
+      font-size: clamp(2.2rem, 6vw, 3.6rem);
+      line-height: 1.15;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .hero-sub {
+      font-size: 1rem;
+      line-height: 1.7;
+      color:#f4f6f9;
+      margin-bottom: 1.8rem;
+      max-width: 36rem;
+    }
+
+    .hero-cta-row {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 0.8rem;
+      margin-bottom: 1.4rem;
+    }
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 0.8rem 1.6rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: 2px solid transparent;
+      text-decoration:none;
+      cursor:pointer;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background:#1ec779;
+      border-color:#1ec779;
+      color:#031016;
+      box-shadow: 0 8px 24px rgba(30,199,121,0.45);
+    }
+    .btn-primary:hover {
+      background:#18b56c;
+      border-color:#18b56c;
+      transform: translateY(-1px);
+    }
+    .btn-ghost {
+      background: transparent;
+      border-color: rgba(255,255,255,0.7);
+      color:#ffffff;
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .hero-meta {
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.5rem;
+      font-size:0.8rem;
+    }
+    .hero-meta span {
+      padding:0.25rem 0.75rem;
+      border-radius:999px;
+      background:rgba(0,0,0,0.45);
+      border:1px solid rgba(255,255,255,0.15);
+    }
+
+    /* GENERIC SECTION */
+    section.page-section {
+      padding:56px 0;
+    }
+    section.page-section:nth-of-type(even) {
+      background:#f8fbff;
+    }
+    .section-title {
+      text-align:center;
+      font-size: clamp(1.8rem, 3.6vw, 2.3rem);
+      color:#0f2e4a;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    /* WHY ANAND CARDS */
+    .cards {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background:#ffffff;
+      border-radius: 18px;
+      padding: 20px 20px 22px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      transition:transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow:0 16px 40px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      font-size:1.1rem;
+      margin-bottom:0.5rem;
+      color:#0b7a6b;
+    }
+    .card p {
+      font-size:0.95rem;
+      color:#444;
+    }
+
+    /* HOW TO BOOK */
+    .steps-list {
+      list-style:none;
+      max-width:700px;
+      margin:0 auto 28px;
+      padding:0;
+    }
+    .steps-list li {
+      display:flex;
+      gap:10px;
+      margin-bottom:10px;
+      font-size:0.98rem;
+      color:#444;
+    }
+    .steps-list span.step-no {
+      width:26px;
+      height:26px;
+      border-radius:50%;
+      background:#0b7a6b;
+      color:#fff;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-size:0.8rem;
+      flex-shrink:0;
+    }
+
+    /* ABOUT ANAND */
+    .about-grid {
+      display:grid;
+      grid-template-columns: minmax(0,1.3fr) minmax(0,1fr);
+      gap:24px;
+      align-items:center;
+      max-width:1000px;
+      margin:0 auto;
+    }
+    .about-text p {
+      margin-bottom:12px;
+      font-size:0.98rem;
+      color:#444;
+    }
+    .about-photo img {
+      width:100%;
+      max-height:340px;
+      object-fit:cover;
+      border-radius:18px;
+      box-shadow:0 18px 45px rgba(0,0,0,0.16);
+      display:block;
+    }
+
+    /* FAQ */
+    .faq-wrap {
+      max-width:900px;
+      margin:0 auto;
+    }
+    .faq-item {
+      border-radius:16px;
+      border:1px solid #dbe9ec;
+      background:#ffffff;
+      margin-bottom:10px;
+      overflow:hidden;
+    }
+    .faq-q {
+      padding:14px 18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      cursor:pointer;
+      font-size:0.98rem;
+      font-weight:600;
+      color:#0f2e4a;
+      background:#f8fbff;
+    }
+    .faq-q span.icon {
+      font-size:1.4rem;
+      color:#0b7a6b;
+      margin-left:10px;
+    }
+    .faq-a {
+      max-height:0;
+      overflow:hidden;
+      transition:max-height 0.25s ease;
+      background:#ffffff;
+      padding:0 18px;
+    }
+    .faq-a-inner {
+      padding:8px 0 14px;
+      font-size:0.95rem;
+      color:#444;
+    }
+    .faq-item.active .faq-a {
+      max-height:160px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding:24px 0 80px;
+      text-align:center;
+      font-size:0.9rem;
+      color:#666;
+      background:#f4f6f8;
+    }
+    footer a {
+      color:#0b7a6b;
+      text-decoration:none;
+    }
+
+    /* STICKY FLOATING BUTTONS */
+    .floating-buttons {
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:999;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .fab {
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1.25rem;
+      color:#fff;
+      text-decoration:none;
+      box-shadow:0 10px 26px rgba(0,0,0,0.35);
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .fab-whatsapp {
+      background:#25D366;
+    }
+    .fab-call {
+      background:#0f2e4a;
+    }
+    .fab:hover {
+      transform:scale(1.06);
+      box-shadow:0 14px 34px rgba(0,0,0,0.4);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns:1fr;
+      }
+      .hero {
+        padding-top:76px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        min-height:64vh;
+        background-position:center right;
+      }
+      .hero-inner {
+        max-width: 100%;
+      }
+      .hero-title {
+        font-size: 2.1rem;
+      }
+      .hero-sub {
+        font-size: 0.95rem;
+      }
+      .hero-cta-row {
+        flex-direction:column;
+      }
+      .btn {
+        width:100%;
+      }
+      .logo-sticky {
+        padding:8px 14px;
+      }
+      .logo-sticky img {
+        height:30px;
+      }
+      footer {
+        padding-bottom:72px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .hero {
+        padding:70px 12px 36px;
+      }
+      .container {
+        padding:0 12px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Sticky Logo Top Left -->
-    <a href="#" class="logo-sticky" aria-label="Tour With Anand Home">
-        <img src="images/logo.png" alt="Tour With Anand - South India Tours & Taxi Service" 
-             onerror="this.src='https://via.placeholder.com/160x50/0f4c75/ffffff?text=Tour+With+Anand'">
-    </a>
+  <!-- Sticky Logo -->
+  <a href="#top" class="logo-sticky">
+    <img src="images/logo.png" alt="Tour With Anand Logo" />
+    <span>Tour With Anand</span>
+  </a>
 
-    <!-- Hero Section - Fixed for small images -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>South India Tours & Taxi Service</h1>
-                <p>Custom Kerala tours, Tamil Nadu temples, Munnar hills & airport transfers. Fixed rates from Kochi. Sedan, Innova, Tempo Traveller.</p>
-                <a href="https://wa.me/919400620615?text=Hi%20Anand,%20South%20India%20Tours%20%26%20Taxi%20Service%20enquiry" class="btn">Book Your Tour →</a>
-            </div>
-        </div>
-    </section>
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="hero-inner">
+      <p class="hero-tagline">Trusted South India Tours from Kochi, Kerala & Beyond</p>
+      <h1 class="hero-title">South India Tours &amp; Taxi Service</h1>
+      <p class="hero-sub">
+        Airport pickup from Kochi (COK), Kerala tour packages, Tamil Nadu temple trips and
+        complete South India circuits with clean AC sedans, Innova Crysta and Tempo Traveller.
+      </p>
 
-    <!-- Why Tour With Anand -->
-    <section>
-        <div class="container">
-            <h2>Why Choose Tour With Anand?</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>🧭 Local Expert Guide</h3>
-                    <p>15+ years experience across South India. Anand knows hidden viewpoints, authentic restaurants & best routes.</p>
-                </div>
-                <div class="card">
-                    <h3>💰 Fixed Transparent Rates</h3>
-                    <p>No surprises. Sedan ₹4000/day, Innova Crysta ₹6000/day, Tempo Traveller ₹12000+. Toll & parking included.</p>
-                </div>
-                <div class="card">
-                    <h3>🚗 Modern AC Fleet</h3>
-                    <p>Clean vehicles with GPS tracking. 24/7 Kochi Airport pickup. English speaking drivers. Flight delay covered.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="hero-cta-row">
+        <a href="https://wa.me/919400620615?text=Hi%20Anand,%20I%20want%20a%20South%20India%20tour%20package"
+           class="btn btn-primary">Book Your Tour on WhatsApp</a>
+        <a href="tel:+919400620615" class="btn btn-ghost">Call Anand Now</a>
+      </div>
 
-    <!-- Popular Packages -->
-    <section>
-        <div class="container">
-            <h2>Popular Tour Packages</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Kerala 5 Days</h3>
-                    <p>Munnar → Thekkady → Alleppey Houseboat → Kochi<br><strong>₹18,000 Sedan | ₹22,000 Innova</strong></p>
-                </div>
-                <div class="card">
-                    <h3>Tamil Nadu Temples</h3>
-                    <p>Madurai → Rameshwaram → Kanyakumari → Trivandrum<br><strong>₹25,000 Sedan | ₹35,000 Traveller</strong></p>
-                </div>
-                <div class="card">
-                    <h3>South India Grand Tour</h3>
-                    <p>Kerala + Tamil Nadu + Mysore + Ooty (10 Days)<br><strong>₹48,000 Innova | ₹65,000 Traveller</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How to Book -->
-    <section>
-        <div class="container">
-            <h2>Simple Booking Process</h2>
-            <ol style="max-width:700px; margin:0 auto 3rem auto; text-align:left; font-size:1.15rem; color:#444;">
-                <li style="margin-bottom:1rem;"><strong>WhatsApp Enquiry:</strong> Share dates, group size & destinations</li>
-                <li style="margin-bottom:1rem;"><strong>Get Quote:</strong> Custom itinerary + fixed price within 30 minutes</li>
-                <li style="margin-bottom:1rem;"><strong>50% Advance:</strong> Secure via UPI/GPay/Bank Transfer</li>
-                <li style="margin-bottom:1rem;"><strong>Airport Pickup:</strong> Driver waits with placard, flight tracking included</li>
-            </ol>
-            <div style="text-align:center;">
-                <a href="https://wa.me/919400620615?text=Hi%20Anand,%20South%20India%20tour%20quote%20needed" class="btn">Get Free Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Anand -->
-    <section>
-        <div class="container">
-            <h2>About Tour With Anand</h2>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; max-width:1000px; margin:0 auto;">
-                <div>
-                    <p style="font-size:1.15rem; margin-bottom:1.5rem;">
-                        <strong>Anand launched Tour With Anand in 2010</strong> with airport transfers from Kochi. Today we serve 5000+ tourists yearly across South India.
-                    </p>
-                    <p style="font-size:1.15rem; margin-bottom:1.5rem;">
-                        Multi-lingual drivers (English, Tamil, Hindi, Malayalam). <strong>4.9⭐ Google rating (5000+ reviews)</strong>. GPS tracked vehicles with live location sharing.
-                    </p>
-                    <p style="font-size:1.15rem;">
-                        Custom tours for families, pilgrims, honeymooners. Flexible schedules, luxury options, authentic experiences.
-                    </p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="images/anand.jpeg" alt="Anand - South India Tours Expert" 
-                         style="max-width:100%; height:350px; object-fit:cover; border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,0.15);" 
-                         onerror="this.src='https://via.placeholder.com/400x350/0f4c75/f8fbff?text=Anand+Expert'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Schema - 10 Questions -->
-    <section>
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div itemscope itemtype="https://schema.org/FAQPage">
-                
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Best South India Tours from Kochi Airport?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">Kerala Highlights (5D Munnar-Alleppey), Tamil Nadu Temple Circuit (6D Madurai-Rameshwaram), Grand South India (10D Kerala+TN+Karnataka). Sedan packages start ₹18,000.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Kochi Airport taxi rates for South India tours?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">Sedan ₹4000, Innova Crysta ₹6000 to Munnar (110km). Tempo Traveller ₹12000/day for groups. All tolls, experienced drivers included.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Tempo Traveller rental for South India group tours?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">12-seater ₹12000/day, 20-seater ₹18000/day. Perfect for families visiting Kerala temples, Tamil Nadu, Karnataka palaces.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">How to book South India Tours & Taxi Service?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">WhatsApp your travel dates, group size, budget & destinations. Receive custom itinerary + fixed quote within 30 minutes. 50% advance secures booking.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Alleppey houseboat included in Kerala tours?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">Yes! Premium AC houseboats with chef & meals. 1N houseboat + 2N Munnar hills + Kochi sightseeing. Complete Kerala package ₹22,000 (Innova).</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Customizable South India tours for families?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">Fully customizable! Add child seats, adjust timings, include luxury stays, extra sightseeing. Design your perfect South India itinerary.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Available vehicles for South India taxi service?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">Sedan (4pax), Innova/Ertiga (6pax), Innova Crysta (7pax), 12/20-seater Tempo Traveller. All AC vehicles with GPS tracking & insurance.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">24/7 Kochi airport pickup service?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">Driver waits with name placard for all flights. Live flight tracking via app. Start your South India tour stress-free from COK airport.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Payment & cancellation policy?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">50% advance via UPI/GPay/Bank. Balance on tour end. Cancel 7+ days prior = full refund minus ₹1000 admin fee.</span>
-                    </div>
-                </div>
-
-                <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                    <div class="faq-q" itemprop="name">Sabarimala tours with South India sightseeing?</div>
-                    <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <span itemprop="text">Kochi Airport → Pamba → Madurai temples → Kerala backwaters. Special Mandala season rates for Ayyappa devotees.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sticky WhatsApp & Call Buttons - Circular -->
-    <div class="sticky-bottom">
-        <a href="https://wa.me/919400620615?text=Hi%20Anand,%20South%20India%20Tours%20enquiry" class="btn-whatsapp" aria-label="WhatsApp Book Now">💬</a>
-        <a href="tel:+919400620615" class="btn-call" aria-label="Call Anand">📞</a>
+      <div class="hero-meta">
+        <span>24/7 Kochi Airport Pickup</span>
+        <span>Fixed Transparent Fares</span>
+        <span>Family, Pilgrim & Corporate Friendly</span>
+      </div>
     </div>
+  </header>
 
-    <script>
-        // Interactive FAQ Accordion
-        document.querySelectorAll('.faq-q').forEach(q => {
-            q.addEventListener('click', function() {
-                const item = this.parentElement;
-                const answer = this.nextElementSibling;
-                const isActive = item.classList.contains('active');
-                
-                // Close all FAQs first
-                document.querySelectorAll('.faq-item').forEach(i => {
-                    i.classList.remove('active');
-                    const a = i.querySelector('.faq-a');
-                    if(a) a.style.maxHeight = '0';
-                });
-                
-                // Open clicked FAQ
-                if(!isActive) {
-                    item.classList.add('active');
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                }
-            });
-        });
+  <!-- WHY TOUR WITH ANAND -->
+  <section class="page-section">
+    <div class="container">
+      <h2 class="section-title">Why Tour With Anand?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Local South India Expert</h3>
+          <p>Anand has more than 15 years of experience operating South India tours from Kochi, covering Kerala, Tamil Nadu and Karnataka with safe and punctual drivers.</p>
+        </article>
+        <article class="card">
+          <h3>Clean AC Cabs &amp; Tempo Travellers</h3>
+          <p>Choose from sedan, Ertiga, Innova Crysta and 12 to 20-seater Tempo Travellers. All vehicles are well maintained, AC and comfortable for long distance tours.</p>
+        </article>
+        <article class="card">
+          <h3>Fixed Day Wise Pricing</h3>
+          <p>Get clear per day South India taxi packages with no hidden charges. Toll, parking and driver allowance are shared in advance before confirming your tour.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
+  <!-- HOW TO BOOK -->
+  <section class="page-section">
+    <div class="container">
+      <h2 class="section-title">How to Book Your South India Tour</h2>
+      <ul class="steps-list">
+        <li>
+          <span class="step-no">1</span>
+          <div>Send a WhatsApp message with your travel dates, group size, airport of arrival and places you want to cover in South India.</div>
+        </li>
+        <li>
+          <span class="step-no">2</span>
+          <div>Receive a custom itinerary from Anand with day wise distances, suggested hotels and fixed cab package price.</div>
+        </li>
+        <li>
+          <span class="step-no">3</span>
+          <div>Confirm the South India taxi package by paying a simple advance using UPI, bank transfer or any other agreed method.</div>
+        </li>
+        <li>
+          <span class="step-no">4</span>
+          <div>On arrival at Kochi airport, your driver waits with a name board and your South India tour starts without any stress.</div>
+        </li>
+      </ul>
 
-        // Sticky logo hover effect
-        document.querySelector('.logo-sticky').addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.08)';
+      <div style="text-align:center;">
+        <a href="https://wa.me/919400620615?text=Hi%20Anand,%20please%20share%20South%20India%20tour%20packages%20from%20Kochi"
+           class="btn btn-primary">Get Itinerary &amp; Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ANAND -->
+  <section class="page-section">
+    <div class="container">
+      <h2 class="section-title">About Anand</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p><strong>Anand started Tour With Anand in 2010</strong> with a single sedan operating Kochi airport taxi service. The service slowly grew into full South India tour packages based on repeat guests and referrals.</p>
+          <p>Today the team handles airport pickups, Kerala backwater tours, Tamil Nadu temple trips and long South India circuits with a fleet of well maintained cabs and Tempo Travellers. Drivers know local languages and important routes.</p>
+          <p>Guests appreciate clear communication, honest pricing and flexible planning. Many families, NRIs and pilgrims use this South India taxi service every year for multi day tours starting from Kochi.</p>
+        </div>
+        <div class="about-photo">
+          <img src="images/anand.jpeg" alt="Anand - South India Tours & Taxi Service" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ WITH SCHEMA -->
+  <section class="page-section">
+    <div class="container">
+      <h2 class="section-title">South India Tours &amp; Taxi Service – FAQ</h2>
+      <div class="faq-wrap" itemscope itemtype="https://schema.org/FAQPage">
+
+        <!-- 1 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">Which South India tour packages do you offer from Kochi?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">Popular South India tours from Kochi include 4 to 6 day Kerala packages, Tamil Nadu temple tours, and 10 to 12 day Kerala–Tamil Nadu–Karnataka combinations.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">Do you provide Kochi airport taxi for South India tours?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">Yes, Kochi airport taxi pickup is included in every South India tour package. The driver tracks your flight and waits at the arrival area with a name board.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">What vehicles are available for South India taxi service?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">The fleet includes sedans, Ertiga, Innova, Innova Crysta and Tempo Traveller options, so solo travelers, families and large groups all get suitable vehicles.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">How is the South India tour package pricing calculated?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">Pricing is normally based on the number of days and the vehicle type. A fixed per day South India taxi rate is shared, along with details for toll, parking and driver bata.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">Can the South India tour itinerary be customised?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">Yes, all South India tours are customised as per your interests. You can choose more temples, hill stations, beaches or shopping based on your priority.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">Is hotel booking included in the South India taxi packages?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">You can book only South India taxi service or choose a complete package with suggested hotels that match your budget and comfort level.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">Are child seats or elderly friendly options available?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">Child seats can be arranged on request, and drivers are used to supporting elderly travelers with slower schedules and shorter travel days.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">What is the payment and cancellation policy?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">Usually a 50 percent advance confirms the South India tour booking. The balance is paid during or at the end of the trip, and cancellation policy is shared clearly before payment.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">Do you operate South India tours only from Kochi?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">Most tours start from Kochi airport or railway station, but pickup from Trivandrum, Coimbatore or Madurai can also be arranged for longer South India circuits.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="faq-q"><span itemprop="name">How do I quickly get a South India taxi quote?</span><span class="icon">+</span></div>
+          <div class="faq-a">
+            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">The fastest method is to send a simple WhatsApp message with your tour dates and rough plan. Anand replies with a clear South India taxi quote and suggestions.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Tour With Anand – South India Tours &amp; Taxi Service</p>
+      <p>
+        WhatsApp: <a href="https://wa.me/919400620615">+91 94006 20615</a> ·
+        Call: <a href="tel:+919400620615">+91 94006 20615</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp & Call -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/919400620615?text=Hi%20Anand,%20I%20want%20to%20book%20a%20South%20India%20tour"
+       class="fab fab-whatsapp" aria-label="WhatsApp Anand">💬</a>
+    <a href="tel:+919400620615" class="fab fab-call" aria-label="Call Anand">📞</a>
+  </div>
+
+  <!-- FAQ JS -->
+  <script>
+    document.querySelectorAll('.faq-q').forEach(function(q) {
+      q.addEventListener('click', function() {
+        var item = q.parentElement;
+        var open = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function(i) {
+          i.classList.remove('active');
         });
-        document.querySelector('.logo-sticky').addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-        });
-    </script>
+        if (!open) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
