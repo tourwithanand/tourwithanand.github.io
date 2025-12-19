@@ -1,9 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- HOME -->
   <url>
     <loc>https://tourwithanand.in/</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-19</lastmod>
+    <priority>1.0</priority>
   </url>
+
+  <!-- HUB PAGES -->
+  <url>
+    <loc>https://tourwithanand.in/kochi-airport-hospital-taxi.html</loc>
+    <lastmod>2025-12-19</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tourwithanand.in/kochi-airport-hotel-taxi.html</loc>
+    <lastmod>2025-12-19</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tourwithanand.in/kochi-airport-places-taxi.html</loc>
+    <lastmod>2025-12-19</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tourwithanand.in/kochi-airport-tour-destinations-taxi.html</loc>
+    <lastmod>2025-12-19</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- TOUR DESTINATIONS -->
+  <url><loc>https://tourwithanand.in/kochi-airport-to-alleppey-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-thekkady-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-kumarakom-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-varkala-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-marari-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-guruvayoor-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-vagamon-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-athirappilly-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-cherai-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-fortkochi-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-ashtamudi-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-munnar-taxi</loc></url>
+
+  <!-- PLACES / AREAS -->
+  <url><loc>https://tourwithanand.in/kochi-airport-to-kalamassery-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-edappally-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-palarivattom-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-kaloor-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-vytila-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-kakkanad-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-vazhakkala-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-kundannoor-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-kadavantra-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-mg-road-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-thevara-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-menaka-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-high-court-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-chittoor-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-cheranalloor-taxi</loc></url>
+
+  <!-- HOSPITALS -->
+  <url><loc>https://tourwithanand.in/kochi-airport-to-amrita-hospital-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-aster-medicity-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-renai-medicity-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-lakeshore-hospital-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-sunrise-hospital-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-lisie-hospital-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-medical-trust-taxi</loc></url>
+
+  <!-- HOTELS / MALLS / IT PARKS -->
+  <url><loc>https://tourwithanand.in/kochi-airport-to-lulu-mall-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-oberon-mall-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-grand-hyatt-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-crown-plaza-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-radisson-blu-taxi</loc></url>
+  <url><loc>https://tourwithanand.in/kochi-airport-to-novotel-taxi</loc></url>
 
 </urlset>
