@@ -22,7 +22,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  
+  <link rel="preload" as="image" href="images/Crysta-Banner-Forest.jpg">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tourwithanand.in/">
   <meta property="og:title" content="Kochi Airport Taxi Service | South India Tours | Tour With Anand">
@@ -135,7 +136,7 @@
       "South India Tours",
       "Kerala Tour Packages",
       "Tamil Nadu Temple Tours",
-      "Karnataka Sightseeing"
+      "Karnataka Sightseeing",
       "Kochi Airport Taxi Service"
     ],
     "hasOfferCatalog": {
@@ -318,7 +319,7 @@
                   url('images/Crysta-Banner-Forest.jpg');
       background-size: cover;
       background-position: center center;
-      background-attachment: fixed;
+      background-attachment: scroll;
     }
 
     .hero-content {
@@ -1254,11 +1255,7 @@
             faqItem.classList.add('active');
             question.setAttribute('aria-expanded', 'true');
             
-            // Track FAQ interaction
-            trackEvent('faq_opened', {
-              category: 'engagement',
-              label: question.querySelector('span').textContent.substring(0, 50)
-            });
+            
           }
         });
         
@@ -1308,30 +1305,7 @@
       });
       
       // Track scroll depth
-      let maxScroll = 0;
-      window.addEventListener('scroll', function() {
-        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-        if (scrollPercent > maxScroll) {
-          maxScroll = scrollPercent;
-          if (maxScroll % 25 === 0) { // Track at 25%, 50%, 75%, 100%
-            trackEvent('scroll_depth', {
-              category: 'engagement',
-              label: maxScroll + '%',
-              value: maxScroll
-            });
-          }
-        }
-      });
       
-      // Track time on page
-      let startTime = Date.now();
-      window.addEventListener('beforeunload', function() {
-        const timeOnPage = Math.round((Date.now() - startTime) / 1000);
-        trackEvent('time_on_page', {
-          category: 'engagement',
-          value: timeOnPage
-        });
-      });
     });
   </script>
 </body>
