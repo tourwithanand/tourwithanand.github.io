@@ -3,26 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>South India Tours & Taxi Service | Tour With Anand</title>
 
-  <meta name="description" content="South India Tours & Taxi Service from Kochi Airport. Kerala tour packages, Tamil Nadu temple tours, Kochi airport taxi, Innova Crysta & Tempo Traveller rentals. WhatsApp +91 94006 20615." />
-  <meta name="keywords" content="South India tours, taxi service Kochi, Kerala tour packages, Kochi airport taxi, Innova Crysta cab, Tempo Traveller Kochi, Tour With Anand" />
-  <!-- Organization Logo Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Tour With Anand",
-  "url": "https://tourwithanand.com/",
-  "logo": "https://tourwithanand.com/wp-content/uploads/2025/12/tour-with-anand-logo.png",
-  "sameAs": [
-    "https://www.facebook.com/TourWithAnand",
-    "https://www.instagram.com/tour_with_anand",
-    "https://www.youtube.com/@tour_with_anand"
-  ]
-}
-</script>
- 
+  <meta name="description" content="South India Tours & Taxi Service from Kochi Airport, Kerala & Tamil Nadu with reliable taxi and tour packages." />
+  <meta name="keywords" content="South India tours, taxi service Kochi, Kerala tour packages, Kochi airport taxi" />
+
+  <!-- Google Tag Manager (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-71YDHTLWSB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-71YDHTLWSB');
+  </script>
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9WE2ZT04V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E9WE2ZT04V');
+  </script>
+
+  <!-- Call Tracking & WhatsApp Tracking -->
+  <script>
+    // Call Tracking - Track phone clicks with UTM parameters
+    document.addEventListener('DOMContentLoaded', function() {
+      // Track all tel: links
+      document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'phone_call', {
+            'event_category': 'engagement',
+            'event_label': this.href.replace('tel:', ''),
+            'value': 1
+          });
+        });
+      });
+
+      // Track WhatsApp clicks
+      document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'whatsapp_click', {
+            'event_category': 'engagement',
+            'event_label': 'whatsapp_tour_with_anand',
+            'value': 1
+          });
+        });
+      });
+    });
+
+    // Dynamic phone number tracking (optional - swaps numbers based on traffic source)
+    function getTrackingPhone() {
+      const params = new URLSearchParams(window.location.search);
+      const source = params.get('utm_source') || 'direct';
+      const medium = params.get('utm_medium') || 'none';
+      
+      // Return different numbers based on traffic source (customize as needed)
+      if (source === 'google' || source === 'facebook') {
+        return '+919400620615'; // Primary tracking number
+      }
+      return '+919400620615'; // Default number
+    }
+
+    // Optional: Dynamic phone number injection
+    document.addEventListener('DOMContentLoaded', function() {
+      const phoneLinks = document.querySelectorAll('.dynamic-phone');
+      const trackingPhone = getTrackingPhone();
+      phoneLinks.forEach(function(link) {
+        link.href = 'tel:' + trackingPhone.replace(/[\s+]/g, '');
+        link.textContent = trackingPhone;
+      });
+    });
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tour With Anand",
+    "url": "https://tourwithanand.com/",
+    "logo": "https://tourwithanand.com/wp-content/uploads/2025/12/tour-with-anand-logo.png",
+    "sameAs": [
+      "https://www.facebook.com/TourWithAnand",
+      "https://www.instagram.com/tour_with_anand",
+      "https://www.youtube.com/@tour_with_anand"
+    ]
+  }
+  </script>
+  
   <!-- Open Graph -->
   <meta property="og:title" content="South India Tours & Taxi Service | Tour With Anand" />
   <meta property="og:description" content="Custom South India tours with airport pickup, AC cabs and experienced local drivers. Kerala, Tamil Nadu & Karnataka from Kochi." />
@@ -450,8 +520,7 @@
       </p>
 
       <div class="hero-cta-row">
-        <a href="https://wa.me/919400620615?text=Hi%20Anand,%20I%20want%20a%20South%20India%20tour%20package"
-           class="btn btn-primary">Book Your Tour on WhatsApp</a>
+        <a href="https://wa.me/919400620615?text=Hi%20Anand,%20I%20want%20a%20South%20India%20tour%20package" class="btn btn-primary">Book Your Tour on WhatsApp</a>
         <a href="tel:+919400620615" class="btn btn-ghost">Call Anand Now</a>
       </div>
 
@@ -469,16 +538,16 @@
       <h2 class="section-title">Why Tour With Anand?</h2>
       <div class="cards">
         <article class="card">
-          <h3>Local South India Expert</h3>
-          <p>Anand has more than 15 years of experience operating South India tours from Kochi, covering Kerala, Tamil Nadu and Karnataka with safe and punctual drivers.</p>
+         <h3>Local South India Expert</h3>
+         <p>Anand has more than 15 years of experience operating South India tours from Kochi, covering Kerala, Tamil Nadu and Karnataka with safe and punctual drivers.</p>
         </article>
         <article class="card">
-          <h3>Clean AC Cabs &amp; Tempo Travellers</h3>
-          <p>Choose from sedan, Ertiga, Innova Crysta and 12 to 20-seater Tempo Travellers. All vehicles are well maintained, AC and comfortable for long distance tours.</p>
+         <h3>Clean AC Cabs &amp; Tempo Travellers</h3>
+         <p>Choose from sedan, Ertiga, Innova Crysta and 12 to 20-seater Tempo Travellers. All vehicles are well maintained, AC and comfortable for long distance tours.</p>
         </article>
         <article class="card">
-          <h3>Fixed Day Wise Pricing</h3>
-          <p>Get clear per day South India taxi packages with no hidden charges. Toll, parking and driver allowance are shared in advance before confirming your tour.</p>
+         <h3>Fixed Day Wise Pricing</h3>
+         <p>Get clear per day South India taxi packages with no hidden charges. Toll, parking and driver allowance are shared in advance before confirming your tour.</p>
         </article>
       </div>
     </div>
@@ -490,26 +559,25 @@
       <h2 class="section-title">How to Book Your South India Tour</h2>
       <ul class="steps-list">
         <li>
-          <span class="step-no">1</span>
-          <div>Send a WhatsApp message with your travel dates, group size, airport of arrival and places you want to cover in South India.</div>
+         <span class="step-no">1</span>
+         <div>Send a WhatsApp message with your travel dates, group size, airport of arrival and places you want to cover in South India.</div>
         </li>
         <li>
-          <span class="step-no">2</span>
-          <div>Receive a custom itinerary from Anand with day wise distances, suggested hotels and fixed cab package price.</div>
+         <span class="step-no">2</span>
+         <div>Receive a custom itinerary from Anand with day wise distances, suggested hotels and fixed cab package price.</div>
         </li>
         <li>
-          <span class="step-no">3</span>
-          <div>Confirm the South India taxi package by paying a simple advance using UPI, bank transfer or any other agreed method.</div>
+         <span class="step-no">3</span>
+         <div>Confirm the South India taxi package by paying a simple advance using UPI, bank transfer or any other agreed method.</div>
         </li>
         <li>
-          <span class="step-no">4</span>
-          <div>On arrival at Kochi airport, your driver waits with a name board and your South India tour starts without any stress.</div>
+         <span class="step-no">4</span>
+         <div>On arrival at Kochi airport, your driver waits with a name board and your South India tour starts without any stress.</div>
         </li>
       </ul>
 
       <div style="text-align:center;">
-        <a href="https://wa.me/919400620615?text=Hi%20Anand,%20please%20share%20South%20India%20tour%20packages%20from%20Kochi"
-           class="btn btn-primary">Get Itinerary &amp; Quote</a>
+        <a href="https://wa.me/919400620615?text=Hi%20Anand,%20please%20share%20South%20India%20tour%20packages%20from%20Kochi" class="btn btn-primary">Get Itinerary &amp; Quote</a>
       </div>
     </div>
   </section>
@@ -520,12 +588,12 @@
       <h2 class="section-title">About Anand</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p><strong>Anand started Tour With Anand in 2010</strong> with a single sedan operating Kochi airport taxi service. The service slowly grew into full South India tour packages based on repeat guests and referrals.</p>
-          <p>Today the team handles airport pickups, Kerala backwater tours, Tamil Nadu temple trips and long South India circuits with a fleet of well maintained cabs and Tempo Travellers. Drivers know local languages and important routes.</p>
-          <p>Guests appreciate clear communication, honest pricing and flexible planning. Many families, NRIs and pilgrims use this South India taxi service every year for multi day tours starting from Kochi.</p>
+         <p><strong>Anand started Tour With Anand in 2010</strong> with a single sedan operating Kochi airport taxi service. The service slowly grew into full South India tour packages based on repeat guests and referrals.</p>
+         <p>Today the team handles airport pickups, Kerala backwater tours, Tamil Nadu temple trips and long South India circuits with a fleet of well maintained cabs and Tempo Travellers. Drivers know local languages and important routes.</p>
+         <p>Guests appreciate clear communication, honest pricing and flexible planning. Many families, NRIs and pilgrims use this South India taxi service every year for multi day tours starting from Kochi.</p>
         </div>
         <div class="about-photo">
-          <img src="images/anand.jpeg" alt="Anand - South India Tours & Taxi Service" />
+         <img src="images/anand.jpeg" alt="Anand - South India Tours & Taxi Service" />
         </div>
       </div>
     </div>
@@ -539,102 +607,102 @@
 
         <!-- 1 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">Which South India tour packages do you offer from Kochi?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">Popular South India tours from Kochi include 4 to 6 day Kerala packages, Tamil Nadu temple tours, and 10 to 12 day Kerala–Tamil Nadu–Karnataka combinations.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">Which South India tour packages do you offer from Kochi?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">Popular South India tours from Kochi include 4 to 6 day Kerala packages, Tamil Nadu temple tours, and 10 to 12 day Kerala–Tamil Nadu–Karnataka combinations.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 2 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">Do you provide Kochi airport taxi for South India tours?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">Yes, Kochi airport taxi pickup is included in every South India tour package. The driver tracks your flight and waits at the arrival area with a name board.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">Do you provide Kochi airport taxi for South India tours?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">Yes, Kochi airport taxi pickup is included in every South India tour package. The driver tracks your flight and waits at the arrival area with a name board.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 3 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">What vehicles are available for South India taxi service?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">The fleet includes sedans, Ertiga, Innova, Innova Crysta and Tempo Traveller options, so solo travelers, families and large groups all get suitable vehicles.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">What vehicles are available for South India taxi service?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">The fleet includes sedans, Ertiga, Innova, Innova Crysta and Tempo Traveller options, so solo travelers, families and large groups all get suitable vehicles.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 4 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">How is the South India tour package pricing calculated?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">Pricing is normally based on the number of days and the vehicle type. A fixed per day South India taxi rate is shared, along with details for toll, parking and driver bata.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">How is the South India tour package pricing calculated?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">Pricing is normally based on the number of days and the vehicle type. A fixed per day South India taxi rate is shared, along with details for toll, parking and driver bata.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 5 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">Can the South India tour itinerary be customised?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">Yes, all South India tours are customised as per your interests. You can choose more temples, hill stations, beaches or shopping based on your priority.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">Can the South India tour itinerary be customised?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">Yes, all South India tours are customised as per your interests. You can choose more temples, hill stations, beaches or shopping based on your priority.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 6 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">Is hotel booking included in the South India taxi packages?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">You can book only South India taxi service or choose a complete package with suggested hotels that match your budget and comfort level.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">Is hotel booking included in the South India taxi packages?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">You can book only South India taxi service or choose a complete package with suggested hotels that match your budget and comfort level.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 7 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">Are child seats or elderly friendly options available?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">Child seats can be arranged on request, and drivers are used to supporting elderly travelers with slower schedules and shorter travel days.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">Are child seats or elderly friendly options available?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">Child seats can be arranged on request, and drivers are used to supporting elderly travelers with slower schedules and shorter travel days.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 8 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">What is the payment and cancellation policy?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">Usually a 50 percent advance confirms the South India tour booking. The balance is paid during or at the end of the trip, and cancellation policy is shared clearly before payment.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">What is the payment and cancellation policy?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">Usually a 50 percent advance confirms the South India tour booking. The balance is paid during or at the end of the trip, and cancellation policy is shared clearly before payment.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 9 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">Do you operate South India tours only from Kochi?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">Most tours start from Kochi airport or railway station, but pickup from Trivandrum, Coimbatore or Madurai can also be arranged for longer South India circuits.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">Do you operate South India tours only from Kochi?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">Most tours start from Kochi airport or railway station, but pickup from Trivandrum, Coimbatore or Madurai can also be arranged for longer South India circuits.</span>
+           </div>
+         </div>
         </div>
 
         <!-- 10 -->
         <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="faq-q"><span itemprop="name">How do I quickly get a South India taxi quote?</span><span class="icon">+</span></div>
-          <div class="faq-a">
-            <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <span itemprop="text">The fastest method is to send a simple WhatsApp message with your tour dates and rough plan. Anand replies with a clear South India taxi quote and suggestions.</span>
-            </div>
-          </div>
+         <div class="faq-q"><span itemprop="name">How do I quickly get a South India taxi quote?</span><span class="icon">+</span></div>
+         <div class="faq-a">
+           <div class="faq-a-inner" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+             <span itemprop="text">The fastest method is to send a simple WhatsApp message with your tour dates and rough plan. Anand replies with a clear South India taxi quote and suggestions.</span>
+           </div>
+         </div>
         </div>
 
       </div>
@@ -646,21 +714,21 @@
     <div class="container">
       <p>© 2025 Tour With Anand – South India Tours &amp; Taxi Service</p>
       <p>
-        WhatsApp: <a href="https://wa.me/919400620615">+91 94006 20615</a> ·
-        Call: <a href="tel:+919400620615">+91 94006 20615</a>
+        WhatsApp: <a href="https://wa.me/919400620615" class="dynamic-phone">+91 94006 20615</a> ·
+        Call: <a href="tel:+919400620615" class="dynamic-phone">+91 94006 20615</a>
       </p>
     </div>
   </footer>
 
   <!-- Floating WhatsApp & Call -->
   <div class="floating-buttons">
-    <a href="https://wa.me/919400620615?text=Hi%20Anand,%20I%20want%20to%20book%20a%20South%20India%20tour"
-       class="fab fab-whatsapp" aria-label="WhatsApp Anand">💬</a>
+    <a href="https://wa.me/919400620615?text=Hi%20Anand,%20I%20want%20to%20book%20a%20South%20India%20tour" class="fab fab-whatsapp" aria-label="WhatsApp Anand">💬</a>
     <a href="tel:+919400620615" class="fab fab-call" aria-label="Call Anand">📞</a>
   </div>
 
-  <!-- FAQ JS -->
+  <!-- FAQ JS + Tracking -->
   <script>
+    // FAQ functionality
     document.querySelectorAll('.faq-q').forEach(function(q) {
       q.addEventListener('click', function() {
         var item = q.parentElement;
@@ -670,6 +738,11 @@
         });
         if (!open) {
           item.classList.add('active');
+          // Track FAQ interaction
+          gtag('event', 'faq_view', {
+            'event_category': 'engagement',
+            'event_label': q.querySelector('span').textContent.trim()
+          });
         }
       });
     });
