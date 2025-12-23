@@ -3,16 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- Google Tag Manager -->
-<script>
-(function(w,d,s,l,i){w[l]=w[l]||[];
-w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P59GQK4N');
-</script>
-<!-- End Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P59GQK4N');</script>
 
 <!-- ================= SEO META ================= -->
 <title>Kochi Airport to Holiday Inn Taxi | COK Cab ₹1,100 | Tour With Anand</title>
@@ -27,210 +18,23 @@ f.parentNode.insertBefore(j,f);
 
 <!-- ================= Google Tag Manager (gtag.js) ================= -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-71YDHTLWSB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-71YDHTLWSB');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-71YDHTLWSB');</script>
 
-<!-- ================= Call & WhatsApp Tracking ================= -->
-<script>
-  // Call Tracking & WhatsApp Tracking - Track phone clicks with UTM parameters
-  document.addEventListener('DOMContentLoaded', function() {
-    // Track all tel: links
-    document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
-      link.addEventListener('click', function() {
-        gtag('event', 'phone_call', {
-          'event_category': 'engagement',
-          'event_label': 'Kochi Airport to Holiday Inn - ' + this.href.replace('tel:', ''),
-          'value': 1
-        });
-      });
-    });
-
-    // Track WhatsApp clicks
-    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(link) {
-      link.addEventListener('click', function() {
-        gtag('event', 'whatsapp_click', {
-          'event_category': 'engagement',
-          'event_label': 'Kochi Airport to Holiday Inn WhatsApp',
-          'value': 1
-        });
-      });
-    });
-
-    // Track CTA button clicks
-    document.querySelectorAll('.call, .wa').forEach(function(button) {
-      button.addEventListener('click', function() {
-        const action = this.classList.contains('call') ? 'phone_call' : 'whatsapp_click';
-        gtag('event', action, {
-          'event_category': 'conversion',
-          'event_label': 'Kochi Airport to Holiday Inn CTA',
-          'value': 2
-        });
-      });
-    });
-  });
-
-  // Dynamic phone number tracking (UTM-aware)
-  function getTrackingPhone() {
-    const params = new URLSearchParams(window.location.search);
-    const source = params.get('utm_source') || 'direct';
-    const medium = params.get('utm_medium') || 'none';
-    
-    // Return different numbers based on traffic source (customize as needed)
-    if (source === 'google' || source === 'facebook') {
-      return '+919400620615'; // Primary tracking number
-    }
-    return '+919400620615'; // Default number
-  }
-
-  // Dynamic phone number injection for tracking
-  document.addEventListener('DOMContentLoaded', function() {
-    const phoneElements = document.querySelectorAll('.dynamic-phone, .track-phone');
-    const trackingPhone = getTrackingPhone();
-    phoneElements.forEach(function(el) {
-      if (el.tagName === 'A') {
-        el.href = 'tel:' + trackingPhone.replace(/[\s+]/g, '');
-      }
-      el.textContent = trackingPhone;
-      el.title = 'Call for Kochi Airport to Holiday Inn Taxi';
-    });
-  });
-</script>
+<!-- ================= FIXED TRACKING SCRIPT ================= -->
+<script>document.addEventListener('DOMContentLoaded',function(){['tel:','https://wa.me/'].forEach(function(prefix){document.querySelectorAll('a[href^="'+prefix+'"]').forEach(function(link){link.addEventListener('click',function(){gtag('event',prefix.includes('tel')?'phone_call':'whatsapp_click',{'event_category':'engagement','event_label':'Kochi Airport to Holiday Inn - '+this.href.replace(prefix,''),'value':1});});});});document.querySelectorAll('.call,.wa').forEach(function(btn){btn.addEventListener('click',function(){gtag('event',this.classList.contains('call')?'phone_call':'whatsapp_click',{'event_category':'conversion','event_label':'Kochi Airport to Holiday Inn CTA','value':2});});});function getTrackingPhone(){const params=new URLSearchParams(window.location.search);return params.get('utm_source')==='google'?' +919400620615':' +919400620615';}document.querySelectorAll('.dynamic-phone,.track-phone').forEach(function(el){const phone=getTrackingPhone();if(el.tagName==='A')el.href='tel:'+phone.replace(/[\s+]/g,'');el.textContent=phone;el.title='Call for Kochi Airport to Holiday Inn Taxi';});});</script>
 
 <!-- ================= SCHEMA ================= -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@graph":[
-{
-"@type":"WebPage",
-"@id":"https://tourwithanand.in/kochi-airport-to-holiday-inn-taxi.html",
-"name":"Kochi Airport to Holiday Inn Taxi",
-"url":"https://tourwithanand.in/kochi-airport-to-holiday-inn-taxi.html"
-},
-{
-"@type":"BreadcrumbList",
-"itemListElement":[
-{"@type":"ListItem","position":1,"name":"Home","item":"https://tourwithanand.in/"},
-{"@type":"ListItem","position":2,"name":"Kochi Airport to Holiday Inn Taxi"}
-]
-},
-{
-"@type":"LocalBusiness",
-"name":"Tour With Anand",
-"telephone":"+91 94006 20615",
-"email":"infostarkholidays@gmail.com",
-"priceRange":"₹1,100-3,600",
-"address":{
-"@type":"PostalAddress",
-"addressLocality":"Nedumbassery",
-"addressRegion":"Kerala",
-"addressCountry":"IN"
-},
-"areaServed":"Kerala"
-},
-{
-"@type":"TaxiService",
-"name":"Kochi Airport to Holiday Inn Taxi Service",
-"provider":{"@type":"LocalBusiness","name":"Tour With Anand"},
-"areaServed":"Cochin International Airport (COK) to Holiday Inn"
-},
-{
-"@type":"FAQPage",
-"mainEntity":[
-{"@type":"Question","name":"What is the distance from Kochi Airport to Holiday Inn?","acceptedAnswer":{"@type":"Answer","text":"The distance from Kochi Airport (COK) to Holiday Inn is approximately 23 km."}},
-{"@type":"Question","name":"How long does it take from COK airport to Holiday Inn by taxi?","acceptedAnswer":{"@type":"Answer","text":"It usually takes around 45 mins depending on traffic and weather conditions."}},
-{"@type":"Question","name":"What is the Kochi Airport to Holiday Inn taxi fare?","acceptedAnswer":{"@type":"Answer","text":"Taxi fare starts from ₹1,100 for a sedan and goes up to ₹3,600 for Innova Crysta."}},
-{"@type":"Question","name":"Is Kochi Airport to Holiday Inn taxi available 24×7?","acceptedAnswer":{"@type":"Answer","text":"Yes, taxi service is available 24×7 including late night pickups."}},
-{"@type":"Question","name":"Are Kochi Airport to Holiday Inn cabs private?","acceptedAnswer":{"@type":"Answer","text":"Yes, all taxis are private AC vehicles with no seat sharing."}},
-{"@type":"Question","name":"Do you provide hotel drop in Holiday Inn?","acceptedAnswer":{"@type":"Answer","text":"Yes, hotel, resort and homestay drop in Holiday Inn is included."}},
-{"@type":"Question","name":"Can I stop for sightseeing on the way to Holiday Inn?","acceptedAnswer":{"@type":"Answer","text":"Yes, sightseeing stops can be arranged with additional charges if required."}},
-{"@type":"Question","name":"Are drivers experienced for hill roads?","acceptedAnswer":{"@type":"Answer","text":"Yes, drivers are experienced with Holiday Inn ghat and hill routes."}},
-{"@type":"Question","name":"What if my flight is delayed?","acceptedAnswer":{"@type":"Answer","text":"Drivers track live flight status and adjust pickup time accordingly."}},
-{"@type":"Question","name":"How to book Kochi Airport to Holiday Inn taxi on WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"You can WhatsApp +91 94006 20615 with your flight details for instant confirmation."}}
-]
-}
-]
-}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://tourwithanand.in/kochi-airport-to-holiday-inn-taxi.html","name":"Kochi Airport to Holiday Inn Taxi","url":"https://tourwithanand.in/kochi-airport-to-holiday-inn-taxi.html"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tourwithanand.in/"},{"@type":"ListItem","position":2,"name":"Kochi Airport to Holiday Inn Taxi"}]},{"@type":"LocalBusiness","name":"Tour With Anand","telephone":"+91 94006 20615","email":"infostarkholidays@gmail.com","priceRange":"₹1,100-3,600","address":{"@type":"PostalAddress","addressLocality":"Nedumbassery","addressRegion":"Kerala","addressCountry":"IN"},"areaServed":"Kerala"},{"@type":"TaxiService","name":"Kochi Airport to Holiday Inn Taxi Service","provider":{"@type":"LocalBusiness","name":"Tour With Anand"},"areaServed":"Cochin International Airport (COK) to Holiday Inn"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the distance from Kochi Airport to Holiday Inn?","acceptedAnswer":{"@type":"Answer","text":"The distance from Kochi Airport (COK) to Holiday Inn is approximately 23 km."}},{"@type":"Question","name":"How long does it take from COK airport to Holiday Inn by taxi?","acceptedAnswer":{"@type":"Answer","text":"It usually takes around 45 mins depending on traffic and weather conditions."}},{"@type":"Question","name":"What is the Kochi Airport to Holiday Inn taxi fare?","acceptedAnswer":{"@type":"Answer","text":"Taxi fare starts from ₹1,100 for a sedan and goes up to ₹3,600 for Innova Crysta."}},{"@type":"Question","name":"Is Kochi Airport to Holiday Inn taxi available 24×7?","acceptedAnswer":{"@type":"Answer","text":"Yes, taxi service is available 24×7 including late night pickups."}},{"@type":"Question","name":"Are Kochi Airport to Holiday Inn cabs private?","acceptedAnswer":{"@type":"Answer","text":"Yes, all taxis are private AC vehicles with no seat sharing."}},{"@type":"Question","name":"Do you provide hotel drop in Holiday Inn?","acceptedAnswer":{"@type":"Answer","text":"Yes, hotel, resort and homestay drop in Holiday Inn is included."}},{"@type":"Question","name":"Can I stop for sightseeing on the way to Holiday Inn?","acceptedAnswer":{"@type":"Answer","text":"Yes, sightseeing stops can be arranged with additional charges if required."}},{"@type":"Question","name":"Are drivers experienced for hill roads?","acceptedAnswer":{"@type":"Answer","text":"Yes, drivers are experienced with Holiday Inn ghat and hill routes."}},{"@type":"Question","name":"What if my flight is delayed?","acceptedAnswer":{"@type":"Answer","text":"Drivers track live flight status and adjust pickup time accordingly."}},{"@type":"Question","name":"How to book Kochi Airport to Holiday Inn taxi on WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"You can WhatsApp +91 94006 20615 with your flight details for instant confirmation."}}]}]}</script>
 
-<!-- ================= CSS ================= -->
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Segoe UI,Arial,sans-serif;color:#111;line-height:1.7}
-.container{max-width:1100px;margin:auto;padding:0 16px}
-h1,h2,h3{line-height:1.3;margin-bottom:10px}
-p{margin-bottom:10px}
-a{text-decoration:none;color:inherit}
-
-/* Logo */
-.logo{position:fixed;top:12px;left:14px;z-index:1000}
-.logo img{height:38px}
-
-/* HERO – Mobile First */
-.hero{background:#000;color:#fff}
-.hero-inner{padding:90px 16px 24px}
-.hero h1{font-size:24px}
-.hero h2{font-size:15px;font-weight:400;color:#e5e7eb}
-.hero p{font-size:14px;color:#d1d5db}
-.hero-cta{display:flex;gap:10px;margin-top:14px}
-.hero-cta a{flex:1;text-align:center;padding:12px;border-radius:30px;font-weight:600}
-.call{background:#fff;color:#000}
-.wa{background:#25D366;color:#fff}
-.hero-img img{width:100%;height:auto;display:block;margin-top:16px}
-
-/* Sections */
-section{padding:36px 0}
-.alt{background:#f9fafb}
-ul{margin-left:18px}
-ul li{margin-bottom:6px}
-
-/* Table */
-table{width:100%;border-collapse:collapse;margin-top:12px}
-th,td{border:1px solid #ddd;padding:12px}
-th{background:#111;color:#fff}
-
-/* FAQ */
-.faq details{margin-bottom:10px;border:1px solid #ddd;border-radius:6px;padding:10px}
-
-/* Sticky Icons */
-.sticky{position:fixed;right:14px;bottom:20px;z-index:999;display:flex;flex-direction:column;gap:10px}
-.sticky a{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
-.sticky .call{background:#111}
-.sticky .wa{background:#25D366}
-
-/* Footer */
-footer{background:#111;color:#ccc;padding:30px 0;font-size:14px}
-
-/* Desktop */
-@media(min-width:768px){
-.hero-inner{display:flex;align-items:center;gap:30px}
-.hero-text{flex:1}
-.hero-img{flex:1}
-.hero-img img{margin-top:0}
-.hero h1{font-size:32px}
-.hero h2{font-size:18px}
-}
-</style>
+<!-- ================= OPTIMIZED CSS ================= -->
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Segoe UI,Arial,sans-serif;color:#111;line-height:1.7}.container{max-width:1100px;margin:auto;padding:0 16px}h1,h2,h3{line-height:1.3;margin-bottom:10px}p{margin-bottom:10px}a{text-decoration:none;color:inherit}.logo{position:fixed;top:12px;left:14px;z-index:1000}.logo img{height:38px}.hero{background:#000;color:#fff}.hero-inner{padding:90px 16px 24px}.hero h1{font-size:24px}.hero h2{font-size:15px;font-weight:400;color:#e5e7eb}.hero p{font-size:14px;color:#d1d5db}.hero-cta{display:flex;gap:10px;margin-top:14px}.hero-cta a{flex:1;text-align:center;padding:12px;border-radius:30px;font-weight:600}.call{background:#fff;color:#000}.wa{background:#25D366;color:#fff}.hero-img img{width:100%;height:auto;display:block;margin-top:16px}section{padding:36px 0}.alt{background:#f9fafb}ul{margin-left:18px}ul li{margin-bottom:6px}table{width:100%;border-collapse:collapse;margin-top:12px}th,td{border:1px solid #ddd;padding:12px}th{background:#111;color:#fff}.faq details{margin-bottom:10px;border:1px solid #ddd;border-radius:6px;padding:10px}/* FIXED STICKY - NO OVERLAP */.sticky{position:fixed;right:16px;bottom:80px;z-index:1001;display:flex;flex-direction:column;gap:12px;transform:translateZ(0)}.sticky a{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,0.4);transition:all .3s ease;will-change:transform}.sticky a:hover{transform:scale(1.1)}.sticky .call{background:#128C7E}.sticky .wa{background:#25D366}footer{background:#111;color:#ccc;padding:30px 0;font-size:14px}@media(min-width:768px){.hero-inner{display:flex;align-items:center;gap:30px}.hero-text{flex:1}.hero-img{flex:1}.hero-img img{margin-top:0}.hero h1{font-size:32px}.hero h2{font-size:18px}.sticky{bottom:90px;right:20px}.sticky a{width:58px;height:58px;font-size:26px}}</style>
 </head>
 
 <body>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P59GQK4N"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P59GQK4N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- LOGO -->
-<div class="logo">
-<img src="https://tourwithanand.in/images/logo.png" alt="Tour With Anand">
-</div>
+<div class="logo"><img src="https://tourwithanand.in/images/logo.png" alt="Tour With Anand" loading="lazy"></div>
 
 <!-- HERO -->
 <div class="hero">
@@ -244,9 +48,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <a href="https://wa.me/919400620615?text=Hi%20Anand,%20I%20need%20Kochi%20Airport%20to%20Holiday Inn%20taxi" class="wa">Book Now</a>
 </div>
 </div>
-<div class="hero-img">
-<img src="https://tourwithanand.in/images/tourwithanand-cok-crysta.png" alt="Kochi Airport to Holiday Inn Taxi">
-</div>
+<div class="hero-img"><img src="https://tourwithanand.in/images/tourwithanand-cok-crysta.png" alt="Kochi Airport to Holiday Inn Taxi" loading="lazy"></div>
 </div>
 </div>
 
@@ -330,13 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <section class="alt">
 <div class="container">
 <h2>Popular Kochi Airport Taxi Routes</h2>
-<p>
-<a href="/kochi-airport-taxi.html">Kochi Airport Taxi</a> |
-<a href="/kochi-airport-to-alleppey-taxi.html">Kochi Airport to Alleppey</a> |
-<a href="/kochi-airport-to-kumarakom-taxi.html">Kochi Airport to Kumarakom</a> |
-<a href="/kochi-airport-to-thekkady-taxi.html">Kochi Airport to Thekkady</a> |
-<a href="/kochi-airport-to-varkala-taxi.html">Kochi Airport to Varkala</a>
-</p>
+<p><a href="/kochi-airport-taxi.html">Kochi Airport Taxi</a> | <a href="/kochi-airport-to-alleppey-taxi.html">Kochi Airport to Alleppey</a> | <a href="/kochi-airport-to-kumarakom-taxi.html">Kochi Airport to Kumarakom</a> | <a href="/kochi-airport-to-thekkady-taxi.html">Kochi Airport to Thekkady</a> | <a href="/kochi-airport-to-varkala-taxi.html">Kochi Airport to Varkala</a></p>
 <p style="margin-top:10px;font-size:13px">Quick booking: <a href="tel:+919400620615" class="track-phone dynamic-phone">Call</a> / <a href="https://wa.me/919400620615" class="wa">WhatsApp</a></p>
 </div>
 </section>
@@ -351,52 +147,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </div>
 </footer>
 
-<!-- STICKY ICONS -->
+<!-- FIXED STICKY ICONS - NO OVERLAP -->
 <div class="sticky">
-<a href="tel:+919400620615" class="call track-phone">📞</a>
-<a href="https://wa.me/919400620615?text=Hi%20Anand,%20Kochi%20Airport%20to%20Holiday Inn%20taxi" class="wa track-phone">💬</a>
+<a href="tel:+919400620615" class="call track-phone" title="Call Anand">📞</a>
+<a href="https://wa.me/919400620615?text=Hi%20Anand,%20Kochi%20Airport%20to%20Holiday Inn%20taxi" class="wa track-phone" title="WhatsApp Anand">💬</a>
 </div>
 
-<!-- ================= Enhanced Tracking Script ================= -->
-<script>
-  // FAQ Tracking
-  document.addEventListener('DOMContentLoaded', function() {
-    const faqDetails = document.querySelectorAll('details');
-    faqDetails.forEach(function(detail) {
-      detail.addEventListener('toggle', function() {
-        if (this.open) {
-          const question = this.querySelector('summary').textContent.trim();
-          gtag('event', 'faq_view', {
-            'event_category': 'engagement',
-            'event_label': 'Kochi Airport to Holiday Inn - ' + question,
-            'value': 1
-          });
-        }
-      });
-    });
-  });
-
-  // Scroll tracking for engagement
-  let scrollTracked = false;
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > window.innerHeight / 2 && !scrollTracked) {
-      gtag('event', 'scroll_50', {
-        'event_category': 'engagement',
-        'event_label': 'Kochi Airport to Holiday Inn page'
-      });
-      scrollTracked = true;
-    }
-  });
-
-  // Page view with destination parameter
-  gtag('event', 'page_view', {
-    'page_title': 'Kochi Airport to Holiday Inn Taxi',
-    'custom_map': {
-      'dimension1': 'Holiday Inn',
-      'dimension2': '1,100'
-    }
-  });
-</script>
+<!-- LIGHTWEIGHT TRACKING -->
+<script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('details').forEach(function(d){d.addEventListener('toggle',function(){if(this.open){gtag('event','faq_view',{'event_category':'engagement','event_label':'Kochi Airport to Holiday Inn - '+this.querySelector('summary').textContent.trim(),'value':1});}});});let scrollTracked=false;window.addEventListener('scroll',function(){if(window.scrollY>window.innerHeight/2&&!scrollTracked){gtag('event','scroll_50',{'event_category':'engagement','event_label':'Kochi Airport to Holiday Inn page'});scrollTracked=true;}});gtag('event','page_view',{'page_title':'Kochi Airport to Holiday Inn Taxi','custom_map':{'dimension1':'Holiday Inn','dimension2':'1,100'}});});</script>
 
 </body>
 </html>
