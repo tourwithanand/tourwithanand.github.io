@@ -1,0 +1,4 @@
+from_slug,from_location,to_slug,to_location,distance_km,travel_time
+kochi-airport,Kochi Airport,kottayam,Kottayam,90,2.45 Hours
+kochi-airport,Kochi Airport,pala,Pala,90,2.45 Hours
+kochi-airport,Kochi Airport,thiruvalla,Thiruvalla,90,2.45 Hours
