@@ -22,7 +22,64 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-71YDHTLWSB');</script>
 
 <!-- ================= CLICK & CTA TRACKING ================= -->
-<script>document.addEventListener('DOMContentLoaded',function(){['tel:','https://wa.me/'].forEach(function(prefix){document.querySelectorAll('a[href^="'+prefix+'"]').forEach(function(link){link.addEventListener('click',function(){gtag('event',prefix.includes('tel')?'phone_call':'whatsapp_click',{'event_category':'engagement','event_label':'Kochi Airport to Thiruvalla - '+this.href.replace(prefix,''),'value':1});});});});document.querySelectorAll('.call,.wa').forEach(function(btn){btn.addEventListener('click',function(){gtag('event',this.classList.contains('call')?'phone_call':'whatsapp_click',{'event_category':'conversion','event_label':'Kochi Airport to Thiruvalla CTA','value':2});});});function getTrackingPhone(){const params=new URLSearchParams(window.location.search);return params.get('utm_source')==='google'?' +919072315288':' +919072315288';}document.querySelectorAll('.dynamic-phone,.track-phone').forEach(function(el){const phone=getTrackingPhone();if(el.tagName==='A')el.href='tel:'+phone.replace(/[\s+]/g,'');el.textContent=phone;el.title='Call for Kochi Airport to Thiruvalla Taxi';});});</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* -------------------------------
+     CLICK TRACKING (CALL + WHATSAPP)
+  -------------------------------- */
+  ['tel:', 'https://wa.me/'].forEach(function (prefix) {
+    document.querySelectorAll('a[href^="' + prefix + '"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        gtag('event', prefix.includes('tel') ? 'phone_call' : 'whatsapp_click', {
+          event_category: 'engagement',
+          event_label: 'Kochi Airport to Thiruvalla - ' + this.href.replace(prefix, ''),
+          value: 1
+        });
+      });
+    });
+  });
+
+  /* -------------------------------
+     CTA CONVERSION TRACKING
+  -------------------------------- */
+  document.querySelectorAll('.call, .wa').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      gtag('event', this.classList.contains('call') ? 'phone_call' : 'whatsapp_click', {
+        event_category: 'conversion',
+        event_label: 'Kochi Airport to Thiruvalla CTA',
+        value: 2
+      });
+    });
+  });
+
+  /* -------------------------------
+     DYNAMIC PHONE (NO TEXT OVERRIDE)
+  -------------------------------- */
+  function getTrackingPhone() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('utm_source') === 'google'
+      ? '+919072315288'
+      : '+919072315288';
+  }
+
+  document.querySelectorAll('.dynamic-phone, .track-phone').forEach(function (el) {
+    const phone = getTrackingPhone();
+
+    if (el.tagName === 'A') {
+      el.href = 'tel:' + phone.replace(/[\s+]/g, '');
+    }
+
+    /* ✅ DO NOT override visible text */
+    if (!el.dataset.keepText) {
+      el.textContent = 'Call Anand';
+    }
+
+    el.title = 'Call Anand for Kochi Airport to Thiruvalla Taxi';
+  });
+
+});
+</script>
 
 <!-- ================= STRUCTURED DATA ================= -->
 <script type="application/ld+json">
