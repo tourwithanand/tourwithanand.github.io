@@ -2,11 +2,16 @@ import csv
 import os
 
 # =========================
-# CONFIG
+# PATH CONFIG (IMPORTANT)
 # =========================
-TEMPLATE_FILE = "template-d2d.html"
-CSV_FILE = "D2DPSEO.csv"
-OUTPUT_DIR = "output"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+TEMPLATE_FILE = os.path.join(BASE_DIR, "template-d2d.html")
+CSV_FILE = os.path.join(BASE_DIR, "D2DPSEO.csv")
+
+# WRITE FILES TO ROOT FOLDER
+OUTPUT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
+
 PER_KM_RATE = 15
 
 # =========================
@@ -20,11 +25,6 @@ def parse_distance(val):
         return float(val)
     except:
         return 0
-
-# =========================
-# CREATE OUTPUT FOLDER
-# =========================
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # =========================
 # LOAD TEMPLATE
@@ -60,6 +60,6 @@ with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
         with open(output_path, "w", encoding="utf-8") as out:
             out.write(page)
 
-        print(f"✅ Generated: {output_path}")
+        print(f"✅ Generated & replaced: {filename}")
 
-print("\n🎉 ALL DESTINATION-TO-DESTINATION TAXI PAGES GENERATED SUCCESSFULLY")
+print("\n🎉 ALL D2D TAXI PAGES GENERATED IN ROOT SUCCESSFULLY")
