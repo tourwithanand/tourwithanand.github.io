@@ -1,4 +1,25 @@
 from_slug,from_location,to_slug,to_location,distance_km,travel_time
+kochi-airport,Kochi Airport,thiruvalla,Thiruvalla,110,3.15 Hours
+kochi-airport,Kochi Airport,pala,Pala,95,2.45 Hours
 kochi-airport,Kochi Airport,kottayam,Kottayam,90,2.45 Hours
-kochi-airport,Kochi Airport,pala,Pala,90,2.45 Hours
-kochi-airport,Kochi Airport,thiruvalla,Thiruvalla,90,2.45 Hours
+kochi-airport,Kochi Airport,chengannoor,Chengannoor,120,3.30 Hours
+kochi-airport,Kochi Airport,chengannassery,Changanassery,100,3.00 Hours
+kochi-airport,Kochi Airport,kumarakom,Kumarakom,85,2.30 Hours
+kochi-airport,Kochi Airport,thodupuzha,Thodupuzha,70,2.15 Hours
+kochi-airport,Kochi Airport,ettumannoor,Ettumanoor,80,2.30 Hours
+kochi-airport,Kochi Airport,vaikom,Vaikom,65,2.00 Hours
+kochi-airport,Kochi Airport,kaduthuruthy,Kaduthuruthy,75,2.15 Hours
+kochi-airport,Kochi Airport,alleppey,Alleppey,85,2.30 Hours
+kochi-airport,Kochi Airport,cherthala,Cherthala,70,2.00 Hours
+kochi-airport,Kochi Airport,aranmula,Aranmula,125,3.30 Hours
+kochi-airport,Kochi Airport,adoor,Adoor,140,4.00 Hours
+kochi-airport,Kochi Airport,pandalam,Pandalam,135,3.45 Hours
+kochi-airport,Kochi Airport,erumeli,Erumeli,120,3.30 Hours
+kochi-airport,Kochi Airport,kanjirappally,Kanjirappally,105,3.00 Hours
+kochi-airport,Kochi Airport,ponkunnam,Ponkunnam,110,3.15 Hours
+kochi-airport,Kochi Airport,ranni,Ranni,145,4.15 Hours
+kochi-airport,Kochi Airport,konni,Konni,150,4.30 Hours
+kochi-airport,Kochi Airport,pamba,Pamba,160,5.00 Hours
+kochi-airport,Kochi Airport,nilakkal,Nilakkal,155,4.45 Hours
+kochi-airport,Kochi Airport,sabarimala,Sabarimala,170,5.30 Hours
+kochi-airport,Kochi Airport,irattupetta,Erattupetta,95,2.45 Hours
