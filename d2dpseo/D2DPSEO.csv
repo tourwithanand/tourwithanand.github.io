@@ -1,4 +1,9 @@
 from_slug,from_location,to_slug,to_location,distance_km,travel_time
+kochi-airport,Kochi Airport,thekkady,Thekkady Periyar,144,4.30 Hours
+kochi-airport,Kochi Airport,kodanad,Kodanad Elephant Training Centre,17,25 Minutes
+kochi-airport,Kochi Airport,paniyeli-poru,Paniyeli Poru Waterfalls,35,1 Hours
+kochi-airport,Kochi Airport,abhayaranyam,Abhayaranyam Ecotourism,35,35 Minutes
+kochi-airport,Kochi Airport,kannur,Kannur,260,4.15 Hours
 kochi-airport,Kochi Airport,thiruvalla,Thiruvalla,110,3.15 Hours
 kochi-airport,Kochi Airport,pala,Pala,95,2.45 Hours
 kochi-airport,Kochi Airport,kottayam,Kottayam,90,2.45 Hours
@@ -23,3 +28,172 @@ kochi-airport,Kochi Airport,pamba,Pamba,160,5.00 Hours
 kochi-airport,Kochi Airport,nilakkal,Nilakkal,155,4.45 Hours
 kochi-airport,Kochi Airport,sabarimala,Sabarimala,170,5.30 Hours
 kochi-airport,Kochi Airport,irattupetta,Erattupetta,95,2.45 Hours
+kochi-airport,Kochi Airport,ernakulam,Ernakulam,28,1 Hours
+kochi-airport,Kochi Airport,kochi,Kochi,30,1.10 Hours
+kochi-airport,Kochi Airport,fort-kochi,Fort Kochi,35,1.30 Hours
+kochi-airport,Kochi Airport,mattancherry,Mattancherry,34,1.25 Hours
+kochi-airport,Kochi Airport,edappally,Edappally,22,50 Minutes
+kochi-airport,Kochi Airport,kakkanad,Kakkanad,28,1.05 Hours
+kochi-airport,Kochi Airport,kaloor,Kaloor,27,1 Hours
+kochi-airport,Kochi Airport,aluva,Aluva,7,15 Minutes
+kochi-airport,Kochi Airport,angamaly,Angamaly,10,20 Minutes
+kochi-airport,Kochi Airport,perumbavoor,Perumbavoor,30,1 Hours
+kochi-airport,Kochi Airport,muvattupuzha,Muvattupuzha,45,1.30 Hours
+kochi-airport,Kochi Airport,kothamangalam,Kothamangalam,55,1.45 Hours
+kochi-airport,Kochi Airport,north-paravur,North Paravur,27,1 Hours
+kochi-airport,Kochi Airport,cherai-beach,Cherai Beach,25,1 Hours
+kochi-airport,Kochi Airport,kadamakkudy,Kadamakkudy,25,1.10 Hours
+kochi-airport,Kochi Airport,thattekad,Thattekad Bird Sanctuary,60,2 Hours
+kochi-airport,Kochi Airport,athirappilly,Athirappilly Waterfalls,40,1.30 Hours
+kochi-airport,Kochi Airport,vazhachal,Vazhachal Waterfalls,42,1.35 Hours
+kochi-airport,Kochi Airport,bhoothathankettu,Bhoothathankettu Dam,50,1.40 Hours
+kochi-airport,Kochi Airport,malayattoor,Malayattoor,20,45 Minutes
+kochi-airport,Kochi Airport,chottanikkara,Chottanikkara Temple,32,1.15 Hours
+kochi-airport,Kochi Airport,kalady,Kalady,12,25 Minutes
+kochi-airport,Kochi Airport,aster-medcity,Aster Medcity Hospital,25,1 Hours
+kochi-airport,Kochi Airport,amrita-hospital,Amrita Institute of Medical Sciences,18,45 Minutes
+kochi-airport,Kochi Airport,rajagiri-hospital,Rajagiri Hospital Aluva,12,25 Minutes
+kochi-airport,Kochi Airport,lakeshore-hospital,Lakeshore Hospital Maradu,30,1.15 Hours
+kochi-airport,Kochi Airport,lisie-hospital,Lisie Hospital Ernakulam,26,1 Hours
+kochi-airport,Kochi Airport,medical-trust-hospital,Medical Trust Hospital Ernakulam,27,1.05 Hours
+kochi-airport,Kochi Airport,apollo-adlux-hospital,Apollo Adlux Hospital Angamaly,11,20 Minutes
+kochi-airport,Kochi Airport,emc-hospital,EMC Hospital Palarivattom,24,55 Minutes
+kochi-airport,Kochi Airport,grand-hyatt-kochi,Grand Hyatt Kochi Bolgatty,32,1.20 Hours
+kochi-airport,Kochi Airport,le-meridien-kochi,Le Meridien Kochi Maradu,30,1.15 Hours
+kochi-airport,Kochi Airport,crowne-plaza-kochi,Crowne Plaza Kochi,29,1.10 Hours
+kochi-airport,Kochi Airport,marriott-kochi,Kochi Marriott Hotel Edappally,22,50 Minutes
+kochi-airport,Kochi Airport,taj-malabar-resort,Taj Malabar Resort Willingdon Island,34,1.25 Hours
+kochi-airport,Kochi Airport,brunton-boatyard,Brunton Boatyard Fort Kochi,36,1.30 Hours
+kochi-airport,Kochi Airport,forte-kochi,Forte Kochi Hotel,35,1.30 Hours
+kochi-airport,Kochi Airport,cherai-beach-palace,Cherai Beach Palace Resort,25,1 Hours
+kochi-airport,Kochi Airport,maliekal-heritance,Maliekal Heritance Cherai,26,1.05 Hours
+kochi-airport,Kochi Airport,holiday-inn-kochi,Holiday Inn Kochi,28,1.10 Hours
+kochi-airport,Kochi Airport,thrikkakara-temple,Thrikkakara Vamana Moorthy Temple,25,55 Minutes
+kochi-airport,Kochi Airport,edappally-church,Edappally St George Forane Church,22,50 Minutes
+kochi-airport,Kochi Airport,malayattoor-church,Malayattoor Church,20,45 Minutes
+kochi-airport,Kochi Airport,ernakulam-shiva-temple,Ernakulam Shiva Temple,27,1 Hours
+kochi-airport,Kochi Airport,mattancherry-synagogue,Paradesi Synagogue Mattancherry,34,1.25 Hours
+kochi-airport,Kochi Airport,infopark-kochi,Infopark Kakkanad,28,1.05 Hours
+kochi-airport,Kochi Airport,smartcity-kochi,SmartCity Kochi,29,1.10 Hours
+kochi-airport,Kochi Airport,marine-drive-kochi,Marine Drive Kochi,28,1.10 Hours
+kochi-airport,Kochi Airport,mg-road-kochi,MG Road Ernakulam,27,1 Hours
+kochi-airport,Kochi Airport,willingdon-island,Willingdon Island Kochi,33,1.20 Hours
+kochi-airport,Kochi Airport,fort-kochi-beach,Fort Kochi Beach,36,1.30 Hours
+kochi-airport,Kochi Airport,thrissur,Thrissur,55,1.45 Hours
+kochi-airport,Kochi Airport,guruvayur,Guruvayur,80,2.30 Hours
+kochi-airport,Kochi Airport,chalakudy,Chalakudy,30,1 Hours
+kochi-airport,Kochi Airport,kodungallur,Kodungallur,40,1.30 Hours
+kochi-airport,Kochi Airport,irinjalakuda,Irinjalakuda,60,2 Hours
+kochi-airport,Kochi Airport,kunnamkulam,Kunnamkulam,75,2.30 Hours
+kochi-airport,Kochi Airport,wadakkanchery,Wadakkanchery,65,2.15 Hours
+kochi-airport,Kochi Airport,vadakkumnathan-temple,Vadakkumnathan Temple Thrissur,55,1.45 Hours
+kochi-airport,Kochi Airport,thrissur-pooram-grounds,Thekkinkadu Maidanam Thrissur,55,1.45 Hours
+kochi-airport,Kochi Airport,shakthan-thampuran-palace,Shakthan Thampuran Palace Thrissur,56,1.50 Hours
+kochi-airport,Kochi Airport,amala-hospital,Amala Institute of Medical Sciences Thrissur,52,1.40 Hours
+kochi-airport,Kochi Airport,jubilee-hospital,Jubilee Mission Medical College Thrissur,54,1.45 Hours
+kochi-airport,Kochi Airport,elite-hospital,Elite Mission Hospital Thrissur,53,1.45 Hours
+kochi-airport,Kochi Airport,westfort-hospital,Westfort Hospital Thrissur,56,1.50 Hours
+kochi-airport,Kochi Airport,joy-alukkas-hotel,Joy Alukkas Convention Centre Thrissur,55,1.45 Hours
+kochi-airport,Kochi Airport,hyatt-regency-thrissur,Hyatt Regency Thrissur,54,1.45 Hours
+kochi-airport,Kochi Airport,sobha-city-mall,Sobha City Mall Thrissur,56,1.50 Hours
+kochi-airport,Kochi Airport,guruvayur-temple,Guruvayur Sri Krishna Temple,80,2.30 Hours
+kochi-airport,Kochi Airport,chavakkad,Chavakkad,85,2.45 Hours
+kochi-airport,Kochi Airport,thrissur-railway-station,Thrissur Railway Station,55,1.45 Hours
+kochi-airport,Kochi Airport,guruvayur-railway-station,Guruvayur Railway Station,80,2.30 Hours
+kochi-airport,Kochi Airport,thrissur-bus-stand,Thrissur KSRTC Bus Stand,55,1.45 Hours
+kochi-airport,Kochi Airport,illickal-kallu,Illikkal Kallu,115,3.30 Hours
+kochi-airport,Kochi Airport,ettumanoor-temple,Ettumanoor Mahadeva Temple,80,2.15 Hours
+kochi-airport,Kochi Airport,vaikom-temple,Vaikom Mahadeva Temple,70,2 Hours
+kochi-airport,Kochi Airport,manarcad-temple,Manarcad Bhagavathy Temple,95,2.45 Hours
+kochi-airport,Kochi Airport,caritas-hospital,Caritas Hospital Kottayam,85,2.30 Hours
+kochi-airport,Kochi Airport,believers-church-hospital,Believers Church Medical College Hospital,92,2.45 Hours
+kochi-airport,Kochi Airport,mandiram-hospital,Mandiram Hospital Kottayam,90,2.45 Hours
+kochi-airport,Kochi Airport,matha-hospital,Matha Hospital Thellakom,88,2.40 Hours
+kochi-airport,Kochi Airport,ktm-medical-college,Govt Medical College Kottayam,90,2.45 Hours
+kochi-airport,Kochi Airport,backwater-ripples,Backwater Ripples Kumarakom,85,2.30 Hours
+kochi-airport,Kochi Airport,kumarakom-lake-resort,Kumarakom Lake Resort,85,2.30 Hours
+kochi-airport,Kochi Airport,zuri-kumarakom,Zuri Kumarakom Resort,85,2.30 Hours
+kochi-airport,Kochi Airport,abads-kumarakom,Abad Whispering Palms Kumarakom,85,2.30 Hours
+kochi-airport,Kochi Airport,kottayam-railway-station,Kottayam Railway Station,90,2.45 Hours
+kochi-airport,Kochi Airport,changanassery-railway-station,Changanassery Railway Station,85,2.30 Hours
+kochi-airport,Kochi Airport,ksrtc-kottayam,Kottayam KSRTC Bus Stand,90,2.45 Hours
+kochi-airport,Kochi Airport,alappuzha,Alappuzha,85,2.30 Hours
+kochi-airport,Kochi Airport,kayamkulam,Kayamkulam,110,3 Hours
+kochi-airport,Kochi Airport,haripad,Haripad,105,2.45 Hours
+kochi-airport,Kochi Airport,ambalappuzha,Ambalappuzha,90,2.30 Hours
+kochi-airport,Kochi Airport,kuttanad,Kuttanad,100,2.45 Hours
+kochi-airport,Kochi Airport,thanneermukkom,Thanneermukkom Bund,80,2.15 Hours
+kochi-airport,Kochi Airport,alappuzha-beach,Alappuzha Beach,87,2.30 Hours
+kochi-airport,Kochi Airport,marari-beach,Marari Beach,70,2 Hours
+kochi-airport,Kochi Airport,ambalappuzha-temple,Ambalappuzha Sri Krishna Temple,90,2.30 Hours
+kochi-airport,Kochi Airport,chettikulangara-temple,Chettikulangara Devi Temple,105,2.45 Hours
+kochi-airport,Kochi Airport,mullakkal-temple,Mullakkal Rajarajeswari Temple,85,2.30 Hours
+kochi-airport,Kochi Airport,vandanam-medical-college,Govt Medical College Alappuzha Vandanam,82,2.15 Hours
+kochi-airport,Kochi Airport,medical-trust-alleppey,Medical Trust Hospital Alappuzha,85,2.30 Hours
+kochi-airport,Kochi Airport,leo-hospital,Leo Hospital Cherthala,65,2 Hours
+kochi-airport,Kochi Airport,alleppey-houseboat,Alleppey Houseboat Boarding Point,85,2.30 Hours
+kochi-airport,Kochi Airport,punnamada,Punnamada Backwaters,85,2.30 Hours
+kochi-airport,Kochi Airport,kumarakom-route,Kumarakom Route via Alappuzha,90,2.45 Hours
+kochi-airport,Kochi Airport,ramada-alleppey,Ramada Alleppey Resort,85,2.30 Hours
+kochi-airport,Kochi Airport,lake-palace-resort,Lake Palace Resort Alappuzha,85,2.30 Hours
+kochi-airport,Kochi Airport,punnamada-resort,Punnamada Resort Alappuzha,85,2.30 Hours
+kochi-airport,Kochi Airport,marari-beach-resort,Marari Beach Resort,70,2 Hours
+kochi-airport,Kochi Airport,xandari-marari,Xandari Marari Resort,70,2 Hours
+kochi-airport,Kochi Airport,alappuzha-railway-station,Alappuzha Railway Station,85,2.30 Hours
+kochi-airport,Kochi Airport,kayamkulam-railway-station,Kayamkulam Railway Station,110,3 Hours
+kochi-airport,Kochi Airport,ksrtc-alappuzha,Alappuzha KSRTC Bus Stand,85,2.30 Hours
+kochi-airport,Kochi Airport,munnar,Munnar,110,3.30 Hours
+kochi-airport,Kochi Airport,devikulam,Devikulam,115,3.45 Hours
+kochi-airport,Kochi Airport,anachal,Anachal,105,3.15 Hours
+kochi-airport,Kochi Airport,adimali,Adimali,95,3 Hours
+kochi-airport,Kochi Airport,nedumkandam,Nedumkandam,125,4 Hours
+kochi-airport,Kochi Airport,kattappana,Kattappana,130,4.15 Hours
+kochi-airport,Kochi Airport,peermade,Peermade,135,4.30 Hours
+kochi-airport,Kochi Airport,vagamon,Vagamon,120,4 Hours
+kochi-airport,Kochi Airport,ramakkalmedu,Ramakkalmedu,150,5 Hours
+kochi-airport,Kochi Airport,idukki-dam,Idukki Dam,120,4 Hours
+kochi-airport,Kochi Airport,cheruthoni-dam,Cheruthoni Dam,118,3.45 Hours
+kochi-airport,Kochi Airport,kalvari-mount,Kalvari Mount Idukki,115,3.45 Hours
+kochi-airport,Kochi Airport,eravikulam-national-park,Eravikulam National Park,115,3.45 Hours
+kochi-airport,Kochi Airport,mattupetty-dam,Mattupetty Dam,115,3.45 Hours
+kochi-airport,Kochi Airport,echo-point-munnar,Echo Point Munnar,115,3.45 Hours
+kochi-airport,Kochi Airport,tea-museum,Tea Museum Munnar,110,3.30 Hours
+kochi-airport,Kochi Airport,tata-tea-museum,Tata Tea Museum Munnar,110,3.30 Hours
+kochi-airport,Kochi Airport,munnar-town,Munnar Town,110,3.30 Hours
+kochi-airport,Kochi Airport,ktdc-tea-county,KTDC Tea County Munnar,110,3.30 Hours
+kochi-airport,Kochi Airport,blanket-hotel,The Blanket Hotel and Spa Munnar,112,3.40 Hours
+kochi-airport,Kochi Airport,spice-tree,Spice Tree Munnar Resort,108,3.25 Hours
+kochi-airport,Kochi Airport,ragamaya,Ragamaya Resort Munnar,110,3.30 Hours
+kochi-airport,Kochi Airport,windermere,Windermere Estate Munnar,110,3.30 Hours
+kochi-airport,Kochi Airport,devonshire,Devonshire Greens Munnar,108,3.25 Hours
+kochi-airport,Kochi Airport,tata-general-hospital,Tata General Hospital Munnar,110,3.30 Hours
+kochi-airport,Kochi Airport,thodupuzha-district-hospital,District Hospital Thodupuzha,70,2.15 Hours
+kochi-airport,Kochi Airport,kattappana-taluka-hospital,Taluk Hospital Kattappana,130,4.15 Hours
+kochi-airport,Kochi Airport,munnar-bus-stand,Munnar KSRTC Bus Stand,110,3.30 Hours
+kochi-airport,Kochi Airport,pathanamthitta,Pathanamthitta,120,3.45 Hours
+kochi-airport,Kochi Airport,kollam,Kollam,160,4.45 Hours
+kochi-airport,Kochi Airport,ashtamudi,Ashtamudi Lake,165,4.45 Hours
+kochi-airport,Kochi Airport,thenmala,Thenmala,170,5 Hours
+kochi-airport,Kochi Airport,punalur,Punalur,155,4.30 Hours
+kochi-airport,Kochi Airport,thiruvananthapuram,Thiruvananthapuram,220,6 Hours
+kochi-airport,Kochi Airport,kovalam,Kovalam,225,6.15 Hours
+kochi-airport,Kochi Airport,varkala,Varkala,205,5.30 Hours
+kochi-airport,Kochi Airport,poovar,Poovar,235,6.30 Hours
+kochi-airport,Kochi Airport,neyyattinkara,Neyyattinkara,230,6.15 Hours
+kochi-airport,Kochi Airport,palakkad,Palakkad,125,3.45 Hours
+kochi-airport,Kochi Airport,ottapalam,Ottapalam,140,4.15 Hours
+kochi-airport,Kochi Airport,pattambi,Pattambi,150,4.30 Hours
+kochi-airport,Kochi Airport,malampuzha,Malampuzha,130,4 Hours
+kochi-airport,Kochi Airport,malappuram,Malappuram,140,4 Hours
+kochi-airport,Kochi Airport,tirur,Tirur,155,4.30 Hours
+kochi-airport,Kochi Airport,perinthalmanna,Perinthalmanna,145,4.15 Hours
+kochi-airport,Kochi Airport,ponnani,Ponnani,160,4.45 Hours
+kochi-airport,Kochi Airport,kozhikode,Kozhikode,180,5 Hours
+kochi-airport,Kochi Airport,calicut-beach,Calicut Beach,182,5.15 Hours
+kochi-airport,Kochi Airport,vatakara,Vatakara,195,5.30 Hours
+kochi-airport,Kochi Airport,kalpetta,Kalpetta,275,7.45 Hours
+kochi-airport,Kochi Airport,sulthan-bathery,Sulthan Bathery,290,8.30 Hours
+kochi-airport,Kochi Airport,mananthavady,Mananthavady,300,8.45 Hours
+kochi-airport,Kochi Airport,kasaragod,Kasaragod,360,10 Hours
+kochi-airport,Kochi Airport,bekal,Bekal Fort,350,9.45 Hours
+kochi-airport,Kochi Airport,kanhangad,Kanhangad,345,9.30 Hours
