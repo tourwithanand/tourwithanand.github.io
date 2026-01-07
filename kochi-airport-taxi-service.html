@@ -114,7 +114,19 @@ a{text-decoration:none;color:inherit}
 .hero-cta a{flex:1;padding:12px;border-radius:30px;text-align:center;font-weight:600}
 .call{background:#fff;color:#000}
 .wa{background:#25D366;color:#fff}
-.hero-img img{width:100%;margin-top:16px;border-radius:16px}
+.hero-img img{
+  width:100%;
+  max-height:240px;          /* controls height */
+  object-fit:cover;          /* banner look */
+  margin-top:16px;
+  border-radius:14px
+}
+
+@media(min-width:768px){
+  .hero-img img{
+    max-height:380px;        /* larger for desktop */
+  }
+}
 
 section{padding:36px 0}
 .alt{background:#f9fafb}
@@ -225,8 +237,8 @@ Clean & comfortable AC cabs for Kochi Airport transfers
 <a href="/kochi-airport-to-varkala-taxi.html">Varkala</a>
 <a href="/kochi-airport-to-guruvayur-taxi.html">Guruvayur</a>
 <a href="/kochi-airport-to-kottayam-taxi.html">Kottayam</a>
-<a href="/kochi-airport-to-idukki-taxi.html">Idukki</a>
-<a href="/kochi-airport-to-trivandrum-taxi.html">Trivandrum</a>
+<a href="/kochi-airport-to-Palakkad-taxi.html">Idukki</a>
+<a href="/kochi-airport-to-thiruvanathapuram-taxi.html">Trivandrum</a>
 </div>
 </div>
 </section>
