@@ -3,18 +3,72 @@
 <head>
 <meta charset="UTF-8">
 
+<!-- ================= GOOGLE TAG MANAGER ================= -->
+<script>
+(function(w,d,s,l,i){
+w[l]=w[l]||[];
+w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P59GQK4N');
+</script>
+
 <!-- ================= SEO META ================= -->
-<title>Kochi Airport Taxi Service | 24×7 COK Airport Cab | Tour With Anand</title>
+<title>Kochi Airport Taxi Service | ₹15/km Onwards | 24×7 COK Airport Cab | Tour With Anand</title>
 
-<meta name="description" content="Book reliable Kochi / Cochin (COK) Airport taxi service with fixed fares. Private AC cabs, Innova Crysta & Tempo Traveller. 24×7 airport pickup. Call Anand now.">
+<meta name="description" content="Book Kochi / Cochin (COK) Airport taxi service at ₹15/km onwards. Private AC cabs, Innova Crysta & Tempo Traveller. 24×7 airport pickup with experienced drivers.">
 
-<meta name="keywords" content="Kochi Airport Taxi, Cochin Airport Taxi, COK Airport Cab, Kochi Airport Taxi Service, Kochi Airport Pickup Taxi">
+<meta name="keywords" content="Kochi Airport Taxi, Cochin Airport Taxi, COK Airport Cab, Kochi Airport Taxi ₹15 per km, Kochi Airport Pickup Taxi">
 
 <meta name="robots" content="index,follow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="canonical" href="https://tourwithanand.in/kochi-airport-taxi-service.html">
 
-<!-- ================= SCHEMA ================= -->
+<link rel="icon" href="/favicon.png" type="image/png">
+
+<!-- ================= GA4 ================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-71YDHTLWSB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-71YDHTLWSB');
+</script>
+
+<!-- ================= CLICK & CTA TRACKING ================= -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* CALL + WHATSAPP TRACKING */
+  ['tel:', 'https://wa.me/'].forEach(function (prefix) {
+    document.querySelectorAll('a[href^="' + prefix + '"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        gtag('event', prefix.includes('tel') ? 'phone_call' : 'whatsapp_click', {
+          event_category: 'engagement',
+          event_label: 'Kochi Airport Taxi - ' + this.href.replace(prefix, ''),
+          value: 1
+        });
+      });
+    });
+  });
+
+  /* CTA TRACKING */
+  document.querySelectorAll('.call, .wa').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      gtag('event', this.classList.contains('call') ? 'phone_call' : 'whatsapp_click', {
+        event_category: 'conversion',
+        event_label: 'Kochi Airport Taxi CTA',
+        value: 2
+      });
+    });
+  });
+
+});
+</script>
+
+<!-- ================= STRUCTURED DATA ================= -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -26,11 +80,18 @@
       "url":"https://tourwithanand.in/kochi-airport-taxi-service.html"
     },
     {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://tourwithanand.in/"},
+        {"@type":"ListItem","position":2,"name":"Kochi Airport Taxi Service"}
+      ]
+    },
+    {
       "@type":"LocalBusiness",
       "name":"Tour With Anand",
       "telephone":"+919072315288",
       "email":"infostarkholidays@gmail.com",
-      "priceRange":"₹999 – ₹7000",
+      "priceRange":"₹15/km onwards",
       "address":{
         "@type":"PostalAddress",
         "addressLocality":"Nedumbassery",
@@ -44,36 +105,31 @@
       "@type":"TaxiService",
       "name":"Kochi Airport Taxi Service",
       "provider":{"@type":"LocalBusiness","name":"Tour With Anand"},
-      "areaServed":"Cochin International Airport (COK)"
+      "areaServed":"Cochin International Airport (COK)",
+      "serviceType":"Airport Taxi",
+      "offers":{
+        "@type":"Offer",
+        "price":"15",
+        "priceCurrency":"INR",
+        "priceSpecification":{
+          "@type":"UnitPriceSpecification",
+          "price":"15",
+          "priceCurrency":"INR",
+          "unitText":"per km"
+        }
+      }
     },
     {
       "@type":"FAQPage",
       "mainEntity":[
-        {
-          "@type":"Question",
-          "name":"Is Kochi Airport taxi service available 24×7?",
-          "acceptedAnswer":{"@type":"Answer","text":"Yes, Tour With Anand provides 24×7 Kochi Airport taxi service including late night and early morning pickups."}
-        },
-        {
-          "@type":"Question",
-          "name":"Do you provide fixed fare Kochi Airport taxi?",
-          "acceptedAnswer":{"@type":"Answer","text":"Yes, we offer fixed and transparent Kochi Airport taxi fares with no hidden charges."}
-        },
-        {
-          "@type":"Question",
-          "name":"Are Kochi Airport taxis private?",
-          "acceptedAnswer":{"@type":"Answer","text":"Yes, all Kochi Airport taxis are private AC vehicles with no seat sharing."}
-        },
-        {
-          "@type":"Question",
-          "name":"Which vehicles are available for Kochi Airport taxi?",
-          "acceptedAnswer":{"@type":"Answer","text":"Sedan, Ertiga, Innova, Innova Crysta and Tempo Traveller are available."}
-        },
-        {
-          "@type":"Question",
-          "name":"How to book Kochi Airport taxi on WhatsApp?",
-          "acceptedAnswer":{"@type":"Answer","text":"You can WhatsApp +91 90723 15288 with your flight details for instant confirmation."}
-        }
+        {"@type":"Question","name":"What is Kochi Airport taxi fare?","acceptedAnswer":{"@type":"Answer","text":"Kochi Airport taxi fare starts from ₹15 per km onwards depending on vehicle type."}},
+        {"@type":"Question","name":"Is Kochi Airport taxi available 24×7?","acceptedAnswer":{"@type":"Answer","text":"Yes, Kochi Airport taxi service is available 24×7 including night and early morning pickups."}},
+        {"@type":"Question","name":"Are Kochi Airport taxis private?","acceptedAnswer":{"@type":"Answer","text":"Yes, all Kochi Airport taxis are private AC cabs with no sharing."}},
+        {"@type":"Question","name":"Which vehicles are available for Kochi Airport taxi?","acceptedAnswer":{"@type":"Answer","text":"Sedan, Ertiga, Innova, Innova Crysta and Tempo Traveller are available."}},
+        {"@type":"Question","name":"How to book Kochi Airport taxi?","acceptedAnswer":{"@type":"Answer","text":"Call or WhatsApp +91 90723 15288 for instant Kochi Airport taxi booking."}},
+        {"@type":"Question","name":"Are toll and parking included?","acceptedAnswer":{"@type":"Answer","text":"Toll, parking and entry charges are extra and payable as per actuals."}},
+        {"@type":"Question","name":"Do you provide outstation taxi from Kochi Airport?","acceptedAnswer":{"@type":"Answer","text":"Yes, outstation taxi services are available to Munnar, Alleppey, Thekkady, Varkala and all Kerala destinations."}},
+        {"@type":"Question","name":"Is there waiting charge at Kochi Airport?","acceptedAnswer":{"@type":"Answer","text":"Reasonable waiting time is included. Extended waiting may be chargeable."}}
       ]
     }
   ]
@@ -85,42 +141,30 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Segoe UI,Arial,sans-serif;color:#111;line-height:1.7}
 .container{max-width:1100px;margin:auto;padding:0 16px}
-h1,h2,h3{line-height:1.3;margin-bottom:10px}
-p{margin-bottom:10px}
+h1,h2,h3{margin-bottom:10px}
 a{text-decoration:none;color:inherit}
-
 .logo{position:fixed;top:12px;left:14px;z-index:1000}
 .logo img{height:38px}
-
 .hero{background:#000;color:#fff}
 .hero-inner{padding:90px 16px 24px}
 .hero h1{font-size:24px}
-.hero h2{font-size:15px;font-weight:400;color:#e5e7eb}
+.hero h2{font-size:15px;color:#e5e7eb}
 .hero p{font-size:14px;color:#d1d5db}
 .hero-cta{display:flex;gap:10px;margin-top:14px}
-.hero-cta a{flex:1;text-align:center;padding:12px;border-radius:30px;font-weight:600}
+.hero-cta a{flex:1;padding:12px;border-radius:30px;text-align:center;font-weight:600}
 .call{background:#fff;color:#000}
 .wa{background:#25D366;color:#fff}
-.hero-img img{width:100%;border-radius:14px}
-
+.hero-img img{width:100%;margin-top:16px;border-radius:14px}
 section{padding:36px 0}
 .alt{background:#f9fafb}
 ul{margin-left:18px}
-ul li{margin-bottom:6px}
-
-table{width:100%;border-collapse:collapse;margin-top:12px}
-th,td{border:1px solid #ddd;padding:12px}
-th{background:#111;color:#fff}
-
-footer{background:#111;color:#ccc;padding:30px 0;font-size:14px}
-
-.sticky{position:fixed;right:14px;bottom:20px;z-index:999;display:flex;flex-direction:column;gap:10px}
-.sticky a{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
-.sticky .call{background:#111}
+.faq details{margin-bottom:10px;border:1px solid #ddd;border-radius:6px;padding:10px}
+.sticky{position:fixed;right:16px;bottom:80px;display:flex;flex-direction:column;gap:12px}
+.sticky a{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px}
+.sticky .call{background:#128C7E}
 .sticky .wa{background:#25D366}
-
 @media(min-width:768px){
-.hero-inner{display:flex;align-items:center;gap:30px}
+.hero-inner{display:flex;gap:30px;align-items:center}
 .hero-text{flex:1}
 .hero-img{flex:1}
 .hero h1{font-size:32px}
@@ -131,82 +175,65 @@ footer{background:#111;color:#ccc;padding:30px 0;font-size:14px}
 
 <body>
 
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P59GQK4N" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
 <div class="logo">
-  <img src="https://tourwithanand.in/images/logo.png" alt="Tour With Anand">
+<a href="https://tourwithanand.in/">
+<img src="https://tourwithanand.in/logo.png" alt="Tour With Anand">
+</a>
 </div>
 
 <!-- ================= HERO ================= -->
 <div class="hero">
-  <div class="hero-inner container">
-
-    <div class="hero-text">
-      <h1>Kochi / Cochin (COK) Airport Taxi Service</h1>
-      <h2>24×7 Private AC Cabs from Kochi Airport with Fixed Fares</h2>
-      <p>
-        Tour With Anand provides reliable Kochi Airport taxi service for Kerala
-        and South India destinations with clean vehicles and experienced drivers.
-      </p>
-
-      <div class="hero-cta">
-        <a href="tel:+919072315288" class="call">Call Anand</a>
-        <a href="https://wa.me/919072315288" class="wa">Book on WhatsApp</a>
-      </div>
-    </div>
-
-    <!-- ANAND PHOTO -->
-    <div class="hero-img">
-      <img src="https://tourwithanand.in/images/Anand-White-Shirt.png"
-           alt="Anand – Kochi Airport Taxi Driver & South India Tour Expert">
-    </div>
-
-  </div>
+<div class="hero-inner container">
+<div class="hero-text">
+<h1>Kochi Airport Taxi Service</h1>
+<h2>₹15/km onwards | 24×7 Private AC Cabs</h2>
+<p>Reliable Kochi Airport taxi service with experienced drivers. Clean private AC cabs for Kerala & South India destinations.</p>
+<div class="hero-cta">
+<a href="tel:+919072315288" class="call">Call Anand</a>
+<a href="https://wa.me/919072315288?text=Kochi%20Airport%20Taxi%20Booking" class="wa">WhatsApp Booking</a>
+</div>
+</div>
+<div class="hero-img">
+<img src="https://tourwithanand.in/images/Anand-White-Shirt.png" alt="Anand Kochi Airport Taxi">
+</div>
+</div>
 </div>
 
 <section>
 <div class="container">
-<h2>Why Choose Our Kochi Airport Taxi Service?</h2>
+<h2>Why Choose Our Kochi Airport Taxi?</h2>
 <ul>
-<li>Dedicated Kochi Airport pickup specialist</li>
-<li>24×7 airport taxi availability</li>
-<li>Private AC cabs – no sharing</li>
-<li>Fixed and transparent pricing</li>
-<li>Experienced Kerala drivers</li>
-<li>Trusted by Indian & international travelers</li>
+<li>✔ ₹15/km onwards transparent pricing</li>
+<li>✔ 24×7 airport pickup</li>
+<li>✔ Private AC vehicles only</li>
+<li>✔ Experienced Kerala drivers</li>
+<li>✔ Outstation & local taxi available</li>
 </ul>
 </div>
 </section>
 
 <section class="alt">
 <div class="container">
-<h2>Kochi Airport Taxi Vehicle Options</h2>
-<table>
-<tr><th>Vehicle</th><th>Best For</th></tr>
-<tr><td>Sedan</td><td>Solo & couple airport transfers</td></tr>
-<tr><td>Ertiga</td><td>Family airport travel</td></tr>
-<tr><td>Innova / Crysta</td><td>Comfort long-distance trips</td></tr>
-<tr><td>Tempo Traveller</td><td>Group airport transfers</td></tr>
-</table>
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+<details><summary>Kochi Airport taxi fare?</summary><p>₹15 per km onwards depending on vehicle type.</p></details>
+<details><summary>24×7 Kochi Airport taxi?</summary><p>Yes, available round the clock.</p></details>
+<details><summary>Private cabs?</summary><p>100% private AC vehicles.</p></details>
+<details><summary>Vehicles available?</summary><p>Sedan, Ertiga, Innova, Crysta, Tempo Traveller.</p></details>
+<details><summary>How to book?</summary><p>Call or WhatsApp +91 90723 15288.</p></details>
 </div>
-</section>
-
-<section>
-<div class="container">
-<h2>Popular Kochi Airport Taxi Destinations</h2>
-<p>
-<a href="/kochi-airport-to-munnar-taxi.html">Munnar</a> |
-<a href="/kochi-airport-to-alleppey-taxi.html">Alleppey</a> |
-<a href="/kochi-airport-to-thekkady-taxi.html">Thekkady</a> |
-<a href="/kochi-airport-to-varkala-taxi.html">Varkala</a> |
-<a href="/kochi-airport-to-kumarakom-taxi.html">Kumarakom</a>
-</p>
 </div>
 </section>
 
 <footer>
 <div class="container">
+<p>📞 <a href="tel:+919072315288">+91 90723 15288</a></p>
 <p>📧 infostarkholidays@gmail.com</p>
-<p>📞 +91 90723 15288</p>
-<p>📍 Nedumbassery, Near Cochin International Airport, Kerala</p>
+<p>📍 Kerala Taxi Service</p>
 </div>
 </footer>
 
@@ -214,6 +241,32 @@ footer{background:#111;color:#ccc;padding:30px 0;font-size:14px}
 <a href="tel:+919072315288" class="call">📞</a>
 <a href="https://wa.me/919072315288" class="wa">💬</a>
 </div>
+
+<!-- ================= FAQ + SCROLL TRACKING ================= -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (this.open) {
+        gtag('event','faq_view',{
+          event_category:'engagement',
+          event_label:this.querySelector('summary').textContent
+        });
+      }
+    });
+  });
+
+  let tracked=false;
+  window.addEventListener('scroll',function(){
+    if(!tracked && window.scrollY>window.innerHeight/2){
+      gtag('event','scroll_50',{event_category:'engagement'});
+      tracked=true;
+    }
+  });
+
+});
+</script>
 
 </body>
 </html>
