@@ -217,7 +217,6 @@
     }
     img { max-width: 100%; height: auto; display: block; }
     a { color: inherit; text-decoration: none; }
-
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
     .skip-link {
@@ -258,7 +257,6 @@
       background-size: cover;
       background-position: center center;
     }
-
     .hero::after {
       content: "";
       position: absolute;
@@ -266,7 +264,6 @@
       background: radial-gradient(circle at center, rgba(212,175,55,0.09), transparent 55%);
       pointer-events: none;
     }
-
     .hero-content { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; text-align: center; }
     .hero-badge {
       display: inline-block; padding: 8px 16px; margin-bottom: 18px;
@@ -278,7 +275,6 @@
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      box-shadow: 0 0 0 1px rgba(212,175,55,0.06) inset;
     }
     .hero-title {
       font-size: clamp(2.6rem, 6vw, 4.5rem);
@@ -314,7 +310,6 @@
       background: transparent; border-color: rgba(212,175,55,0.8); color: var(--accent-color);
     }
     .btn-secondary:hover { background: rgba(212,175,55,0.08); }
-
     .hero-features {
       display: flex; flex-wrap: wrap; gap: 12px;
       justify-content: center;
@@ -581,25 +576,70 @@
           Book a private cab from Kochi Airport (COK) with fixed pricing, clean AC vehicles, and an experienced local driver.
           We create custom South India tours across Kerala, Tamil Nadu, and Karnataka for families, couples, and small groups.
         </p>
-
         <div class="hero-cta">
           <a href="https://wa.me/919072315288?text=Hi%20Anand,%20I%20need%20a%20private%20cab%20from%20Kochi%20Airport%20and%20South%20India%20tour%20details"
              class="btn btn-primary"
-             onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'hero_primary_cta'});">
-            Book on WhatsApp
-          </a>
+             onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'hero_primary_cta'});">Book on WhatsApp</a>
           <a href="tel:+919072315288"
              class="btn btn-secondary"
-             onclick="trackEvent('phone_click', {category: 'conversion', label: 'hero_secondary_cta'});">
-            Call Now
-          </a>
+             onclick="trackEvent('phone_click', {category: 'conversion', label: 'hero_secondary_cta'});">Call Now</a>
         </div>
-
         <div class="hero-features">
           <div class="hero-feature">24/7 COK Airport Pickup</div>
           <div class="hero-feature">English-Friendly Support</div>
           <div class="hero-feature">Fixed Transparent Rates</div>
           <div class="hero-feature">Private AC Cars Only</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section loading">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What You Can Expect From Our Side</h2>
+          <p class="section-subtitle">
+            We focus on comfort, safety, professionalism, and clear communication for every guest arriving at Kochi Airport or traveling across Kerala and South India.
+          </p>
+        </div>
+        <div class="cards-grid">
+          <article class="card"><div class="card-icon">🎓</div><h3>Educated & Experienced Team</h3><p>Our team members are well mannered, experienced, and committed to delivering a smooth, premium travel experience from start to finish.</p></article>
+          <article class="card"><div class="card-icon">🚘</div><h3>Well-Maintained Premium Cabs</h3><p>We provide hygienic, latest, and well-maintained cabs that are suitable for airport transfers, Kerala tours, and South India trips.</p></article>
+          <article class="card"><div class="card-icon">💼</div><h3>Transparent Service</h3><p>There are no hidden agendas or surprise charges. Everything is handled in a clear and transparent manner for complete peace of mind.</p></article>
+          <article class="card"><div class="card-icon">⏱️</div><h3>Respect for Your Time</h3><p>We value your schedule and always make sure the service is delivered according to your travel plan and client needs.</p></article>
+          <article class="card"><div class="card-icon">🧴</div><h3>Basic Amenities Included</h3><p>Our cab service can include water bottle, tissue, sanitizer, umbrella, and other basic travel comforts on request.</p></article>
+          <article class="card"><div class="card-icon">🌍</div><h3>Multilingual Communication</h3><p>Our team speaks English, Hindi, Tamil, and Malayalam, making communication easier for international and domestic travelers.</p></article>
+          <article class="card"><div class="card-icon">📍</div><h3>Placard Pickup on Request</h3><p>We can receive your guest at Kochi Airport with a placard on request, making arrivals easier and more organized.</p></article>
+          <article class="card"><div class="card-icon">👩</div><h3>Lady Staff Support</h3><p>Special lady staff assistance is available on request for women passengers for airport transfers, with safety and comfort in mind.</p></article>
+          <article class="card"><div class="card-icon">🧒</div><h3>Booster Seats on Request</h3><p>Booster seats can be arranged on request to support family travel and improve comfort for children during the journey.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section loading">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Meet Anand</h2>
+          <p class="section-subtitle">A local travel expert helping foreign visitors experience South India with comfort and confidence.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Local Experience, Premium Service</h3>
+            <p>
+              Tour With Anand started in 2010 with one car and one goal: to provide reliable private transport from Kochi Airport.
+              Over time, the service expanded into customized tours for families, NRIs, and international visitors.
+            </p>
+            <p>
+              Today we focus on clean vehicles, honest communication, and flexible South India itineraries that suit foreign travelers.
+              We help you travel with comfort across Kerala, Tamil Nadu, and Karnataka.
+            </p>
+            <p>
+              Whether you need a simple airport pickup or a multi-day private tour, we aim to make every trip smooth, safe, and well planned.
+            </p>
+            <p><strong>Best for:</strong> airport transfers, honeymoon trips, family holidays, temple tours, backwater tours, and custom South India circuits.</p>
+          </div>
+          <div class="about-image">
+            <img src="images/Anand-White-Shirt.png" alt="Anand - Founder of Tour With Anand" width="400" height="400">
+          </div>
         </div>
       </div>
     </section>
@@ -617,47 +657,15 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Why Foreign Travelers Choose Us</h2>
-          <p class="section-subtitle">
-            Premium service, local expertise, and smooth communication for international visitors arriving in Kochi.
-          </p>
+          <p class="section-subtitle">Premium service, local expertise, and smooth communication for international visitors arriving in Kochi.</p>
         </div>
-
         <div class="cards-grid">
-          <article class="card">
-            <div class="card-icon">✈️</div>
-            <h3>Airport Pickup Specialist</h3>
-            <p>We track flight timing, meet you at the arrivals area, and provide a smooth pickup from Kochi International Airport with a name board.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">🚗</div>
-            <h3>Premium Private Vehicles</h3>
-            <p>Choose from sedan, Ertiga, Innova Crysta, and Tempo Traveller options. All vehicles are clean, air-conditioned, and travel-ready.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">💎</div>
-            <h3>Transparent Fixed Pricing</h3>
-            <p>We share clear package rates in advance with tolls, parking, and driver allowance explained upfront. No surprise charges.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">🗺️</div>
-            <h3>South India Route Expert</h3>
-            <p>Travel confidently across Kerala, Tamil Nadu, and Karnataka with a local driver who knows scenic routes, timing, and travel comfort.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">👨‍👩‍👧‍👦</div>
-            <h3>Family & Couple Friendly</h3>
-            <p>We support family travel, elderly guests, honeymoon trips, and small groups with flexible pacing and comfortable stops.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">📱</div>
-            <h3>Fast English Communication</h3>
-            <p>Get quick updates and booking support through WhatsApp. We keep communication simple, clear, and easy for international travelers.</p>
-          </article>
+          <article class="card"><div class="card-icon">✈️</div><h3>Airport Pickup Specialist</h3><p>We track flight timing, meet you at the arrivals area, and provide a smooth pickup from Kochi International Airport with a name board.</p></article>
+          <article class="card"><div class="card-icon">🚗</div><h3>Premium Private Vehicles</h3><p>Choose from sedan, Ertiga, Innova Crysta, and Tempo Traveller options. All vehicles are clean, air-conditioned, and travel-ready.</p></article>
+          <article class="card"><div class="card-icon">💎</div><h3>Transparent Fixed Pricing</h3><p>We share clear package rates in advance with tolls, parking, and driver allowance explained upfront. No surprise charges.</p></article>
+          <article class="card"><div class="card-icon">🗺️</div><h3>South India Route Expert</h3><p>Travel confidently across Kerala, Tamil Nadu, and Karnataka with a local driver who knows scenic routes, timing, and travel comfort.</p></article>
+          <article class="card"><div class="card-icon">👨‍👩‍👧‍👦</div><h3>Family & Couple Friendly</h3><p>We support family travel, elderly guests, honeymoon trips, and small groups with flexible pacing and comfortable stops.</p></article>
+          <article class="card"><div class="card-icon">📱</div><h3>Fast English Communication</h3><p>Get quick updates and booking support through WhatsApp. We keep communication simple, clear, and easy for international travelers.</p></article>
         </div>
       </div>
     </section>
@@ -666,50 +674,16 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Popular Airport Transfers & Tours</h2>
-          <p class="section-subtitle">
-            Best-requested routes and custom tour starting points from Kochi Airport.
-          </p>
+          <p class="section-subtitle">Best-requested routes and custom tour starting points from Kochi Airport.</p>
         </div>
-
         <div class="tour-grid">
-          <article class="tour-card">
-            <div class="tour-body">
-              <h3>Kochi Airport to Munnar</h3>
-              <p>Comfortable hill station transfer for tea garden, nature, and honeymoon travel.</p>
-            </div>
-          </article>
-          <article class="tour-card">
-            <div class="tour-body">
-              <h3>Kochi Airport to Alleppey</h3>
-              <p>Private cab transfer for backwater cruises and houseboat trips in Kerala.</p>
-            </div>
-          </article>
-          <article class="tour-card">
-            <div class="tour-body">
-              <h3>Kochi Airport to Thekkady</h3>
-              <p>Ideal for wildlife, spice plantations, and peaceful forest stays.</p>
-            </div>
-          </article>
-          <article class="tour-card">
-            <div class="tour-body">
-              <h3>Kochi to Ooty & Kodaikanal</h3>
-              <p>Scenic private cab journeys into the Tamil Nadu hills with custom stops.</p>
-            </div>
-          </article>
-          <article class="tour-card">
-            <div class="tour-body">
-              <h3>Kerala Temple & Culture Tours</h3>
-              <p>Visit famous temples, heritage towns, and authentic local cultural places.</p>
-            </div>
-          </article>
-          <article class="tour-card">
-            <div class="tour-body">
-              <h3>South India Circuit Tours</h3>
-              <p>Multi-state travel covering Kerala, Tamil Nadu, and Karnataka in one itinerary.</p>
-            </div>
-          </article>
+          <article class="tour-card"><div class="tour-body"><h3>Kochi Airport to Munnar</h3><p>Comfortable hill station transfer for tea garden, nature, and honeymoon travel.</p></div></article>
+          <article class="tour-card"><div class="tour-body"><h3>Kochi Airport to Alleppey</h3><p>Private cab transfer for backwater cruises and houseboat trips in Kerala.</p></div></article>
+          <article class="tour-card"><div class="tour-body"><h3>Kochi Airport to Thekkady</h3><p>Ideal for wildlife, spice plantations, and peaceful forest stays.</p></div></article>
+          <article class="tour-card"><div class="tour-body"><h3>Kochi to Ooty & Kodaikanal</h3><p>Scenic private cab journeys into the Tamil Nadu hills with custom stops.</p></div></article>
+          <article class="tour-card"><div class="tour-body"><h3>Kerala Temple & Culture Tours</h3><p>Visit famous temples, heritage towns, and authentic local cultural places.</p></div></article>
+          <article class="tour-card"><div class="tour-body"><h3>South India Circuit Tours</h3><p>Multi-state travel covering Kerala, Tamil Nadu, and Karnataka in one itinerary.</p></div></article>
         </div>
-
         <div class="destinations">
           <div class="destination-pill">Munnar</div>
           <div class="destination-pill">Alleppey</div>
@@ -729,75 +703,18 @@
           <h2 class="section-title">How to Book Your Tour</h2>
           <p class="section-subtitle">A simple process designed for easy planning and stress-free travel.</p>
         </div>
-
         <div class="steps-container">
           <ol class="steps-list">
-            <li class="step-item">
-              <div class="step-number"></div>
-              <div class="step-content">
-                <p><strong>Send your travel details:</strong> Share your arrival date, number of travelers, destination list, and trip duration.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number"></div>
-              <div class="step-content">
-                <p><strong>Get a custom quote:</strong> We prepare a private cab plan with route suggestions, vehicle options, and clear pricing.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number"></div>
-              <div class="step-content">
-                <p><strong>Confirm the booking:</strong> Pay a small advance through UPI or bank transfer to reserve your vehicle.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number"></div>
-              <div class="step-content">
-                <p><strong>Meet at Kochi Airport:</strong> Your driver arrives on time with a name board, and your journey starts comfortably.</p>
-              </div>
-            </li>
+            <li class="step-item"><div class="step-number"></div><div class="step-content"><p><strong>Send your travel details:</strong> Share your arrival date, number of travelers, destination list, and trip duration.</p></div></li>
+            <li class="step-item"><div class="step-number"></div><div class="step-content"><p><strong>Get a custom quote:</strong> We prepare a private cab plan with route suggestions, vehicle options, and clear pricing.</p></div></li>
+            <li class="step-item"><div class="step-number"></div><div class="step-content"><p><strong>Confirm the booking:</strong> Pay a small advance through UPI or bank transfer to reserve your vehicle.</p></div></li>
+            <li class="step-item"><div class="step-number"></div><div class="step-content"><p><strong>Meet at Kochi Airport:</strong> Your driver arrives on time with a name board, and your journey starts comfortably.</p></div></li>
           </ol>
         </div>
-
         <div class="section-cta">
           <a href="https://wa.me/919072315288?text=Hi%20Anand,%20please%20share%20a%20custom%20tour%20quote%20from%20Kochi%20Airport"
              class="btn btn-primary"
-             onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'steps_cta'});">
-            Get Custom Quote
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section loading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Meet Anand</h2>
-          <p class="section-subtitle">A local travel expert helping foreign visitors experience South India with comfort and confidence.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-content">
-            <h3>Local Experience, Premium Service</h3>
-            <p>
-              Tour With Anand started in 2010 with one car and one goal: to provide reliable private transport from Kochi Airport.
-              Over time, the service expanded into customized tours for families, NRIs, and international visitors.
-            </p>
-            <p>
-              Today we focus on clean vehicles, honest communication, and flexible South India itineraries that suit foreign travelers.
-              We help you travel with comfort across Kerala, Tamil Nadu, and Karnataka.
-            </p>
-            <p>
-              Whether you need a simple airport pickup or a multi-day private tour, we aim to make every trip smooth, safe, and well planned.
-            </p>
-            <p>
-              <strong>Best for:</strong> airport transfers, honeymoon trips, family holidays, temple tours, backwater tours, and custom South India circuits.
-            </p>
-          </div>
-
-          <div class="about-image">
-            <img src="images/Anand-White-Shirt.png" alt="Anand - Founder of Tour With Anand" width="400" height="400">
-          </div>
+             onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'steps_cta'});">Get Custom Quote</a>
         </div>
       </div>
     </section>
@@ -806,94 +723,50 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">
-            Important details for foreign visitors booking private cab services from Kochi Airport.
-          </p>
+          <p class="section-subtitle">Important details for foreign visitors booking private cab services from Kochi Airport.</p>
         </div>
-
         <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
           <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
               <span itemprop="name">Do you provide 24/7 Kochi Airport pickup?</span>
               <span class="faq-icon">+</span>
             </div>
-            <div class="faq-answer">
-              <div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <span itemprop="text">
-                  Yes, we provide round-the-clock pickup from Kochi International Airport (COK). We track flight timing and meet you at arrivals with a name board.
-                </span>
-              </div>
-            </div>
+            <div class="faq-answer"><div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Yes, we provide round-the-clock pickup from Kochi International Airport (COK). We track flight timing and meet you at arrivals with a name board.</span></div></div>
           </div>
-
           <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
               <span itemprop="name">Do you offer private cab service for foreigners?</span>
               <span class="faq-icon">+</span>
             </div>
-            <div class="faq-answer">
-              <div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <span itemprop="text">
-                  Yes, our service is ideal for foreign travelers who want private, comfortable, and flexible travel across South India.
-                </span>
-              </div>
-            </div>
+            <div class="faq-answer"><div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Yes, our service is ideal for foreign travelers who want private, comfortable, and flexible travel across South India.</span></div></div>
           </div>
-
           <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
               <span itemprop="name">Which destinations do you cover?</span>
               <span class="faq-icon">+</span>
             </div>
-            <div class="faq-answer">
-              <div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <span itemprop="text">
-                  We cover Kerala, Tamil Nadu, and Karnataka, including Munnar, Alleppey, Thekkady, Wayanad, Ooty, Kodaikanal, Madurai, Rameswaram, Mysore, and Coorg.
-                </span>
-              </div>
-            </div>
+            <div class="faq-answer"><div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">We cover Kerala, Tamil Nadu, and Karnataka, including Munnar, Alleppey, Thekkady, Wayanad, Ooty, Kodaikanal, Madurai, Rameswaram, Mysore, and Coorg.</span></div></div>
           </div>
-
           <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
               <span itemprop="name">How is pricing calculated?</span>
               <span class="faq-icon">+</span>
             </div>
-            <div class="faq-answer">
-              <div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <span itemprop="text">
-                  Pricing depends on vehicle type, trip length, and distance. We provide transparent package rates with no hidden charges.
-                </span>
-              </div>
-            </div>
+            <div class="faq-answer"><div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Pricing depends on vehicle type, trip length, and distance. We provide transparent package rates with no hidden charges.</span></div></div>
           </div>
-
           <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
               <span itemprop="name">Can you customize the itinerary?</span>
               <span class="faq-icon">+</span>
             </div>
-            <div class="faq-answer">
-              <div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <span itemprop="text">
-                  Absolutely. We can adjust the route, pace, hotel suggestions, and sightseeing based on your preferences and travel duration.
-                </span>
-              </div>
-            </div>
+            <div class="faq-answer"><div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Absolutely. We can adjust the route, pace, hotel suggestions, and sightseeing based on your preferences and travel duration.</span></div></div>
           </div>
-
           <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
               <span itemprop="name">Are your vehicles suitable for long tours?</span>
               <span class="faq-icon">+</span>
             </div>
-            <div class="faq-answer">
-              <div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <span itemprop="text">
-                  Yes, our AC vehicles are suitable for long-distance South India travel and are selected for comfort and luggage space.
-                </span>
-              </div>
-            </div>
+            <div class="faq-answer"><div class="faq-answer-content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Yes, our AC vehicles are suitable for long-distance South India travel and are selected for comfort and luggage space.</span></div></div>
           </div>
         </div>
       </div>
@@ -911,9 +784,7 @@
           <div class="section-cta">
             <a href="https://wa.me/919072315288?text=Hi%20Anand,%20I%20want%20a%20private%20cab%20and%20South%20India%20tour%20quote"
                class="btn btn-primary"
-               onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'bottom_cta'});">
-              Get Tour Quote
-            </a>
+               onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'bottom_cta'});">Get Tour Quote</a>
           </div>
         </div>
       </div>
@@ -924,22 +795,11 @@
     <div class="container">
       <div class="footer-logo">Tour With Anand</div>
       <p>Premium Kochi Airport Taxi Service & South India Tours Since 2010</p>
-
       <div class="footer-contact">
-        <div>
-          📱 WhatsApp:
-          <a href="https://wa.me/919072315288" onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'footer_contact'});">+91 90723 15288</a>
-        </div>
-        <div>
-          📞 Call:
-          <a href="tel:+919072315288" onclick="trackEvent('phone_click', {category: 'conversion', label: 'footer_contact'});">+91 90723 15288</a>
-        </div>
-        <div>
-          ✉️ Email:
-          <a href="mailto:info@tourwithanand.in">info@tourwithanand.in</a>
-        </div>
+        <div>📱 WhatsApp: <a href="https://wa.me/919072315288" onclick="trackEvent('whatsapp_click', {category: 'conversion', label: 'footer_contact'});">+91 90723 15288</a></div>
+        <div>📞 Call: <a href="tel:+919072315288" onclick="trackEvent('phone_click', {category: 'conversion', label: 'footer_contact'});">+91 90723 15288</a></div>
+        <div>✉️ Email: <a href="mailto:info@tourwithanand.in">info@tourwithanand.in</a></div>
       </div>
-
       <div class="footer-bottom">
         <p>&copy; 2026 Tour With Anand. All rights reserved. | Kochi Airport Taxi Service & South India Tours</p>
       </div>
@@ -960,23 +820,19 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const faqQuestions = document.querySelectorAll('.faq-question');
-
       faqQuestions.forEach(function(question) {
         question.addEventListener('click', function() {
           const faqItem = question.parentElement;
           const isActive = faqItem.classList.contains('active');
-
           document.querySelectorAll('.faq-item').forEach(function(item) {
             item.classList.remove('active');
             item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
           });
-
           if (!isActive) {
             faqItem.classList.add('active');
             question.setAttribute('aria-expanded', 'true');
           }
         });
-
         question.addEventListener('keydown', function(e) {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
