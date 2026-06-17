@@ -9,9 +9,11 @@ from google.oauth2.service_account import Credentials
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CREDENTIALS_FILE = os.path.join(BASE_DIR, "credentials.json")
 CSV_FILE = os.path.join(BASE_DIR, "to_index.csv")
-LOG_FILE = os.path.join(BASE_DIR, "indexed_log.txt") # Tracks what's done
+LOG_FILE = os.path.join(BASE_DIR, "indexed_log.txt") # Tracks successfully indexed URLs
+BASE_URL = "https://tourwithanand.in" # Added base URL for construction
 
 def get_already_indexed():
+    """Reads the log file to see which URLs have already been processed."""
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, "r") as f:
             return set(f.read().splitlines())
@@ -23,14 +25,29 @@ def bulk_index():
     service = build('indexing', 'v3', credentials=creds)
     
     already_indexed = get_already_indexed()
+    urls_to_process = []
     
-    # Read URLs from CSV (assuming column header is 'url')
-    with open(CSV_FILE, mode='r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        urls_to_process = [row['url'] for row in reader if row['url'] not in already_indexed]
+    # Read URLs from CSV by constructing them from from_slug and to_slug
+    try:
+        with open(CSV_FILE, mode='r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                # Dynamically build the URL exactly like your page generator does
+                constructed_url = f"{BASE_URL}/{row['from_slug']}-to-{row['to_slug']}-taxi.html"
+                
+                # Filter out URLs already in the log
+                if constructed_url not in already_indexed:
+                    urls_to_process.append(constructed_url)
+    except KeyError as e:
+        print(f"❌ Error: Your CSV is missing a required column. Make sure it has {e}")
+        return
 
-    # Slice to only 200 to protect quota 
+    # Slice to only 200 to protect daily quota
     batch = urls_to_process[:200]
+    
+    if not batch:
+        print("✅ All URLs in your CSV have already been processed or the list is empty.")
+        return
     
     print(f"🚀 Starting submission of {len(batch)} URLs...")
 
