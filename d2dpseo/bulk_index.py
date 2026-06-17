@@ -42,8 +42,8 @@ def bulk_index():
         print(f"❌ Error: Your CSV is missing a required column. Make sure it has {e}")
         return
 
-    # Slice to only 200 to protect daily quota
-    batch = urls_to_process[:200]
+    # Slice to only 10 to test a small batch
+    batch = urls_to_process[:10]
     
     if not batch:
         print("✅ All URLs in your CSV have already been processed or the list is empty.")
