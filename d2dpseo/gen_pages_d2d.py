@@ -62,6 +62,8 @@ with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
         base_fare = int(distance_km * PER_KM_RATE)
 
         page = template
+        
+        # STANDARD VARIABLES
         page = page.replace("{{FROM_LOCATION}}", row["from_location"])
         page = page.replace("{{TO_LOCATION}}", row["to_location"])
         page = page.replace("{{FROM_SLUG}}", row["from_slug"])
@@ -70,6 +72,14 @@ with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
         page = page.replace("{{TRAVEL_TIME}}", row["travel_time"])
         page = page.replace("{{PER_KM_RATE}}", str(PER_KM_RATE))
         page = page.replace("{{BASE_FARE}}", str(base_fare))
+
+        # =========================
+        # NEW SEO VARIABLES (CRITICAL FOR INDEXING)
+        # =========================
+        page = page.replace("{{ROUTE_TERRAIN}}", row["route_terrain"])
+        page = page.replace("{{SUGGESTED_CAR}}", row["suggested_car"])
+        page = page.replace("{{WAYPOINTS}}", row["waypoints"])
+        page = page.replace("{{UNIQUE_DESC}}", row["unique_desc"])
 
         # Generate HTML Filename
         filename = f"{row['from_slug']}-to-{row['to_slug']}-taxi.html"
