@@ -1,241 +1,241 @@
-from_slug,from_location,to_slug,to_location,distance_km,travel_time
-kochi-airport,Kochi Airport,aluva,Aluva,12,0.30 Hours
-kochi-airport,Kochi Airport,angamaly,Angamaly,7,0.15 Hours
-kochi-airport,Kochi Airport,north-paravur,North Paravur,20,0.45 Hours
-kochi-airport,Kochi Airport,kalamassery,Kalamassery,18,0.40 Hours
-kochi-airport,Kochi Airport,edappally,Edappally,22,0.45 Hours
-kochi-airport,Kochi Airport,kaloor,Kaloor,28,1.00 Hours
-kochi-airport,Kochi Airport,marine-drive-kochi,Marine Drive Kochi,30,1.10 Hours
-kochi-airport,Kochi Airport,vyttila,Vyttila,28,1.00 Hours
-kochi-airport,Kochi Airport,palarivattom,Palarivattom,25,0.55 Hours
-kochi-airport,Kochi Airport,kakkanad,Kakkanad,26,0.50 Hours
-kochi-airport,Kochi Airport,tripunithura,Tripunithura,35,1.15 Hours
-kochi-airport,Kochi Airport,thoppumpady,Thoppumpady,38,1.20 Hours
-kochi-airport,Kochi Airport,mattancherry,Mattancherry,42,1.30 Hours
-kochi-airport,Kochi Airport,fort-kochi,Fort Kochi,45,1.30 Hours
-kochi-airport,Kochi Airport,perumbavoor,Perumbavoor,15,0.30 Hours
-kochi-airport,Kochi Airport,kothamangalam,Kothamangalam,35,1.00 Hours
-kochi-airport,Kochi Airport,muvattupuzha,Muvattupuzha,38,1.10 Hours
-kochi-airport,Kochi Airport,piravom,Piravom,45,1.20 Hours
-kochi-airport,Kochi Airport,koothattukulam,Koothattukulam,55,1.30 Hours
-kochi-airport,Kochi Airport,kolenchery,Kolenchery,30,1.00 Hours
-kochi-airport,Kochi Airport,vypin,Vypin,32,1.10 Hours
-kochi-airport,Kochi Airport,cherai,Cherai,26,0.50 Hours
-kochi-airport,Kochi Airport,thrissur,Thrissur,55,1.15 Hours
-kochi-airport,Kochi Airport,chalakudy,Chalakudy,25,0.40 Hours
-kochi-airport,Kochi Airport,irinjalakuda,Irinjalakuda,38,1.00 Hours
-kochi-airport,Kochi Airport,guruvayur,Guruvayur,80,2.00 Hours
-kochi-airport,Kochi Airport,kunnamkulam,Kunnamkulam,75,1.45 Hours
-kochi-airport,Kochi Airport,chavakkad,Chavakkad,80,2.00 Hours
-kochi-airport,Kochi Airport,wadakkanchery,Wadakkanchery,70,1.40 Hours
-kochi-airport,Kochi Airport,palakkad,Palakkad,110,2.30 Hours
-kochi-airport,Kochi Airport,ottapalam,Ottapalam,95,2.15 Hours
-kochi-airport,Kochi Airport,shoranur,Shoranur,85,2.00 Hours
-kochi-airport,Kochi Airport,mannarkkad,Mannarkkad,130,3.00 Hours
-kochi-airport,Kochi Airport,malappuram,Malappuram,130,3.15 Hours
-kochi-airport,Kochi Airport,perinthalmanna,Perinthalmanna,110,2.45 Hours
-kochi-airport,Kochi Airport,manjeri,Manjeri,140,3.30 Hours
-kochi-airport,Kochi Airport,tirur,Tirur,115,2.45 Hours
-kochi-airport,Kochi Airport,ponnani,Ponnani,100,2.30 Hours
-kochi-airport,Kochi Airport,kozhikode,Kozhikode,155,4.00 Hours
-kochi-airport,Kochi Airport,vadakara,Vadakara,200,5.00 Hours
-kochi-airport,Kochi Airport,koyilandy,Koyilandy,180,4.30 Hours
-kochi-airport,Kochi Airport,thamarassery,Thamarassery,185,4.45 Hours
-kochi-airport,Kochi Airport,wayanad,Wayanad,240,6.30 Hours
-kochi-airport,Kochi Airport,kalpetta,Kalpetta,230,6.00 Hours
-kochi-airport,Kochi Airport,sulthan-bathery,Sulthan Bathery,250,6.30 Hours
-kochi-airport,Kochi Airport,mananthavady,Mananthavady,260,7.00 Hours
-kochi-airport,Kochi Airport,kannur,Kannur,245,6.30 Hours
-kochi-airport,Kochi Airport,thalassery,Thalassery,225,5.45 Hours
-kochi-airport,Kochi Airport,payyanur,Payyanur,285,7.30 Hours
-kochi-airport,Kochi Airport,kasaragod,Kasaragod,330,8.30 Hours
-kochi-airport,Kochi Airport,kanhangad,Kanhangad,305,8.00 Hours
-kochi-airport,Kochi Airport,kottayam,Kottayam,90,2.15 Hours
-kochi-airport,Kochi Airport,pala,Pala,75,2.00 Hours
-kochi-airport,Kochi Airport,changanassery,Changanassery,105,2.45 Hours
-kochi-airport,Kochi Airport,kanjirappally,Kanjirappally,100,2.30 Hours
-kochi-airport,Kochi Airport,vaikom,Vaikom,60,1.30 Hours
-kochi-airport,Kochi Airport,ettumanoor,Ettumanoor,75,2.00 Hours
-kochi-airport,Kochi Airport,pathanamthitta,Pathanamthitta,130,3.15 Hours
-kochi-airport,Kochi Airport,thiruvalla,Thiruvalla,115,3.00 Hours
-kochi-airport,Kochi Airport,adoor,Adoor,140,3.30 Hours
-kochi-airport,Kochi Airport,kozhencherry,Kozhencherry,135,3.15 Hours
-kochi-airport,Kochi Airport,ranni,Ranni,130,3.15 Hours
-kochi-airport,Kochi Airport,alleppey,Alleppey,85,2.15 Hours
-kochi-airport,Kochi Airport,cherthala,Cherthala,65,1.45 Hours
-kochi-airport,Kochi Airport,haripad,Haripad,115,2.45 Hours
-kochi-airport,Kochi Airport,kayamkulam,Kayamkulam,130,3.15 Hours
-kochi-airport,Kochi Airport,mavelikara,Mavelikara,125,3.00 Hours
-kochi-airport,Kochi Airport,kollam,Kollam,165,4.00 Hours
-kochi-airport,Kochi Airport,karunagappally,Karunagappally,140,3.30 Hours
-kochi-airport,Kochi Airport,kottarakkara,Kottarakkara,160,4.00 Hours
-kochi-airport,Kochi Airport,punalur,Punalur,175,4.30 Hours
-kochi-airport,Kochi Airport,trivandrum,Trivandrum,225,5.30 Hours
-kochi-airport,Kochi Airport,attingal,Attingal,195,4.45 Hours
-kochi-airport,Kochi Airport,varkala,Varkala,195,5.00 Hours
-kochi-airport,Kochi Airport,nedumangad,Nedumangad,230,5.45 Hours
-kochi-airport,Kochi Airport,neyyattinkara,Neyyattinkara,245,6.15 Hours
-kochi-airport,Kochi Airport,idukki,Idukki,115,3.15 Hours
-kochi-airport,Kochi Airport,thodupuzha,Thodupuzha,55,1.30 Hours
-kochi-airport,Kochi Airport,adimali,Adimali,80,2.30 Hours
-kochi-airport,Kochi Airport,munnar,Munnar,110,3.30 Hours
-kochi-airport,Kochi Airport,kattappana,Kattappana,140,4.00 Hours
-kochi-airport,Kochi Airport,nedumkandam,Nedumkandam,150,4.15 Hours
-kochi-airport,Kochi Airport,peermade,Peermade,125,3.30 Hours
-kochi-airport,Kochi Airport,kumily,Kumily,145,4.15 Hours
-kochi-airport,Kochi Airport,kumarakom,Kumarakom,80,2.15 Hours
-kochi-airport,Kochi Airport,athirappilly,Athirappilly Waterfalls,40,1.15 Hours
-kochi-airport,Kochi Airport,vazhachal,Vazhachal Waterfalls,45,1.25 Hours
-kochi-airport,Kochi Airport,vagamon,Vagamon,105,3.15 Hours
-kochi-airport,Kochi Airport,marari-beach,Marari Beach,75,2.00 Hours
-kochi-airport,Kochi Airport,kovalam,Kovalam Beach,240,6.00 Hours
-kochi-airport,Kochi Airport,thekkady,Thekkady,144,4.30 Hours
-kochi-airport,Kochi Airport,bekal-fort,Bekal Fort,320,8.00 Hours
-kochi-airport,Kochi Airport,ponmudi,Ponmudi,245,6.30 Hours
-kochi-airport,Kochi Airport,thenmala,Thenmala,185,4.45 Hours
-kochi-airport,Kochi Airport,ashtamudi-lake,Ashtamudi Lake,165,4.00 Hours
-kochi-airport,Kochi Airport,munroe-island,Munroe Island,170,4.15 Hours
-kochi-airport,Kochi Airport,kuttanad,Kuttanad,95,2.30 Hours
-kochi-airport,Kochi Airport,ilaveezhapoonchira,Ilaveezhapoonchira,85,2.30 Hours
-kochi-airport,Kochi Airport,nelliyampathy,Nelliyampathy,125,3.15 Hours
-kochi-airport,Kochi Airport,silent-valley,Silent Valley,150,4.00 Hours
-kochi-airport,Kochi Airport,malampuzha,Malampuzha,115,2.45 Hours
-kochi-airport,Kochi Airport,kanthalloor,Kanthalloor,150,4.30 Hours
-kochi-airport,Kochi Airport,marayoor,Marayoor,140,4.15 Hours
-kochi-airport,Kochi Airport,chinnar,Chinnar Wildlife Sanctuary,160,4.45 Hours
-kochi-airport,Kochi Airport,eravikulam,Eravikulam National Park,115,3.45 Hours
-kochi-airport,Kochi Airport,anamudi,Anamudi Peak,120,4.00 Hours
-kochi-airport,Kochi Airport,mattupetty,Mattupetty Dam,120,3.45 Hours
-kochi-airport,Kochi Airport,kundala-lake,Kundala Lake,135,4.15 Hours
-kochi-airport,Kochi Airport,top-station,Top Station Munnar,145,4.30 Hours
-kochi-airport,Kochi Airport,meesapulimala,Meesapulimala,135,4.15 Hours
-kochi-airport,Kochi Airport,ramakkalmedu,Ramakkalmedu,160,4.30 Hours
-kochi-airport,Kochi Airport,idukki-dam,Idukki Dam,115,3.15 Hours
-kochi-airport,Kochi Airport,cherai-beach,Cherai Beach,26,0.50 Hours
-kochi-airport,Kochi Airport,kuzhupilly-beach,Kuzhupilly Beach,28,1.00 Hours
-kochi-airport,Kochi Airport,andhakaranazhi-beach,Andhakaranazhi Beach,55,1.30 Hours
-kochi-airport,Kochi Airport,alappuzha-beach,Alappuzha Beach,85,2.15 Hours
-kochi-airport,Kochi Airport,kappad-beach,Kappad Beach,170,4.30 Hours
-kochi-airport,Kochi Airport,muzhappilangad-beach,Muzhappilangad Beach,235,6.00 Hours
-kochi-airport,Kochi Airport,bekal-beach,Bekal Beach,320,8.00 Hours
-kochi-airport,Kochi Airport,ranipuram,Ranipuram,335,8.30 Hours
-kochi-airport,Kochi Airport,paithalmala,Paithalmala,295,8.00 Hours
-kochi-airport,Kochi Airport,gavi,Gavi Forest,165,5.00 Hours
-kochi-airport,Kochi Airport,sabarimala,Sabarimala Pamba,160,4.30 Hours
-kochi-airport,Kochi Airport,chottanikkara-temple,Chottanikkara Temple,40,1.10 Hours
-kochi-airport,Kochi Airport,kaduthuruthy-temple,Kaduthuruthy Thaliyil Mahadeva Temple,55,1.20 Hours
-kochi-airport,Kochi Airport,ambalappuzha-temple,Ambalappuzha Sri Krishna Temple,95,2.30 Hours
-kochi-airport,Kochi Airport,mannarasala-temple,Mannarasala Nagaraja Temple,115,2.45 Hours
-kochi-airport,Kochi Airport,chettikulangara-temple,Chettikulangara Devi Temple,125,3.00 Hours
-kochi-airport,Kochi Airport,oachira-temple,Oachira Temple,135,3.15 Hours
-kochi-airport,Kochi Airport,attukal-temple,Attukal Bhagavathy Temple,230,5.45 Hours
-kochi-airport,Kochi Airport,padmanabhaswamy-temple,Sree Padmanabhaswamy Temple,230,5.45 Hours
-kochi-airport,Kochi Airport,pazhavangadi-temple,Pazhavangadi Ganapathy Temple,230,5.45 Hours
-kochi-airport,Kochi Airport,kottarakkara-ganapathy,Kottarakkara Sree Mahaganapathy Kshethram,160,4.00 Hours
-kochi-airport,Kochi Airport,aranmula-temple,Aranmula Parthasarathy Temple,135,3.15 Hours
-kochi-airport,Kochi Airport,malayattoor-church,Malayattoor Church,18,0.30 Hours
-kochi-airport,Kochi Airport,edappally-church,Edappally St George Church,22,0.45 Hours
-kochi-airport,Kochi Airport,vallarpadam-church,Vallarpadam Basilica,32,1.00 Hours
-kochi-airport,Kochi Airport,arthunkal-church,Arthunkal Basilica,65,1.45 Hours
-kochi-airport,Kochi Airport,bharananganam,Bharananganam St Alphonsa,80,2.15 Hours
-kochi-airport,Kochi Airport,beemapally,Beemapally Trivandrum,235,6.00 Hours
-kochi-airport,Kochi Airport,cheraman-masjid,Cheraman Juma Masjid,25,0.45 Hours
-kochi-airport,Kochi Airport,vavar-mosque,Vavar Mosque Erumely,115,3.00 Hours
-kochi-airport,Kochi Airport,thirunelli-temple,Thirunelli Temple,280,7.30 Hours
-kochi-airport,Kochi Airport,rajarajeshwara-temple,Rajarajeshwara Temple Taliparamba,265,6.45 Hours
-kochi-airport,Kochi Airport,parassinikadavu-muthappan,Parassinikadavu Muthappan Temple,260,6.30 Hours
-kochi-airport,Kochi Airport,thiruvambadi-temple,Thiruvambadi Temple Thrissur,55,1.15 Hours
-kochi-airport,Kochi Airport,paramekkavu-temple,Paramekkavu Temple Thrissur,55,1.15 Hours
-kochi-airport,Kochi Airport,kodungallur-temple,Kodungallur Bhagavathy Temple,30,0.50 Hours
-kochi-airport,Kochi Airport,thriprayar-temple,Thriprayar Sri Rama Temple,50,1.15 Hours
-kochi-airport,Kochi Airport,aster-medcity,Aster Medcity Kochi,26,0.45 Hours
-kochi-airport,Kochi Airport,amrita-hospital,Amrita Hospital Kochi,22,0.40 Hours
-kochi-airport,Kochi Airport,rajagiri-hospital,Rajagiri Hospital Aluva,15,0.25 Hours
-kochi-airport,Kochi Airport,lakeshore-hospital,Lakeshore Hospital Kochi,38,1.00 Hours
-kochi-airport,Kochi Airport,apollo-adlux,Apollo Adlux Hospital Angamaly,10,0.15 Hours
-kochi-airport,Kochi Airport,renai-medicity,Renai Medicity Kochi,25,0.50 Hours
-kochi-airport,Kochi Airport,medical-trust,Medical Trust Hospital Kochi,32,1.00 Hours
-kochi-airport,Kochi Airport,sunrise-hospital,Sunrise Hospital Kakkanad,26,0.50 Hours
-kochi-airport,Kochi Airport,kims-kochi,KIMS Hospital Kochi,28,0.55 Hours
-kochi-airport,Kochi Airport,lisie-hospital,Lisie Hospital Kochi,28,0.55 Hours
-kochi-airport,Kochi Airport,lourdes-hospital,Lourdes Hospital Kochi,30,1.00 Hours
-kochi-airport,Kochi Airport,caritas-hospital,Caritas Hospital Kottayam,85,2.10 Hours
-kochi-airport,Kochi Airport,matha-hospital,Matha Hospital Kottayam,90,2.15 Hours
-kochi-airport,Kochi Airport,believers-hospital,Believers Church Hospital Thiruvalla,115,3.00 Hours
-kochi-airport,Kochi Airport,kims-trivandrum,KIMS Trivandrum,220,5.15 Hours
-kochi-airport,Kochi Airport,ananthapuri-hospital,Ananthapuri Hospital Trivandrum,225,5.30 Hours
-kochi-airport,Kochi Airport,rcc-trivandrum,RCC Trivandrum,225,5.30 Hours
-kochi-airport,Kochi Airport,sree-chitra,Sree Chitra Trivandrum,225,5.30 Hours
-kochi-airport,Kochi Airport,aster-mims-calicut,Aster MIMS Calicut,150,3.45 Hours
-kochi-airport,Kochi Airport,baby-memorial,Baby Memorial Hospital Calicut,155,4.00 Hours
-kochi-airport,Kochi Airport,meitra-hospital,Meitra Hospital Calicut,160,4.10 Hours
-kochi-airport,Kochi Airport,amala-hospital,Amala Hospital Thrissur,60,1.20 Hours
-kochi-airport,Kochi Airport,jubilee-mission,Jubilee Mission Thrissur,55,1.15 Hours
-kochi-airport,Kochi Airport,elite-hospital,Elite Hospital Thrissur,55,1.15 Hours
-kochi-airport,Kochi Airport,westfort-hospital,Westfort Hospital Thrissur,55,1.15 Hours
-kochi-airport,Kochi Airport,grand-hyatt-bolgatty,Grand Hyatt Kochi Bolgatty,35,1.00 Hours
-kochi-airport,Kochi Airport,taj-malabar,Taj Malabar Resort Willingdon Island,42,1.20 Hours
-kochi-airport,Kochi Airport,crowne-plaza,Crowne Plaza Kochi,36,1.10 Hours
-kochi-airport,Kochi Airport,le-meridien,Le Meridien Kochi,37,1.15 Hours
-kochi-airport,Kochi Airport,ramada-resort,Ramada Resort Kochi,40,1.20 Hours
-kochi-airport,Kochi Airport,marriott-edappally,Marriott Hotel Edappally,22,0.40 Hours
-kochi-airport,Kochi Airport,novotel-kochi,Novotel Kochi Infopark,28,0.55 Hours
-kochi-airport,Kochi Airport,holiday-inn-kochi,Holiday Inn Kochi,30,1.00 Hours
-kochi-airport,Kochi Airport,radisson-blu-kochi,Radisson Blu Kochi,32,1.00 Hours
-kochi-airport,Kochi Airport,courtyard-marriott-airport,Courtyard by Marriott Kochi Airport,1,0.05 Hours
-kochi-airport,Kochi Airport,port-muziris,Port Muziris Kochi,1,0.05 Hours
-kochi-airport,Kochi Airport,taj-kumarakom,Taj Kumarakom Resort,80,2.15 Hours
-kochi-airport,Kochi Airport,kumarakom-lake-resort,Kumarakom Lake Resort,80,2.15 Hours
-kochi-airport,Kochi Airport,zuri-kumarakom,Zuri Kumarakom Resort,80,2.15 Hours
-kochi-airport,Kochi Airport,coconut-lagoon,Coconut Lagoon Kumarakom,80,2.15 Hours
-kochi-airport,Kochi Airport,niraamaya-kumarakom,Niraamaya Retreats Kumarakom,80,2.15 Hours
-kochi-airport,Kochi Airport,blanket-hotel-munnar,Blanket Hotel & Spa Munnar,105,3.15 Hours
-kochi-airport,Kochi Airport,panoramic-getaway,The Panoramic Getaway Munnar,100,3.00 Hours
-kochi-airport,Kochi Airport,chandys-windy-woods,Chandys Windy Woods Munnar,105,3.15 Hours
-kochi-airport,Kochi Airport,elephant-court,Elephant Court Thekkady,144,4.15 Hours
-kochi-airport,Kochi Airport,spice-village,Spice Village Thekkady,144,4.15 Hours
-kochi-airport,Kochi Airport,niraamaya-thekkady,Niraamaya Retreats Cardamom Club,145,4.20 Hours
-kochi-airport,Kochi Airport,taj-bekal,Taj Bekal Resort,320,8.00 Hours
-kochi-airport,Kochi Airport,lalit-bekal,The Lalit Resort Bekal,325,8.15 Hours
-kochi-airport,Kochi Airport,neeleshwar-hermitage,Neeleshwar Hermitage,310,7.45 Hours
-kochi-airport,Kochi Airport,raviz-ashtamudi,The Raviz Ashtamudi Kollam,165,4.00 Hours
-kochi-airport,Kochi Airport,fragrant-nature-kollam,Fragrant Nature Kollam,175,4.15 Hours
-kochi-airport,Kochi Airport,taj-green-cove,Taj Green Cove Kovalam,240,6.00 Hours
-kochi-airport,Kochi Airport,leela-raviz-kovalam,The Leela Raviz Kovalam,240,6.00 Hours
-kochi-airport,Kochi Airport,niraamaya-kovalam,Niraamaya Retreats Surya Samudra,245,6.15 Hours
-kochi-airport,Kochi Airport,carnoustie-resort,Carnoustie Ayurveda Resort Marari,70,1.50 Hours
-kochi-airport,Kochi Airport,marari-beach-resort,Marari Beach Resort CGH,75,2.00 Hours
-kochi-airport,Kochi Airport,xandari-pearl,Xandari Pearl Marari,75,2.00 Hours
-kochi-airport,Kochi Airport,brunton-boatyard,Brunton Boatyard Fort Kochi,45,1.30 Hours
-kochi-airport,Kochi Airport,eighth-bastion,Eighth Bastion Fort Kochi,45,1.30 Hours
-kochi-airport,Kochi Airport,forte-kochi,Forte Kochi,45,1.30 Hours
-kochi-airport,Kochi Airport,fragrant-nature-kochi,Fragrant Nature Kochi,45,1.30 Hours
-kochi-airport,Kochi Airport,vythiri-resort,Vythiri Resort Wayanad,225,6.00 Hours
-kochi-airport,Kochi Airport,windflower-wayanad,Windflower Resort Wayanad,235,6.15 Hours
-kochi-airport,Kochi Airport,taj-wayanad,Taj Wayanad,250,6.45 Hours
-kochi-airport,Kochi Airport,morickap-resort,Morickap Resort Wayanad,240,6.30 Hours
-kochi-airport,Kochi Airport,lulu-mall,Lulu Mall Kochi,23,0.45 Hours
-kochi-airport,Kochi Airport,centre-square-mall,Centre Square Mall Kochi,30,1.00 Hours
-kochi-airport,Kochi Airport,oberon-mall,Oberon Mall Kochi,25,0.50 Hours
-kochi-airport,Kochi Airport,forum-mall,Forum Mall Kochi,32,1.05 Hours
-kochi-airport,Kochi Airport,infopark,Infopark Kakkanad,28,0.55 Hours
-kochi-airport,Kochi Airport,smartcity,SmartCity Kochi,29,0.55 Hours
-kochi-airport,Kochi Airport,technopark,Technopark Trivandrum,215,5.15 Hours
-kochi-airport,Kochi Airport,cyberpark,Cyberpark Calicut,150,3.45 Hours
-kochi-airport,Kochi Airport,cusat,Cochin University CUSAT,20,0.40 Hours
-kochi-airport,Kochi Airport,rajagiri-college,Rajagiri College Kalamassery,19,0.40 Hours
-kochi-airport,Kochi Airport,iim-kozhikode,IIM Kozhikode,165,4.15 Hours
-kochi-airport,Kochi Airport,nit-calicut,NIT Calicut,170,4.30 Hours
-kochi-airport,Kochi Airport,iiser-trivandrum,IISER Trivandrum,235,6.00 Hours
-kochi-airport,Kochi Airport,coimbatore,Coimbatore,160,3.30 Hours
-kochi-airport,Kochi Airport,madurai,Madurai,270,6.00 Hours
-kochi-airport,Kochi Airport,bangalore,Bangalore,500,10.00 Hours
-kochi-airport,Kochi Airport,mysore,Mysore,350,8.00 Hours
-kochi-airport,Kochi Airport,ooty,Ooty,240,6.30 Hours
-kochi-airport,Kochi Airport,kodaikanal,Kodaikanal,260,6.30 Hours
-kochi-airport,Kochi Airport,salem,Salem,320,6.30 Hours
-kochi-airport,Kochi Airport,tiruppur,Tiruppur,210,4.30 Hours
-kochi-airport,Kochi Airport,erode,Erode,260,5.30 Hours
-kochi-airport,Kochi Airport,mangalore,Mangalore,360,9.00 Hours
-kochi-airport,Kochi Airport,kanyakumari,Kanyakumari,310,7.30 Hours
-kochi-airport,Kochi Airport,nagercoil,Nagercoil,295,7.00 Hours
+from_slug,from_location,to_slug,to_location,distance_km,travel_time,route_terrain,suggested_car,waypoints,unique_desc
+kochi-airport,Kochi Airport,aluva,Aluva,12,0.30 Hours,"smooth city roads","Dzire or Etios for quick city transit","Periyar River banks","A swift and comfortable short transfer right into the heart of Aluva."
+kochi-airport,Kochi Airport,angamaly,Angamaly,7,0.15 Hours,"short highway stretch","Dzire or Etios","local town centers","A rapid 15-minute hop from the airport terminal to Angamaly."
+kochi-airport,Kochi Airport,north-paravur,North Paravur,20,0.45 Hours,"suburban town roads","Dzire for easy navigation","local markets","A straightforward drive through the northern suburbs of Ernakulam."
+kochi-airport,Kochi Airport,kalamassery,Kalamassery,18,0.40 Hours,"urban city traffic","Dzire or Etios","CUSAT campus area","A quick and direct transfer into the bustling industrial and educational hub."
+kochi-airport,Kochi Airport,edappally,Edappally,22,0.45 Hours,"multi-lane city highways","Ertiga or Dzire","Lulu Mall junction","A smooth drive dropping you right at the commercial center of Kochi."
+kochi-airport,Kochi Airport,kaloor,Kaloor,28,1.00 Hours,"busy urban streets","Dzire or Etios","Jawaharlal Nehru Stadium","Navigate straight into the heart of Kochi's sporting and commercial district."
+kochi-airport,Kochi Airport,marine-drive-kochi,Marine Drive Kochi,30,1.10 Hours,"city traffic and coastal stretches","Ertiga for family comfort","Ernakulam backwaters","Enjoy the transition from highway to the scenic waterfront of Kochi city."
+kochi-airport,Kochi Airport,vyttila,Vyttila,28,1.00 Hours,"major city bypass highway","Dzire or Innova","Edappally bypass","A direct route to the busiest transport hub in Kerala."
+kochi-airport,Kochi Airport,palarivattom,Palarivattom,25,0.55 Hours,"city bypass roads","Dzire or Etios","Kochi Metro pillars","A quick transfer into one of Ernakulam's major intersections."
+kochi-airport,Kochi Airport,kakkanad,Kakkanad,26,0.50 Hours,"urban tech-corridor roads","Dzire or Innova Crysta","Seaport-Airport road","A hassle-free ride tailored for IT professionals heading to the tech park."
+kochi-airport,Kochi Airport,tripunithura,Tripunithura,35,1.15 Hours,"city and heritage town roads","Ertiga for family groups","Hill Palace Museum area","Drive through the city to reach the historical capital of the Cochin kingdom."
+kochi-airport,Kochi Airport,thoppumpady,Thoppumpady,38,1.20 Hours,"urban traffic and harbor bridges","Dzire or Etios","Willingdon Island bridges","Cross the beautiful backwater bridges to reach the old harbor town."
+kochi-airport,Kochi Airport,mattancherry,Mattancherry,42,1.30 Hours,"narrow heritage streets","Dzire for easy maneuvering","Jew Town and Spice Markets","A journey transporting you from the modern airport to the historic spice markets."
+kochi-airport,Kochi Airport,fort-kochi,Fort Kochi,45,1.30 Hours,"city traffic and heritage roads","Innova Crysta for a premium arrival","Chinese Fishing Nets","Drive through the bustling city into the colonial charm of Fort Kochi."
+kochi-airport,Kochi Airport,perumbavoor,Perumbavoor,15,0.30 Hours,"smooth suburban highways","Dzire or Etios","MC Road stretches","A quick eastbound transfer into the timber and spice trading hub."
+kochi-airport,Kochi Airport,kothamangalam,Kothamangalam,35,1.00 Hours,"scenic town roads","Ertiga for comfortable transit","Bhoothathankettu diversions","A pleasant drive acting as the gateway to the high ranges of Kerala."
+kochi-airport,Kochi Airport,muvattupuzha,Muvattupuzha,38,1.10 Hours,"hilly suburban stretches","Ertiga or Innova","Moovattupuzha river bridge","A smooth cruise towards the central junctions of Ernakulam district."
+kochi-airport,Kochi Airport,piravom,Piravom,45,1.20 Hours,"rural and town roads","Dzire or Etios","Pazhoor Perumthrikkovil area","A quiet drive away from the city traffic into the peaceful suburbs."
+kochi-airport,Kochi Airport,koothattukulam,Koothattukulam,55,1.30 Hours,"MC road highway stretches","Ertiga or Innova","local rubber plantations","A straightforward journey down the main central road connecting mid-Kerala."
+kochi-airport,Kochi Airport,kolenchery,Kolenchery,30,1.00 Hours,"suburban highways","Dzire for quick transit","Medical College area","A direct and comfortable drive to the eastern suburbs of Ernakulam."
+kochi-airport,Kochi Airport,vypin,Vypin,32,1.10 Hours,"coastal roads and Goshree bridges","Ertiga or Innova","Bolgatty and Vallarpadam","A beautiful drive crossing the backwater islands to reach the coastal stretch."
+kochi-airport,Kochi Airport,cherai,Cherai,26,0.50 Hours,"scenic coastal roads","Innova Crysta for family trips","Munambam beach road","A relaxing coastal drive leading straight to the sun and sand."
+kochi-airport,Kochi Airport,thrissur,Thrissur,55,1.15 Hours,"busy NH544 toll highway","Innova or Dzire","Chalakudy river bridge","A straight highway drive connecting the airport directly to the cultural capital."
+kochi-airport,Kochi Airport,chalakudy,Chalakudy,25,0.40 Hours,"smooth NH544 highway","Dzire or Etios","Angamaly bypass","A very quick highway sprint to the gateway of Athirappilly."
+kochi-airport,Kochi Airport,irinjalakuda,Irinjalakuda,38,1.00 Hours,"highway and local town roads","Ertiga for family groups","Koodalmanikyam Temple area","A smooth transition from the national highway into the cultural town."
+kochi-airport,Kochi Airport,guruvayur,Guruvayur,80,2.00 Hours,"highways and pilgrim town roads","Ertiga for family pilgrim trips","Thrissur town bypass","A peaceful pilgrimage drive directly to the holy temple town."
+kochi-airport,Kochi Airport,kunnamkulam,Kunnamkulam,75,1.45 Hours,"state highways","Dzire or Innova","Thrissur bypass","A direct drive to the historic commercial town in Thrissur district."
+kochi-airport,Kochi Airport,chavakkad,Chavakkad,80,2.00 Hours,"coastal state highways","Ertiga or Dzire","Munnakkal beach diversions","A smooth journey ending at the beautiful coastal belt of Thrissur."
+kochi-airport,Kochi Airport,wadakkanchery,Wadakkanchery,70,1.40 Hours,"NH544 and state roads","Dzire or Innova","Peechi Dam diversions","A comfortable drive towards the northern borders of Thrissur."
+kochi-airport,Kochi Airport,palakkad,Palakkad,110,2.30 Hours,"multi-lane toll highways (NH544)","Innova Crysta for highway cruising","Kuthiran Tunnel","A fast-paced interstate highway cruise through the scenic Kuthiran hills."
+kochi-airport,Kochi Airport,ottapalam,Ottapalam,95,2.15 Hours,"highway and riverside roads","Ertiga or Innova","Bharathappuzha river banks","A scenic drive leading to the cinematic landscapes of the Valluvanad region."
+kochi-airport,Kochi Airport,shoranur,Shoranur,85,2.00 Hours,"state highways","Dzire or Etios","Kerala Kalamandalam","A comfortable trip to the major railway and cultural hub of Kerala."
+kochi-airport,Kochi Airport,mannarkkad,Mannarkkad,130,3.00 Hours,"highways and forested town roads","Innova for long drives","Silent Valley gateway","A beautiful drive transitioning from highways to the foothills of the Western Ghats."
+kochi-airport,Kochi Airport,malappuram,Malappuram,130,3.15 Hours,"busy NH66 and state highways","Innova Crysta for comfort","Kottakkal bypass","A long but steady journey into the hilly terrain of Malappuram district."
+kochi-airport,Kochi Airport,perinthalmanna,Perinthalmanna,110,2.45 Hours,"state highways","Ertiga or Innova","Pattambi roads","A straightforward drive to the medical and commercial hub of Malappuram."
+kochi-airport,Kochi Airport,manjeri,Manjeri,140,3.30 Hours,"hilly state roads","Innova Crysta","Malappuram town","A scenic, slightly winding drive into the historic northern town."
+kochi-airport,Kochi Airport,tirur,Tirur,115,2.45 Hours,"coastal and state highways","Dzire or Ertiga","Thunjan Parambu area","A cultural journey towards the birthplace of the Malayalam language."
+kochi-airport,Kochi Airport,ponnani,Ponnani,100,2.30 Hours,"flat coastal highways (NH66)","Ertiga or Innova","Chamravattom bridge","A beautiful coastal drive to the historic port town of Malabar."
+kochi-airport,Kochi Airport,kozhikode,Kozhikode,155,4.00 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance comfort","Kadalundi bird sanctuary diversions","A long, culturally rich cruise up the coast to the culinary capital of Kerala."
+kochi-airport,Kochi Airport,vadakara,Vadakara,200,5.00 Hours,"northern NH66 highway","Innova for maximum comfort","Kappad beach diversions","An extended coastal journey tracing the historic spice routes."
+kochi-airport,Kochi Airport,koyilandy,Koyilandy,180,4.30 Hours,"busy coastal highways","Ertiga or Innova","Kozhikode bypass","A straight drive up the Malabar coast with views of the Arabian Sea."
+kochi-airport,Kochi Airport,thamarassery,Thamarassery,185,4.45 Hours,"highway transitioning to ghat roads","Innova Crysta for hill power","Thamarassery Churam base","A scenic approach drive to the famous mountain pass leading to Wayanad."
+kochi-airport,Kochi Airport,wayanad,Wayanad,240,6.30 Hours,"steep winding ghat roads (Churam)","Innova Crysta for hill comfort and safety","Lakkidi Viewpoint","An epic climb up the mountain pass into the lush green forests of Wayanad."
+kochi-airport,Kochi Airport,kalpetta,Kalpetta,230,6.00 Hours,"winding mountain roads","Innova Crysta","Pookode Lake diversion","A beautiful, misty drive right into the district headquarters of Wayanad."
+kochi-airport,Kochi Airport,sulthan-bathery,Sulthan Bathery,250,6.30 Hours,"ghat roads and forest stretches","Innova Crysta for premium comfort","Muthanga Wildlife Sanctuary","A long, scenic drive passing through the historic and forested parts of Wayanad."
+kochi-airport,Kochi Airport,mananthavady,Mananthavady,260,7.00 Hours,"steep ghats and forest roads","Innova for rough terrain","Kuruva Island diversions","A deep dive into the northernmost, pristine forests of the Wayanad district."
+kochi-airport,Kochi Airport,kannur,Kannur,245,6.30 Hours,"long NH66 coastal highway","Innova Crysta for extreme comfort","Muzhappilangad Drive-in Beach","A marathon coastal cruise to the land of looms and lore."
+kochi-airport,Kochi Airport,thalassery,Thalassery,225,5.45 Hours,"busy northern NH66","Ertiga or Innova","Mahe bypass","A long, flavorful journey to the heritage city famous for its biryani and forts."
+kochi-airport,Kochi Airport,payyanur,Payyanur,285,7.30 Hours,"extended coastal highway","Innova Crysta","Kannur bypass","A deep northern journey exploring the rich Theyyam culture belt."
+kochi-airport,Kochi Airport,kasaragod,Kasaragod,330,8.30 Hours,"long-distance NH66 highway","Innova Crysta for maximum endurance","Bekal Fort diversions","The ultimate coastal road trip spanning the entire length of northern Kerala."
+kochi-airport,Kochi Airport,kanhangad,Kanhangad,305,8.00 Hours,"northern state highways","Innova for long trips","Nileshwaram backwaters","A beautiful, extended drive into the culturally rich northernmost district."
+kochi-airport,Kochi Airport,kottayam,Kottayam,90,2.15 Hours,"MC Road / state highways","Dzire or Ertiga","Kumarakom diversions","A smooth inland drive transitioning into the land of lakes and letters."
+kochi-airport,Kochi Airport,pala,Pala,75,2.00 Hours,"hilly state highways","Ertiga or Innova","Ettumanoor temple diversions","A scenic drive into the rubber plantation heartland of Kerala."
+kochi-airport,Kochi Airport,changanassery,Changanassery,105,2.45 Hours,"MC Road highway","Dzire or Innova","Kottayam bypass","A straightforward journey down the main central road to the trading hub."
+kochi-airport,Kochi Airport,kanjirappally,Kanjirappally,100,2.30 Hours,"winding plantation roads","Innova Crysta for hill access","Ponkunnam stretches","A pleasant drive climbing gently into the gateway of the high ranges."
+kochi-airport,Kochi Airport,vaikom,Vaikom,60,1.30 Hours,"scenic backwater roads","Ertiga for family trips","Vembanad Lake views","A calm and scenic route running parallel to the magnificent backwaters."
+kochi-airport,Kochi Airport,ettumanoor,Ettumanoor,75,2.00 Hours,"smooth MC road","Dzire or Etios","Vaikom diversions","A direct, hassle-free transfer to the famous temple town."
+kochi-airport,Kochi Airport,pathanamthitta,Pathanamthitta,130,3.15 Hours,"state highways and hilly roads","Innova for family comfort","Konni Elephant Reserve","A scenic inland drive heading towards the pilgrim capital of Kerala."
+kochi-airport,Kochi Airport,thiruvalla,Thiruvalla,115,3.00 Hours,"busy MC road stretches","Ertiga or Dzire","Changanassery bypass","A smooth journey into the heart of the NRI belt of Central Kerala."
+kochi-airport,Kochi Airport,adoor,Adoor,140,3.30 Hours,"MC road highway","Innova Crysta","Pandalam Palace diversions","A continuous, steady drive down the central arterial road of the state."
+kochi-airport,Kochi Airport,kozhencherry,Kozhencherry,135,3.15 Hours,"hilly and riverside roads","Ertiga or Innova","Pamba river views","A beautiful drive tracing the banks of the sacred Pamba river."
+kochi-airport,Kochi Airport,ranni,Ranni,130,3.15 Hours,"winding plantation roads","Innova for hill comfort","Perunthenaruvi waterfalls","A quiet, green drive into the rubber and spice hills of Pathanamthitta."
+kochi-airport,Kochi Airport,alleppey,Alleppey,85,2.15 Hours,"smooth coastal highways (NH66)","Dzire or Ertiga for a comfortable highway ride","Marari Beach and local backwaters","A quick and flat transfer down the coast straight to the Venice of the East."
+kochi-airport,Kochi Airport,cherthala,Cherthala,65,1.45 Hours,"NH66 bypass road","Dzire or Etios","Aroor bridge","A fast highway sprint leading to the northern gateway of the backwaters."
+kochi-airport,Kochi Airport,haripad,Haripad,115,2.45 Hours,"flat NH66 coastal highway","Ertiga or Innova","Ambalappuzha diversions","A continuous, easy highway cruise down the Alappuzha coastline."
+kochi-airport,Kochi Airport,kayamkulam,Kayamkulam,130,3.15 Hours,"busy NH66 highway","Dzire or Innova","Krishnapuram Palace","A smooth, straight drive connecting central Kerala to the southern districts."
+kochi-airport,Kochi Airport,mavelikara,Mavelikara,125,3.00 Hours,"state highways and rural roads","Ertiga for family trips","Chettikulangara temple","A peaceful diversion from the main highway into the cultural heart of Onattukara."
+kochi-airport,Kochi Airport,kollam,Kollam,165,4.00 Hours,"long coastal highway (NH66)","Innova Crysta for long-distance comfort","Ashtamudi Lake bypass","A scenic highway cruise ending at the historic cashew capital and backwaters."
+kochi-airport,Kochi Airport,karunagappally,Karunagappally,140,3.30 Hours,"flat NH66 highway","Dzire or Ertiga","Oachira temple diversions","A direct coastal highway route into the northern towns of Kollam district."
+kochi-airport,Kochi Airport,kottarakkara,Kottarakkara,160,4.00 Hours,"MC road stretches","Innova or Ertiga","Jatayu Earth's Center","An inland highway journey through the cashew plantations of the south."
+kochi-airport,Kochi Airport,punalur,Punalur,175,4.30 Hours,"hilly state highways","Innova Crysta","Thenmala eco-tourism diversions","A scenic drive climbing gently towards the eastern forest borders of Kollam."
+kochi-airport,Kochi Airport,trivandrum,Trivandrum,225,5.30 Hours,"long coastal and city highways (NH66)","Innova Crysta for maximum highway comfort","Kollam bypass and Technopark","A marathon highway cruise spanning the length of the state to the capital city."
+kochi-airport,Kochi Airport,attingal,Attingal,195,4.45 Hours,"NH66 highway","Ertiga or Innova","Varkala diversions","A long but steady coastal drive approaching the outskirts of Trivandrum."
+kochi-airport,Kochi Airport,varkala,Varkala,195,5.00 Hours,"coastal highway and cliff roads","Innova Crysta for a premium arrival","Kappil Beach and Backwaters","A beautiful coastal journey ending at the majestic red cliffs overlooking the Arabian Sea."
+kochi-airport,Kochi Airport,nedumangad,Nedumangad,230,5.45 Hours,"city bypass and hilly roads","Innova for comfort","Ponmudi hill diversions","An inland drive bypassing the capital city to reach the spice-trading foothills."
+kochi-airport,Kochi Airport,neyyattinkara,Neyyattinkara,245,6.15 Hours,"busy southern NH66 highway","Innova Crysta","Kovalam bypass","A complete north-to-south journey reaching the southernmost borders of Kerala."
+kochi-airport,Kochi Airport,idukki,Idukki,115,3.15 Hours,"steep and winding mountain roads","Innova Crysta for superior hill performance","Idukki Arch Dam","A breathtaking climb up the Western Ghats into the rugged heart of Kerala."
+kochi-airport,Kochi Airport,thodupuzha,Thodupuzha,55,1.30 Hours,"smooth state highways","Dzire or Ertiga","Muvattupuzha bypass","A quick and easy transfer to the gateway town of the Idukki high ranges."
+kochi-airport,Kochi Airport,adimali,Adimali,80,2.30 Hours,"winding ghat roads","Innova or Ertiga","Cheeyappara Waterfalls","The classic mountain drive marking the start of the steep ascent to Munnar."
+kochi-airport,Kochi Airport,munnar,Munnar,110,3.30 Hours,"steep and winding mountain roads","Innova Crysta for hill comfort and safety","Cheeyappara and Valara Waterfalls","The drive climbs up the Western Ghats offering stunning views of tea plantations and mist."
+kochi-airport,Kochi Airport,kattappana,Kattappana,140,4.00 Hours,"steep ghats and spice plantation roads","Innova Crysta for rough terrain","Idukki wildlife sanctuary","A deep mountainous drive into the pepper and cardamom capital of India."
+kochi-airport,Kochi Airport,nedumkandam,Nedumkandam,150,4.15 Hours,"high-altitude winding roads","Innova Crysta","Ramakkalmedu diversions","A scenic, high-altitude journey exploring the remote eastern borders of Idukki."
+kochi-airport,Kochi Airport,peermade,Peermade,125,3.30 Hours,"winding hill station roads","Innova for family comfort","Vagamon pine forest diversions","A beautiful climb through tea and pine estates towards the cooler climates."
+kochi-airport,Kochi Airport,kumily,Kumily,145,4.15 Hours,"steep ghat roads and forest borders","Innova Crysta for premium safety","Thekkady Periyar Reserve","An adventurous mountain drive ending at the famous elephant reserves."
+kochi-airport,Kochi Airport,kumarakom,Kumarakom,80,2.15 Hours,"scenic backwater resort roads","Innova Crysta for a luxurious arrival","Vembanad Lake views","A premium, relaxing transfer straight to the luxury backwater resorts."
+kochi-airport,Kochi Airport,athirappilly,Athirappilly Waterfalls,40,1.15 Hours,"forest roads and hilly curves","Ertiga or Innova for family views","Thumboormuzhi Dam","A short but incredibly scenic drive into the lush Sholayar rain forests."
+kochi-airport,Kochi Airport,vazhachal,Vazhachal Waterfalls,45,1.25 Hours,"dense forest canopy roads","Innova for forest terrain","Athirappilly viewpoints","An immersive drive deep into the pristine rainforests of the Western Ghats."
+kochi-airport,Kochi Airport,vagamon,Vagamon,105,3.15 Hours,"steep and winding mountain roads","Innova Crysta for superior hill performance","Pine Forests and Meadows","A mesmerizing climb into the misty, rolling green meadows of the high ranges."
+kochi-airport,Kochi Airport,marari-beach,Marari Beach,75,2.00 Hours,"flat coastal roads","Ertiga or Innova Crysta","Alleppey bypass","A relaxing drive leading straight to the sun, sand, and private beach resorts."
+kochi-airport,Kochi Airport,kovalam,Kovalam Beach,240,6.00 Hours,"long coastal highway (NH66)","Innova Crysta for a premium arrival","Trivandrum city bypass","A marathon coastal cruise ending at the internationally renowned crescent beaches."
+kochi-airport,Kochi Airport,thekkady,Thekkady,144,4.30 Hours,"winding mountain roads and ghats","Innova Crysta for superior comfort and power","Periyar National Park","Relax as our expert drivers navigate the beautiful winding roads up to the spice gardens."
+kochi-airport,Kochi Airport,bekal-fort,Bekal Fort,320,8.00 Hours,"long-distance NH66 highway","Innova Crysta for maximum endurance","Payyanur and Kannur bypass","The ultimate coastal road trip spanning the entire length of northern Kerala."
+kochi-airport,Kochi Airport,ponmudi,Ponmudi,245,6.30 Hours,"highway followed by 22 hairpin bends","Innova Crysta for extreme hill safety","Kallar river and Meenmutty","A long highway journey capping off with a thrilling climb up 22 hairpin curves."
+kochi-airport,Kochi Airport,thenmala,Thenmala,185,4.45 Hours,"highway and forested ghat roads","Innova for family comfort","Punalur hanging bridge","A scenic eco-tourism drive into the forested eastern borders of the state."
+kochi-airport,Kochi Airport,ashtamudi-lake,Ashtamudi Lake,165,4.00 Hours,"NH66 coastal highway","Innova Crysta for resort arrivals","Kollam backwaters","A comfortable highway cruise leading directly to the luxurious lakeside resorts."
+kochi-airport,Kochi Airport,munroe-island,Munroe Island,170,4.15 Hours,"highway and narrow canal roads","Ertiga or Dzire","Ashtamudi lake diversions","A beautiful drive transitioning from main highways to tiny backwater village roads."
+kochi-airport,Kochi Airport,kuttanad,Kuttanad,95,2.30 Hours,"narrow roads below sea level","Dzire or Etios for easy maneuvering","Paddy fields and houseboats","A unique drive through the farming heartland situated below sea level."
+kochi-airport,Kochi Airport,ilaveezhapoonchira,Ilaveezhapoonchira,85,2.30 Hours,"steep, off-road rocky terrain","Innova or specialized SUV","Kanjar diversions","An adventurous climb to one of the most stunning, treeless viewpoints in Kerala."
+kochi-airport,Kochi Airport,nelliyampathy,Nelliyampathy,125,3.15 Hours,"highway followed by steep ghats","Innova Crysta for hill safety","Pothundi Dam","A scenic journey crossing highways and climbing into the orange-county of Kerala."
+kochi-airport,Kochi Airport,silent-valley,Silent Valley,150,4.00 Hours,"highway and rough forest roads","Innova for rugged terrain","Mannarkkad town","A long drive into the buffer zones of the most pristine rainforest in India."
+kochi-airport,Kochi Airport,malampuzha,Malampuzha,115,2.45 Hours,"multi-lane toll highways","Ertiga or Innova","Palakkad bypass","A fast and smooth interstate highway cruise to the famous dam and gardens."
+kochi-airport,Kochi Airport,kanthalloor,Kanthalloor,150,4.30 Hours,"high-altitude winding roads","Innova Crysta for supreme power","Marayoor Sandalwood forests","A majestic climb beyond Munnar into the fruit bowl of Kerala."
+kochi-airport,Kochi Airport,marayoor,Marayoor,140,4.15 Hours,"steep ghats and rain-shadow roads","Innova Crysta","Munnar town bypass","A beautiful mountain drive passing through natural sandalwood forests."
+kochi-airport,Kochi Airport,chinnar,Chinnar Wildlife Sanctuary,160,4.45 Hours,"winding mountain and forest roads","Innova for wildlife terrains","Thoovanam waterfalls","An adventurous drive through the rain-shadow forests of the Western Ghats."
+kochi-airport,Kochi Airport,eravikulam,Eravikulam National Park,115,3.45 Hours,"steep mountain estate roads","Innova Crysta","Rajamalai diversions","A breathtaking climb to the home of the endangered Nilgiri Tahr."
+kochi-airport,Kochi Airport,anamudi,Anamudi Peak,120,4.00 Hours,"high-altitude winding roads","Innova Crysta for hill safety","Eravikulam park entrance","A scenic drive towards the base of the highest peak in South India."
+kochi-airport,Kochi Airport,mattupetty,Mattupetty Dam,120,3.45 Hours,"winding tea plantation roads","Innova or Ertiga","Munnar Rose Garden","A highly scenic, slow-paced drive through the iconic tea estates of Munnar."
+kochi-airport,Kochi Airport,kundala-lake,Kundala Lake,135,4.15 Hours,"narrow winding estate roads","Innova Crysta","Echo Point","A picturesque journey deep into the tea country past historical dams."
+kochi-airport,Kochi Airport,top-station,Top Station Munnar,145,4.30 Hours,"steep, high-altitude mountain roads","Innova Crysta for supreme power","Kundala Dam","An epic climb to the highest viewpoint in the Munnar region."
+kochi-airport,Kochi Airport,meesapulimala,Meesapulimala,135,4.15 Hours,"rugged mountain and off-road tracks","Innova or 4x4 Jeep","Kolukkumalai base","An adventurous mountain transfer to the base camp of the famous trekking peak."
+kochi-airport,Kochi Airport,ramakkalmedu,Ramakkalmedu,160,4.30 Hours,"steep ghats and high-wind roads","Innova Crysta","Kuruvan Kuruthi statue","A scenic, high-altitude journey exploring the windy eastern borders of Idukki."
+kochi-airport,Kochi Airport,idukki-dam,Idukki Dam,115,3.15 Hours,"steep and winding mountain roads","Innova Crysta for superior hill performance","Cheruthoni Dam","A breathtaking climb up the Western Ghats to witness the engineering marvel."
+kochi-airport,Kochi Airport,cherai-beach,Cherai Beach,26,0.50 Hours,"scenic coastal roads","Innova Crysta for family trips","Munambam beach road","A relaxing coastal drive leading straight to the sun, sand, and Arabian Sea."
+kochi-airport,Kochi Airport,kuzhupilly-beach,Kuzhupilly Beach,28,1.00 Hours,"narrow coastal village roads","Dzire or Etios","Vypin island route","A quiet drive away from the crowds to a pristine, hidden beach."
+kochi-airport,Kochi Airport,andhakaranazhi-beach,Andhakaranazhi Beach,55,1.30 Hours,"NH66 bypass and coastal roads","Ertiga or Dzire","Cherthala diversions","A fast highway cruise followed by a short diversion to the scenic estuary."
+kochi-airport,Kochi Airport,alappuzha-beach,Alappuzha Beach,85,2.15 Hours,"smooth coastal highways (NH66)","Ertiga or Innova for a comfortable ride","Alleppey Lighthouse","A quick and flat transfer down the coast straight to the historic beach."
+kochi-airport,Kochi Airport,kappad-beach,Kappad Beach,170,4.30 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance comfort","Kozhikode bypass","A long, culturally rich cruise up the coast to the historic landing site of Vasco da Gama."
+kochi-airport,Kochi Airport,muzhappilangad-beach,Muzhappilangad Beach,235,6.00 Hours,"long NH66 coastal highway","Innova Crysta for extreme comfort","Thalassery bypass","A marathon coastal cruise to Asia's longest drive-in beach."
+kochi-airport,Kochi Airport,bekal-beach,Bekal Beach,320,8.00 Hours,"long-distance NH66 highway","Innova Crysta for maximum endurance","Payyanur and Kannur bypass","The ultimate coastal road trip spanning the entire length of northern Kerala."
+kochi-airport,Kochi Airport,ranipuram,Ranipuram,335,8.30 Hours,"highway followed by steep hill roads","Innova Crysta for hill power","Kanhangad diversions","A massive cross-state journey ending in the misty hills of the 'Ooty of Kerala'."
+kochi-airport,Kochi Airport,paithalmala,Paithalmala,295,8.00 Hours,"highway and rugged hill tracks","Innova for rough terrain","Taliparamba diversions","An adventurous, long-distance drive to the stunning hill stations of Kannur."
+kochi-airport,Kochi Airport,gavi,Gavi Forest,165,5.00 Hours,"steep ghats and restricted forest roads","Innova Crysta for rough terrain","Vandiperiyar diversions","A deep, immersive drive into one of the most pristine eco-tourism spots in India."
+kochi-airport,Kochi Airport,sabarimala,Sabarimala Pamba,160,4.30 Hours,"highways and forested pilgrim routes","Ertiga or Innova for family groups","Erumely and Nilakkal","A peaceful and comfortable drive tailored specifically for your spiritual journey to Pamba."
+kochi-airport,Kochi Airport,chottanikkara-temple,Chottanikkara Temple,40,1.10 Hours,"city traffic and town roads","Ertiga for family pilgrim trips","Tripunithura bypass","A smooth city transit leading directly to the powerful goddess temple."
+kochi-airport,Kochi Airport,kaduthuruthy-temple,Kaduthuruthy Thaliyil Mahadeva Temple,55,1.20 Hours,"MC Road highway","Dzire or Etios","Piravom diversions","A direct, hassle-free transfer to the famous Shiva temple."
+kochi-airport,Kochi Airport,ambalappuzha-temple,Ambalappuzha Sri Krishna Temple,95,2.30 Hours,"flat NH66 coastal highway","Ertiga or Innova","Alleppey bypass","A continuous, easy highway cruise down the Alappuzha coastline for darshan."
+kochi-airport,Kochi Airport,mannarasala-temple,Mannarasala Nagaraja Temple,115,2.45 Hours,"NH66 highway and town roads","Ertiga or Innova","Haripad diversions","A peaceful pilgrimage drive directly to the ancient serpent temple."
+kochi-airport,Kochi Airport,chettikulangara-temple,Chettikulangara Devi Temple,125,3.00 Hours,"state highways and rural roads","Ertiga for family trips","Mavelikara diversions","A peaceful diversion from the main highway into the cultural heart of Onattukara."
+kochi-airport,Kochi Airport,oachira-temple,Oachira Temple,135,3.15 Hours,"flat NH66 highway","Dzire or Ertiga","Kayamkulam bypass","A direct coastal highway route straight to the unique parabrahma temple."
+kochi-airport,Kochi Airport,attukal-temple,Attukal Bhagavathy Temple,230,5.45 Hours,"long coastal highway (NH66)","Innova Crysta for long-distance comfort","Trivandrum city bypass","A marathon highway cruise spanning the length of the state to the 'Sabarimala of Women'."
+kochi-airport,Kochi Airport,padmanabhaswamy-temple,Sree Padmanabhaswamy Temple,230,5.45 Hours,"long coastal and city highways (NH66)","Innova Crysta for maximum highway comfort","East Fort Trivandrum","A marathon highway cruise to the richest temple in the world."
+kochi-airport,Kochi Airport,pazhavangadi-temple,Pazhavangadi Ganapathy Temple,230,5.45 Hours,"long coastal and city highways (NH66)","Innova Crysta for maximum highway comfort","East Fort Trivandrum","A marathon highway cruise to the famous Ganapathy temple in the capital."
+kochi-airport,Kochi Airport,kottarakkara-ganapathy,Kottarakkara Sree Mahaganapathy Kshethram,160,4.00 Hours,"MC road stretches","Innova or Ertiga","Adoor bypass","An inland highway journey directly to the famous Unniyappam temple."
+kochi-airport,Kochi Airport,aranmula-temple,Aranmula Parthasarathy Temple,135,3.15 Hours,"hilly and riverside roads","Ertiga or Innova","Chengannur bypass","A beautiful drive tracing the banks of the sacred Pamba river to the heritage village."
+kochi-airport,Kochi Airport,malayattoor-church,Malayattoor Church,18,0.30 Hours,"smooth rural roads","Dzire or Etios","Periyar river banks","A very short, scenic drive from the airport to the base of the holy mountain."
+kochi-airport,Kochi Airport,edappally-church,Edappally St George Church,22,0.45 Hours,"multi-lane city highways","Ertiga or Dzire","Lulu Mall junction","A smooth drive dropping you right at the famous pilgrim center in Kochi."
+kochi-airport,Kochi Airport,vallarpadam-church,Vallarpadam Basilica,32,1.00 Hours,"coastal roads and Goshree bridges","Ertiga or Innova","Marine Drive Kochi","A beautiful drive crossing the backwater islands to reach the historic basilica."
+kochi-airport,Kochi Airport,arthunkal-church,Arthunkal Basilica,65,1.45 Hours,"scenic coastal roads","Innova Crysta for family trips","Cherthala bypass","A relaxing coastal drive leading straight to the famous pilgrim center on the beach."
+kochi-airport,Kochi Airport,bharananganam,Bharananganam St Alphonsa,80,2.15 Hours,"hilly state highways","Ertiga or Innova","Pala town","A scenic drive into the rubber plantation heartland to the holy shrine."
+kochi-airport,Kochi Airport,beemapally,Beemapally Trivandrum,235,6.00 Hours,"long coastal highway (NH66)","Innova Crysta for long-distance comfort","Trivandrum airport bypass","A marathon coastal cruise ending at the historic mosque by the sea."
+kochi-airport,Kochi Airport,cheraman-masjid,Cheraman Juma Masjid,25,0.45 Hours,"suburban town roads","Dzire for easy navigation","Kodungallur bypass","A straightforward drive to India's oldest mosque in the heritage town."
+kochi-airport,Kochi Airport,vavar-mosque,Vavar Mosque Erumely,115,3.00 Hours,"winding plantation roads","Innova Crysta for hill access","Kanjirappally bypass","A pleasant drive climbing gently into the gateway of the Sabarimala pilgrimage."
+kochi-airport,Kochi Airport,thirunelli-temple,Thirunelli Temple,280,7.30 Hours,"steep ghats and dense forest roads","Innova Crysta for premium safety","Mananthavady diversions","An epic, deep-forest drive to the ancient 'Kashi of the South'."
+kochi-airport,Kochi Airport,rajarajeshwara-temple,Rajarajeshwara Temple Taliparamba,265,6.45 Hours,"long NH66 coastal highway","Innova Crysta for extreme comfort","Kannur bypass","A marathon coastal cruise to one of the most prominent Shiva temples in Malabar."
+kochi-airport,Kochi Airport,parassinikadavu-muthappan,Parassinikadavu Muthappan Temple,260,6.30 Hours,"long NH66 coastal highway","Innova Crysta for extreme comfort","Valapattanam river banks","A long, flavorful journey to the unique riverside temple in Kannur."
+kochi-airport,Kochi Airport,thiruvambadi-temple,Thiruvambadi Temple Thrissur,55,1.15 Hours,"busy NH544 toll highway","Innova or Dzire","Thrissur Swaraj Round","A straight highway drive connecting the airport directly to the cultural capital."
+kochi-airport,Kochi Airport,paramekkavu-temple,Paramekkavu Temple Thrissur,55,1.15 Hours,"busy NH544 toll highway","Innova or Dzire","Thrissur Swaraj Round","A straight highway drive connecting the airport directly to the cultural capital."
+kochi-airport,Kochi Airport,kodungallur-temple,Kodungallur Bhagavathy Temple,30,0.50 Hours,"suburban town roads","Dzire for easy navigation","North Paravur bypass","A straightforward drive through the northern suburbs to the historic temple."
+kochi-airport,Kochi Airport,thriprayar-temple,Thriprayar Sri Rama Temple,50,1.15 Hours,"coastal state highways","Ertiga or Dzire","Kodungallur bypass","A smooth journey ending at the beautiful riverside temple."
+kochi-airport,Kochi Airport,aster-medcity,Aster Medcity Kochi,26,0.45 Hours,"well-paved city and backwater roads","Innova Crysta for patient comfort","Cheranallur bypass","A smooth, priority transfer focused on reaching the premium medical facility safely."
+kochi-airport,Kochi Airport,amrita-hospital,Amrita Hospital Kochi,22,0.40 Hours,"multi-lane city highways","Dzire or Innova for patient comfort","Edappally toll junction","A quick and direct medical transfer into the bustling hospital campus."
+kochi-airport,Kochi Airport,rajagiri-hospital,Rajagiri Hospital Aluva,15,0.25 Hours,"smooth suburban roads","Dzire or Etios","Aluva bypass","An extremely rapid 25-minute transfer ensuring quick access to medical care."
+kochi-airport,Kochi Airport,lakeshore-hospital,Lakeshore Hospital Kochi,38,1.00 Hours,"major city bypass highway","Innova for maximum patient comfort","Vyttila bypass","A direct route down the bypass avoiding deep city traffic for a smooth hospital arrival."
+kochi-airport,Kochi Airport,apollo-adlux,Apollo Adlux Hospital Angamaly,10,0.15 Hours,"short highway stretch","Dzire or Etios","Karukutty highway","A rapid 15-minute hop from the airport terminal directly to the hospital."
+kochi-airport,Kochi Airport,renai-medicity,Renai Medicity Kochi,25,0.50 Hours,"busy urban streets","Dzire or Innova for patient comfort","Palarivattom bypass","Navigate straight into the heart of Kochi for a quick medical transfer."
+kochi-airport,Kochi Airport,medical-trust,Medical Trust Hospital Kochi,32,1.00 Hours,"major city bypass highway","Dzire or Innova","Pallimukku junction","A direct route to one of Ernakulam's oldest and major hospital hubs."
+kochi-airport,Kochi Airport,sunrise-hospital,Sunrise Hospital Kakkanad,26,0.50 Hours,"urban tech-corridor roads","Dzire or Innova Crysta","Seaport-Airport road","A hassle-free medical ride tailored for quick access to the Kakkanad hospital."
+kochi-airport,Kochi Airport,kims-kochi,KIMS Hospital Kochi,28,0.55 Hours,"busy urban streets","Dzire or Innova for patient comfort","Edappally bypass","A smooth medical transfer dropping you right at the hospital entrance."
+kochi-airport,Kochi Airport,lisie-hospital,Lisie Hospital Kochi,28,0.55 Hours,"busy urban streets","Dzire or Innova for patient comfort","Kaloor junction","Navigate straight into the heart of Kochi for a quick medical transfer."
+kochi-airport,Kochi Airport,lourdes-hospital,Lourdes Hospital Kochi,30,1.00 Hours,"busy urban streets","Dzire or Innova for patient comfort","Pachalam bypass","Navigate straight into the city for a quick and comfortable medical transfer."
+kochi-airport,Kochi Airport,caritas-hospital,Caritas Hospital Kottayam,85,2.10 Hours,"MC Road / state highways","Innova for patient comfort","Ettumanoor bypass","A smooth inland medical transfer to the major hospital in Kottayam."
+kochi-airport,Kochi Airport,matha-hospital,Matha Hospital Kottayam,90,2.15 Hours,"MC Road / state highways","Innova for patient comfort","Kottayam town","A smooth inland medical transfer to the hospital in Kottayam."
+kochi-airport,Kochi Airport,believers-hospital,Believers Church Hospital Thiruvalla,115,3.00 Hours,"busy MC road stretches","Innova for maximum patient comfort","Thiruvalla bypass","A smooth, priority medical transfer into the heart of Central Kerala."
+kochi-airport,Kochi Airport,kims-trivandrum,KIMS Trivandrum,220,5.15 Hours,"long coastal highway (NH66)","Innova Crysta for maximum patient comfort","Trivandrum bypass","A long but comfortable highway cruise focused on a safe medical arrival."
+kochi-airport,Kochi Airport,ananthapuri-hospital,Ananthapuri Hospital Trivandrum,225,5.30 Hours,"long coastal highway (NH66)","Innova Crysta for maximum patient comfort","Chackai bypass","A long but comfortable highway cruise focused on a safe medical arrival."
+kochi-airport,Kochi Airport,rcc-trivandrum,RCC Trivandrum,225,5.30 Hours,"long coastal highway (NH66)","Innova Crysta for maximum patient comfort","Medical College bypass","A priority, comfortable highway cruise for outstation medical care."
+kochi-airport,Kochi Airport,sree-chitra,Sree Chitra Trivandrum,225,5.30 Hours,"long coastal highway (NH66)","Innova Crysta for maximum patient comfort","Medical College bypass","A priority, comfortable highway cruise for outstation medical care."
+kochi-airport,Kochi Airport,aster-mims-calicut,Aster MIMS Calicut,150,3.45 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance patient comfort","Kozhikode bypass","A long, culturally rich cruise up the coast focused on a safe medical arrival."
+kochi-airport,Kochi Airport,baby-memorial,Baby Memorial Hospital Calicut,155,4.00 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance patient comfort","Kozhikode city","A long, comfortable cruise up the coast focused on a safe medical arrival."
+kochi-airport,Kochi Airport,meitra-hospital,Meitra Hospital Calicut,160,4.10 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance patient comfort","Kozhikode bypass","A long, comfortable cruise up the coast focused on a safe medical arrival."
+kochi-airport,Kochi Airport,amala-hospital,Amala Hospital Thrissur,60,1.20 Hours,"busy NH544 toll highway","Innova or Dzire for patient comfort","Thrissur bypass","A straight highway drive connecting the airport directly to the medical facility."
+kochi-airport,Kochi Airport,jubilee-mission,Jubilee Mission Thrissur,55,1.15 Hours,"busy NH544 toll highway","Innova or Dzire for patient comfort","Thrissur town","A straight highway drive connecting the airport directly to the medical facility."
+kochi-airport,Kochi Airport,elite-hospital,Elite Hospital Thrissur,55,1.15 Hours,"busy NH544 toll highway","Innova or Dzire for patient comfort","Thrissur town","A straight highway drive connecting the airport directly to the medical facility."
+kochi-airport,Kochi Airport,westfort-hospital,Westfort Hospital Thrissur,55,1.15 Hours,"busy NH544 toll highway","Innova or Dzire for patient comfort","Thrissur town","A straight highway drive connecting the airport directly to the medical facility."
+kochi-airport,Kochi Airport,grand-hyatt-bolgatty,Grand Hyatt Kochi Bolgatty,35,1.00 Hours,"city and backwater island roads","Innova Crysta for a premium arrival","Bolgatty bridge","A premium, hassle-free transfer straight to your luxury resort reception."
+kochi-airport,Kochi Airport,taj-malabar,Taj Malabar Resort Willingdon Island,42,1.20 Hours,"urban traffic and harbor bridges","Innova Crysta for a premium arrival","Willingdon Island bridges","Cross the beautiful backwater bridges for a luxurious arrival at the heritage resort."
+kochi-airport,Kochi Airport,crowne-plaza,Crowne Plaza Kochi,36,1.10 Hours,"major city bypass highway","Innova Crysta for a premium arrival","Kundannoor bypass","A direct, premium route down the bypass to your luxury business hotel."
+kochi-airport,Kochi Airport,le-meridien,Le Meridien Kochi,37,1.15 Hours,"major city bypass highway","Innova Crysta for a premium arrival","Kundannoor bypass","A direct, premium route down the bypass to your luxury hotel."
+kochi-airport,Kochi Airport,ramada-resort,Ramada Resort Kochi,40,1.20 Hours,"major city bypass highway","Innova Crysta for a premium arrival","Kumbalam bypass","A direct, premium route down the bypass to your luxury backwater resort."
+kochi-airport,Kochi Airport,marriott-edappally,Marriott Hotel Edappally,22,0.40 Hours,"multi-lane city highways","Innova Crysta for a premium arrival","Lulu Mall junction","A smooth, premium drive dropping you right at the luxury hotel entrance."
+kochi-airport,Kochi Airport,novotel-kochi,Novotel Kochi Infopark,28,0.55 Hours,"urban tech-corridor roads","Innova Crysta for a premium arrival","Seaport-Airport road","A hassle-free, premium ride tailored for IT professionals and business travelers."
+kochi-airport,Kochi Airport,holiday-inn-kochi,Holiday Inn Kochi,30,1.00 Hours,"major city bypass highway","Innova Crysta for a premium arrival","Chakkaraparambu bypass","A direct, premium route down the bypass to your luxury hotel."
+kochi-airport,Kochi Airport,radisson-blu-kochi,Radisson Blu Kochi,32,1.00 Hours,"busy urban streets","Innova Crysta for a premium arrival","Kadavanthra junction","Navigate straight into the heart of Kochi for a premium hotel arrival."
+kochi-airport,Kochi Airport,courtyard-marriott-airport,Courtyard by Marriott Kochi Airport,1,0.05 Hours,"airport approach road","Dzire or Innova","Airport VIP road","An ultra-short, premium 5-minute transfer from the terminal to your hotel."
+kochi-airport,Kochi Airport,port-muziris,Port Muziris Kochi,1,0.05 Hours,"airport approach road","Dzire or Innova","Airport VIP road","An ultra-short, premium 5-minute transfer from the terminal to your hotel."
+kochi-airport,Kochi Airport,taj-kumarakom,Taj Kumarakom Resort,80,2.15 Hours,"scenic backwater resort roads","Innova Crysta for a premium arrival","Vembanad Lake views","A premium, relaxing transfer straight to the luxury backwater resort reception."
+kochi-airport,Kochi Airport,kumarakom-lake-resort,Kumarakom Lake Resort,80,2.15 Hours,"scenic backwater resort roads","Innova Crysta for a premium arrival","Vembanad Lake views","A premium, relaxing transfer straight to the luxury backwater resort reception."
+kochi-airport,Kochi Airport,zuri-kumarakom,Zuri Kumarakom Resort,80,2.15 Hours,"scenic backwater resort roads","Innova Crysta for a premium arrival","Vembanad Lake views","A premium, relaxing transfer straight to the luxury backwater resort reception."
+kochi-airport,Kochi Airport,coconut-lagoon,Coconut Lagoon Kumarakom,80,2.15 Hours,"scenic backwater resort roads","Innova Crysta for a premium arrival","Vembanad Lake views","A premium, relaxing transfer straight to the boat jetty for your resort."
+kochi-airport,Kochi Airport,niraamaya-kumarakom,Niraamaya Retreats Kumarakom,80,2.15 Hours,"scenic backwater resort roads","Innova Crysta for a premium arrival","Vembanad Lake views","A premium, relaxing transfer straight to the luxury backwater resort reception."
+kochi-airport,Kochi Airport,blanket-hotel-munnar,Blanket Hotel & Spa Munnar,105,3.15 Hours,"steep and winding mountain roads","Innova Crysta for a premium arrival","Attukad Waterfalls diversion","A breathtaking climb up the Western Ghats straight to your luxury resort."
+kochi-airport,Kochi Airport,panoramic-getaway,The Panoramic Getaway Munnar,100,3.00 Hours,"steep and winding mountain roads","Innova Crysta for a premium arrival","Chithirapuram diversions","A breathtaking climb up the Western Ghats straight to your luxury resort."
+kochi-airport,Kochi Airport,chandys-windy-woods,Chandys Windy Woods Munnar,105,3.15 Hours,"steep and winding mountain roads","Innova Crysta for a premium arrival","Pallivasal diversions","A breathtaking climb up the Western Ghats straight to your luxury resort."
+kochi-airport,Kochi Airport,elephant-court,Elephant Court Thekkady,144,4.15 Hours,"winding mountain roads and ghats","Innova Crysta for a premium arrival","Periyar National Park","Relax as our expert drivers navigate the beautiful winding roads up to your resort."
+kochi-airport,Kochi Airport,spice-village,Spice Village Thekkady,144,4.15 Hours,"winding mountain roads and ghats","Innova Crysta for a premium arrival","Periyar National Park","Relax as our expert drivers navigate the beautiful winding roads up to your resort."
+kochi-airport,Kochi Airport,niraamaya-thekkady,Niraamaya Retreats Cardamom Club,145,4.20 Hours,"winding mountain roads and ghats","Innova Crysta for a premium arrival","Periyar National Park","Relax as our expert drivers navigate the beautiful winding roads up to your resort."
+kochi-airport,Kochi Airport,taj-bekal,Taj Bekal Resort,320,8.00 Hours,"long-distance NH66 highway","Innova Crysta for maximum endurance","Bekal Fort diversions","The ultimate premium coastal road trip spanning the entire length of northern Kerala."
+kochi-airport,Kochi Airport,lalit-bekal,The Lalit Resort Bekal,325,8.15 Hours,"long-distance NH66 highway","Innova Crysta for maximum endurance","Bekal Fort diversions","The ultimate premium coastal road trip spanning the entire length of northern Kerala."
+kochi-airport,Kochi Airport,neeleshwar-hermitage,Neeleshwar Hermitage,310,7.45 Hours,"long-distance NH66 highway","Innova Crysta for maximum endurance","Nileshwaram backwaters","The ultimate premium coastal road trip to the hidden gems of northern Kerala."
+kochi-airport,Kochi Airport,raviz-ashtamudi,The Raviz Ashtamudi Kollam,165,4.00 Hours,"NH66 coastal highway","Innova Crysta for a premium arrival","Kollam backwaters","A comfortable, premium highway cruise leading directly to the luxurious lakeside resort."
+kochi-airport,Kochi Airport,fragrant-nature-kollam,Fragrant Nature Kollam,175,4.15 Hours,"NH66 coastal highway","Innova Crysta for a premium arrival","Paravur backwaters","A comfortable, premium highway cruise leading directly to the luxurious lakeside resort."
+kochi-airport,Kochi Airport,taj-green-cove,Taj Green Cove Kovalam,240,6.00 Hours,"long coastal highway (NH66)","Innova Crysta for a premium arrival","Kovalam bypass","A marathon, premium coastal cruise ending at the internationally renowned beach resort."
+kochi-airport,Kochi Airport,leela-raviz-kovalam,The Leela Raviz Kovalam,240,6.00 Hours,"long coastal highway (NH66)","Innova Crysta for a premium arrival","Kovalam bypass","A marathon, premium coastal cruise ending at the internationally renowned beach resort."
+kochi-airport,Kochi Airport,niraamaya-kovalam,Niraamaya Retreats Surya Samudra,245,6.15 Hours,"long coastal highway (NH66)","Innova Crysta for a premium arrival","Kovalam bypass","A marathon, premium coastal cruise ending at the internationally renowned beach resort."
+kochi-airport,Kochi Airport,carnoustie-resort,Carnoustie Ayurveda Resort Marari,70,1.50 Hours,"flat coastal roads","Innova Crysta for a premium arrival","Alleppey bypass","A relaxing, premium drive leading straight to the private beach and ayurveda resort."
+kochi-airport,Kochi Airport,marari-beach-resort,Marari Beach Resort CGH,75,2.00 Hours,"flat coastal roads","Innova Crysta for a premium arrival","Alleppey bypass","A relaxing, premium drive leading straight to the famous eco-friendly beach resort."
+kochi-airport,Kochi Airport,xandari-pearl,Xandari Pearl Marari,75,2.00 Hours,"flat coastal roads","Innova Crysta for a premium arrival","Alleppey bypass","A relaxing, premium drive leading straight to the luxurious beach villas."
+kochi-airport,Kochi Airport,brunton-boatyard,Brunton Boatyard Fort Kochi,45,1.30 Hours,"city traffic and heritage roads","Innova Crysta for a premium arrival","Vasco da Gama Square","Drive through the bustling city for a premium arrival at the historic harbor resort."
+kochi-airport,Kochi Airport,eighth-bastion,Eighth Bastion Fort Kochi,45,1.30 Hours,"city traffic and heritage roads","Innova Crysta for a premium arrival","Fort Kochi beach road","Drive through the bustling city for a premium arrival at the boutique heritage hotel."
+kochi-airport,Kochi Airport,forte-kochi,Forte Kochi,45,1.30 Hours,"city traffic and heritage roads","Innova Crysta for a premium arrival","Princess Street","Drive through the bustling city for a premium arrival at the luxury heritage hotel."
+kochi-airport,Kochi Airport,fragrant-nature-kochi,Fragrant Nature Kochi,45,1.30 Hours,"city traffic and heritage roads","Innova Crysta for a premium arrival","Bazaar Road","Drive through the bustling city for a premium arrival at the luxury harbor hotel."
+kochi-airport,Kochi Airport,vythiri-resort,Vythiri Resort Wayanad,225,6.00 Hours,"steep winding ghat roads (Churam)","Innova Crysta for a premium arrival","Lakkidi Viewpoint","An epic climb up the mountain pass for a luxurious arrival in the rainforest."
+kochi-airport,Kochi Airport,windflower-wayanad,Windflower Resort Wayanad,235,6.15 Hours,"steep winding ghat roads (Churam)","Innova Crysta for a premium arrival","Vythiri diversions","An epic climb up the mountain pass for a luxurious arrival in the tea estates."
+kochi-airport,Kochi Airport,taj-wayanad,Taj Wayanad,250,6.45 Hours,"winding mountain roads","Innova Crysta for a premium arrival","Banasura Sagar Dam diversions","A beautiful, misty drive right into the luxury resort overlooking the reservoir."
+kochi-airport,Kochi Airport,morickap-resort,Morickap Resort Wayanad,240,6.30 Hours,"winding mountain roads","Innova Crysta for a premium arrival","Kalpetta bypass","A beautiful, misty drive right into the premium luxury resort in the hills."
+kochi-airport,Kochi Airport,lulu-mall,Lulu Mall Kochi,23,0.45 Hours,"multi-lane city highways","Dzire or Ertiga","Edappally toll junction","A smooth drive dropping you right at the entrance of India's largest shopping mall."
+kochi-airport,Kochi Airport,centre-square-mall,Centre Square Mall Kochi,30,1.00 Hours,"busy urban streets","Dzire or Etios","MG Road","Navigate straight into the heart of Kochi's main shopping district."
+kochi-airport,Kochi Airport,oberon-mall,Oberon Mall Kochi,25,0.50 Hours,"major city bypass highway","Dzire or Etios","Edappally bypass","A quick transfer down the bypass straight to the popular shopping destination."
+kochi-airport,Kochi Airport,forum-mall,Forum Mall Kochi,32,1.05 Hours,"major city bypass highway","Dzire or Innova","Kundannoor bypass","A direct route down the bypass to the newest luxury shopping mall in Kochi."
+kochi-airport,Kochi Airport,infopark,Infopark Kakkanad,28,0.55 Hours,"urban tech-corridor roads","Dzire or Innova Crysta","Seaport-Airport road","A hassle-free ride tailored for IT professionals heading straight to the tech hub."
+kochi-airport,Kochi Airport,smartcity,SmartCity Kochi,29,0.55 Hours,"urban tech-corridor roads","Dzire or Innova Crysta","Seaport-Airport road","A hassle-free ride tailored for IT professionals heading straight to the tech hub."
+kochi-airport,Kochi Airport,technopark,Technopark Trivandrum,215,5.15 Hours,"long coastal highway (NH66)","Innova Crysta for maximum highway comfort","Kazhakootam bypass","A long, fast-paced highway cruise dedicated for corporate travelers."
+kochi-airport,Kochi Airport,cyberpark,Cyberpark Calicut,150,3.45 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance comfort","Kozhikode bypass","A long, culturally rich cruise up the coast focused on a safe corporate arrival."
+kochi-airport,Kochi Airport,cusat,Cochin University CUSAT,20,0.40 Hours,"urban city traffic","Dzire or Etios","Kalamassery junction","A quick and direct transfer straight into the sprawling university campus."
+kochi-airport,Kochi Airport,rajagiri-college,Rajagiri College Kalamassery,19,0.40 Hours,"urban city traffic","Dzire or Etios","Kalamassery junction","A quick and direct transfer straight into the prominent educational institution."
+kochi-airport,Kochi Airport,iim-kozhikode,IIM Kozhikode,165,4.15 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance comfort","Kunnamangalam diversions","A long cruise up the coast directly to the premier management institute."
+kochi-airport,Kochi Airport,nit-calicut,NIT Calicut,170,4.30 Hours,"busy NH66 coastal highway","Innova Crysta for long-distance comfort","Kunnamangalam diversions","A long cruise up the coast directly to the premier engineering institute."
+kochi-airport,Kochi Airport,iiser-trivandrum,IISER Trivandrum,235,6.00 Hours,"long coastal highway and hilly roads","Innova Crysta for long-distance comfort","Vithura diversions","A marathon highway cruise followed by a scenic drive to the science campus."
+kochi-airport,Kochi Airport,coimbatore,Coimbatore,160,3.30 Hours,"multi-lane interstate toll highways","Innova Crysta for high-speed cruising","Walayar border","A fast-paced interstate highway cruise crossing the Palakkad gap into Tamil Nadu."
+kochi-airport,Kochi Airport,madurai,Madurai,270,6.00 Hours,"multi-lane interstate toll highways","Innova Crysta for maximum endurance","Kumily or Shencottah ghats","A long, culturally rich interstate journey crossing the Western Ghats into Tamil Nadu."
+kochi-airport,Kochi Airport,bangalore,Bangalore,500,10.00 Hours,"multi-lane interstate toll highways (NH544/NH44)","Innova Crysta for maximum endurance","Salem bypass","An epic, full-day interstate road trip connecting Kerala to the IT capital of India."
+kochi-airport,Kochi Airport,mysore,Mysore,350,8.00 Hours,"ghat roads and interstate highways","Innova Crysta for long trips","Bandipur National Park","A highly scenic interstate journey passing through the famous tiger reserves."
+kochi-airport,Kochi Airport,ooty,Ooty,240,6.30 Hours,"steep ghats and interstate hill roads","Innova Crysta for supreme hill power","Nilgiri Mountain curves","An epic climb up the Nilgiri mountains to the Queen of Hill Stations in Tamil Nadu."
+kochi-airport,Kochi Airport,kodaikanal,Kodaikanal,260,6.30 Hours,"steep ghats and interstate hill roads","Innova Crysta for supreme hill power","Palani hills","An epic climb up the Palani mountains to the Princess of Hill Stations in Tamil Nadu."
+kochi-airport,Kochi Airport,salem,Salem,320,6.30 Hours,"multi-lane interstate toll highways","Innova Crysta for high-speed cruising","Coimbatore bypass","A fast-paced interstate highway cruise deep into Tamil Nadu."
+kochi-airport,Kochi Airport,tiruppur,Tiruppur,210,4.30 Hours,"multi-lane interstate toll highways","Innova Crysta for high-speed cruising","Coimbatore bypass","A fast-paced interstate highway cruise to the textile hub of Tamil Nadu."
+kochi-airport,Kochi Airport,erode,Erode,260,5.30 Hours,"multi-lane interstate toll highways","Innova Crysta for high-speed cruising","Salem bypass","A fast-paced interstate highway cruise deep into the industrial belt of Tamil Nadu."
+kochi-airport,Kochi Airport,mangalore,Mangalore,360,9.00 Hours,"long-distance NH66 coastal highway","Innova Crysta for maximum endurance","Kasaragod border","The ultimate coastal road trip spanning the entire length of Kerala into Karnataka."
+kochi-airport,Kochi Airport,kanyakumari,Kanyakumari,310,7.30 Hours,"long-distance NH66 coastal highway","Innova Crysta for maximum endurance","Trivandrum bypass","A marathon journey to the southernmost tip of India where three oceans meet."
+kochi-airport,Kochi Airport,nagercoil,Nagercoil,295,7.00 Hours,"long-distance NH66 coastal highway","Innova Crysta for maximum endurance","Trivandrum bypass","A marathon journey crossing the southern border into the temple towns of Tamil Nadu."
